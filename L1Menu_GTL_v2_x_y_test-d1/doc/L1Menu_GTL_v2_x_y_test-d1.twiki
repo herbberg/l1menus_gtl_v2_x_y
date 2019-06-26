@@ -1,0 +1,91 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_GTL_v2_x_y_test.html" }%
+
+---+!! !L1Menu_GTL_v2_x_y_test
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_GTL_v2_x_y_test | 0.7 | >= 9_2_2 |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_GTL_v2_x_y_test |
+|Menu UUID: | 37d17afa-95d7-4e21-aaf2-5f8ccb7704c1 |
+|Firmware UUID: | 09c6b402-4680-4a54-8ebb-880d6e4872bd  |
+|Associated L1 scale DB key: | scales_2018_08_07 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 7 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Muon algorithm triggers: | 2 |
+      | !E/gamma algorithm triggers: | 1 |
+      | !Cross algorithm triggers: | 2 |
+      | !Correlation algorithm triggers: | 2 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Muon algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMuOpen_OS ][L1_QuadMuOpen_OS]]   | L1_QuadMuOpen_OS  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0 ][L1_DoubleMu0]]   | L1_DoubleMu0  | 1 |  |
+!Muon algorithm triggers: 2 bits defined
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG5 ][L1_DoubleEG5]]   | L1_DoubleEG5  | 4 |  |
+!E/gamma algorithm triggers: 1 bits defined
+---++++ !Cross algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet60_FWD3p0 ][L1_SingleJet60_FWD3p0]]   | L1_SingleJet60_FWD3p0  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet120_FWD3p0 ][L1_SingleJet120_FWD3p0]]   | L1_SingleJet120_FWD3p0  | 6 |  |
+!Cross algorithm triggers: 2 bits defined
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 ][L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4]]   | L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 ][L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4]]   | L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4  | 3 |  |
+!Correlation algorithm triggers: 2 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_QuadMuOpen_OS ][L1_QuadMuOpen_OS]]   |L1_QuadMuOpen_OS |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleMu0 ][L1_DoubleMu0]]   |L1_DoubleMu0 |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 ][L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4]]   |L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 ][L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4]]   |L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 |3 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_DoubleEG5 ][L1_DoubleEG5]]   |L1_DoubleEG5 |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet60_FWD3p0 ][L1_SingleJet60_FWD3p0]]   |L1_SingleJet60_FWD3p0 |5 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_SingleJet120_FWD3p0 ][L1_SingleJet120_FWD3p0]]   |L1_SingleJet120_FWD3p0 |6 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
