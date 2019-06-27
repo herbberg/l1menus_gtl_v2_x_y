@@ -1,0 +1,15 @@
+{
+  "firmware_uuid" : "09c6b402-4680-4a54-8ebb-880d6e4872bd",
+  "menu_uuid"     : "37d17afa-95d7-4e21-aaf2-5f8ccb7704c1",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_QuadMuOpen_OS", 0, 0, 2],
+    ["L1_DoubleMu0", 1, 0, 3],
+    ["L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4", 2, 0, 0],
+    ["L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4", 3, 0, 1],
+    ["L1_DoubleEG5", 4, 0, 4],
+    ["L1_SingleJet60_FWD3p0", 5, 0, 6],
+    ["L1_SingleJet120_FWD3p0", 6, 0, 5]
+  ]
+}
