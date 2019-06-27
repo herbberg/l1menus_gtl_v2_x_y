@@ -31,7 +31,7 @@ entity l1menu is
     port(
         lhc_clk : in std_logic;
         data_in : in data_pipeline_record;
-        conv_in : in conversions_record;
+        conv_in : in conv_pipeline_record;
         algo : out std_logic_vector(NR_ALGOS-1 downto 0));
 end l1menu;
 
@@ -118,8 +118,8 @@ begin
             N_EG_OBJECTS, N_JET_OBJECTS
         )
         port map(
-            conv_in.eg_eta(bx(0)),
-            conv_in.jet_eta(bx(0)),
+            conv_in.eg(bx(0)).eta,
+            conv_in.jet(bx(0)).eta,
             sub_eta_eg_bx_0_jet_bx_0
         );
 
@@ -138,8 +138,8 @@ begin
             EG_JET_PHI_HALF_RANGE_BINS
         )
         port map(
-            conv_in.eg_phi(bx(0)),
-            conv_in.jet_phi(bx(0)),
+            conv_in.eg(bx(0)).phi,
+            conv_in.jet(bx(0)).phi,
             sub_phi_eg_bx_0_jet_bx_0
         );
 
