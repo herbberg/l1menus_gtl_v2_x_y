@@ -41,7 +41,8 @@ architecture rtl of l1menu is
     signal cc_double_bx_0_bx_0 : muon_cc_double_array;
     signal cc_triple_bx_0_bx_0 : muon_cc_triple_array;
     signal cc_quad_bx_0_bx_0 : muon_cc_quad_array;
-    signal sub_eta_eg_bx_0_jet_bx_0 : dim2_max_eta_range_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    -- signal sub_eta_eg_bx_0_jet_bx_0 : dim2_max_eta_range_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal sub_eta_eg_jet : obj_bx_max_eta_range_array(0 to 4, 0 to 4, 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal deta_eg_bx_0_jet_bx_0 : deta_dphi_vector_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal sub_phi_eg_bx_0_jet_bx_0 : dim2_max_phi_range_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal dphi_eg_bx_0_jet_bx_0 : deta_dphi_vector_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
@@ -120,7 +121,7 @@ begin
         port map(
             conv_in.eg(bx(0)).eta,
             conv_in.jet(bx(0)).eta,
-            sub_eta_eg_bx_0_jet_bx_0
+            sub_eta_eg_jet(bx(0), bx(0), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1)
         );
 
     deta_eg_bx_0_jet_bx_0_i: entity work.diff_eta_lut
@@ -128,7 +129,7 @@ begin
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            sub_eta_eg_bx_0_jet_bx_0,
+            sub_eta_eg_jet(bx(0), bx(0), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1),
             deta_eg_bx_0_jet_bx_0
         );
 
