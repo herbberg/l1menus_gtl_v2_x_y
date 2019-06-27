@@ -42,7 +42,7 @@ architecture rtl of l1menu is
     signal cc_triple_bx_0_bx_0 : muon_cc_triple_array;
     signal cc_quad_bx_0_bx_0 : muon_cc_quad_array;
     -- signal sub_eta_eg_bx_0_jet_bx_0 : dim2_max_eta_range_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal sub_eta_eg_jet : obj_bx_max_eta_range_array(0 to 4, 0 to 4, 0 to MAX_N_OBJECTS-1, 0 to MAX_N_OBJECTS-1);
+    signal sub_eta_eg_jet : obj_bx_max_eta_range_array(0 to 4, 0 to 4, 0 to MAX_N_OBJ-1, 0 to MAX_N_OBJ-1);
     signal deta_eg_bx_0_jet_bx_0 : deta_dphi_vector_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal sub_phi_eg_bx_0_jet_bx_0 : dim2_max_phi_range_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal dphi_eg_bx_0_jet_bx_0 : deta_dphi_vector_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
