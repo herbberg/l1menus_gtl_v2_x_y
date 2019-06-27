@@ -25,7 +25,7 @@ use ieee.std_logic_1164.all;
 use work.lhc_data_pkg.all;
 use work.gtl_pkg.all;
 use work.lut_pkg.all;
-use work.l1_menu_pkg.all;
+use work.l1menu_pkg.all;
 
 entity l1menu is
     port(
