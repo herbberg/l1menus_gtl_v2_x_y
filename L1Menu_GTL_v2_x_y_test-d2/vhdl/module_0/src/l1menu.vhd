@@ -121,7 +121,7 @@ begin
         port map(
             conv_in.eg(bx(0)).eta,
             conv_in.jet(bx(0)).eta,
-            sub_eta_eg_jet(bx(0), bx(0), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1)
+            sub_eta_eg_jet(eg(bx(0)), jet(bx(0)), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1)
         );
 
     deta_eg_bx_0_jet_bx_0_i: entity work.diff_eta_lut
@@ -129,7 +129,7 @@ begin
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            sub_eta_eg_jet(bx(0), bx(0), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1),
+            sub_eta_eg_jet(eg(bx(0)), jet(bx(0)), 0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1),
             deta_eg_bx_0_jet_bx_0
         );
 
