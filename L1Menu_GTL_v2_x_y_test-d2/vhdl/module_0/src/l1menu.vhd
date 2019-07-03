@@ -48,38 +48,38 @@ architecture rtl of l1menu is
     signal dr_eg_jet : obj_bx_corr_cuts_std_logic_array;
 
 -- Comparators outputs
-    signal comp_pt_0001 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal comp_pt_0005 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal comp_pt_0006 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal comp_pt_0002 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_pt_0003 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_pt_0007 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_eta_0002 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_eta_0001 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_eta_0003 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal comp_pt_0004 : std_logic_vector(N_MUON_OBJECTS-1 downto 0);
-    signal comp_qual_0002 : std_logic_vector(N_MUON_OBJECTS-1 downto 0);
-    signal comp_qual_0001 : std_logic_vector(N_MUON_OBJECTS-1 downto 0);
+    signal comp_pt_0001 : eg_obj_t;
+    signal comp_pt_0005 : eg_obj_t;
+    signal comp_pt_0006 : eg_obj_t;
+    signal comp_pt_0002 : jet_obj_t;
+    signal comp_pt_0003 : jet_obj_t;
+    signal comp_pt_0007 : jet_obj_t;
+    signal comp_eta_0002 : jet_obj_t;
+    signal comp_eta_0001 : jet_obj_t;
+    signal comp_eta_0003 : jet_obj_t;
+    signal comp_pt_0004 : muon_obj_t;
+    signal comp_qual_0002 : muon_obj_t;
+    signal comp_qual_0001 : muon_obj_t;
     
-    signal comp_dr_0001 : corr_cuts_array(N_EG_OBJECTS-1 downto 0, N_JET_OBJECTS-1 downto 0);
+    signal comp_dr_0001 : eg_jet_t;
 
-    signal comp_cc_double_0001 : muon_cc_double_std_logic_array;
-    signal comp_cc_triple_0001 : muon_cc_triple_std_logic_array;
-    signal comp_cc_quad_0001 : muon_cc_quad_std_logic_array;
+    signal comp_cc_double_0001 : muon_cc_double_t;
+    signal comp_cc_triple_0001 : muon_cc_triple_t;
+    signal comp_cc_quad_0001 : muon_cc_quad_t;
 
 -- Conditions inputs
-    signal cond_in_0001 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal cond_in_0002 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal cond_in_0003 : std_logic_vector(N_EG_OBJECTS-1 downto 0);
-    signal cond_in_0005 : muon_cc_quad_std_logic_array;
-    signal cond_in_0006 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal cond_in_0007 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal cond_in_0008 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal cond_in_0009 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal cond_in_0010 : std_logic_vector(N_MUON_OBJECTS-1 downto 0);
-    signal cond_in_0011 : std_logic_vector(N_MUON_OBJECTS-1 downto 0);
-    signal cond_in_0012 : std_logic_vector(N_JET_OBJECTS-1 downto 0);
-    signal cond_in_0013 : corr_cuts_array(N_EG_OBJECTS-1 downto 0, N_JET_OBJECTS-1 downto 0);
+    signal cond_in_0001 : eg_obj_t;
+    signal cond_in_0002 : eg_obj_t;
+    signal cond_in_0003 : eg_obj_t;
+    signal cond_in_0005 : muon_cc_quad_t;
+    signal cond_in_0006 : jet_obj_t;
+    signal cond_in_0007 : jet_obj_t;
+    signal cond_in_0008 : jet_obj_t;
+    signal cond_in_0009 : jet_obj_t;
+    signal cond_in_0010 : muon_obj_t;
+    signal cond_in_0011 : muon_obj_t;
+    signal cond_in_0012 : jet_obj_t;
+    signal cond_in_0013 : eg_jet_t;
 
 -- Conditions outputs
     signal double_eg_i2 : std_logic;
