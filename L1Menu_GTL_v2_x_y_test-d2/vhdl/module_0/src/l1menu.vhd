@@ -30,8 +30,8 @@ use work.l1menu_pkg.all;
 entity l1menu is
     port(
         lhc_clk : in std_logic;
-        data_in : in data_pipeline_record;
-        conv_in : in conv_pipeline_record;
+        data : in data_pipeline_record;
+        conv : in conv_pipeline_record;
         algo : out std_logic_vector(NR_ALGOS-1 downto 0));
 end l1menu;
 
@@ -52,34 +52,37 @@ architecture rtl of l1menu is
 
 -- Comparators outputs
     -- Object cuts    
-    signal eg_pt_0001 : eg_obj_t;
-    signal eg_pt_0002 : eg_obj_t;
-    signal eg_pt_0003 : eg_obj_t;
-    signal jet_pt_0001 : jet_obj_t;
-    signal jet_pt_0002 : jet_obj_t;
-    signal jet_pt_0003 : jet_obj_t;
-    signal jet_eta_0001 : jet_obj_t;
-    signal jet_eta_0002 : jet_obj_t;
-    signal jet_eta_0003 : jet_obj_t;
-    signal muon_pt_0001 : muon_obj_t;
-    signal muon_qual_0001 : muon_obj_t;
-    signal muon_qual_0002 : muon_obj_t;
+    signal pt_eg_1 : eg_obj_t;
+    signal pt_eg_2 : eg_obj_t;
+    signal pt_eg_3 : eg_obj_t;
+    signal pt_jet_1 : jet_obj_t;
+    signal pt_jet_2 : jet_obj_t;
+    signal pt_jet_3 : jet_obj_t;
+    signal eta_jet_1 : jet_obj_t;
+    signal eta_jet_2 : jet_obj_t;
+    signal eta_jet_3 : jet_obj_t;
+    signal pt_muon_1 : muon_obj_t;
+    signal qual_muon_1 : muon_obj_t;
+    signal qual_muon_2 : muon_obj_t;
     -- Correlation cuts    
-    signal eg_jet_dr_0001 : eg_jet_t;
+    signal dr_eg_jet_1 : eg_jet_t;
     -- Muon charge correlation    
-    signal cc_double_0001 : muon_cc_double_t;
-    signal cc_triple_0001 : muon_cc_triple_t;
-    signal cc_quad_0001 : muon_cc_quad_t;
+    signal cc_double_1 : muon_cc_double_t;
+    signal cc_triple_1 : muon_cc_triple_t;
+    signal cc_quad_1 : muon_cc_quad_t;
 
 -- Conditions inputs
     -- Object cuts "and"  
-    signal jet_cuts_and_0001 : jet_obj_t;
-    signal jet_cuts_and_0002 : jet_obj_t;
-    signal jet_cuts_and_0003 : jet_obj_t;
-    signal jet_cuts_and_0004 : jet_obj_t;
-    signal muon_cuts_and_0001 : muon_obj_t;
-    signal muon_cuts_and_0002 : muon_obj_t;
-    signal jet_cuts_and_0005 : jet_obj_t;
+    signal comb_eg_1 : eg_obj_t;
+    signal comb_eg_2 : eg_obj_t;
+    signal comb_eg_3 : eg_obj_t;
+    signal comb_jet_1 : jet_obj_t;
+    signal comb_jet_2 : jet_obj_t;
+    signal comb_jet_3 : jet_obj_t;
+    signal comb_jet_4 : jet_obj_t;
+    signal comb_jet_5 : jet_obj_t;
+    signal comb_muon_1 : muon_obj_t;
+    signal comb_muon_2 : muon_obj_t;
 
 -- Conditions outputs
     signal double_eg_i2 : std_logic;
@@ -105,26 +108,26 @@ begin
 
 -- First stage: calculations
 
-    muon_charge_correlations_0001_i: entity work.muon_charge_correlations
+    calc_1_i: entity work.muon_charge_correlations
         port map(
-            data_in.muon(bx(0)).charge,
-            data_in.muon(bx(0)).charge,
+            data.muon(bx(0)).charge,
+            data.muon(bx(0)).charge,
             muon_cc_double(bx(0),bx(0)),
             muon_cc_triple(bx(0),bx(0)),
             muon_cc_quad(bx(0),bx(0))
         );
 
-    sub_eta_eg_jet_0001_i: entity work.sub_eta
+    calc_2_i: entity work.sub_eta
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS
         )
         port map(
-            conv_in.eg(bx(0)).eta,
-            conv_in.jet(bx(0)).eta,
+            conv.eg(bx(0)).eta,
+            conv.jet(bx(0)).eta,
             sub_eta_eg_jet(bx(0),bx(0))
         );
 
-    deta_eg_jet_0001_i: entity work.diff_eta_lut
+    calc_3_i: entity work.diff_eta_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -133,18 +136,18 @@ begin
             deta_eg_jet(bx(0),bx(0))
         );
 
-    sub_phi_eg_jet_0001_i: entity work.sub_phi
+    calc_4_i: entity work.sub_phi
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS,
             EG_JET_PHI_HALF_RANGE_BINS
         )
         port map(
-            conv_in.eg(bx(0)).phi,
-            conv_in.jet(bx(0)).phi,
+            conv.eg(bx(0)).phi,
+            conv.jet(bx(0)).phi,
             sub_phi_eg_jet(bx(0),bx(0))
         );
 
-    dphi_eg_jet_0001_i: entity work.diff_phi_lut
+    calc_5_i: entity work.diff_phi_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -153,7 +156,7 @@ begin
             dphi_eg_jet(bx(0),bx(0))
         );
 
-    dr_eg_jet_0001_i: entity work.delta_r
+    calc_6_i: entity work.delta_r
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS
         )
@@ -165,195 +168,176 @@ begin
         
 -- Second stage: comparisons
 
-    eg_pt_0001_i: entity work.threshold_comparator
+    comp_1_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_EG_OBJECTS,
-            DATA_WIDTH => EG_PT_WIDTH,
-            MODE => GE, -- default value
-            THRESHOLD => X"000A"
+            N_EG_OBJECTS, EG_PT_WIDTH,
+            GE, X"000A"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.eg(bx(0)).pt,
-            comp_o => eg_pt_0001
+            lhc_clk,
+            data.eg(bx(0)).pt,
+            pt_eg_1
         );
 
-    jet_pt_0001_i: entity work.threshold_comparator
+    comp_2_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_PT_WIDTH,
-            THRESHOLD => X"0078"
+            N_JET_OBJECTS, JET_PT_WIDTH,
+            GE, X"0078"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).pt,
-            comp_o => jet_pt_0001
+            lhc_clk,
+            data.jet(bx(0)).pt,
+            pt_jet_1
         );
 
-    jet_eta_0002_i: entity work.range_comparator
+    comp_3_i: entity work.range_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_ETA_WIDTH,
-            MODE => ETA,
-            MIN_REQ => X"008D",
-            MAX_REQ => X"00BA"
+            N_JET_OBJECTS, JET_ETA_WIDTH,
+            ETA,
+            X"008D", X"00BA"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).eta,
-            comp_o => jet_eta_0002
+            lhc_clk,
+            data.jet(bx(0)).eta,
+            eta_jet_2
         );
         
-    jet_eta_0001_i: entity work.range_comparator
+    comp_4_i: entity work.range_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_ETA_WIDTH,
-            MODE => ETA,
-            MIN_REQ => X"0045",
-            MAX_REQ => X"0072"
+            N_JET_OBJECTS, JET_ETA_WIDTH,
+            ETA,
+            X"0045", X"0072"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).eta,
-            comp_o => jet_eta_0001
+            lhc_clk,
+            data.jet(bx(0)).eta,
+            eta_jet_1
         );
 
-    jet_pt_0002_i: entity work.threshold_comparator
+    comp_5_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_PT_WIDTH,
-            THRESHOLD => X"00F0"
+            N_JET_OBJECTS, JET_PT_WIDTH,
+            GE, X"00F0"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).pt,
-            comp_o => jet_pt_0002
+            lhc_clk,
+            data.jet(bx(0)).pt,
+            pt_jet_2
         );
 
-    muon_pt_0001_i: entity work.threshold_comparator
+    comp_6_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_MUON_OBJECTS,
-            DATA_WIDTH => MUON_PT_WIDTH,
-            THRESHOLD => X"0001"
+            N_MUON_OBJECTS, MUON_PT_WIDTH,
+            GE, X"0001"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.muon(bx(0)).pt,
-            comp_o => muon_pt_0001
+            lhc_clk,
+            data.muon(bx(0)).pt,
+            pt_muon_1
         );
 
-    muon_qual_0002_i: entity work.lut_comparator
+    comp_7_i: entity work.lut_comparator
         generic map(
-            N_OBJ => N_MUON_OBJECTS,
-            DATA_WIDTH => MUON_QUAL_WIDTH,
-            LUT => X"FF00"
+            N_MUON_OBJECTS, MUON_QUAL_WIDTH,
+            X"FF00"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.muon(bx(0)).qual,
-            comp_o => muon_qual_0002
+            lhc_clk,
+            data.muon(bx(0)).qual,
+            qual_muon_2
         );
 
-    muon_qual_0001_i: entity work.lut_comparator
+    comp_8_i: entity work.lut_comparator
         generic map(
-            N_OBJ => N_MUON_OBJECTS,
-            DATA_WIDTH => MUON_QUAL_WIDTH,
-            LUT => X"FFF0"
+            N_MUON_OBJECTS, MUON_QUAL_WIDTH,
+            X"FFF0"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.muon(bx(0)).qual,
-            comp_o => muon_qual_0001
+            lhc_clk,
+            data.muon(bx(0)).qual,
+            qual_muon_1
         );
 
-    eg_pt_0002_i: entity work.threshold_comparator
+    comp_9_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_EG_OBJECTS,
-            DATA_WIDTH => EG_PT_WIDTH,
-            THRESHOLD => X"0018"
+            N_EG_OBJECTS, EG_PT_WIDTH,
+            GE, X"0018"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.eg(bx(0)).pt,
-            comp_o => eg_pt_0002
+            lhc_clk,
+            data.eg(bx(0)).pt,
+            pt_eg_2
         );
 
-    eg_pt_0003_i: entity work.threshold_comparator
+    comp_10_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_EG_OBJECTS,
-            DATA_WIDTH => EG_PT_WIDTH,
-            THRESHOLD => X"001E"
+            N_EG_OBJECTS, EG_PT_WIDTH,
+            GE, X"001E"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.eg(bx(0)).pt,
-            comp_o => eg_pt_0003
+            lhc_clk,
+            data.eg(bx(0)).pt,
+            pt_eg_3
         );
 
-    jet_pt_0003_i: entity work.threshold_comparator
+    comp_11_i: entity work.threshold_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_PT_WIDTH,
-            THRESHOLD => X"0038"
+            N_JET_OBJECTS, JET_PT_WIDTH,
+            GE, X"0038"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).pt,
-            comp_o => jet_pt_0003
+            lhc_clk,
+            data.jet(bx(0)).pt,
+            pt_jet_3
         );
 
-    jet_eta_0003_i: entity work.range_comparator
+    comp_12_i: entity work.range_comparator
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            DATA_WIDTH => JET_ETA_WIDTH,
-            MODE => ETA,
-            MIN_REQ => X"00C2",
-            MAX_REQ => X"003D"
+            N_JET_OBJECTS, JET_ETA_WIDTH,
+            ETA,
+            X"00C2", X"003D"
         )
         port map(
-            clk => lhc_clk,
-            data => data_in.jet(bx(0)).eta,
-            comp_o => jet_eta_0003
+            lhc_clk,
+            data.jet(bx(0)).eta,
+            eta_jet_3
         );
 
-    eg_jet_dr_0001_i: entity work.comparators_corr_cuts
+    comp_13_i: entity work.comparators_corr_cuts
         generic map(
-            N_OBJ_1 => N_EG_OBJECTS,
-            N_OBJ_2 => N_JET_OBJECTS,
-            DATA_WIDTH => 2*DETA_DPHI_VECTOR_WIDTH,
-            MODE => deltaR,
-            MIN_REQ => X"0000000027100",
-            MAX_REQ => X"00000084CA240"
+            N_EG_OBJECTS, N_JET_OBJECTS,
+            2*DETA_DPHI_VECTOR_WIDTH,
+            deltaR,
+            X"0000000027100", X"00000084CA240"
         )
         port map(
-            clk => lhc_clk,
-            data => dr_eg_jet(bx(0),bx(0)),
-            comp_o => eg_jet_dr_0001
+            lhc_clk,
+            dr_eg_jet(bx(0),bx(0)),
+            dr_eg_jet_1
         );
 
-    comp_cc_0001_i: entity work.comparator_muon_charge_corr
+    comp_14_i: entity work.comparator_muon_charge_corr
         generic map(
-            REQ => CC_OS
+            CC_OS
         )
         port map(
-            clk => lhc_clk,
-            cc_double => muon_cc_double(bx(0),bx(0)),
-            cc_triple => muon_cc_triple(bx(0),bx(0)),
-            cc_quad => muon_cc_quad(bx(0),bx(0)),
-            comp_o_double => cc_double_0001,
-            comp_o_triple => cc_triple_0001,
-            comp_o_quad => cc_quad_0001
+            lhc_clk,
+            muon_cc_double(bx(0),bx(0)), muon_cc_triple(bx(0),bx(0)), muon_cc_quad(bx(0),bx(0)),
+            cc_double_1, cc_triple_1, cc_quad_1
         );
         
     -- Creating condition inputs
     
-    jet_cuts_and_0001 <= jet_pt_0001 and jet_eta_0002;
-    jet_cuts_and_0002 <= jet_pt_0001 and jet_eta_0001;
-    jet_cuts_and_0003 <= jet_pt_0002 and jet_eta_0002;
-    jet_cuts_and_0004 <= jet_pt_0002 and jet_eta_0001;
-    muon_cuts_and_0001 <= muon_pt_0001 and muon_qual_0002;
-    muon_cuts_and_0002 <= muon_pt_0001 and muon_qual_0001;
-    jet_cuts_and_0005 <= jet_pt_0003 and jet_eta_0003;
+    comb_eg_1 <= pt_eg_1;
+    comb_eg_2 <= pt_eg_2;
+    comb_eg_3 <= pt_eg_3;
+    comb_jet_1 <= pt_jet_1 and eta_jet_2;
+    comb_jet_2 <= pt_jet_1 and eta_jet_1;
+    comb_jet_3 <= pt_jet_2 and eta_jet_2;
+    comb_jet_4 <= pt_jet_2 and eta_jet_1;
+    comb_jet_5 <= pt_jet_3 and eta_jet_3;
+    comb_muon_1 <= pt_muon_1 and qual_muon_2;
+    comb_muon_2 <= pt_muon_1 and qual_muon_1;
         
 -- Third stage: conditions and algos
     
@@ -361,147 +345,118 @@ begin
     
     double_eg_i2_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_EG_OBJECTS,
-            N_REQ => 2,
-            SLICES => ((0,11),(0,11),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_EG_OBJECTS, 2,
+            ((0,11),(0,11),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => eg_pt_0001,
-            in_2 => eg_pt_0001,
+            lhc_clk,
+            comb_eg_1,
             cond_o => double_eg_i2
         );
 
     single_jet_i3_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            N_REQ => 1,
-            SLICES => ((0,11),(0,0),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_JET_OBJECTS, 1,
+            ((0,11),(0,0),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => jet_cuts_and_0001,
+            lhc_clk,
+            comb_jet_1,
             cond_o => single_jet_i3
         );
 
     single_jet_i4_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            N_REQ => 1,
-            SLICES => ((0,11),(0,0),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_JET_OBJECTS, 1,
+            ((0,11),(0,0),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => jet_cuts_and_0002,
+            lhc_clk,
+            comb_jet_2,
             cond_o => single_jet_i4
         );
 
     single_jet_i5_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            N_REQ => 1,
-            SLICES => ((0,11),(0,0),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_JET_OBJECTS, 1,
+            ((0,11),(0,0),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => jet_cuts_and_0003,
+            lhc_clk,
+            comb_jet_3,
             cond_o => single_jet_i5
         );
 
     single_jet_i6_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_JET_OBJECTS,
-            N_REQ => 1,
-            SLICES => ((0,11),(0,0),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_JET_OBJECTS, 1,
+            ((0,11),(0,0),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => jet_cuts_and_0004,
+            lhc_clk,
+            comb_jet_4,
             cond_o => single_jet_i6
         );
 
     double_mu_i0_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_MUON_OBJECTS,
-            N_REQ => 2,
-            SLICES => ((0,7),(0,7),(0,0),(0,0)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_MUON_OBJECTS, 2,
+            ((0,7),(0,7),(0,0),(0,0)),
+            false, false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => muon_cuts_and_0001,
-            in_2 => muon_cuts_and_0001,
+            lhc_clk,
+            comb_muon_1,
             cond_o => double_mu_i0
         );
 
     quad_mu_i1_i: entity work.combinatorial_conditions
         generic map(
-            N_OBJ => N_MUON_OBJECTS,
-            N_REQ => 4,
-            SLICES => ((0,7),(0,7),(0,7),(0,7)),
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => true
+            N_MUON_OBJECTS, 4,
+            ((0,7),(0,7),(0,7),(0,7)),
+            false, true
         )
         port map(
-            clk => lhc_clk,
-            in_1 => muon_cuts_and_0002,
-            in_2 => muon_cuts_and_0002,
-            in_3 => muon_cuts_and_0002,
-            in_4 => muon_cuts_and_0002,
-            charge_corr_quad => cc_quad_0001,
+            lhc_clk,
+            comb_muon_2,
+            charge_corr_quad => cc_quad_1,
             cond_o => quad_mu_i1
         );
 
     calo_calo_correlation_i7_i: entity work.correlation_conditions
         generic map(
-            N_OBJ_1 => N_EG_OBJECTS,
-            N_OBJ_2 => N_JET_OBJECTS,
-            SLICES => ((0,11),(0,11),(0,0),(0,0)),
-            DETA_SEL => false,
-            DPHI_SEL => false,
-            DR_SEL => true,
-            INV_MASS_SEL => false,
-            TRANS_MASS_SEL => false,
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_EG_OBJECTS, N_JET_OBJECTS,
+            ((0,11),(0,11),(0,0),(0,0)),
+            false, false, true,
+            false, false, false,
+            false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => eg_pt_0002,
-            in_2 => jet_cuts_and_0005,
-            delta_r => eg_jet_dr_0001,
+            lhc_clk,
+            comb_eg_2,
+            comb_jet_5,
+            delta_r => dr_eg_jet_1,
             cond_o => calo_calo_correlation_i7
         );
 
     calo_calo_correlation_i8_i: entity work.correlation_conditions
         generic map(
-            N_OBJ_1 => N_EG_OBJECTS,
-            N_OBJ_2 => N_JET_OBJECTS,
-            SLICES => ((0,11),(0,11),(0,0),(0,0)),
-            DETA_SEL => false,
-            DPHI_SEL => false,
-            DR_SEL => true,
-            INV_MASS_SEL => false,
-            TRANS_MASS_SEL => false,
-            TBPT_SEL => false,
-            CHARGE_CORR_SEL => false
+            N_EG_OBJECTS, N_JET_OBJECTS,
+            ((0,11),(0,11),(0,0),(0,0)),
+            false, false, true,
+            false, false, false,
+            false
         )
         port map(
-            clk => lhc_clk,
-            in_1 => eg_pt_0003,
-            in_2 => jet_cuts_and_0005,
-            delta_r => eg_jet_dr_0001,
+            lhc_clk,
+            comb_eg_3,
+            comb_jet_5,
+            delta_r => dr_eg_jet_1,
             cond_o => calo_calo_correlation_i8
         );
 
