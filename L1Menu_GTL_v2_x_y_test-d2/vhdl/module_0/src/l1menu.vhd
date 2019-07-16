@@ -36,6 +36,26 @@ entity l1menu is
 end l1menu;
 
 architecture rtl of l1menu is
+-- Default signals for correlation cuts (fix in "template" independent of L1Menu content)   
+    signal def : default_corr_cuts_rec := (
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => (others => '1'))), (others => (others => (others => (others => '1')))));
+--     signal default_eg_eg : eg_eg_t := (others => (others => '1'));
+--     signal default_eg_jet : eg_jet_t := (others => (others => '1'));
+--     signal default_eg_tau : eg_tau_t := (others => (others => '1'));
+--     signal default_eg_muon : eg_muon_t := (others => (others => '1'));
+--     signal default_jet_jet : jet_jet_t := (others => (others => '1'));
+--     signal default_jet_tau : jet_tau_t := (others => (others => '1'));
+--     signal default_jet_muon : jet_muon_t := (others => (others => '1'));
+--     signal default_tau_tau : tau_tau_t := (others => (others => '1'));
+--     signal default_tau_muon : tau_muon_t := (others => (others => '1'));
+--     signal default_muon_muon : muon_muon_t := (others => (others => '1'));
+--     signal default_cc_double : muon_cc_double_std_logic_array := (others => (others => '1'));
+--     signal default_cc_triple : muon_cc_triple_std_logic_array := (others => (others => (others => '1')));
+--     signal default_cc_quad : muon_cc_quad_std_logic_array := (others => (others => (others => (others => '1'))));
 
 -- Calculations outputs
     -- Differences
@@ -46,9 +66,9 @@ architecture rtl of l1menu is
     signal dphi_eg_jet : obj_bx_corr_cuts_std_logic_array;
     signal dr_eg_jet : obj_bx_corr_cuts_std_logic_array;
     -- Muon charge correlation    
-    signal muon_cc_double : obj_bx_muon_cc_double_array;
-    signal muon_cc_triple : obj_bx_muon_cc_triple_array;
-    signal muon_cc_quad : obj_bx_muon_cc_quad_array;
+    signal cc_double : obj_bx_muon_cc_double_array;
+    signal cc_triple : obj_bx_muon_cc_triple_array;
+    signal cc_quad : obj_bx_muon_cc_quad_array;
 
 -- Comparators outputs
     -- Object cuts    
@@ -112,9 +132,9 @@ begin
         port map(
             data.muon(bx(0)).charge,
             data.muon(bx(0)).charge,
-            muon_cc_double(bx(0),bx(0)),
-            muon_cc_triple(bx(0),bx(0)),
-            muon_cc_quad(bx(0),bx(0))
+            cc_double(bx(0),bx(0)),
+            cc_triple(bx(0),bx(0)),
+            cc_quad(bx(0),bx(0))
         );
 
     calc_2_i: entity work.sub_eta
@@ -174,9 +194,7 @@ begin
             GE, X"000A"
         )
         port map(
-            lhc_clk,
-            data.eg(bx(0)).pt,
-            pt_eg_1
+            lhc_clk, data.eg(bx(0)).pt, pt_eg_1
         );
 
     comp_2_i: entity work.threshold_comparator
@@ -185,9 +203,7 @@ begin
             GE, X"0078"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).pt,
-            pt_jet_1
+            lhc_clk, data.jet(bx(0)).pt, pt_jet_1
         );
 
     comp_3_i: entity work.range_comparator
@@ -197,9 +213,7 @@ begin
             X"008D", X"00BA"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).eta,
-            eta_jet_2
+            lhc_clk, data.jet(bx(0)).eta, eta_jet_2
         );
         
     comp_4_i: entity work.range_comparator
@@ -209,9 +223,7 @@ begin
             X"0045", X"0072"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).eta,
-            eta_jet_1
+            lhc_clk, data.jet(bx(0)).eta, eta_jet_1
         );
 
     comp_5_i: entity work.threshold_comparator
@@ -220,9 +232,7 @@ begin
             GE, X"00F0"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).pt,
-            pt_jet_2
+            lhc_clk, data.jet(bx(0)).pt, pt_jet_2
         );
 
     comp_6_i: entity work.threshold_comparator
@@ -231,9 +241,7 @@ begin
             GE, X"0001"
         )
         port map(
-            lhc_clk,
-            data.muon(bx(0)).pt,
-            pt_muon_1
+            lhc_clk, data.muon(bx(0)).pt, pt_muon_1
         );
 
     comp_7_i: entity work.lut_comparator
@@ -242,9 +250,7 @@ begin
             X"FF00"
         )
         port map(
-            lhc_clk,
-            data.muon(bx(0)).qual,
-            qual_muon_2
+            lhc_clk, data.muon(bx(0)).qual, qual_muon_2
         );
 
     comp_8_i: entity work.lut_comparator
@@ -253,9 +259,7 @@ begin
             X"FFF0"
         )
         port map(
-            lhc_clk,
-            data.muon(bx(0)).qual,
-            qual_muon_1
+            lhc_clk, data.muon(bx(0)).qual, qual_muon_1
         );
 
     comp_9_i: entity work.threshold_comparator
@@ -264,9 +268,7 @@ begin
             GE, X"0018"
         )
         port map(
-            lhc_clk,
-            data.eg(bx(0)).pt,
-            pt_eg_2
+            lhc_clk, data.eg(bx(0)).pt, pt_eg_2
         );
 
     comp_10_i: entity work.threshold_comparator
@@ -275,9 +277,7 @@ begin
             GE, X"001E"
         )
         port map(
-            lhc_clk,
-            data.eg(bx(0)).pt,
-            pt_eg_3
+            lhc_clk, data.eg(bx(0)).pt, pt_eg_3
         );
 
     comp_11_i: entity work.threshold_comparator
@@ -286,9 +286,7 @@ begin
             GE, X"0038"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).pt,
-            pt_jet_3
+            lhc_clk, data.jet(bx(0)).pt, pt_jet_3
         );
 
     comp_12_i: entity work.range_comparator
@@ -298,9 +296,7 @@ begin
             X"00C2", X"003D"
         )
         port map(
-            lhc_clk,
-            data.jet(bx(0)).eta,
-            eta_jet_3
+            lhc_clk, data.jet(bx(0)).eta, eta_jet_3
         );
 
     comp_13_i: entity work.comparators_corr_cuts
@@ -311,9 +307,7 @@ begin
             X"0000000027100", X"00000084CA240"
         )
         port map(
-            lhc_clk,
-            dr_eg_jet(bx(0),bx(0)),
-            dr_eg_jet_1
+            lhc_clk, dr_eg_jet(bx(0),bx(0)), dr_eg_jet_1
         );
 
     comp_14_i: entity work.comparator_muon_charge_corr
@@ -322,7 +316,7 @@ begin
         )
         port map(
             lhc_clk,
-            muon_cc_double(bx(0),bx(0)), muon_cc_triple(bx(0),bx(0)), muon_cc_quad(bx(0),bx(0)),
+            cc_double(bx(0),bx(0)), cc_triple(bx(0),bx(0)), cc_quad(bx(0),bx(0)),
             cc_double_1, cc_triple_1, cc_quad_1
         );
         
@@ -350,9 +344,11 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_eg_1,
-            cond_o => double_eg_i2
+            lhc_clk, comb_eg_1,
+            def.eg_eg, 
+            def.cc_double, def.cc_triple, def.cc_quad, 
+            double_eg_i2
+--             cond_o => double_eg_i2
         );
 
     single_jet_i3_i: entity work.combinatorial_conditions
@@ -362,8 +358,7 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_jet_1,
+            lhc_clk, comb_jet_1,
             cond_o => single_jet_i3
         );
 
@@ -374,8 +369,7 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_jet_2,
+            lhc_clk, comb_jet_2,
             cond_o => single_jet_i4
         );
 
@@ -386,8 +380,7 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_jet_3,
+            lhc_clk, comb_jet_3,
             cond_o => single_jet_i5
         );
 
@@ -398,8 +391,7 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_jet_4,
+            lhc_clk, comb_jet_4,
             cond_o => single_jet_i6
         );
 
@@ -410,8 +402,7 @@ begin
             false, false
         )
         port map(
-            lhc_clk,
-            comb_muon_1,
+            lhc_clk, comb_muon_1,
             cond_o => double_mu_i0
         );
 
@@ -422,10 +413,12 @@ begin
             false, true
         )
         port map(
-            lhc_clk,
-            comb_muon_2,
-            charge_corr_quad => cc_quad_1,
-            cond_o => quad_mu_i1
+            lhc_clk, comb_muon_2,
+            def.muon_muon, 
+            def.cc_double, def.cc_triple, cc_quad_1, 
+            quad_mu_i1
+--             charge_corr_quad => cc_quad_1,
+--             cond_o => quad_mu_i1
         );
 
     calo_calo_correlation_i7_i: entity work.correlation_conditions
@@ -437,11 +430,13 @@ begin
             false
         )
         port map(
-            lhc_clk,
-            comb_eg_2,
-            comb_jet_5,
-            delta_r => dr_eg_jet_1,
-            cond_o => calo_calo_correlation_i7
+            lhc_clk, comb_eg_2, comb_jet_5,
+            def.eg_jet, def.eg_jet, dr_eg_jet_1,
+            def.eg_jet, def.eg_jet, def.eg_jet,
+            def.cc_double,
+            calo_calo_correlation_i7
+--             delta_r => dr_eg_jet_1,
+--             cond_o => calo_calo_correlation_i7
         );
 
     calo_calo_correlation_i8_i: entity work.correlation_conditions
@@ -453,9 +448,7 @@ begin
             false
         )
         port map(
-            lhc_clk,
-            comb_eg_3,
-            comb_jet_5,
+            lhc_clk, comb_eg_3, comb_jet_5,
             delta_r => dr_eg_jet_1,
             cond_o => calo_calo_correlation_i8
         );
