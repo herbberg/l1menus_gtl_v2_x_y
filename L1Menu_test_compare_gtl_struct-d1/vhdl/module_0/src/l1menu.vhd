@@ -148,8 +148,8 @@ begin
             N_EG_OBJECTS, N_JET_OBJECTS
         )
         port map(
-            data.eg(bx(0)).eta,
-            data.jet(bx(0)).eta,
+            conv.eg(bx(0)).eta,
+            conv.jet(bx(0)).eta,
             sub_eta_eg_jet(bx(0),bx(0))
         );
 
@@ -168,8 +168,8 @@ begin
             EG_JET_PHI_HALF_RANGE_BINS
         )
         port map(
-            data.eg(bx(0)).phi,
-            data.jet(bx(0)).phi,
+            conv.eg(bx(0)).phi,
+            conv.jet(bx(0)).phi,
             sub_phi_eg_jet(bx(0),bx(0))
         );
 
@@ -197,8 +197,8 @@ begin
             N_JET_OBJECTS, N_JET_OBJECTS
         )
         port map(
-            data.jet(bx(0)).eta,
-            data.jet(bx(0)).eta,
+            conv.jet(bx(0)).eta,
+            conv.jet(bx(0)).eta,
             sub_eta_jet_jet(bx(0),bx(0))
         );
 
@@ -217,8 +217,8 @@ begin
             JET_JET_PHI_HALF_RANGE_BINS
         )
         port map(
-            data.jet(bx(0)).phi,
-            data.jet(bx(0)).phi,
+            conv.jet(bx(0)).phi,
+            conv.jet(bx(0)).phi,
             sub_phi_jet_jet(bx(0),bx(0))
         );
 
@@ -235,11 +235,11 @@ begin
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
             JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
-            JET_JET_COSH_COS_VECTOR_WIDTH
+            CALO_CALO_COSH_COS_VECTOR_WIDTH
         )
         port map(
-            data.jet(bx(0)).pt,
-            data.jet(bx(0)).pt,
+            conv.jet(bx(0)).pt_vector,
+            conv.jet(bx(0)).pt_vector,
             cosh_deta_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0)),
             inv_mass_jet_jet(bx(0),bx(0))
@@ -410,9 +410,9 @@ begin
     comp_17_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
-            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH),
+            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH),
             mass,
-            X"00000000BA43B740", X"00041A6642C78140"
+            X"00000BA43B740", X"41A6642C78140"
         )
         port map(
             lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_1
@@ -421,9 +421,9 @@ begin
     comp_18_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
-            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH),
+            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH),
             mass,
-            X"000000010C388D00", X"00041A6642C78140"
+            X"000010C388D00", X"41A6642C78140"
         )
         port map(
             lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_2
@@ -432,9 +432,9 @@ begin
     comp_19_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
-            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+JET_JET_COSH_COS_VECTOR_WIDTH),
+            (JET_PT_VECTOR_WIDTH+JET_PT_VECTOR_WIDTH+CALO_CALO_COSH_COS_VECTOR_WIDTH),
             mass,
-            X"00000001448C1B40", X"00041A6642C78140"
+            X"00001448C1B40", X"41A6642C78140"
         )
         port map(
             lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_3
@@ -443,9 +443,9 @@ begin
     comp_20_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
-            2DETA_DPHI_VECTOR_WIDTH,
-            deta,
-            X"00000000", X"000005DC"
+            DETA_DPHI_VECTOR_WIDTH,
+            deltaEta,
+            X"0000000000000", X"00000000005DC"
         )
         port map(
             lhc_clk, deta_jet_jet(bx(0),bx(0)), deta_jet_jet_1
