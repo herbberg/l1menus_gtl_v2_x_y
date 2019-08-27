@@ -103,18 +103,18 @@ architecture rtl of l1menu is
     signal comb_muon_2 : muon_obj_t;
 
 -- Conditions outputs
-    signal cond_double_eg_i2 : std_logic;
-    signal cond_single_jet_i3 : std_logic;
-    signal cond_single_jet_i4 : std_logic;
-    signal cond_single_jet_i5 : std_logic;
-    signal cond_single_jet_i6 : std_logic;
-    signal cond_double_mu_i0 : std_logic;
-    signal cond_quad_mu_i1 : std_logic;
-    signal cond_calo_calo_correlation_i7 : std_logic;
-    signal cond_calo_calo_correlation_i8 : std_logic;
-    signal cond_invariant_mass_i9 : std_logic;
-    signal cond_invariant_mass_i10 : std_logic;
-    signal cond_invariant_mass_i11 : std_logic;
+    signal double_eg_i2 : std_logic;
+    signal single_jet_i3 : std_logic;
+    signal single_jet_i4 : std_logic;
+    signal single_jet_i5 : std_logic;
+    signal single_jet_i6 : std_logic;
+    signal double_mu_i0 : std_logic;
+    signal quad_mu_i1 : std_logic;
+    signal calo_calo_correlation_i7 : std_logic;
+    signal calo_calo_correlation_i8 : std_logic;
+    signal invariant_mass_i9 : std_logic;
+    signal invariant_mass_i10 : std_logic;
+    signal invariant_mass_i11 : std_logic;
     
 -- Algorithms
     signal l1_quad_mu_open_os : std_logic;
