@@ -1,0 +1,185 @@
+2019-08-20 08:56:05 INFO : svn revison r881497995
+2019-08-20 08:56:05 INFO : distributing menu...
+2019-08-20 08:56:05 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2019-08-20 08:56:05 INFO : :: listing resources...
+2019-08-20 08:56:05 INFO : thresholds:
+2019-08-20 08:56:05 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2019-08-20 08:56:05 INFO : instances:
+2019-08-20 08:56:05 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-08-20 08:56:05 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2019-08-20 08:56:05 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2019-08-20 08:56:05 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2019-08-20 08:56:05 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2019-08-20 08:56:05 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-08-20 08:56:05 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2019-08-20 08:56:05 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-08-20 08:56:05 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-08-20 08:56:05 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2019-08-20 08:56:05 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-08-20 08:56:05 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : | Algorithms sorted by payload (descending)                                   |
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-08-20 08:56:05 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2019-08-20 08:56:05 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-08-20 08:56:05 INFO : |     4 |    0.048% |  0.000% | L1_DoubleEG5                                  |
+2019-08-20 08:56:05 INFO : |     6 |    0.048% |  0.000% | L1_SingleJet120_FWD3p0                        |
+2019-08-20 08:56:05 INFO : |     5 |    0.048% |  0.000% | L1_SingleJet60_FWD3p0                         |
+2019-08-20 08:56:05 INFO : |     1 |    0.160% |  0.000% | L1_DoubleMu0                                  |
+2019-08-20 08:56:05 INFO : |     0 |    0.320% |  0.000% | L1_QuadMuOpen_OS                              |
+2019-08-20 08:56:05 INFO : |     7 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min250_dEta_M...     |
+2019-08-20 08:56:05 INFO : |     8 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min300_dEta_M...     |
+2019-08-20 08:56:05 INFO : |     9 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min330_dEta_M...     |
+2019-08-20 08:56:05 INFO : |     2 |    4.608% |  8.064% | L1_SingleEG12_SingleJet28_MidEta2p7_Mi...     |
+2019-08-20 08:56:05 INFO : |     3 |    4.608% |  8.064% | L1_SingleEG15_SingleJet28_MidEta2p7_Mi...     |
+2019-08-20 08:56:05 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : distributing algorithms, shadow ratio: 0.0
+2019-08-20 08:56:05 INFO : starting algorithm distribution for 10 algorithms on 1 modules using shadow ratio of 0.0
+2019-08-20 08:56:05 INFO :  . adding L1_DoubleEG5 (4) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_SingleJet120_FWD3p0 (6) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_SingleJet60_FWD3p0 (5) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_DoubleMu0 (1) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_QuadMuOpen_OS (0) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 (7) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5 (8) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 (9) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 (2) to module 0
+2019-08-20 08:56:05 INFO :  . adding L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 (3) to module 0
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : | Detailed distribition on 1 modules, shadow ratio: 0.0                       |
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : |------------|----------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : | Module     | Algorithm                                                      |
+2019-08-20 08:56:05 INFO : | ID | Index | Index | Name                                                   |
+2019-08-20 08:56:05 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |  0 |     0 |     4 | L1_DoubleEG5                                           |
+2019-08-20 08:56:05 INFO : |  0 |     1 |     6 | L1_SingleJet120_FWD3p0                                 |
+2019-08-20 08:56:05 INFO : |  0 |     2 |     5 | L1_SingleJet60_FWD3p0                                  |
+2019-08-20 08:56:05 INFO : |  0 |     3 |     1 | L1_DoubleMu0                                           |
+2019-08-20 08:56:05 INFO : |  0 |     4 |     0 | L1_QuadMuOpen_OS                                       |
+2019-08-20 08:56:05 INFO : |  0 |     5 |     7 | L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5            |
+2019-08-20 08:56:05 INFO : |  0 |     6 |     8 | L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5            |
+2019-08-20 08:56:05 INFO : |  0 |     7 |     9 | L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5            |
+2019-08-20 08:56:05 INFO : |  0 |     8 |     2 | L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4           |
+2019-08-20 08:56:05 INFO : |  0 |     9 |     3 | L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4           |
+2019-08-20 08:56:05 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : | Name                                             | Modules                  |
+2019-08-20 08:56:05 INFO : |--------------------------------------------------|--------------------------|
+2019-08-20 08:56:05 INFO : | SingleJET_i3                                     | 0                        |
+2019-08-20 08:56:05 INFO : | SingleJET_i6                                     | 0                        |
+2019-08-20 08:56:05 INFO : | SingleJET_i5                                     | 0                        |
+2019-08-20 08:56:05 INFO : | SingleJET_i4                                     | 0                        |
+2019-08-20 08:56:05 INFO : | DoubleEG_i2                                      | 0                        |
+2019-08-20 08:56:05 INFO : | DoubleMU_i0                                      | 0                        |
+2019-08-20 08:56:05 INFO : | QuadMU_i1                                        | 0                        |
+2019-08-20 08:56:05 INFO : | InvariantMass_i10                                | 0                        |
+2019-08-20 08:56:05 INFO : | InvariantMass_i11                                | 0                        |
+2019-08-20 08:56:05 INFO : | InvariantMass_i9                                 | 0                        |
+2019-08-20 08:56:05 INFO : | CaloCaloCorrelation_i8                           | 0                        |
+2019-08-20 08:56:05 INFO : | CaloCaloCorrelation_i7                           | 0                        |
+2019-08-20 08:56:05 INFO : |--------------------------------------------------|--------------------------|
+2019-08-20 08:56:05 INFO : |-----------------------------------------------------------------------------|
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : | Summary for distribution on 1 modules, shadow ratio: 0.0                    |
+2019-08-20 08:56:05 INFO : |                                                                             |
+2019-08-20 08:56:05 INFO : |-------------------------------------|---------------------------------------|
+2019-08-20 08:56:05 INFO : | Module                              | Payload                               |
+2019-08-20 08:56:05 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2019-08-20 08:56:05 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-08-20 08:56:05 INFO : |  0 |         10 |         12 | 1.20 |    39.71% |  32.56% |                 |
+2019-08-20 08:56:05 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-08-20 08:56:05 INFO : writing VHDL modules...
+2019-08-20 08:56:05 INFO : writing 10 algorithms to 1 module(s)
+2019-08-20 08:56:05 INFO : writing output for module: 0
+2019-08-20 08:56:05 INFO : algo_index.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/vhdl/module_0/src/algo_index.vhd
+2019-08-20 08:56:05 INFO : gtl_module_signals.vhd  : /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2019-08-20 08:56:05 INFO : gtl_module_instances.vhd: /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2019-08-20 08:56:05 INFO : ugt_constants.vhd       : /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/vhdl/module_0/src/ugt_constants.vhd
+2019-08-20 08:56:05 INFO : writing updated XML file /home/bergauer/L1Menu_test_compare_gtl_struct.xml
+2019-08-20 08:56:05 INFO : reading source XML menu file /home/bergauer/L1Menu_test_compare_gtl_struct.xml
+2019-08-20 08:56:05 INFO : processing menu "L1Menu_test_compare_gtl_struct" ... 
+2019-08-20 08:56:05 INFO : updating menu information...
+2019-08-20 08:56:05 INFO : uuid_menu     : 1b3f3a63-0d4d-4306-8be6-d2504bb4694c
+2019-08-20 08:56:05 INFO : uuid_firmware : f822c120-c588-4eb5-b838-8173427f882b
+2019-08-20 08:56:05 INFO : n_modules     : 1
+2019-08-20 08:56:05 INFO : writing target XML menu file /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/xml/L1Menu_test_compare_gtl_struct-d1.xml
+2019-08-20 08:56:05 INFO : generating menu documentation...
+2019-08-20 08:56:05 INFO : writing HTML documentation /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/xml/L1Menu_test_compare_gtl_struct-d1.xml
+2019-08-20 08:56:06 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/xml/L1Menu_test_compare_gtl_struct-d1.xml
+2019-08-20 08:56:07 INFO : patching filenames...
+2019-08-20 08:56:07 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/doc/L1Menu_test_compare_gtl_struct.twiki --> /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/doc/L1Menu_test_compare_gtl_struct-d1.twiki
+2019-08-20 08:56:07 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/doc/L1Menu_test_compare_gtl_struct.html --> /home/bergauer/L1Menu_test_compare_gtl_struct/L1Menu_test_compare_gtl_struct-d1/doc/L1Menu_test_compare_gtl_struct-d1.html
+2019-08-20 08:56:07 INFO : done.
