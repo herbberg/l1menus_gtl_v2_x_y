@@ -38,11 +38,16 @@ end l1menu;
 architecture rtl of l1menu is
 -- Default signal for correlation cuts (fix in "template" independent of L1Menu content)   
     signal def : default_corr_cuts_rec := (
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
         (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
-        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
-        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), 
         (others => (others => '1')), (others => (others => '1')), 
-        (others => (others => (others => '1'))), (others => (others => (others => (others => '1')))));
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), (others => (others => '1')),
+        (others => (others => '1')),
+        (others => (others => '1')), (others => (others => '1')), (others => (others => '1')), (others => (others => '1')),
+        (others => (others => '1')), (others => (others => (others => '1'))), (others => (others => (others => (others => '1'))))
+    );
 
 -- Calculations outputs
     -- Differences
