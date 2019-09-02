@@ -107,6 +107,7 @@ architecture rtl of l1menu is
     signal qual_muon_1 : muon_obj_t;
     signal qual_muon_2 : muon_obj_t;
     signal qual_muon_3 : muon_obj_t;
+    signal pt_htt_1 : htt_obj_t;
     signal pt_etm_1 : etm_obj_t;
     signal pt_etmhf_1 : etmhf_obj_t;
     -- Correlation cuts    
@@ -117,6 +118,7 @@ architecture rtl of l1menu is
     signal inv_mass_jet_jet_3 : jet_jet_t;
     signal inv_mass_jet_jet_4 : jet_jet_t;
     signal dr_jet_muon_1 : jet_muon_t;
+    signal dr_jet_tau_1 : jet_tau_t;
     -- Muon charge correlation    
     signal cc_quad_1 : muon_cc_quad_t;
 
@@ -378,7 +380,7 @@ begin
 
     calc_19_i: entity work.diff_eta_lut
         generic map(
-            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
+            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
         port map(
             sub_eta_jet_muon(bx(0),bx(0)),
@@ -387,7 +389,7 @@ begin
 
     calc_20_i: entity work.diff_phi_lut
         generic map(
-            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
+            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
         port map(
             sub_phi_jet_muon(bx(0),bx(0)),
@@ -414,7 +416,7 @@ begin
 
     calc_23_i: entity work.cosh_deta_lut
         generic map(
-            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
+            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
         port map(
             sub_eta_jet_muon(bx(0),bx(0)),
@@ -423,7 +425,7 @@ begin
 
     calc_24_i: entity work.cos_dphi_lut
         generic map(
-            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
+            N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
         port map(
             sub_phi_jet_muon(bx(0),bx(0)),
