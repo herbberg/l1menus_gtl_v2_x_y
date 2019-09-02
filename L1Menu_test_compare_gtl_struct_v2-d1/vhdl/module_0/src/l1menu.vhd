@@ -27,8 +27,6 @@ use work.gtl_pkg.all;
 use work.lut_pkg.all;
 use work.l1menu_pkg.all;
 
-UNDER CONSTRUCTION !!! HB 2019-08-29
-
 entity l1menu is
     port(
         lhc_clk : in std_logic;
