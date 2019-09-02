@@ -57,6 +57,8 @@ architecture rtl of l1menu is
     signal sub_phi_jet_jet : obj_bx_max_phi_range_array;
     signal sub_eta_jet_tau : obj_bx_max_eta_range_array;
     signal sub_phi_jet_tau : obj_bx_max_phi_range_array;
+    signal sub_eta_jet_muon : obj_bx_max_eta_range_array;
+    signal sub_phi_jet_muon : obj_bx_max_phi_range_array;
     -- Correlation cuts
     signal deta_eg_jet : obj_bx_corr_cuts_std_logic_array;
     signal dphi_eg_jet : obj_bx_corr_cuts_std_logic_array;
@@ -710,7 +712,7 @@ begin
             lhc_clk, dr_jet_muon(bx(0),bx(0)), dr_jet_muon_1
         );
 
-    comp_112_i: entity work.comparators_corr_cuts
+    comp_113_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
             DELTAR_VECTOR_WIDTH,
