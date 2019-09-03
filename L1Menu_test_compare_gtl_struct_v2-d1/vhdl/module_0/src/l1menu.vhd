@@ -24,7 +24,6 @@ use ieee.std_logic_1164.all;
 
 use work.lhc_data_pkg.all;
 use work.gtl_pkg.all;
-use work.lut_pkg.all;
 use work.l1menu_pkg.all;
 
 entity l1menu is
@@ -395,24 +394,6 @@ begin
             sub_phi_jet_muon(bx(0),bx(0)),
             dphi_jet_muon(bx(0),bx(0))
         );
-
---     calc_21_i: entity work.cosh_deta_lut
---         generic map(
---             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
---         )
---         port map(
---             sub_eta_jet_tau(bx(0),bx(0)),
---             cosh_deta_jet_tau(bx(0),bx(0))
---         );
--- 
---     calc_22_i: entity work.cos_dphi_lut
---         generic map(
---             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
---         )
---         port map(
---             sub_phi_jet_tau(bx(0),bx(0)),
---             cos_dphi_jet_tau(bx(0),bx(0))
---         );
 
     calc_23_i: entity work.cosh_deta_lut
         generic map(
@@ -788,7 +769,9 @@ begin
             lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_4
         );
 
-    -- Creating condition inputs
+-- Third stage: conditions and algos
+    
+    -- Creating condition inputs (combination of object cuts)
     
     comb_eg_1 <= pt_eg_1;
     comb_eg_2 <= pt_eg_2;
@@ -807,8 +790,6 @@ begin
     comb_muon_2 <= pt_muon_1 and qual_muon_1;
     comb_muon_3 <= pt_muon_2 and qual_muon_3;
         
--- Third stage: conditions and algos
-    
     -- Instantiations of conditions
     
     cond_double_eg_i2_i: entity work.combinatorial_conditions
@@ -986,7 +967,7 @@ begin
             cond_o => calo_muon_correlation_i21
         );
 
-    invariant_mass_ov_rm_i19_i: entity work.correlation_conditions_ovrm
+    cond_invariant_mass_ov_rm_i19_i: entity work.correlation_conditions_ovrm
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS,
             ((0,11),(0,11),(0,11),(0,0)),
