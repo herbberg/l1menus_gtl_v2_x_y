@@ -763,7 +763,7 @@ begin
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             DELTAETA_VECTOR_WIDTH,
             deltaEta,
-            X"0000000000000", X"00000000005DC"
+            X"00000000", X"000005DC"
         )
         port map(
             lhc_clk, deta_jet_jet(bx(0),bx(0)), deta_jet_jet_1
@@ -916,12 +916,12 @@ begin
         )
         port map(
             lhc_clk, comb_eg_2, comb_jet_5,
-            def.eg_jet, def.eg_jet, dr_eg_jet_1,
-            def.eg_jet, def.eg_jet, def.eg_jet,
-            def.cc_double,
-            calo_calo_correlation_i7
---             delta_r => dr_eg_jet_1,
---             cond_o => calo_calo_correlation_i7
+--             def.eg_jet, def.eg_jet, dr_eg_jet_1,
+--             def.eg_jet, def.eg_jet, def.eg_jet,
+--             def.cc_double,
+--             calo_calo_correlation_i7
+            delta_r => dr_eg_jet_1,
+            cond_o => calo_calo_correlation_i7
         );
 
     cond_calo_calo_correlation_i8_i: entity work.correlation_conditions
