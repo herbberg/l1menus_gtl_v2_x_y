@@ -590,10 +590,19 @@ begin
             lhc_clk, data.tau(bx(0)).pt, pt_tau_1
         );
 
-    comp_109_i: entity work.comparators_obj_cuts
+--     comp_109_i: entity work.comparators_obj_cuts
+--         generic map(
+--             N_TAU_OBJECTS, TAU_ISO_WIDTH,
+--             GE, X"000E"
+--         )
+--         port map(
+--             lhc_clk, data.tau(bx(0)).iso, iso_tau_1
+--         );
+-- 
+    comp_109_i: entity work.lut_comparator
         generic map(
-            N_TAU_OBJECTS, TAU_ISO_WIDTH,
-            GE, X"000E"
+            N_TAU_OBJECTS, 2**TAU_ISO_WIDTH,
+            X"E"
         )
         port map(
             lhc_clk, data.tau(bx(0)).iso, iso_tau_1
@@ -659,7 +668,7 @@ begin
 
     comp_7_i: entity work.lut_comparator
         generic map(
-            N_MUON_OBJECTS, MUON_QUAL_WIDTH,
+            N_MUON_OBJECTS, 2**MUON_QUAL_WIDTH,
             X"FF00"
         )
         port map(
@@ -668,7 +677,7 @@ begin
 
     comp_8_i: entity work.lut_comparator
         generic map(
-            N_MUON_OBJECTS, MUON_QUAL_WIDTH,
+            N_MUON_OBJECTS, 2**MUON_QUAL_WIDTH,
             X"FFF0"
         )
         port map(
@@ -677,7 +686,7 @@ begin
 
     comp_111_i: entity work.lut_comparator
         generic map(
-            N_MUON_OBJECTS, MUON_QUAL_WIDTH,
+            N_MUON_OBJECTS, 2**MUON_QUAL_WIDTH,
             X"F000"
         )
         port map(
