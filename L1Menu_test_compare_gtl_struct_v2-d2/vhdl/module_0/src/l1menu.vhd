@@ -763,7 +763,7 @@ begin
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             DELTAETA_VECTOR_WIDTH,
             deltaEta,
-            X"00000000", X"000005DC"
+            X"0000000000000", X"00000000005DC"
         )
         port map(
             lhc_clk, deta_jet_jet(bx(0),bx(0)), deta_jet_jet_1
