@@ -1059,7 +1059,7 @@ begin
 
     cond_double_jet_i13_i: entity work.combinatorial_conditions
         generic map(
-            N_JET_OBJECTS, 1,
+            N_JET_OBJECTS, 2,
             ((0,11),(0,11),(0,0),(0,0)),
             false
         )
