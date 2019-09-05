@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1Menu_test_compare_gtl_struct_v3</title>
+  <meta name="description" content="">
+  <meta name="generator" content="tm-reporter 2.6.1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- style customizations -->
+  <style>
+    /* Fixing anchor offset for fixed top navbar */
+    h1:before,
+    h2:before {
+        height: 38px;
+        content: "";
+        display:block;
+    }
+    a.anchor {
+      visibility:hidden;
+      position:relative;
+      top:-68px;
+    }
+    .panel-heading h3 {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+    .panel-heading a.top {
+        float: right;
+    }
+    pre .curl {
+        font-weight: bold;
+    }
+    pre .cut {
+        color: darkmagenta;
+    }
+    pre .function {
+        font-weight: bold;
+        color: darkblue;
+    }
+    pre .keyword {
+        font-weight: bold;
+        color: blue;
+    }
+    pre .vhdlop {
+        font-weight: bold;
+        color: darkmagenta;
+    }
+    pre .vhdlsig {
+        color: brown;
+    }
+    .vhdl,
+    .expression {
+        white-space: normal;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    .informative {
+        font-size: .9em;
+        color: darkgray;
+    }
+    h3 .informative {
+        font-size: .6em;
+    }
+    .footer {
+        float: right;
+        font-size: .9em;
+        color: darkgray;
+    }
+  </style>
+</head>
+<body role="document">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Top</span></a></li>
+          <li class=""><a href="#algorithms"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Algorithms</span></a></li>
+          <li class=""><a href="#cuts"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Cuts</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <a name="top"></a>
+
+    <header class="page-header">
+      <h1>L1Menu_test_compare_gtl_struct_v3</h1>
+    </header>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Comment:</strong> </li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> c63cb2f9-6c7c-4926-9ccf-9960e5252617</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> 5097c010-5f51-45e4-8fd6-2a31f7a973a9</li>
+      <li class="list-group-item"><strong>Grammar Version:</strong> 0.7</li>
+      <li class="list-group-item"><strong>Scale Set:</strong> scales_2018_08_07</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180910</li>
+    </ul>
+    <hr />
+
+    <a name="algorithms"></a>
+
+    <header class="page-header">
+      <h2>Algorithms</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td><a href=#L1_QuadMuOpen_OS>0</a></td>
+        <td><a href=#L1_QuadMuOpen_OS>L1_QuadMuOpen_OS</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu0>1</a></td>
+        <td><a href=#L1_DoubleMu0>L1_DoubleMu0</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4>2</a></td>
+        <td><a href=#L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4>L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4>3</a></td>
+        <td><a href=#L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4>L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleEG5>4</a></td>
+        <td><a href=#L1_DoubleEG5>L1_DoubleEG5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_SingleJet60_FWD3p0>5</a></td>
+        <td><a href=#L1_SingleJet60_FWD3p0>L1_SingleJet60_FWD3p0</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_SingleJet120_FWD3p0>6</a></td>
+        <td><a href=#L1_SingleJet120_FWD3p0>L1_SingleJet120_FWD3p0</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5>7</a></td>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5>L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5>8</a></td>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5>L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5>9</a></td>
+        <td><a href=#L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5>L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_TripleMu0_OQ>10</a></td>
+        <td><a href=#L1_TripleMu0_OQ>L1_TripleMu0_OQ</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu3_Jet35er2p5_dR_Max0p4>11</a></td>
+        <td><a href=#L1_Mu3_Jet35er2p5_dR_Max0p4>L1_Mu3_Jet35er2p5_dR_Max0p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu3_Jet60er2p5_dR_Max0p4>12</a></td>
+        <td><a href=#L1_Mu3_Jet60er2p5_dR_Max0p4>L1_Mu3_Jet60er2p5_dR_Max0p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp>13</a></td>
+        <td><a href=#L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp>L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5>14</a></td>
+        <td><a href=#L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5>L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0>15</a></td>
+        <td><a href=#L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0>L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_QuadJet60er2p5>16</a></td>
+        <td><a href=#L1_QuadJet60er2p5>L1_QuadJet60er2p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT280er>17</a></td>
+        <td><a href=#L1_HTT280er>L1_HTT280er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETM120>18</a></td>
+        <td><a href=#L1_ETM120>L1_ETM120</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF120>19</a></td>
+        <td><a href=#L1_ETMHF120>L1_ETMHF120</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_UnpairedBunchBptxPlus>20</a></td>
+        <td><a href=#L1_UnpairedBunchBptxPlus>L1_UnpairedBunchBptxPlus</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_UnpairedBunchBptxMinus>21</a></td>
+        <td><a href=#L1_UnpairedBunchBptxMinus>L1_UnpairedBunchBptxMinus</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet_100_30_DoubleJet30_Mass_Min620>22</a></td>
+        <td><a href=#L1_DoubleJet_100_30_DoubleJet30_Mass_Min620>L1_DoubleJet_100_30_DoubleJet30_Mass_Min620</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleJet_110_35_DoubleJet35_Mass_Min620>23</a></td>
+        <td><a href=#L1_DoubleJet_110_35_DoubleJet35_Mass_Min620>L1_DoubleJet_110_35_DoubleJet35_Mass_Min620</a></td>
+      </tr>
+    </table>
+    <hr />
+    <a class="anchor" name="L1_QuadMuOpen_OS"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>0 L1_QuadMuOpen_OS <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU0[MU-QLTY_OPEN], MU0[MU-QLTY_OPEN], MU0[MU-QLTY_OPEN], MU0[MU-QLTY_OPEN]<span class="curl">}</span>[CHGCOR_OS]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_quad_mu_open_os</span> <span class="vhdlop"><=</span> <span class="vhdlsig">quad_mu_i1</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}[CHGCOR_OS]</strong> : <code>quad_mu_i1</code>
+          <ul>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#CHGCOR_OS">CHGCOR_OS</a></li>
+            <ul><li>
+              
+                Charge Correaltion: <code>os</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu0"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>1 L1_DoubleMu0 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU0[MU-QLTY_DBLE], MU0[MU-QLTY_DBLE]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu0</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i0</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU0[MU-QLTY_DBLE],MU0[MU-QLTY_DBLE]}</strong> : <code>double_mu_i0</code>
+          <ul>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_DBLE">MU-QLTY_DBLE</a>:
+                    <code>0xff00</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_DBLE">MU-QLTY_DBLE</a>:
+                    <code>0xff00</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>2 L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>EG12, JET28[JET-ETA_2p7]<span class="curl">}</span>[DR_MIN_0p4]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_eg12_single_jet28_mid_eta2p7_min_dr0p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_i7</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 HI Menu (2018 v4.1.0): Seeds for HI Collisions Menu
+https://its.cern.ch/jira/browse/CMSLITDPG-790</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{EG12,JET28[JET-ETA_2p7]}[DR_MIN_0p4]</strong> : <code>calo_calo_correlation_i7</code>
+          <ul>
+            <li>Object: EG12
+              <ul>
+                <li>
+                  
+                    Threshold: 12.0 GeV
+                    : <code>0x18</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p7">JET-ETA_2p7</a> [-2.697, 2.697]
+                    : <code>[0xc2, 0x3d]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DR_MIN_0p4">DR_MIN_0p4</a></li>
+            <ul><li>
+              
+                Delta-R: [0.4, 11.8]
+                : <code>[0.16, 139.24]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>3 L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>EG15, JET28[JET-ETA_2p7]<span class="curl">}</span>[DR_MIN_0p4]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_eg15_single_jet28_mid_eta2p7_min_dr0p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_i8</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 HI Menu (2018 v4.1.0): Seeds for HI Collisions Menu
+https://its.cern.ch/jira/browse/CMSLITDPG-790</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{EG15,JET28[JET-ETA_2p7]}[DR_MIN_0p4]</strong> : <code>calo_calo_correlation_i8</code>
+          <ul>
+            <li>Object: EG15
+              <ul>
+                <li>
+                  
+                    Threshold: 15.0 GeV
+                    : <code>0x1e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p7">JET-ETA_2p7</a> [-2.697, 2.697]
+                    : <code>[0xc2, 0x3d]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DR_MIN_0p4">DR_MIN_0p4</a></li>
+            <ul><li>
+              
+                Delta-R: [0.4, 11.8]
+                : <code>[0.16, 139.24]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleEG5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>4 L1_DoubleEG5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>EG5, EG5<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_eg5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_eg_i2</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 HI Menu (2018 v4): Seeds for HI Collisions Menu
+https://its.cern.ch/jira/browse/CMSLITDPG-772</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{EG5,EG5}</strong> : <code>double_eg_i2</code>
+          <ul>
+            <li>Object: EG5
+              <ul>
+                <li>
+                  
+                    Threshold: 5.0 GeV
+                    : <code>0xa</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG5
+              <ul>
+                <li>
+                  
+                    Threshold: 5.0 GeV
+                    : <code>0xa</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_SingleJet60_FWD3p0"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>5 L1_SingleJet60_FWD3p0 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">JET60[JET-ETA_FWD_3p00_NEG] <span class="keyword">OR</span> JET60[JET-ETA_FWD_3p00_POS]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_jet60_fwd3p0</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_jet_i3</span> <span class="vhdlop">or</span> <span class="vhdlsig">single_jet_i4</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SMP/BTV/JME: https://its.cern.ch/jira/browse/CMSLITDPG-99</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>JET60[JET-ETA_FWD_3p00_NEG]</strong> : <code>single_jet_i3</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_NEG">JET-ETA_FWD_3p00_NEG</a> [-5.0, -3.001]
+                    : <code>[0x8d, 0xba]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET60[JET-ETA_FWD_3p00_POS]</strong> : <code>single_jet_i4</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_POS">JET-ETA_FWD_3p00_POS</a> [3.001, 5.0]
+                    : <code>[0x45, 0x72]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_SingleJet120_FWD3p0"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>6 L1_SingleJet120_FWD3p0 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">JET120[JET-ETA_FWD_3p00_NEG] <span class="keyword">OR</span> JET120[JET-ETA_FWD_3p00_POS]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_single_jet120_fwd3p0</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_jet_i5</span> <span class="vhdlop">or</span> <span class="vhdlsig">single_jet_i6</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SMP/BTV/JME: https://its.cern.ch/jira/browse/CMSLITDPG-99</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>JET120[JET-ETA_FWD_3p00_NEG]</strong> : <code>single_jet_i5</code>
+          <ul>
+            <li>Object: JET120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_NEG">JET-ETA_FWD_3p00_NEG</a> [-5.0, -3.001]
+                    : <code>[0x8d, 0xba]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET120[JET-ETA_FWD_3p00_POS]</strong> : <code>single_jet_i6</code>
+          <ul>
+            <li>Object: JET120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_POS">JET-ETA_FWD_3p00_POS</a> [3.001, 5.0]
+                    : <code>[0x45, 0x72]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>7 L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>JET30[JET-ETA_2p52], JET30[JET-ETA_2p52]<span class="curl">}</span>[MASS_MIN_250, DETA_MAX_1p5]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet30er2p5_mass_min250_d_eta_max1p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i9</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+https://its.cern.ch/jira/browse/CMSLITDPG-177</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_250,DETA_MAX_1p5]</strong> : <code>invariant_mass_i9</code>
+          <ul>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_250">MASS_MIN_250</a></li>
+            <ul><li>
+              
+                Mass: [250.0, 151982.0]
+                : <code>[31250.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>8 L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>JET30[JET-ETA_2p52], JET30[JET-ETA_2p52]<span class="curl">}</span>[MASS_MIN_300, DETA_MAX_1p5]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet30er2p5_mass_min300_d_eta_max1p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i10</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+https://its.cern.ch/jira/browse/CMSLITDPG-177</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_300,DETA_MAX_1p5]</strong> : <code>invariant_mass_i10</code>
+          <ul>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MIN_300">MASS_MIN_300</a></li>
+            <ul><li>
+              
+                Mass: [300.0, 151982.0]
+                : <code>[45000.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>9 L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>JET30[JET-ETA_2p52], JET30[JET-ETA_2p52]<span class="curl">}</span>[MASS_MIN_330, DETA_MAX_1p5]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet30er2p5_mass_min330_d_eta_max1p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i11</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+https://its.cern.ch/jira/browse/CMSLITDPG-177</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_330,DETA_MAX_1p5]</strong> : <code>invariant_mass_i11</code>
+          <ul>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_330">MASS_MIN_330</a></li>
+            <ul><li>
+              
+                Mass: [330.0, 151982.0]
+                : <code>[54450.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_TripleMu0_OQ"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>10 L1_TripleMu0_OQ <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU0[MU-QLTY_OPEN], MU0[MU-QLTY_OPEN], MU0[MU-QLTY_OPEN]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_mu0_oq</span> <span class="vhdlop"><=</span> <span class="vhdlsig">triple_mu_i18</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>Bphys: https://its.cern.ch/jira/browse/CMSLITDPG-96</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}</strong> : <code>triple_mu_i18</code>
+          <ul>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU0
+              <ul>
+                <li>
+                  
+                    Threshold: 0.0 GeV
+                    : <code>0x1</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_OPEN">MU-QLTY_OPEN</a>:
+                    <code>0xfff0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Mu3_Jet35er2p5_dR_Max0p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>11 L1_Mu3_Jet35er2p5_dR_Max0p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], JET35[JET-ETA_2p52]<span class="curl">}</span>[DR_MAX_0p4]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu3_jet35er2p5_d_r_max0p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_muon_correlation_i20</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for BTagMu paths
+https://its.cern.ch/jira/browse/CMSLITDPG-488</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU3[MU-QLTY_SNGL],JET35[JET-ETA_2p52]}[DR_MAX_0p4]</strong> : <code>calo_muon_correlation_i20</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DR_MAX_0p4">DR_MAX_0p4</a></li>
+            <ul><li>
+              
+                Delta-R: [0.0, 0.4]
+                : <code>[0.0, 0.161]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Mu3_Jet60er2p5_dR_Max0p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>12 L1_Mu3_Jet60er2p5_dR_Max0p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], JET60[JET-ETA_2p52]<span class="curl">}</span>[DR_MAX_0p4]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu3_jet60er2p5_d_r_max0p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_muon_correlation_i21</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for BTagMu paths
+https://its.cern.ch/jira/browse/CMSLITDPG-488</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU3[MU-QLTY_SNGL],JET60[JET-ETA_2p52]}[DR_MAX_0p4]</strong> : <code>calo_muon_correlation_i21</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DR_MAX_0p4">DR_MAX_0p4</a></li>
+            <ul><li>
+              
+                Delta-R: [0.0, 0.4]
+                : <code>[0.0, 0.161]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>13 L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>JET35, JET35, TAU45[TAU-ISO_0xE]<span class="curl">}</span>[MASS_MIN_450, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet35_mass_min450_iso_tau45_rm_ovlp</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i19</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Higgs PAG
+https://its.cern.ch/jira/browse/CMSLITDPG-521
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-121</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{JET35,JET35,TAU45[TAU-ISO_0xE]}[MASS_MIN_450,ORMDR_0p2]</strong> : <code>invariant_mass_ov_rm_i19</code>
+          <ul>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU45
+              <ul>
+                <li>
+                  
+                    Threshold: 45.0 GeV
+                    : <code>0x5a</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Isolation: <a href="#TAU-ISO_0xE">TAU-ISO_0xE</a>:
+                    : <code>0x000e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MIN_450">MASS_MIN_450</a></li>
+            <ul><li>
+              
+                Mass: [450.0, 151982.0]
+                : <code>[101250.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>14 L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET95, JET75, JET65<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET75[JET-ETA_2p52], JET65[JET-ETA_2p52]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_triple_jet_95_75_65_double_jet_75_65_er2p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">triple_jet_i17</span> <span class="vhdlop">and</span> <span class="vhdlsig">double_jet_i13</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Higgs PAG
+https://its.cern.ch/jira/browse/CMSLITDPG-521
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-264</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET95,JET75,JET65}</strong> : <code>triple_jet_i17</code>
+          <ul>
+            <li>Object: JET95
+              <ul>
+                <li>
+                  
+                    Threshold: 95.0 GeV
+                    : <code>0xbe</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET75
+              <ul>
+                <li>
+                  
+                    Threshold: 75.0 GeV
+                    : <code>0x96</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET65
+              <ul>
+                <li>
+                  
+                    Threshold: 65.0 GeV
+                    : <code>0x82</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]}</strong> : <code>double_jet_i13</code>
+          <ul>
+            <li>Object: JET75
+              <ul>
+                <li>
+                  
+                    Threshold: 75.0 GeV
+                    : <code>0x96</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET65
+              <ul>
+                <li>
+                  
+                    Threshold: 65.0 GeV
+                    : <code>0x82</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>15 L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET95, JET75, JET65, JET20<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET75[JET-ETA_2p52], JET65[JET-ETA_2p52]<span class="curl">}</span> <span class="keyword">AND</span> (JET20[JET-ETA_FWD_3p00_NEG] <span class="keyword">OR</span> JET20[JET-ETA_FWD_3p00_POS])</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0</span> <span class="vhdlop"><=</span> <span class="vhdlsig">quad_jet_i12</span> <span class="vhdlop">and</span> <span class="vhdlsig">double_jet_i13</span> <span class="vhdlop">and</span> ( <span class="vhdlsig">single_jet_i14</span> <span class="vhdlop">or</span> <span class="vhdlsig">single_jet_i15</span> )</pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Higgs PAG
+https://its.cern.ch/jira/browse/CMSLITDPG-521
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-462</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET95,JET75,JET65,JET20}</strong> : <code>quad_jet_i12</code>
+          <ul>
+            <li>Object: JET95
+              <ul>
+                <li>
+                  
+                    Threshold: 95.0 GeV
+                    : <code>0xbe</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET75
+              <ul>
+                <li>
+                  
+                    Threshold: 75.0 GeV
+                    : <code>0x96</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET65
+              <ul>
+                <li>
+                  
+                    Threshold: 65.0 GeV
+                    : <code>0x82</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x28</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]}</strong> : <code>double_jet_i13</code>
+          <ul>
+            <li>Object: JET75
+              <ul>
+                <li>
+                  
+                    Threshold: 75.0 GeV
+                    : <code>0x96</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET65
+              <ul>
+                <li>
+                  
+                    Threshold: 65.0 GeV
+                    : <code>0x82</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET20[JET-ETA_FWD_3p00_NEG]</strong> : <code>single_jet_i14</code>
+          <ul>
+            <li>Object: JET20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x28</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_NEG">JET-ETA_FWD_3p00_NEG</a> [-5.0, -3.001]
+                    : <code>[0x8d, 0xba]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET20[JET-ETA_FWD_3p00_POS]</strong> : <code>single_jet_i15</code>
+          <ul>
+            <li>Object: JET20
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x28</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_FWD_3p00_POS">JET-ETA_FWD_3p00_POS</a> [3.001, 5.0]
+                    : <code>[0x45, 0x72]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_QuadJet60er2p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>16 L1_QuadJet60er2p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET60[JET-ETA_2p52], JET60[JET-ETA_2p52], JET60[JET-ETA_2p52], JET60[JET-ETA_2p52]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_quad_jet60er2p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">quad_jet_i16</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for BTagCSV PD
+https://its.cern.ch/jira/browse/CMSLITDPG-462
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-281</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52]}</strong> : <code>quad_jet_i16</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT280er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>17 L1_HTT280er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT280</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt280er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i22</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT280</strong> : <code>single_htt_i22</code>
+          <ul>
+            <li>Object: HTT280
+              <ul>
+                <li>
+                  
+                    Threshold: 280.0 GeV
+                    : <code>0x230</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETM120"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>18 L1_ETM120 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETM120</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etm120</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etm_i23</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for JetHT / MET / HTMHT PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETM120</strong> : <code>single_etm_i23</code>
+          <ul>
+            <li>Object: ETM120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF120"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>19 L1_ETMHF120 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF120</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf120</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i24</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF120</strong> : <code>single_etmhf_i24</code>
+          <ul>
+            <li>Object: ETMHF120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_UnpairedBunchBptxPlus"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>20 L1_UnpairedBunchBptxPlus <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">EXT_BPTX_B1NotB2_VME</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_unpaired_bunch_bptx_plus</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ext_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>BRIL: bit09 ref: https://twiki.cern.ch/twiki/bin/view/CMS/AndreyPozdnyakovBPTXCableNames</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>EXT_BPTX_B1NotB2_VME</strong> : <code>single_ext_i25</code>
+          <ul>
+            <li>Object: EXT_BPTX_B1NotB2_VME
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_UnpairedBunchBptxMinus"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>21 L1_UnpairedBunchBptxMinus <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">EXT_BPTX_B2NotB1_VME</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_unpaired_bunch_bptx_minus</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ext_i26</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>BRIL: bit10 ref: https://twiki.cern.ch/twiki/bin/view/CMS/AndreyPozdnyakovBPTXCableNames</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>EXT_BPTX_B2NotB1_VME</strong> : <code>single_ext_i26</code>
+          <ul>
+            <li>Object: EXT_BPTX_B2NotB1_VME
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet_100_30_DoubleJet30_Mass_Min620"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>22 L1_DoubleJet_100_30_DoubleJet30_Mass_Min620 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET100, JET30<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">mass_inv</span><span class="curl">{</span>JET30, JET30<span class="curl">}</span>[MASS_MIN_620]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet_100_30_double_jet30_mass_min620</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_jet_i27</span> <span class="vhdlop">and</span> <span class="vhdlsig">invariant_mass_i28</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>Higgs VBF H to tau tau:</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET100,JET30}</strong> : <code>double_jet_i27</code>
+          <ul>
+            <li>Object: JET100
+              <ul>
+                <li>
+                  
+                    Threshold: 100.0 GeV
+                    : <code>0xc8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>mass_inv{JET30,JET30}[MASS_MIN_620]</strong> : <code>invariant_mass_i28</code>
+          <ul>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_620">MASS_MIN_620</a></li>
+            <ul><li>
+              
+                Mass: [620.0, 151982.0]
+                : <code>[192200.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleJet_110_35_DoubleJet35_Mass_Min620"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>23 L1_DoubleJet_110_35_DoubleJet35_Mass_Min620 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET110, JET35<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">mass_inv</span><span class="curl">{</span>JET35, JET35<span class="curl">}</span>[MASS_MIN_620]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_jet_110_35_double_jet35_mass_min620</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_jet_i29</span> <span class="vhdlop">and</span> <span class="vhdlsig">invariant_mass_i30</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-102</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET110,JET35}</strong> : <code>double_jet_i29</code>
+          <ul>
+            <li>Object: JET110
+              <ul>
+                <li>
+                  
+                    Threshold: 110.0 GeV
+                    : <code>0xdc</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>mass_inv{JET35,JET35}[MASS_MIN_620]</strong> : <code>invariant_mass_i30</code>
+          <ul>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MIN_620">MASS_MIN_620</a></li>
+            <ul><li>
+              
+                Mass: [620.0, 151982.0]
+                : <code>[192200.0, 11549264162.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <a name="cuts"></a>
+
+    <header class="page-header">
+      <h2>Cuts</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Minimum (hw/emu)</th>
+        <th>Maximum (hw/emu)</th>
+        <th>Data (hw/emu)</th>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p7"></a> JET-ETA_2p7</td>
+        <td>-2.697</td>
+        <td>2.697</td>
+        <td><code>-2.697</code></td>
+        <td><code>2.697</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p52"></a> JET-ETA_2p52</td>
+        <td>-2.523</td>
+        <td>2.523</td>
+        <td><code>-2.523</code></td>
+        <td><code>2.523</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_FWD_3p00_POS"></a> JET-ETA_FWD_3p00_POS</td>
+        <td>3.001</td>
+        <td>5.0</td>
+        <td><code>3.001</code></td>
+        <td><code>5.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_FWD_3p00_NEG"></a> JET-ETA_FWD_3p00_NEG</td>
+        <td>-5.0</td>
+        <td>-3.001</td>
+        <td><code>-5.0</code></td>
+        <td><code>-3.001</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MU-QLTY_SNGL"></a> MU-QLTY_SNGL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0xf000</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MU-QLTY_OPEN"></a> MU-QLTY_OPEN</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0xfff0</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MU-QLTY_DBLE"></a> MU-QLTY_DBLE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0xff00</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="TAU-ISO_0xE"></a> TAU-ISO_0xE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0x000e</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DETA_MAX_1p5"></a> DETA_MAX_1p5</td>
+        <td>0.0</td>
+        <td>1.5</td>
+        <td><code>0.0</code></td>
+        <td><code>1.5</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DR_MAX_0p4"></a> DR_MAX_0p4</td>
+        <td>0.0</td>
+        <td>0.4</td>
+        <td><code>0.0</code></td>
+        <td><code>0.161</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DR_MIN_0p4"></a> DR_MIN_0p4</td>
+        <td>0.4</td>
+        <td>11.8</td>
+        <td><code>0.16</code></td>
+        <td><code>139.24</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_330"></a> MASS_MIN_330</td>
+        <td>330.0</td>
+        <td>151982.0</td>
+        <td><code>54450.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_620"></a> MASS_MIN_620</td>
+        <td>620.0</td>
+        <td>151982.0</td>
+        <td><code>192200.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_250"></a> MASS_MIN_250</td>
+        <td>250.0</td>
+        <td>151982.0</td>
+        <td><code>31250.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_450"></a> MASS_MIN_450</td>
+        <td>450.0</td>
+        <td>151982.0</td>
+        <td><code>101250.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MIN_300"></a> MASS_MIN_300</td>
+        <td>300.0</td>
+        <td>151982.0</td>
+        <td><code>45000.0</code></td>
+        <td><code>11549264162.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="CHGCOR_OS"></a> CHGCOR_OS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0x0000</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="ORMDR_0p2"></a> ORMDR_0p2</td>
+        <td>0.0</td>
+        <td>0.2</td>
+        <td><code>0.0</code></td>
+        <td><code>0.041</code></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <p>Generated by tm-reporter v2.6.1 on 2019-09-05 09:26:13.</p>
+    </fooer>
+
+  </main><!-- /container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
