@@ -1086,7 +1086,7 @@ begin
             false, true
         )
         port map(
-            lhc_clk, comb_jet_9, comb_tau_1,
+            lhc_clk, comb_jet_19, comb_tau_1,
             inv_mass => inv_mass_jet_jet_4,
             dr_ovrm => dr_jet_tau_1,
             cond_o => invariant_mass_ov_rm_i19
