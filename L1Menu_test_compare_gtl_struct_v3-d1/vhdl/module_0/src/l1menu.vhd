@@ -1081,12 +1081,12 @@ begin
 
     cond_invariant_mass_ov_rm_i19_i: entity work.correlation_conditions_ovrm
         generic map(
-            N_JET_OBJECTS, N_TAU_OBJECTS,
+            N_JET_OBJECTS, N_JET_OBJECTS, N_TAU_OBJECTS,
             ((0,11),(0,11),(0,11),(0,0)),
             false, true
         )
         port map(
-            lhc_clk, comb_jet_19, comb_tau_1,
+            lhc_clk, comb_jet_19, comb_jet_19, comb_tau_1,
             inv_mass => inv_mass_jet_jet_4,
             dr_ovrm => dr_jet_tau_1,
             cond_o => invariant_mass_ov_rm_i19
