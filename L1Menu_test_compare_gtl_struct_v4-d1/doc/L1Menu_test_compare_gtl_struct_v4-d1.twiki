@@ -1,0 +1,81 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_compare_gtl_struct_v4.html" }%
+
+---+!! !L1Menu_test_compare_gtl_struct_v4
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_compare_gtl_struct_v4 | 0.7 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_compare_gtl_struct_v4 |
+|Menu UUID: | fe5957aa-1a58-4062-bc19-4a4fa1c3e7f6 |
+|Firmware UUID: | 8c8c211e-28df-4365-b661-661bb5585c2c  |
+|Associated L1 scale DB key: | scales_2018_08_07 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 4 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Jet algorithm triggers: | 1 |
+      | !Correlation algorithm triggers: | 2 |
+      | !Mass algorithm triggers: | 1 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Jet algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tbpt60 ][L1_Test_DoubleJet30_Tbpt60]]   | L1_Test_DoubleJet30_Tbpt60  | 0 |  |
+!Jet algorithm triggers: 1 bits defined
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2 ][L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2]]   | L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60 ][L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60]]   | L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60  | 3 |  |
+!Correlation algorithm triggers: 2 bits defined
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp ][L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp]]   | L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp  | 1 |  |
+!Mass algorithm triggers: 1 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tbpt60 ][L1_Test_DoubleJet30_Tbpt60]]   |L1_Test_DoubleJet30_Tbpt60 |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp ][L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp]]   |L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2 ][L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2]]   |L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2 |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60 ][L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60]]   |L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60 |3 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
