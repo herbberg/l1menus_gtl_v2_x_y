@@ -49,10 +49,10 @@ architecture rtl of l1menu is
     signal deta_jet_jet : obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_tau : obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_tau : obj_bx_corr_cuts_std_logic_array;
-    signal dphi_jet_tau : obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_tau : obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_tau : obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_tau : obj_bx_corr_cuts_std_logic_array;
+    signal inv_mass_jet_tau : obj_bx_corr_cuts_std_logic_array;
 
 -- Comparators outputs
     -- Object cuts    
@@ -93,7 +93,7 @@ begin
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS,
             JET_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH,
-            JET_TAU_SIN_COS_VECTOR_WIDTH
+            MAX_SIN_COS_WIDTH
         )
         port map(
             conv.jet(bx(0)).pt_vector,
@@ -109,7 +109,7 @@ begin
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
             JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
-            JET_JET_SIN_COS_VECTOR_WIDTH
+            MAX_SIN_COS_WIDTH
         )
         port map(
             conv.jet(bx(0)).pt_vector,
@@ -142,7 +142,7 @@ begin
 
     calc_4_i: entity work.sub_phi
         generic map(
-            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
+            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
             JET_TAU_PHI_HALF_RANGE_BINS
         )
         port map(
@@ -343,7 +343,7 @@ begin
         port map(
             lhc_clk, comb_jet_1, comb_tau_1,
             deta => deta_jet_tau_1,
-            tbpt => tbpt_jet_tau_1
+            tbpt => tbpt_jet_tau_1,
             cond_o => calo_calo_correlation_i3
         );
 
@@ -356,21 +356,21 @@ begin
         port map(
             lhc_clk, comb_jet_1, comb_jet_1, comb_tau_1,
             deta => deta_jet_jet_1,
-            tbpt => tbpt_jet_jet_1
+            tbpt => tbpt_jet_jet_1,
             dr_ovrm => dr_jet_tau_1,
             cond_o => calo_calo_correlation_ov_rm_i2
         );
 
     invariant_mass_ov_rm_i1_i: entity work.correlation_conditions_ovrm
         generic map(
-            N_JET_OBJECTS, N_TAU_OBJECTS,
-            ((0,11),(0,11),(0,0),(0,0)),
+            N_JET_OBJECTS, N_JET_OBJECTS, N_TAU_OBJECTS,
+            ((0,11),(0,11),(0,11),(0,0)),
             false, false
         )
         port map(
-            lhc_clk, comb_jet_1, comb_tau_2,
+            lhc_clk, comb_jet_1, comb_jet_1, comb_tau_1,
             inv_mass => inv_mass_jet_tau_1,
-            tbpt => tbpt_jet_tau_1
+            tbpt => tbpt_jet_tau_1,
             dr_ovrm => dr_jet_tau_1,
             cond_o => invariant_mass_ov_rm_i1
         );
