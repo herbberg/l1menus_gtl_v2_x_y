@@ -1,0 +1,73 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_compare_gtl_struct_v5.html" }%
+
+---+!! !L1Menu_test_compare_gtl_struct_v5
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_compare_gtl_struct_v5 | 0.7 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_compare_gtl_struct_v5 |
+|Menu UUID: | 7980afa2-2223-470a-a8cd-d79883406ff9 |
+|Firmware UUID: | b73191c2-b016-4684-be31-cd40e5e1e44c  |
+|Associated L1 scale DB key: | scales_2018_08_07 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 4 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Jet algorithm triggers: | 4 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Jet algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet30_Tau45_Rmovlp ][L1_Test_Jet30_Tau45_Rmovlp]]   | L1_Test_Jet30_Tau45_Rmovlp  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tau45_Rmovlp ][L1_Test_DoubleJet30_Tau45_Rmovlp]]   | L1_Test_DoubleJet30_Tau45_Rmovlp  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_TripleJet30_Tau45_Rmovlp ][L1_Test_TripleJet30_Tau45_Rmovlp]]   | L1_Test_TripleJet30_Tau45_Rmovlp  | 2 |  |
+|[[%GET{"REPORTER_URL"}%#L1_Test_QuadJet30_Tau45_Rmovlp ][L1_Test_QuadJet30_Tau45_Rmovlp]]   | L1_Test_QuadJet30_Tau45_Rmovlp  | 3 |  |
+!Jet algorithm triggers: 4 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_Test_Jet30_Tau45_Rmovlp ][L1_Test_Jet30_Tau45_Rmovlp]]   |L1_Test_Jet30_Tau45_Rmovlp |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_DoubleJet30_Tau45_Rmovlp ][L1_Test_DoubleJet30_Tau45_Rmovlp]]   |L1_Test_DoubleJet30_Tau45_Rmovlp |1 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_TripleJet30_Tau45_Rmovlp ][L1_Test_TripleJet30_Tau45_Rmovlp]]   |L1_Test_TripleJet30_Tau45_Rmovlp |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_Test_QuadJet30_Tau45_Rmovlp ][L1_Test_QuadJet30_Tau45_Rmovlp]]   |L1_Test_QuadJet30_Tau45_Rmovlp |3 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>

@@ -1,0 +1,12 @@
+{
+  "firmware_uuid" : "b73191c2-b016-4684-be31-cd40e5e1e44c",
+  "menu_uuid"     : "7980afa2-2223-470a-a8cd-d79883406ff9",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_Test_Jet30_Tau45_Rmovlp", 0, 0, 0],
+    ["L1_Test_DoubleJet30_Tau45_Rmovlp", 1, 0, 1],
+    ["L1_Test_TripleJet30_Tau45_Rmovlp", 2, 0, 2],
+    ["L1_Test_QuadJet30_Tau45_Rmovlp", 3, 0, 3]
+  ]
+}
