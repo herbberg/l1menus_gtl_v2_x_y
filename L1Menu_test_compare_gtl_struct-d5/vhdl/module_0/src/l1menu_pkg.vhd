@@ -4,19 +4,19 @@
 -- Module ID: 0
 
 -- Name of L1 Trigger Menu:
--- L1Menu_test_compare_gtl_struct
+-- L1Menu_test_compare_gtl_struct_v5
 
 -- Unique ID of L1 Trigger Menu:
--- 1b3f3a63-0d4d-4306-8be6-d2504bb4694c
+-- 7980afa2-2223-470a-a8cd-d79883406ff9
 
 -- Unique ID of firmware implementation:
--- f822c120-c588-4eb5-b838-8173427f882b
+-- fbdeff6d-9c7a-473d-b67c-99d43fd3621c
 
 -- Scale set:
 -- scales_2018_08_07
 
 -- VHDL producer version
--- v2.6.1
+-- v2.7.2
 -- ========================================================
 
 library ieee;
