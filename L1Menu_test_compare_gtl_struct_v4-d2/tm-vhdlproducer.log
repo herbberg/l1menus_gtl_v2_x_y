@@ -1,0 +1,159 @@
+2019-10-07 14:41:26 INFO : svn revison r881497995
+2019-10-07 14:41:26 INFO : distributing menu...
+2019-10-07 14:41:26 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/tm-vhdlproducer/tmVhdlProducer/config/resource_default.json
+2019-10-07 14:41:26 INFO : :: listing resources...
+2019-10-07 14:41:26 INFO : thresholds:
+2019-10-07 14:41:26 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2019-10-07 14:41:26 INFO : instances:
+2019-10-07 14:41:26 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-10-07 14:41:26 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2019-10-07 14:41:26 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2019-10-07 14:41:26 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2019-10-07 14:41:26 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2019-10-07 14:41:26 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-10-07 14:41:26 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2019-10-07 14:41:26 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-10-07 14:41:26 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-10-07 14:41:26 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.03%: 
+2019-10-07 14:41:26 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-10-07 14:41:26 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : | Algorithms sorted by payload (descending)                                   |
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-10-07 14:41:26 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2019-10-07 14:41:26 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-10-07 14:41:26 INFO : |     0 |    3.348% |  1.980% | L1_Test_DoubleJet30_Tbpt60                    |
+2019-10-07 14:41:26 INFO : |     3 |    7.488% |  4.320% | L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60        |
+2019-10-07 14:41:26 INFO : |     2 |   11.652% | 10.044% | L1_Test_DoubleJet30_Tau45_Deta_ignore_...     |
+2019-10-07 14:41:26 INFO : |     1 |   12.672% | 20.016% | L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp     |
+2019-10-07 14:41:26 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : distributing algorithms, shadow ratio: 0.0
+2019-10-07 14:41:26 INFO : starting algorithm distribution for 4 algorithms on 1 modules using shadow ratio of 0.0
+2019-10-07 14:41:26 INFO :  . adding L1_Test_DoubleJet30_Tbpt60 (0) to module 0
+2019-10-07 14:41:26 INFO :  . adding L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60 (3) to module 0
+2019-10-07 14:41:26 INFO :  . adding L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2 (2) to module 0
+2019-10-07 14:41:26 INFO :  . adding L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp (1) to module 0
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : | Detailed distribition on 1 modules, shadow ratio: 0.0                       |
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : |------------|----------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : | Module     | Algorithm                                                      |
+2019-10-07 14:41:26 INFO : | ID | Index | Index | Name                                                   |
+2019-10-07 14:41:26 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |  0 |     0 |     0 | L1_Test_DoubleJet30_Tbpt60                             |
+2019-10-07 14:41:26 INFO : |  0 |     1 |     3 | L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60                 |
+2019-10-07 14:41:26 INFO : |  0 |     2 |     2 | L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_Or...     |
+2019-10-07 14:41:26 INFO : |  0 |     3 |     1 | L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp              |
+2019-10-07 14:41:26 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : | Name                                             | Modules                  |
+2019-10-07 14:41:26 INFO : |--------------------------------------------------|--------------------------|
+2019-10-07 14:41:26 INFO : | DoubleJET_i0                                     | 0                        |
+2019-10-07 14:41:26 INFO : | CaloCaloCorrelation_i3                           | 0                        |
+2019-10-07 14:41:26 INFO : | CaloCaloCorrelationOvRm_i2                       | 0                        |
+2019-10-07 14:41:26 INFO : | InvariantMassOvRm_i1                             | 0                        |
+2019-10-07 14:41:26 INFO : |--------------------------------------------------|--------------------------|
+2019-10-07 14:41:26 INFO : |-----------------------------------------------------------------------------|
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : | Summary for distribution on 1 modules, shadow ratio: 0.0                    |
+2019-10-07 14:41:26 INFO : |                                                                             |
+2019-10-07 14:41:26 INFO : |-------------------------------------|---------------------------------------|
+2019-10-07 14:41:26 INFO : | Module                              | Payload                               |
+2019-10-07 14:41:26 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2019-10-07 14:41:26 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-10-07 14:41:26 INFO : |  0 |          4 |          4 | 1.00 |    52.16% |  36.36% |                 |
+2019-10-07 14:41:26 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-10-07 14:41:26 INFO : writing VHDL modules...
+2019-10-07 14:41:26 INFO : writing 4 algorithms to 1 module(s)
+2019-10-07 14:41:26 INFO : writing output for module: 0
+2019-10-07 14:41:26 INFO : algo_index.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/vhdl/module_0/src/algo_index.vhd
+2019-10-07 14:41:26 INFO : gtl_module_signals.vhd  : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/vhdl/module_0/src/gtl_module_signals.vhd
+2019-10-07 14:41:26 INFO : gtl_module_instances.vhd: /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/vhdl/module_0/src/gtl_module_instances.vhd
+2019-10-07 14:41:26 INFO : ugt_constants.vhd       : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/vhdl/module_0/src/ugt_constants.vhd
+2019-10-07 14:41:26 INFO : writing updated XML file /home/bergauer/L1Menu_test_compare_gtl_struct_v4.xml
+2019-10-07 14:41:26 INFO : reading source XML menu file /home/bergauer/L1Menu_test_compare_gtl_struct_v4.xml
+2019-10-07 14:41:26 INFO : processing menu "L1Menu_test_compare_gtl_struct_v4" ... 
+2019-10-07 14:41:26 INFO : updating menu information...
+2019-10-07 14:41:26 INFO : uuid_menu     : fe5957aa-1a58-4062-bc19-4a4fa1c3e7f6
+2019-10-07 14:41:26 INFO : uuid_firmware : 8c8c211e-28df-4365-b661-661bb5585c2c
+2019-10-07 14:41:26 INFO : n_modules     : 1
+2019-10-07 14:41:26 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/xml/L1Menu_test_compare_gtl_struct_v4-d1.xml
+2019-10-07 14:41:27 INFO : generating menu documentation...
+2019-10-07 14:41:27 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/xml/L1Menu_test_compare_gtl_struct_v4-d1.xml
+2019-10-07 14:41:27 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/xml/L1Menu_test_compare_gtl_struct_v4-d1.xml
+2019-10-07 14:41:28 INFO : patching filenames...
+2019-10-07 14:41:28 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/doc/L1Menu_test_compare_gtl_struct_v4.twiki --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/doc/L1Menu_test_compare_gtl_struct_v4-d1.twiki
+2019-10-07 14:41:28 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/doc/L1Menu_test_compare_gtl_struct_v4.html --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v4-d1/doc/L1Menu_test_compare_gtl_struct_v4-d1.html
+2019-10-07 14:41:28 INFO : done.
