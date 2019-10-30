@@ -786,7 +786,7 @@ begin
 --             lhc_clk, cc_quad(bx(0),bx(0)), cc_quad_1
 --         );
 --         
-    comp_14_i: entity work.comparator_muon_charge_corr
+    comp_14_i: entity work.comparators_muon_charge_corr
         generic map(
             quad, CC_OS
         )
