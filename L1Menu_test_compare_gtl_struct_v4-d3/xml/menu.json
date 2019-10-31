@@ -1,0 +1,12 @@
+{
+  "firmware_uuid" : "8c8c211e-28df-4365-b661-661bb5585c2c",
+  "menu_uuid"     : "fe5957aa-1a58-4062-bc19-4a4fa1c3e7f6",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_Test_DoubleJet30_Tbpt60", 0, 0, 0],
+    ["L1_Test_Jet35_IsoTau45_Mass_Min450_RmOvlp", 1, 0, 3],
+    ["L1_Test_DoubleJet30_Tau45_Deta_ignore_Tbpt60_OrmDr0p2", 2, 0, 2],
+    ["L1_Test_Jet30_Tau45_Deta_ignore_Tbpt60", 3, 0, 1]
+  ]
+}
