@@ -92,8 +92,7 @@ begin
     calc_1_i: entity work.twobody_pt
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS,
-            JET_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH,
-            MAX_SIN_COS_WIDTH
+            JET_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH
         )
         port map(
             conv.jet(bx(0)).pt_vector,
@@ -108,8 +107,7 @@ begin
     calc_1a_i: entity work.twobody_pt
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,
-            JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
-            MAX_SIN_COS_WIDTH
+            JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH
         )
         port map(
             conv.jet(bx(0)).pt_vector,
