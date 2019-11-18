@@ -112,7 +112,11 @@ architecture rtl of l1menu is
     signal inv_mass_jet_jet_5 : jet_jet_t;
     -- Muon charge correlation    
     signal cc_quad_1 : muon_cc_quad_t;
-
+    signal asymet_1 : asymet_obj_t;
+    signal asymet_2 : asymet_obj_t;
+    signal mbt0hfm_1 : mbt0hfm_obj_t;
+    signal mbt0hfp_1 : mbt0hfp_obj_t;
+    
 -- Conditions inputs
     -- Object cuts "and"  
     signal comb_eg_1 : eg_obj_t;
@@ -146,6 +150,10 @@ architecture rtl of l1menu is
     signal comb_htt_1 : htt_obj_t;
     signal comb_etm_1 : etm_obj_t;
     signal comb_etmhf_1 : etmhf_obj_t;
+    signal comb_asymet_1 : asymet_obj_t;
+    signal comb_asymet_2 : asymet_obj_t;
+    signal comb_mbt0hfm_1 : mbt0hfm_obj_t;
+    signal comb_mbt0hfp_1 : mbt0hfp_obj_t;
 
 -- Signal definition for conditions names
     signal single_ext_i25 : std_logic;
@@ -213,6 +221,11 @@ architecture rtl of l1menu is
     signal l1_unpaired_bunch_bptx_minus : std_logic;
     signal l1_double_jet_100_30_double_jet30_mass_min620 : std_logic;
     signal l1_double_jet_110_35_double_jet35_mass_min620 : std_logic;
+    signal l1_minimum_bias_hf0_and_bptx_and : std_logic;
+    signal l1_ett_asym40 : std_logic;
+    signal l1_ett_asym50 : std_logic;
+    signal l1_centrality_50_100 : std_logic;
+    signal l1_centrality_saturation : std_logic;
     
 begin
 
@@ -852,41 +865,43 @@ begin
             lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_5
         );
 
-    comp_single_asymet_i33_i: entity work.comparators_obj_cuts
+-----------------------------------------------------------------------
+    comp_asymet_1_i: entity work.comparators_obj_cuts
         generic map(
             1, ASYM_WIDTH,
-            COUNT, X"28"
+            COUNT, X"0028"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, single_asymet_i33
+            lhc_clk, data.asymet(bx(0)).count, asymet_1
         );
 
-    comp_single_asymet_i34_i: entity work.comparators_obj_cuts
+    comp_asymet_2_i: entity work.comparators_obj_cuts
         generic map(
             1, ASYM_WIDTH,
-            COUNT, X"32"
+            COUNT, X"0032"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, single_asymet_i34
+            lhc_clk, data.asymet(bx(0)).count, asymet_2
         );
 
-    comp_single_mbt0_hfm_i32_i: entity work.comparators_obj_cuts
+    comp_mbt0hfm_1_i: entity work.comparators_obj_cuts
         generic map(
             1, MB_COUNT_WIDTH,
-            COUNT, X"1"
+            COUNT, X"0001"
         )
         port map(
-            lhc_clk, data.mbt0hfm(bx(0)).count, single_mbt0_hfm_i32
+            lhc_clk, data.mbt0hfm(bx(0)).count, mbt0hfm_1
         );
 
-    comp_single_mbt0_hfp_i31_i: entity work.comparators_obj_cuts
+    comp_mbt0hfp_1_i: entity work.comparators_obj_cuts
         generic map(
             1, MB_COUNT_WIDTH,
-            COUNT, X"1"
+            COUNT, X"0001"
         )
         port map(
-            lhc_clk, data.mbt0hfp(bx(0)).count, single_mbt0_hfp_i31
+            lhc_clk, data.mbt0hfp(bx(0)).count, mbt0hfp_1
         );
+-----------------------------------------------------------------------
 
 -- Third stage: conditions and algos
     
@@ -923,7 +938,11 @@ begin
     comb_muon_1 <= pt_muon_1 and qual_muon_2;
     comb_muon_2 <= pt_muon_1 and qual_muon_1;
     comb_muon_3 <= pt_muon_2 and qual_muon_3;
-        
+    comb_asymet_1 <= asymet_1;
+    comb_asymet_2 <= asymet_2;
+    comb_mbt0hfm_1 <= mbt0hfm_1;
+    comb_mbt0hfp_1 <= mbt0hfp_1;
+
     -- Instantiations of conditions
     
     cond_double_eg_i2_i: entity work.combinatorial_conditions
@@ -1306,11 +1325,60 @@ begin
             cond_o => invariant_mass_i30
         );
 -----------------------------------------------------------------------
+    cond_single_asymet_i33_i: entity work.combinatorial_conditions
+        generic map(
+            N_ASYMET_OBJECTS, 1,
+            ((0,0),(0,0),(0,0),(0,0)),
+            false
+        )
+        port map(
+            lhc_clk, 
+            comb_1 => comb_asymet_1,
+            cond_o => single_asymet_i33
+        );
+
+    cond_single_asymet_i34_i: entity work.combinatorial_conditions
+        generic map(
+            N_ASYMET_OBJECTS, 1,
+            ((0,0),(0,0),(0,0),(0,0)),
+            false
+        )
+        port map(
+            lhc_clk, 
+            comb_1 => comb_asymet_2,
+            cond_o => single_asymet_i34
+        );
+
+    cond_single_mbt0_hfm_i32_i: entity work.combinatorial_conditions
+        generic map(
+            N_MBT0HFM_OBJECTS, 1,
+            ((0,0),(0,0),(0,0),(0,0)),
+            false
+        )
+        port map(
+            lhc_clk, 
+            comb_1 => comb_mbt0hfm_1,
+            cond_o => single_mbt0_hfm_i32
+        );
+
+    cond_single_mbt0_hfp_i31_i: entity work.combinatorial_conditions
+        generic map(
+            N_MBT0HFP_OBJECTS, 1,
+            ((0,0),(0,0),(0,0),(0,0)),
+            false
+        )
+        port map(
+            lhc_clk, 
+            comb_1 => comb_mbt0hfp_1,
+            cond_o => single_mbt0_hfp_i31
+        );
+
     -- Centrality assignment
     single_cent0_i35 <= data.centrality(bx(0))(0);
     single_cent1_i36 <= data.centrality(bx(0))(1);
     single_cent2_i37 <= data.centrality(bx(0))(2);
     single_cent7_i38 <= data.centrality(bx(0))(7);
+-----------------------------------------------------------------------
 
     -- External condition assignment
     single_ext_i25 <= data.ext_cond(bx(0))(9); -- single_ext_i25
