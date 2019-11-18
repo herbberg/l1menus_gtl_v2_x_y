@@ -179,6 +179,14 @@ architecture rtl of l1menu is
     signal single_jet_i6 : std_logic;
     signal triple_jet_i17 : std_logic;
     signal triple_mu_i18 : std_logic;
+    signal single_cent0_i35 : std_logic;
+    signal single_cent1_i36 : std_logic;
+    signal single_cent2_i37 : std_logic;
+    signal single_cent7_i38 : std_logic;
+    signal single_asymet_i33 : std_logic;
+    signal single_asymet_i34 : std_logic;
+    signal single_mbt0_hfm_i32 : std_logic;
+    signal single_mbt0_hfp_i31 : std_logic;
 
 -- Signal definition for algorithms names
     signal l1_quad_mu_open_os : std_logic;
