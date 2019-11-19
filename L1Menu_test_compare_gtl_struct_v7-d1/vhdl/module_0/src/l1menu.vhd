@@ -868,8 +868,8 @@ begin
 -----------------------------------------------------------------------
     comp_asymet_1_i: entity work.comparators_obj_cuts
         generic map(
-            1, ASYM_WIDTH,
-            GE, X"0028"
+            N_ASYMET_OBJECTS, ASYMET_WIDTH,
+            GE, X"0028", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.asymet(bx(0)).count, asymet_1
@@ -877,8 +877,8 @@ begin
 
     comp_asymet_2_i: entity work.comparators_obj_cuts
         generic map(
-            1, ASYM_WIDTH,
-            GE, X"0032"
+            N_ASYMET_OBJECTS, ASYMET_WIDTH,
+            GE, X"0032", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.asymet(bx(0)).count, asymet_2
@@ -886,8 +886,8 @@ begin
 
     comp_mbt0hfm_1_i: entity work.comparators_obj_cuts
         generic map(
-            1, MB_COUNT_WIDTH,
-            GE, X"0001"
+            N_MBT0HFM_OBJECTS, MBT0HFM_WIDTH,
+            GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.mbt0hfm(bx(0)).count, mbt0hfm_1
@@ -895,8 +895,8 @@ begin
 
     comp_mbt0hfp_1_i: entity work.comparators_obj_cuts
         generic map(
-            1, MB_COUNT_WIDTH,
-            GE, X"0001"
+            N_MBT0HFP_OBJECTS, MBT0HFP_WIDTH, 
+            GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.mbt0hfp(bx(0)).count, mbt0hfp_1
