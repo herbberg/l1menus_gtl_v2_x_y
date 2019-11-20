@@ -112,10 +112,12 @@ architecture rtl of l1menu is
     signal inv_mass_jet_jet_5 : jet_jet_t;
     -- Muon charge correlation    
     signal cc_quad_1 : muon_cc_quad_t;
-    signal asymet_1 : asymet_obj_t;
-    signal asymet_2 : asymet_obj_t;
-    signal mbt0hfm_1 : mbt0hfm_obj_t;
-    signal mbt0hfp_1 : mbt0hfp_obj_t;
+    -- Asymmetry    
+    signal count_asymet_1 : asymet_obj_t;
+    signal count_asymet_2 : asymet_obj_t;
+    -- Minimum-bias    
+    signal count_mbt0hfm_1 : mbt0hfm_obj_t;
+    signal count_mbt0hfp_1 : mbt0hfp_obj_t;
     
 -- Conditions inputs
     -- Object cuts "and"  
@@ -872,7 +874,7 @@ begin
             GE, X"0028", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, asymet_1
+            lhc_clk, data.asymet(bx(0)).count, count_asymet_1
         );
 
     comp_asymet_2_i: entity work.comparators_obj_cuts
@@ -881,7 +883,7 @@ begin
             GE, X"0032", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, asymet_2
+            lhc_clk, data.asymet(bx(0)).count, count_asymet_2
         );
 
     comp_mbt0hfm_1_i: entity work.comparators_obj_cuts
@@ -890,7 +892,7 @@ begin
             GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.mbt0hfm(bx(0)).count, mbt0hfm_1
+            lhc_clk, data.mbt0hfm(bx(0)).count, count_mbt0hfm_1
         );
 
     comp_mbt0hfp_1_i: entity work.comparators_obj_cuts
@@ -899,7 +901,7 @@ begin
             GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.mbt0hfp(bx(0)).count, mbt0hfp_1
+            lhc_clk, data.mbt0hfp(bx(0)).count, count_mbt0hfp_1
         );
 -----------------------------------------------------------------------
 
@@ -938,10 +940,10 @@ begin
     comb_muon_1 <= pt_muon_1 and qual_muon_2;
     comb_muon_2 <= pt_muon_1 and qual_muon_1;
     comb_muon_3 <= pt_muon_2 and qual_muon_3;
-    comb_asymet_1 <= asymet_1;
-    comb_asymet_2 <= asymet_2;
-    comb_mbt0hfm_1 <= mbt0hfm_1;
-    comb_mbt0hfp_1 <= mbt0hfp_1;
+    comb_asymet_1 <= count_asymet_1;
+    comb_asymet_2 <= count_asymet_2;
+    comb_mbt0hfm_1 <= count_mbt0hfm_1;
+    comb_mbt0hfp_1 <= count_mbt0hfp_1;
 
     -- Instantiations of conditions
     
