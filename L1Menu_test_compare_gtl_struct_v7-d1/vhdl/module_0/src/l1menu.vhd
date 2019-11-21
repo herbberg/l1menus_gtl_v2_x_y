@@ -1042,7 +1042,7 @@ begin
         )
         port map(
             lhc_clk, comb_jet_6, comb_jet_6,
-            deta => deta_jet_jet_1,
+            deta => comp_deta_jet_jet_1,
             inv_mass => comp_inv_mass_jet_jet_2,
             cond_o => invariant_mass_i10
         );
