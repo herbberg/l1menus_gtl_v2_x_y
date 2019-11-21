@@ -993,7 +993,7 @@ begin
             comb_2 => comb_muon_2,
             comb_3 => comb_muon_2,
             comb_4 => comb_muon_2,
-            charge_corr_quad => cc_quad_1,
+            charge_corr_quad => comp_cc_quad_1,
             cond_o => quad_mu_i1
         );
 
@@ -1005,11 +1005,7 @@ begin
         )
         port map(
             lhc_clk, comb_eg_2, comb_jet_5,
---             def.eg_jet, def.eg_jet, dr_eg_jet_1,
---             def.eg_jet, def.eg_jet, def.eg_jet,
---             def.cc_double,
---             calo_calo_correlation_i7
-            delta_r => dr_eg_jet_1,
+            delta_r => comp_dr_eg_jet_1,
             cond_o => calo_calo_correlation_i7
         );
 
@@ -1021,7 +1017,7 @@ begin
         )
         port map(
             lhc_clk, comb_eg_3, comb_jet_5,
-            delta_r => dr_eg_jet_1,
+            delta_r => comp_dr_eg_jet_1,
             cond_o => calo_calo_correlation_i8
         );
 
@@ -1033,8 +1029,8 @@ begin
         )
         port map(
             lhc_clk, comb_jet_6, comb_jet_6,
-            deta => deta_jet_jet_1,
-            inv_mass => inv_mass_jet_jet_1,
+            deta => comp_deta_jet_jet_1,
+            inv_mass => comp_inv_mass_jet_jet_1,
             cond_o => invariant_mass_i9
         );
 
@@ -1047,7 +1043,7 @@ begin
         port map(
             lhc_clk, comb_jet_6, comb_jet_6,
             deta => deta_jet_jet_1,
-            inv_mass => inv_mass_jet_jet_2,
+            inv_mass => comp_inv_mass_jet_jet_2,
             cond_o => invariant_mass_i10
         );
 
@@ -1059,8 +1055,8 @@ begin
         )
         port map(
             lhc_clk, comb_jet_6, comb_jet_6,
-            deta => deta_jet_jet_1,
-            inv_mass => inv_mass_jet_jet_3,
+            deta => comp_deta_jet_jet_1,
+            inv_mass => comp_inv_mass_jet_jet_3,
             cond_o => invariant_mass_i11
         );
 
@@ -1072,7 +1068,7 @@ begin
         )
         port map(
             lhc_clk, comb_jet_7, comb_muon_3,
-            delta_r => dr_jet_muon_1,
+            delta_r => comp_dr_jet_muon_1,
             cond_o => calo_muon_correlation_i20
         );
 
@@ -1084,7 +1080,7 @@ begin
         )
         port map(
             lhc_clk, comb_jet_8, comb_muon_3,
-            delta_r => dr_jet_muon_1,
+            delta_r => comp_dr_jet_muon_1,
             cond_o => calo_muon_correlation_i21
         );
 
@@ -1096,8 +1092,8 @@ begin
         )
         port map(
             lhc_clk, comb_jet_19, comb_jet_19, comb_tau_1,
-            inv_mass => inv_mass_jet_jet_4,
-            dr_ovrm => dr_jet_tau_1,
+            inv_mass => comp_inv_mass_jet_jet_4,
+            dr_ovrm => comp_dr_jet_tau_1,
             cond_o => invariant_mass_ov_rm_i19
         );
 
@@ -1267,7 +1263,7 @@ begin
         )
         port map(
             lhc_clk, comb_jet_18, comb_jet_18,
-            inv_mass => inv_mass_jet_jet_5,
+            inv_mass => comp_inv_mass_jet_jet_5,
             cond_o => invariant_mass_i28
         );
 
@@ -1279,7 +1275,7 @@ begin
         )
         port map(
             lhc_clk, comb_jet_19, comb_jet_19,
-            inv_mass => inv_mass_jet_jet_5,
+            inv_mass => comp_inv_mass_jet_jet_5,
             cond_o => invariant_mass_i30
         );
 -----------------------------------------------------------------------
