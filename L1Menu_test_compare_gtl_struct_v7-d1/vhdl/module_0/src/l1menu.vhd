@@ -72,52 +72,52 @@ architecture rtl of l1menu is
 
 -- Comparators outputs
     -- Object cuts    
-    signal pt_eg_1 : eg_obj_t;
-    signal pt_eg_2 : eg_obj_t;
-    signal pt_eg_3 : eg_obj_t;
-    signal pt_jet_1 : jet_obj_t;
-    signal pt_jet_2 : jet_obj_t;
-    signal pt_jet_3 : jet_obj_t;
-    signal pt_jet_4 : jet_obj_t;
-    signal pt_jet_5 : jet_obj_t;
-    signal pt_jet_6 : jet_obj_t;
-    signal pt_jet_7 : jet_obj_t;
-    signal pt_jet_8 : jet_obj_t;
-    signal pt_jet_9 : jet_obj_t;
-    signal pt_jet_10 : jet_obj_t;
-    signal pt_jet_11 : jet_obj_t;
-    signal pt_tau_1 : tau_obj_t;
-    signal eta_jet_1 : jet_obj_t;
-    signal eta_jet_2 : jet_obj_t;
-    signal eta_jet_3 : jet_obj_t;
-    signal eta_jet_4 : jet_obj_t;
-    signal iso_tau_1 : tau_obj_t;
-    signal pt_muon_1 : muon_obj_t;
-    signal pt_muon_2 : muon_obj_t;
-    signal qual_muon_1 : muon_obj_t;
-    signal qual_muon_2 : muon_obj_t;
-    signal qual_muon_3 : muon_obj_t;
-    signal pt_htt_1 : htt_obj_t;
-    signal pt_etm_1 : etm_obj_t;
-    signal pt_etmhf_1 : etmhf_obj_t;
+    signal comp_pt_eg_1 : eg_obj_t;
+    signal comp_pt_eg_2 : eg_obj_t;
+    signal comp_pt_eg_3 : eg_obj_t;
+    signal comp_pt_jet_1 : jet_obj_t;
+    signal comp_pt_jet_2 : jet_obj_t;
+    signal comp_pt_jet_3 : jet_obj_t;
+    signal comp_pt_jet_4 : jet_obj_t;
+    signal comp_pt_jet_5 : jet_obj_t;
+    signal comp_pt_jet_6 : jet_obj_t;
+    signal comp_pt_jet_7 : jet_obj_t;
+    signal comp_pt_jet_8 : jet_obj_t;
+    signal comp_pt_jet_9 : jet_obj_t;
+    signal comp_pt_jet_10 : jet_obj_t;
+    signal comp_pt_jet_11 : jet_obj_t;
+    signal comp_pt_tau_1 : tau_obj_t;
+    signal comp_eta_jet_1 : jet_obj_t;
+    signal comp_eta_jet_2 : jet_obj_t;
+    signal comp_eta_jet_3 : jet_obj_t;
+    signal comp_eta_jet_4 : jet_obj_t;
+    signal comp_iso_tau_1 : tau_obj_t;
+    signal comp_pt_muon_1 : muon_obj_t;
+    signal comp_pt_muon_2 : muon_obj_t;
+    signal comp_qual_muon_1 : muon_obj_t;
+    signal comp_qual_muon_2 : muon_obj_t;
+    signal comp_qual_muon_3 : muon_obj_t;
+    signal comp_pt_htt_1 : htt_obj_t;
+    signal comp_pt_etm_1 : etm_obj_t;
+    signal comp_pt_etmhf_1 : etmhf_obj_t;
     -- Correlation cuts    
-    signal dr_eg_jet_1 : eg_jet_t;
-    signal deta_jet_jet_1 : jet_jet_t;
-    signal inv_mass_jet_jet_1 : jet_jet_t;
-    signal inv_mass_jet_jet_2 : jet_jet_t;
-    signal inv_mass_jet_jet_3 : jet_jet_t;
-    signal inv_mass_jet_jet_4 : jet_jet_t;
-    signal dr_jet_muon_1 : jet_muon_t;
-    signal dr_jet_tau_1 : jet_tau_t;
-    signal inv_mass_jet_jet_5 : jet_jet_t;
+    signal comp_dr_eg_jet_1 : eg_jet_t;
+    signal comp_deta_jet_jet_1 : jet_jet_t;
+    signal comp_inv_mass_jet_jet_1 : jet_jet_t;
+    signal comp_inv_mass_jet_jet_2 : jet_jet_t;
+    signal comp_inv_mass_jet_jet_3 : jet_jet_t;
+    signal comp_inv_mass_jet_jet_4 : jet_jet_t;
+    signal comp_dr_jet_muon_1 : jet_muon_t;
+    signal comp_dr_jet_tau_1 : jet_tau_t;
+    signal comp_inv_mass_jet_jet_5 : jet_jet_t;
     -- Muon charge correlation    
-    signal cc_quad_1 : muon_cc_quad_t;
+    signal comp_cc_quad_1 : muon_cc_quad_t;
     -- Asymmetry    
-    signal count_asymet_1 : asymet_obj_t;
-    signal count_asymet_2 : asymet_obj_t;
+    signal comp_count_asymet_1 : asymet_obj_t;
+    signal comp_count_asymet_2 : asymet_obj_t;
     -- Minimum-bias    
-    signal count_mbt0hfm_1 : mbt0hfm_obj_t;
-    signal count_mbt0hfp_1 : mbt0hfp_obj_t;
+    signal comp_count_mbt0hfm_1 : mbt0hfm_obj_t;
+    signal comp_count_mbt0hfp_1 : mbt0hfp_obj_t;
     
 -- Conditions inputs
     -- Object cuts "and"  
@@ -233,7 +233,7 @@ begin
 
 -- First stage: calculations
 
-    calc_1_i: entity work.muon_charge_correlations
+    calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(
             data.muon(bx(0)).charge,
             data.muon(bx(0)).charge,
@@ -242,7 +242,7 @@ begin
             cc_quad(bx(0),bx(0))
         );
 
-    calc_2_i: entity work.deta_calc
+    calc_deta_calc_eg_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -252,7 +252,7 @@ begin
             deta_calc_eg_jet(bx(0),bx(0))
         );
 
-    calc_3_i: entity work.deta_lut
+    calc_deta_eg_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -261,7 +261,7 @@ begin
             deta_eg_jet(bx(0),bx(0))
         );
 
-    calc_4_i: entity work.dphi_calc
+    calc_dphi_calc_eg_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t),
             EG_JET_PHI_HALF_RANGE_BINS
@@ -272,7 +272,7 @@ begin
             dphi_calc_eg_jet(bx(0),bx(0))
         );
 
-    calc_5_i: entity work.dphi_lut
+    calc_dphi_eg_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -281,7 +281,7 @@ begin
             dphi_eg_jet(bx(0),bx(0))
         );
 
-    calc_6_i: entity work.delta_r
+    calc_dr_eg_jet_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
@@ -291,7 +291,7 @@ begin
             dr_eg_jet(bx(0),bx(0))
         );
         
-    calc_7_i: entity work.deta_calc
+    calc_deta_calc_jet_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
@@ -301,7 +301,7 @@ begin
             deta_calc_jet_jet(bx(0),bx(0))
         );
 
-    calc_8_i: entity work.cosh_deta_lut
+    calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
@@ -310,7 +310,7 @@ begin
             cosh_deta_jet_jet(bx(0),bx(0))
         );
 
-    calc_9_i: entity work.dphi_calc
+    calc_dphi_calc_jet_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_PHI_HALF_RANGE_BINS
@@ -321,7 +321,7 @@ begin
             dphi_calc_jet_jet(bx(0),bx(0))
         );
 
-    calc_10_i: entity work.cos_dphi_lut
+    calc_cos_dphi_jet_jet_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
@@ -330,7 +330,7 @@ begin
             cos_dphi_jet_jet(bx(0),bx(0))
         );
 
-    calc_11_i: entity work.invariant_mass
+    calc_inv_mass_jet_jet_bx_0_bx_0_i: entity work.invariant_mass
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_PT_VECTOR_WIDTH, JET_PT_VECTOR_WIDTH,
@@ -344,7 +344,7 @@ begin
             inv_mass_jet_jet(bx(0),bx(0))
         );
         
-    calc_12_i: entity work.deta_lut
+    calc_deta_jet_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
@@ -353,7 +353,7 @@ begin
             deta_jet_jet(bx(0),bx(0))
         );
 
-    calc_13_i: entity work.deta_calc
+    calc_deta_calc_jet_tau_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
         )
@@ -363,7 +363,7 @@ begin
             deta_calc_jet_tau(bx(0),bx(0))
         );
 
-    calc_14_i: entity work.dphi_calc
+    calc_dphi_calc_jet_tau_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
             JET_TAU_PHI_HALF_RANGE_BINS
@@ -374,7 +374,7 @@ begin
             dphi_calc_jet_tau(bx(0),bx(0))
         );
 
-    calc_15_i: entity work.deta_calc
+    calc_deta_calc_jet_muon_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -384,7 +384,7 @@ begin
             deta_calc_jet_muon(bx(0),bx(0))
         );
 
-    calc_16_i: entity work.dphi_calc
+    calc_dphi_calc_jet_muon_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
             JET_MUON_PHI_HALF_RANGE_BINS
@@ -395,7 +395,7 @@ begin
             dphi_calc_jet_muon(bx(0),bx(0))
         );
 
-    calc_17_i: entity work.deta_lut
+    calc_deta_jet_tau_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
         )
@@ -404,7 +404,7 @@ begin
             deta_jet_tau(bx(0),bx(0))
         );
 
-    calc_18_i: entity work.dphi_lut
+    calc_dphi_jet_tau_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
         )
@@ -413,7 +413,7 @@ begin
             dphi_jet_tau(bx(0),bx(0))
         );
 
-    calc_19_i: entity work.deta_lut
+    calc_deta_jet_muon_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -422,7 +422,7 @@ begin
             deta_jet_muon(bx(0),bx(0))
         );
 
-    calc_20_i: entity work.dphi_lut
+    calc_dphi_jet_muon_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -431,7 +431,7 @@ begin
             dphi_jet_muon(bx(0),bx(0))
         );
 
-    calc_23_i: entity work.cosh_deta_lut
+    calc_cosh_deta_jet_muon_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -440,7 +440,7 @@ begin
             cosh_deta_jet_muon(bx(0),bx(0))
         );
 
-    calc_24_i: entity work.cos_dphi_lut
+    calc_cos_dphi_jet_muon_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -449,7 +449,7 @@ begin
             cos_dphi_jet_muon(bx(0),bx(0))
         );
 
-    calc_25_i: entity work.delta_r
+    calc_dr_jet_muon_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t)
         )
@@ -459,7 +459,7 @@ begin
             dr_jet_muon(bx(0),bx(0))
         );
         
-    calc_26_i: entity work.delta_r
+    calc_dr_jet_tau_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
         )
@@ -471,437 +471,393 @@ begin
         
 -- Second stage: comparisons
 
-    comp_1_i: entity work.comparators_obj_cuts
+    comp_pt_eg_1_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,
             GE, X"000A", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.eg(bx(0)).pt, pt_eg_1
+            lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_1
         );
 
-    comp_9_i: entity work.comparators_obj_cuts
+    comp_pt_eg_2_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,
             GE, X"0018", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.eg(bx(0)).pt, pt_eg_2
+            lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_2
         );
 
-    comp_10_i: entity work.comparators_obj_cuts
+    comp_pt_eg_3_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,
             GE, X"001E", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.eg(bx(0)).pt, pt_eg_3
+            lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_3
         );
 
-    comp_2_i: entity work.comparators_obj_cuts
+    comp_pt_jet_1_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0078", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_1
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_1
         );
 
-    comp_5_i: entity work.comparators_obj_cuts
+    comp_pt_jet_2_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"00F0", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_2
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_2
         );
 
-    comp_11_i: entity work.comparators_obj_cuts
+    comp_pt_jet_3_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0038", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_3
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_3
         );
 
-    comp_15_i: entity work.comparators_obj_cuts
+    comp_pt_jet_4_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"003C", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_4
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_4
         );
 
-    comp_100_i: entity work.comparators_obj_cuts
+    comp_pt_jet_5_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0096", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_5
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_5
         );
 
-    comp_101_i: entity work.comparators_obj_cuts
+    comp_pt_jet_6_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0082", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_6
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_6
         );
 
-    comp_102_i: entity work.comparators_obj_cuts
+    comp_pt_jet_7_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"00BE", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_7
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_7
         );
 
-    comp_103_i: entity work.comparators_obj_cuts
+    comp_pt_jet_8_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0028", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_8
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_8
         );
 
-    comp_107_i: entity work.comparators_obj_cuts
+    comp_pt_jet_9_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"0046", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_9
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_9
         );
 
-    comp_200_i: entity work.comparators_obj_cuts
+    comp_pt_jet_10_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"00C8", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_10
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_10
         );
 
-    comp_201_i: entity work.comparators_obj_cuts
+    comp_pt_jet_11_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,
             GE, X"00DC", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, pt_jet_11
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_11
         );
 
-    comp_104_i: entity work.comparators_obj_cuts
+    comp_pt_etm_1_i: entity work.comparators_obj_cuts
         generic map(
             N_ETM_OBJECTS, ETM_PT_WIDTH,
             GE, X"00F0", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.etm(bx(0)).pt, pt_etm_1
+            lhc_clk, data.etm(bx(0)).pt, comp_pt_etm_1
         );
 
-    comp_105_i: entity work.comparators_obj_cuts
+    comp_pt_etmhf_1_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,
             GE, X"00F0", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.etmhf(bx(0)).pt, pt_etmhf_1
+            lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_1
         );
 
-    comp_106_i: entity work.comparators_obj_cuts
+    comp_pt_htt_1_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,
             GE, X"0230", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.htt(bx(0)).pt, pt_htt_1
+            lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_1
         );
 
-    comp_108_i: entity work.comparators_obj_cuts
+    comp_pt_tau_1_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,
             GE, X"005A", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.tau(bx(0)).pt, pt_tau_1
+            lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_1
         );
 
---     comp_109_i: entity work.lut_comparator
---         generic map(
---             N_TAU_OBJECTS, TAU_ISO_WIDTH,
---             X"000E"
---         )
---         port map(
---             lhc_clk, data.tau(bx(0)).iso, iso_tau_1
---         );
--- 
-    comp_109_i: entity work.comparators_obj_cuts
+    comp_iso_tau_1_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_ISO_WIDTH,
             ISO, X"0000", X"0000", X"000E", "ign"
         )
         port map(
-            lhc_clk, data.tau(bx(0)).iso, iso_tau_1
+            lhc_clk, data.tau(bx(0)).iso, comp_iso_tau_1
         );
 
-    comp_6_i: entity work.comparators_obj_cuts
+    comp_pt_muon_1_i: entity work.comparators_obj_cuts
         generic map(
             N_MUON_OBJECTS, MUON_PT_WIDTH,
             GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.muon(bx(0)).pt, pt_muon_1
+            lhc_clk, data.muon(bx(0)).pt, comp_pt_muon_1
         );
 
-    comp_110_i: entity work.comparators_obj_cuts
+    comp_pt_muon_2_i: entity work.comparators_obj_cuts
         generic map(
             N_MUON_OBJECTS, MUON_PT_WIDTH,
             GE, X"0007", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.muon(bx(0)).pt, pt_muon_2
+            lhc_clk, data.muon(bx(0)).pt, comp_pt_muon_2
         );
 
-    comp_3_i: entity work.comparators_obj_cuts
+    comp_eta_jet_2_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
             ETA, X"008D", X"00BA", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).eta, eta_jet_2
+            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_2
         );
         
-    comp_4_i: entity work.comparators_obj_cuts
+    comp_eta_jet_1_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
             ETA, X"0045", X"0072", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).eta, eta_jet_1
+            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_1
         );
 
-    comp_12_i: entity work.comparators_obj_cuts
+    comp_eta_jet_3_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
             ETA, X"00C2", X"003D", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).eta, eta_jet_3
+            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_3
         );
 
-     comp_16_i: entity work.comparators_obj_cuts
+     comp_eta_jet_4_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
             ETA, X"00C6", X"0039", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).eta, eta_jet_4
+            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_4
         );
 
---     comp_7_i: entity work.lut_comparator
---         generic map(
---             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
---             X"FF00"
---         )
---         port map(
---             lhc_clk, data.muon(bx(0)).qual, qual_muon_2
---         );
--- 
-    comp_7_i: entity work.comparators_obj_cuts
+    comp_qual_muon_2_i: entity work.comparators_obj_cuts
         generic map(
             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
             QUAL, X"0000", X"0000", X"FF00", "ign"
         )
         port map(
-            lhc_clk, data.muon(bx(0)).qual, qual_muon_2
+            lhc_clk, data.muon(bx(0)).qual, comp_qual_muon_2
         );
 
---     comp_8_i: entity work.lut_comparator
---         generic map(
---             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
---             X"FFF0"
---         )
---         port map(
---             lhc_clk, data.muon(bx(0)).qual, qual_muon_1
---         );
--- 
-    comp_8_i: entity work.comparators_obj_cuts
+    comp_qual_muon_1_i: entity work.comparators_obj_cuts
         generic map(
             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
             QUAL, X"0000", X"0000", X"FFF0", "ign"
         )
         port map(
-            lhc_clk, data.muon(bx(0)).qual, qual_muon_1
+            lhc_clk, data.muon(bx(0)).qual, comp_qual_muon_1
         );
 
---     comp_111_i: entity work.lut_comparator
---         generic map(
---             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
---             X"F000"
---         )
---         port map(
---             lhc_clk, data.muon(bx(0)).qual, qual_muon_3
---         );
--- 
-    comp_111_i: entity work.comparators_obj_cuts
+    comp_qual_muon_3_i: entity work.comparators_obj_cuts
         generic map(
             N_MUON_OBJECTS, MUON_QUAL_WIDTH,
             QUAL, X"0000", X"0000", X"F000", "ign"
         )
         port map(
-            lhc_clk, data.muon(bx(0)).qual, qual_muon_3
+            lhc_clk, data.muon(bx(0)).qual, comp_qual_muon_3
         );
 
-    comp_13_i: entity work.comparators_corr_cuts
+    comp_dr_eg_jet_1_i: entity work.comparators_corr_cuts
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t),
             EG_JET_DELTAR_VECTOR_WIDTH, deltaR,
             X"0000000027100", X"00000084CA240"
         )
         port map(
-            lhc_clk, dr_eg_jet(bx(0),bx(0)), dr_eg_jet_1
+            lhc_clk, dr_eg_jet(bx(0),bx(0)), comp_dr_eg_jet_1
         );
 
-    comp_112_i: entity work.comparators_corr_cuts
+    comp_dr_jet_muon_1_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_MUON_OBJECTS, (jet_t,muon_t),
             JET_MUON_DELTAR_VECTOR_WIDTH, deltaR,
             X"0000000000000", X"00000000274E8"
         )
         port map(
-            lhc_clk, dr_jet_muon(bx(0),bx(0)), dr_jet_muon_1
+            lhc_clk, dr_jet_muon(bx(0),bx(0)), comp_dr_jet_muon_1
         );
 
-    comp_113_i: entity work.comparators_corr_cuts
+    comp_dr_jet_tau_1_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
             JET_TAU_DELTAR_VECTOR_WIDTH, deltaR,
             X"0000000000000", X"000000000A028"
         )
         port map(
-            lhc_clk, dr_jet_tau(bx(0),bx(0)), dr_jet_tau_1
+            lhc_clk, dr_jet_tau(bx(0),bx(0)), comp_dr_jet_tau_1
         );
 
---     comp_14_i: entity work.comparator_muon_cc_quad
---         generic map(
---             CC_OS
---         )
---         port map(
---             lhc_clk, cc_quad(bx(0),bx(0)), cc_quad_1
---         );
---         
-    comp_14_i: entity work.comparators_muon_charge_corr
+    comp_cc_quad_1_i: entity work.comparators_muon_charge_corr
         generic map(
             quad, CC_OS
         )
         port map(
             lhc_clk, 
             cc_quad => cc_quad(bx(0),bx(0)), 
-            comp_o_quad => cc_quad_1
+            comp_o_quad => comp_cc_quad_1
         );
         
-    comp_17_i: entity work.comparators_corr_cuts
+    comp_inv_mass_jet_jet_1_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass,
             X"00000BA43B740", X"41A6642C78140"
         )
         port map(
-            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_1
+            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), comp_inv_mass_jet_jet_1
         );
 
-    comp_18_i: entity work.comparators_corr_cuts
+    comp_inv_mass_jet_jet_2_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass,
             X"000010C388D00", X"41A6642C78140"
         )
         port map(
-            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_2
+            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), comp_inv_mass_jet_jet_2
         );
 
-    comp_19_i: entity work.comparators_corr_cuts
+    comp_inv_mass_jet_jet_3_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass,
             X"00001448C1B40", X"41A6642C78140"
         )
         port map(
-            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_3
+            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), comp_inv_mass_jet_jet_3
         );
 
-    comp_20_i: entity work.comparators_corr_cuts
+    comp_deta_jet_jet_1_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_DELTAETA_VECTOR_WIDTH, deltaEta,
             X"0000000000000", X"00000000005DC"
         )
         port map(
-            lhc_clk, deta_jet_jet(bx(0),bx(0)), deta_jet_jet_1
+            lhc_clk, deta_jet_jet(bx(0),bx(0)), comp_deta_jet_jet_1
         );
 
-    comp_21_i: entity work.comparators_corr_cuts
+    comp_inv_mass_jet_jet_4_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass,
             X"000025B7F3D40", X"41A6642C78140"
         )
         port map(
-            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_4
+            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), comp_inv_mass_jet_jet_4
         );
 
-    comp_22_i: entity work.comparators_corr_cuts
+    comp_inv_mass_jet_jet_5_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass,
             X"000047999ED00", X"41A6642C78140"
         )
         port map(
-            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), inv_mass_jet_jet_5
+            lhc_clk, inv_mass_jet_jet(bx(0),bx(0)), comp_inv_mass_jet_jet_5
         );
 
 -----------------------------------------------------------------------
-    comp_asymet_1_i: entity work.comparators_obj_cuts
+    comp_count_asymet_1_i: entity work.comparators_obj_cuts
         generic map(
             N_ASYMET_OBJECTS, ASYMET_WIDTH,
             GE, X"0028", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, count_asymet_1
+            lhc_clk, data.asymet(bx(0)).count, comp_count_asymet_1
         );
 
-    comp_asymet_2_i: entity work.comparators_obj_cuts
+    comp_count_asymet_2_i: entity work.comparators_obj_cuts
         generic map(
             N_ASYMET_OBJECTS, ASYMET_WIDTH,
             GE, X"0032", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.asymet(bx(0)).count, count_asymet_2
+            lhc_clk, data.asymet(bx(0)).count, comp_count_asymet_2
         );
 
-    comp_mbt0hfm_1_i: entity work.comparators_obj_cuts
+    comp_count_mbt0hfm_1_i: entity work.comparators_obj_cuts
         generic map(
             N_MBT0HFM_OBJECTS, MBT0HFM_WIDTH,
             GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.mbt0hfm(bx(0)).count, count_mbt0hfm_1
+            lhc_clk, data.mbt0hfm(bx(0)).count, comp_count_mbt0hfm_1
         );
 
-    comp_mbt0hfp_1_i: entity work.comparators_obj_cuts
+    comp_count_mbt0hfp_1_i: entity work.comparators_obj_cuts
         generic map(
             N_MBT0HFP_OBJECTS, MBT0HFP_WIDTH, 
             GE, X"0001", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.mbt0hfp(bx(0)).count, count_mbt0hfp_1
+            lhc_clk, data.mbt0hfp(bx(0)).count, comp_count_mbt0hfp_1
         );
 -----------------------------------------------------------------------
 
@@ -909,41 +865,41 @@ begin
     
     -- Creating condition inputs (combination of object cuts)
     
-    comb_eg_1 <= pt_eg_1;
-    comb_eg_2 <= pt_eg_2;
-    comb_eg_3 <= pt_eg_3;
-    comb_jet_1 <= pt_jet_1 and eta_jet_2;
-    comb_jet_2 <= pt_jet_1 and eta_jet_1;
-    comb_jet_3 <= pt_jet_2 and eta_jet_2;
-    comb_jet_4 <= pt_jet_2 and eta_jet_1;
-    comb_jet_5 <= pt_jet_3 and eta_jet_3;
-    comb_jet_6 <= pt_jet_4 and eta_jet_4;
-    comb_jet_7 <= pt_jet_9 and eta_jet_4;
-    comb_jet_8 <= pt_jet_1 and eta_jet_4;
-    comb_jet_9 <= pt_jet_1;
-    comb_jet_10 <= pt_jet_5 and eta_jet_4;
-    comb_jet_11 <= pt_jet_6 and eta_jet_4;
-    comb_jet_12 <= pt_jet_7;
-    comb_jet_13 <= pt_jet_5;
-    comb_jet_14 <= pt_jet_6;
-    comb_jet_15 <= pt_jet_8;
-    comb_jet_16 <= pt_jet_8 and eta_jet_2;
-    comb_jet_17 <= pt_jet_8 and eta_jet_1;
-    comb_jet_18 <= pt_jet_4;
-    comb_jet_19 <= pt_jet_9;
-    comb_jet_20 <= pt_jet_10;
-    comb_jet_21 <= pt_jet_11;
-    comb_tau_1 <= pt_tau_1 and iso_tau_1;
-    comb_htt_1 <= pt_htt_1;
-    comb_etm_1 <= pt_etm_1;
-    comb_etmhf_1 <= pt_etmhf_1;
-    comb_muon_1 <= pt_muon_1 and qual_muon_2;
-    comb_muon_2 <= pt_muon_1 and qual_muon_1;
-    comb_muon_3 <= pt_muon_2 and qual_muon_3;
-    comb_asymet_1 <= count_asymet_1;
-    comb_asymet_2 <= count_asymet_2;
-    comb_mbt0hfm_1 <= count_mbt0hfm_1;
-    comb_mbt0hfp_1 <= count_mbt0hfp_1;
+    comb_eg_1 <= comp_pt_eg_1;
+    comb_eg_2 <= comp_pt_eg_2;
+    comb_eg_3 <= comp_pt_eg_3;
+    comb_jet_1 <= comp_pt_jet_1 and comp_eta_jet_2;
+    comb_jet_2 <= comp_pt_jet_1 and comp_eta_jet_1;
+    comb_jet_3 <= comp_pt_jet_2 and comp_eta_jet_2;
+    comb_jet_4 <= comp_pt_jet_2 and comp_eta_jet_1;
+    comb_jet_5 <= comp_pt_jet_3 and comp_eta_jet_3;
+    comb_jet_6 <= comp_pt_jet_4 and comp_eta_jet_4;
+    comb_jet_7 <= comp_pt_jet_9 and comp_eta_jet_4;
+    comb_jet_8 <= comp_pt_jet_1 and comp_eta_jet_4;
+    comb_jet_9 <= comp_pt_jet_1;
+    comb_jet_10 <= comp_pt_jet_5 and comp_eta_jet_4;
+    comb_jet_11 <= comp_pt_jet_6 and comp_eta_jet_4;
+    comb_jet_12 <= comp_pt_jet_7;
+    comb_jet_13 <= comp_pt_jet_5;
+    comb_jet_14 <= comp_pt_jet_6;
+    comb_jet_15 <= comp_pt_jet_8;
+    comb_jet_16 <= comp_pt_jet_8 and comp_eta_jet_2;
+    comb_jet_17 <= comp_pt_jet_8 and comp_eta_jet_1;
+    comb_jet_18 <= comp_pt_jet_4;
+    comb_jet_19 <= comp_pt_jet_9;
+    comb_jet_20 <= comp_pt_jet_10;
+    comb_jet_21 <= comp_pt_jet_11;
+    comb_tau_1 <= comp_pt_tau_1 and comp_iso_tau_1;
+    comb_htt_1 <= comp_pt_htt_1;
+    comb_etm_1 <= comp_pt_etm_1;
+    comb_etmhf_1 <= comp_pt_etmhf_1;
+    comb_muon_1 <= comp_pt_muon_1 and comp_qual_muon_2;
+    comb_muon_2 <= comp_pt_muon_1 and comp_qual_muon_1;
+    comb_muon_3 <= comp_pt_muon_2 and comp_qual_muon_3;
+    comb_asymet_1 <= comp_count_asymet_1;
+    comb_asymet_2 <= comp_count_asymet_2;
+    comb_mbt0hfm_1 <= comp_count_mbt0hfm_1;
+    comb_mbt0hfp_1 <= comp_count_mbt0hfp_1;
 
     -- Instantiations of conditions
     
