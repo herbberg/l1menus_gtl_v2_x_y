@@ -89,7 +89,7 @@ architecture rtl of l1menu is
     signal comp_pt_tau_bx0_0x005a : tau_obj_t;
     signal comp_eta_jet_bx0_0x0045_0x0072 : jet_obj_t;
     signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
-    signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
+    signal comp_eta_jet_bx0_0x00c2_0x003d : jet_obj_t;
     signal comp_eta_jet_bx0_0x00c6_0x0039 : jet_obj_t;
     signal comp_iso_tau_bx0_0x000e : tau_obj_t;
     signal comp_pt_muon_bx0_0x0001 : muon_obj_t;
