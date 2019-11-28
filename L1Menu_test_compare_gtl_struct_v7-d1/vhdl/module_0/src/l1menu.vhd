@@ -90,7 +90,6 @@ architecture rtl of l1menu is
     signal comp_eta_jet_bx0_0x00c2_0x003d : jet_obj_t;
     signal comp_eta_jet_bx0_0x0045_0x0072 : jet_obj_t;
     signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
-    signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
     signal comp_eta_jet_bx0_0x00c6_0x0039 : jet_obj_t;
     signal comp_iso_tau_bx0_0x000e : tau_obj_t;
     signal comp_pt_muon_bx0_0x0001 : muon_obj_t;
@@ -155,8 +154,8 @@ architecture rtl of l1menu is
     signal comb_etmhf_1 : etmhf_obj_t;
     signal comb_asymet_bx0_count_0x0028 : asymet_obj_t;
     signal comb_asymet_bx0_count_0x0032 : asymet_obj_t;
-    signal comb_mbt0hfm_bx0_count__0x0001 : mbt0hfm_obj_t;
-    signal comb_mbt0hfp_bx0_count__0x0001 : mbt0hfp_obj_t;
+    signal comb_mbt0hfm_bx0_count_0x0001 : mbt0hfm_obj_t;
+    signal comb_mbt0hfp_bx0_count_0x0001 : mbt0hfp_obj_t;
 -- Signal definition for conditions names
     signal single_ext_i25 : std_logic;
     signal single_ext_i26 : std_logic;
@@ -1319,7 +1318,7 @@ begin
         )
         port map(
             lhc_clk, 
-            comb_1 => comb_asymet_bx0_0x0028,
+            comb_1 => comb_asymet_bx0_count_0x0028,
             cond_o => single_asymet_i33
         );
 
@@ -1331,7 +1330,7 @@ begin
         )
         port map(
             lhc_clk, 
-            comb_1 => comb_asymet_bx0_0x0032,
+            comb_1 => comb_asymet_bx0_count_0x0032,
             cond_o => single_asymet_i34
         );
 
@@ -1343,7 +1342,7 @@ begin
         )
         port map(
             lhc_clk, 
-            comb_1 => comb_mbt0hfm_bx0_0x0001,
+            comb_1 => comb_mbt0hfm_bx0_count_0x0001,
             cond_o => single_mbt0_hfm_i32
         );
 
@@ -1355,7 +1354,7 @@ begin
         )
         port map(
             lhc_clk, 
-            comb_1 => comb_mbt0hfp_bx0_0x0001,
+            comb_1 => comb_mbt0hfp_bx0_count_0x0001,
             cond_o => single_mbt0_hfp_i31
         );
 
