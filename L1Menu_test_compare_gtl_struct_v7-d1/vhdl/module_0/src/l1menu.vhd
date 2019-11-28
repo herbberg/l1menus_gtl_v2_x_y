@@ -87,6 +87,7 @@ architecture rtl of l1menu is
     signal comp_pt_jet_bx0_0x00c8 : jet_obj_t;
     signal comp_pt_jet_bx0_0x00dc : jet_obj_t;
     signal comp_pt_tau_bx0_0x005a : tau_obj_t;
+    signal comp_eta_jet_bx0_0x00c2_0x003d : jet_obj_t;
     signal comp_eta_jet_bx0_0x0045_0x0072 : jet_obj_t;
     signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
     signal comp_eta_jet_bx0_0x008d_0x00ba : jet_obj_t;
@@ -152,11 +153,10 @@ architecture rtl of l1menu is
     signal comb_htt_bx0_pt_0x0230 : htt_obj_t;
     signal comb_etm_bx0_pt_0x00f0 : etm_obj_t;
     signal comb_etmhf_1 : etmhf_obj_t;
-    signal comb_asymet_bx0_0x0028 : asymet_obj_t;
-    signal comb_asymet_bx0_0x0032 : asymet_obj_t;
-    signal comb_mbt0hfm_bx0_0x0001 : mbt0hfm_obj_t;
-    signal comb_mbt0hfp_bx0_0x0001 : mbt0hfp_obj_t;
-
+    signal comb_asymet_bx0_count_0x0028 : asymet_obj_t;
+    signal comb_asymet_bx0_count_0x0032 : asymet_obj_t;
+    signal comb_mbt0hfm_bx0_count__0x0001 : mbt0hfm_obj_t;
+    signal comb_mbt0hfp_bx0_count__0x0001 : mbt0hfp_obj_t;
 -- Signal definition for conditions names
     signal single_ext_i25 : std_logic;
     signal single_ext_i26 : std_logic;
