@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 3739e298-17dd-4349-9a06-9c369d6d7a1d
+-- ed5d1d78-7f96-412d-888f-81a3cecbbf3e
 
 -- Scale set:
 -- scales_2018_08_07
@@ -33,8 +33,8 @@ use work.l1menu_pkg.all;
 entity l1menu is
     port(
         lhc_clk : in std_logic;
-        data_in : in data_pipeline_record;
-        conv_in : in conv_pipeline_record;
+        data : in data_pipeline_record;
+        conv : in conv_pipeline_record;
         algo : out std_logic_vector(NR_ALGOS-1 downto 0));
 end l1menu;
 
