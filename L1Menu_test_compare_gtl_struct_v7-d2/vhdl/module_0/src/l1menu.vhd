@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 5e24a566-faee-412c-8aee-00aeded3dde1
+-- e73ccb90-e8a1-48c6-8050-ec7d61d9f168
 
 -- Scale set:
 -- scales_2018_08_07
@@ -53,6 +53,7 @@ architecture rtl of l1menu is
     signal dr_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal dr_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
@@ -113,6 +114,7 @@ architecture rtl of l1menu is
     signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_MU_OBJECTS-1);
     signal comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
     signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_TAU_OBJECTS-1);
     -- Muon charge correlation
@@ -419,6 +421,15 @@ begin
             cos_dphi_jet_jet(bx(0),bx(0)),
             invmass_jet_jet(bx(0),bx(0))
        );
+    calc_delta_r_jet_mu_bx_0_bx_0_i: entity work.delta_r
+        generic map(
+            N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
+        )
+        port map(
+            deta_jet_mu(bx(0),bx(0)),
+            dphi_jet_mu(bx(0),bx(0)),
+            dr_jet_mu(bx(0),bx(0))
+        );
     calc_delta_r_jet_tau_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
@@ -756,6 +767,16 @@ begin
         port map(
             lhc_clk, 
             invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x00000ba43b740_0x41A6642C78140
+        );
+    comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8_i: entity work.comparators_corr_cuts
+        generic map(
+            N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
+            JET_MU_DELTAR_VECTOR_WIDTH, deltaR, 
+            X"0000000000000", X"00000000274E8"        
+        )
+        port map(
+            lhc_clk, 
+            dr_jet_mu(bx(0),bx(0)), comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8
         );
     comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140_i: entity work.comparators_corr_cuts
         generic map(
@@ -1292,7 +1313,7 @@ begin
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140,
             cond_o => invariant_mass_i10
         );
 
@@ -1309,7 +1330,7 @@ begin
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140,
             cond_o => invariant_mass_i11
         );
 
@@ -1325,7 +1346,7 @@ begin
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
             cond_o => invariant_mass_i28
         );
 
@@ -1341,7 +1362,7 @@ begin
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
             cond_o => invariant_mass_i30
         );
 
@@ -1358,7 +1379,7 @@ begin
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140,
             cond_o => invariant_mass_i9
         );
 
@@ -1396,18 +1417,18 @@ begin
 
     cond_invariant_mass_ov_rm_i19_i: entity work.correlation_conditions_ovrm
         generic map(  
-            N_JET_OBJECTS, N_JET_OBJECTS,  N_TAU_OBJECTS
+            N_JET_OBJECTS, N_JET_OBJECTS,  N_TAU_OBJECTS,
             ((0,11), (0,11), (0,11), (0,0)),
             false,  
             true
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_3 => 
+            in_3 => 
             comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e, 
             inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140, 
             dr_ovrm => comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028,
@@ -1419,8 +1440,8 @@ begin
     single_cent2_i37 <= data.centrality(bx(0))(2);  
     single_cent7_i38 <= data.centrality(bx(0))(7);
     -- External condition assignment
-    single_ext_i25 <= data_in.ext_cond(bx(0))(9);
-    single_ext_i26 <= data_in.ext_cond(bx(0))(10);
+    single_ext_i25 <= data.ext_cond(bx(0))(9);
+    single_ext_i26 <= data.ext_cond(bx(0))(10);
 -- Instantiations of algorithms
 
     l1_quad_mu_open_os <= quad_mu_i1;
