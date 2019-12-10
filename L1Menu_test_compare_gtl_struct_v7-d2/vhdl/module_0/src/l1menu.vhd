@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- d2ac29a9-d75a-4b61-9f0a-559824866129
+-- 3739e298-17dd-4349-9a06-9c369d6d7a1d
 
 -- Scale set:
 -- scales_2018_08_07
@@ -216,112 +216,112 @@ begin
             cc_quad(bx(0),bx(0))
         );
   
-    calc_deta_eg_jet_bx_EG_bx_EG_i: entity work.deta_calc
+    calc_deta_eg_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            conv.eg(bx(EG)).eta,
-            conv.jet(bx(EG)).eta,
-            deta_calc_eg_jet(bx(EG),bx(EG))
+            conv.eg(bx(0)).eta,
+            conv.jet(bx(0)).eta,
+            deta_calc_eg_jet(bx(0),bx(0))
         );
-    calc_deta_lut_eg_jet_bx_EG_bx_EG_i: entity work.deta_lut
+    calc_deta_lut_eg_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            deta_calc_eg_jet(bx(EG),bx(EG)),
-            deta_eg_jet(bx(EG),bx(EG))
+            deta_calc_eg_jet(bx(0),bx(0)),
+            deta_eg_jet(bx(0),bx(0))
         );
   
-    calc_deta_jet_jet_bx_JET_bx_JET_i: entity work.deta_calc
+    calc_deta_jet_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
-            conv.jet(bx(JET)).eta,
-            conv.jet(bx(JET)).eta,
-            deta_calc_jet_jet(bx(JET),bx(JET))
+            conv.jet(bx(0)).eta,
+            conv.jet(bx(0)).eta,
+            deta_calc_jet_jet(bx(0),bx(0))
         );
-    calc_deta_lut_jet_jet_bx_JET_bx_JET_i: entity work.deta_lut
+    calc_deta_lut_jet_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
-            deta_calc_jet_jet(bx(JET),bx(JET)),
-            deta_jet_jet(bx(JET),bx(JET))
+            deta_calc_jet_jet(bx(0),bx(0)),
+            deta_jet_jet(bx(0),bx(0))
         );
   
-    calc_deta_jet_mu_bx_JET_bx_JET_i: entity work.deta_calc
+    calc_deta_jet_mu_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
         )
         port map(
-            conv.jet(bx(JET)).eta,
-            conv.mu(bx(JET)).eta,
-            deta_calc_jet_mu(bx(JET),bx(JET))
+            conv.jet(bx(0)).eta,
+            conv.mu(bx(0)).eta,
+            deta_calc_jet_mu(bx(0),bx(0))
         );
-    calc_deta_lut_jet_mu_bx_JET_bx_JET_i: entity work.deta_lut
+    calc_deta_lut_jet_mu_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
         )
         port map(
-            deta_calc_jet_mu(bx(JET),bx(JET)),
-            deta_jet_mu(bx(JET),bx(JET))
+            deta_calc_jet_mu(bx(0),bx(0)),
+            deta_jet_mu(bx(0),bx(0))
         );
   
-    calc_dphi_eg_jet_bx_EG_bx_EG_i: entity work.dphi_calc
+    calc_dphi_eg_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            conv.eg(bx(EG)).phi,
-            conv.jet(bx(EG)).phi,
-            dphi_calc_eg_jet(bx(EG),bx(EG))
+            conv.eg(bx(0)).phi,
+            conv.jet(bx(0)).phi,
+            dphi_calc_eg_jet(bx(0),bx(0))
         );
-    calc_dphi_lut_eg_jet_bx_EG_bx_EG_i: entity work.dphi_lut
+    calc_dphi_lut_eg_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
         )
         port map(
-            dphi_calc_eg_jet(bx(EG),bx(EG)),
-            dphi_eg_jet(bx(EG),bx(EG))
+            dphi_calc_eg_jet(bx(0),bx(0)),
+            dphi_eg_jet(bx(0),bx(0))
         );
   
-    calc_dphi_jet_jet_bx_JET_bx_JET_i: entity work.dphi_calc
+    calc_dphi_jet_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
-            conv.jet(bx(JET)).phi,
-            conv.jet(bx(JET)).phi,
-            dphi_calc_jet_jet(bx(JET),bx(JET))
+            conv.jet(bx(0)).phi,
+            conv.jet(bx(0)).phi,
+            dphi_calc_jet_jet(bx(0),bx(0))
         );
-    calc_dphi_lut_jet_jet_bx_JET_bx_JET_i: entity work.dphi_lut
+    calc_dphi_lut_jet_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
-            dphi_calc_jet_jet(bx(JET),bx(JET)),
-            dphi_jet_jet(bx(JET),bx(JET))
+            dphi_calc_jet_jet(bx(0),bx(0)),
+            dphi_jet_jet(bx(0),bx(0))
         );
   
-    calc_dphi_jet_mu_bx_JET_bx_JET_i: entity work.dphi_calc
+    calc_dphi_jet_mu_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
         )
         port map(
-            conv.jet(bx(JET)).phi,
-            conv.mu(bx(JET)).phi,
-            dphi_calc_jet_mu(bx(JET),bx(JET))
+            conv.jet(bx(0)).phi,
+            conv.mu(bx(0)).phi,
+            dphi_calc_jet_mu(bx(0),bx(0))
         );
-    calc_dphi_lut_jet_mu_bx_JET_bx_JET_i: entity work.dphi_lut
+    calc_dphi_lut_jet_mu_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
         )
         port map(
-            dphi_calc_jet_mu(bx(JET),bx(JET)),
-            dphi_jet_mu(bx(JET),bx(JET))
+            dphi_calc_jet_mu(bx(0),bx(0)),
+            dphi_jet_mu(bx(0),bx(0))
         );
 
 -- Second stage: comparisons
