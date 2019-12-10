@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 88d91591-cf19-4caf-b39d-a62607ef75c3
+-- 5e24a566-faee-412c-8aee-00aeded3dde1
 
 -- Scale set:
 -- scales_2018_08_07
@@ -43,9 +43,11 @@ architecture rtl of l1menu is
     -- Differences
     signal deta_calc_eg_jet : obj_bx_max_eta_range_array;
     signal deta_calc_jet_jet : obj_bx_max_eta_range_array;
+    signal deta_calc_jet_tau : obj_bx_max_eta_range_array;
     signal deta_calc_jet_mu : obj_bx_max_eta_range_array;
     signal dphi_calc_eg_jet : obj_bx_max_phi_range_array;
     signal dphi_calc_jet_jet : obj_bx_max_phi_range_array;
+    signal dphi_calc_jet_tau : obj_bx_max_phi_range_array;
     signal dphi_calc_jet_mu : obj_bx_max_phi_range_array;
     -- Correlation cuts
     signal dr_eg_jet :  obj_bx_corr_cuts_std_logic_array;
@@ -53,15 +55,19 @@ architecture rtl of l1menu is
     signal invmass_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal dphi_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     -- Muon charge correlation    
     signal cc_double : obj_bx_muon_cc_double_array;
@@ -264,6 +270,24 @@ begin
             deta_jet_jet(bx(0),bx(0))
         );
   
+    calc_deta_jet_tau_bx_0_bx_0_i: entity work.deta_calc
+        generic map(
+            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
+        )
+        port map(
+            conv.jet(bx(0)).eta,
+            conv.tau(bx(0)).eta,
+            deta_calc_jet_tau(bx(0),bx(0))
+        );
+    calc_deta_lut_jet_tau_bx_0_bx_0_i: entity work.deta_lut
+        generic map(
+            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
+        )
+        port map(
+            deta_calc_jet_tau(bx(0),bx(0)),
+            deta_jet_tau(bx(0),bx(0))
+        );
+  
     calc_deta_jet_mu_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -318,6 +342,25 @@ begin
         port map(
             dphi_calc_jet_jet(bx(0),bx(0)),
             dphi_jet_jet(bx(0),bx(0))
+        );
+  
+    calc_dphi_jet_tau_bx_0_bx_0_i: entity work.dphi_calc
+        generic map(
+            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
+            JET_TAU_PHI_HALF_RANGE_BINS
+        )
+        port map(
+            conv.jet(bx(0)).phi,
+            conv.tau(bx(0)).phi,
+            dphi_calc_jet_tau(bx(0),bx(0))
+        );
+    calc_dphi_lut_jet_tau_bx_0_bx_0_i: entity work.dphi_lut
+        generic map(
+            N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
+        )
+        port map(
+            dphi_calc_jet_tau(bx(0),bx(0)),
+            dphi_jet_tau(bx(0),bx(0))
         );
   
     calc_dphi_jet_mu_bx_0_bx_0_i: entity work.dphi_calc
