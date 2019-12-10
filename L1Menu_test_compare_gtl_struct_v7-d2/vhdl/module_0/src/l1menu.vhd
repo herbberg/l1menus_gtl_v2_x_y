@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- b210f110-d3aa-42a9-988f-954208b00e57
+-- d71ce959-08cf-40cb-91c6-a3843c75ab0f
 
 -- Scale set:
 -- scales_2018_08_07
@@ -101,15 +101,15 @@ architecture rtl of l1menu is
     signal comp_pt_mu_bx_0_0x0007 : std_logic_vector(0 to N_MU_OBJECTS-1);
     signal comp_qual_mu_bx_0_0xf000 : std_logic_vector(0 to N_MU_OBJECTS-1);
     -- Correlation cuts
-    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : std_logic;
-    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : std_logic;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140 : std_logic;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : std_logic;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : std_logic;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : std_logic;
-    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : std_logic;
+    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : corr_cuts_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
+    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_MU_OBJECTS-1);
     -- Muon charge correlation
-    signal comp_cc_quad_bx_0_bx_0_cc_os : std_logic;
+    signal comp_cc_quad_bx_0_bx_0_cc_os : muon_cc_quad_std_logic_array;
 -- Conditions inputs
     -- Object cuts "and"
    signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
@@ -1201,9 +1201,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240,
             cond_o => calo_calo_correlation_i7
@@ -1217,9 +1217,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240,
             cond_o => calo_calo_correlation_i8
@@ -1233,9 +1233,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
             inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140,
@@ -1250,9 +1250,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
             inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140,
@@ -1267,9 +1267,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
             cond_o => invariant_mass_i28
@@ -1283,9 +1283,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
             cond_o => invariant_mass_i30
@@ -1299,9 +1299,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
             inv_mass => comp_inv_mass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140,
@@ -1316,9 +1316,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
             delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8,
             cond_o => calo_muon_correlation_i20
@@ -1332,9 +1332,9 @@ begin
         )
         port map(
             lhc_clk,
-            comb_1 => 
+            in_1 => 
             comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            comb_2 => 
+            in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
             delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8,
             cond_o => calo_muon_correlation_i21
@@ -1360,10 +1360,10 @@ begin
             cond_o => invariant_mass_ov_rm_i19
         );    
     -- Centrality assignment  
-    single_cent0_i35 <= data_in.centrality(bx(0))(0);  
-    single_cent1_i36 <= data_in.centrality(bx(0))(1);  
-    single_cent2_i37 <= data_in.centrality(bx(0))(2);  
-    single_cent7_i38 <= data_in.centrality(bx(0))(7);
+    single_cent0_i35 <= data.centrality(bx(0))(0);  
+    single_cent1_i36 <= data.centrality(bx(0))(1);  
+    single_cent2_i37 <= data.centrality(bx(0))(2);  
+    single_cent7_i38 <= data.centrality(bx(0))(7);
     -- External condition assignment
     single_ext_i25 <= data_in.ext_cond(bx(0))(9);
     single_ext_i26 <= data_in.ext_cond(bx(0))(10);
