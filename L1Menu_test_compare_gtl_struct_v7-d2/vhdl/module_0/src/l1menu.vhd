@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 4d2b5b42-70ee-4104-91a8-cf502ae9dcc3
+-- b210f110-d3aa-42a9-988f-954208b00e57
 
 -- Scale set:
 -- scales_2018_08_07
@@ -44,9 +44,9 @@ architecture rtl of l1menu is
     signal deta_calc_eg_jet : obj_bx_max_eta_range_array;
     signal deta_calc_jet_jet : obj_bx_max_eta_range_array;
     signal deta_calc_jet_mu : obj_bx_max_eta_range_array;
-    signal dphi_calc_eg_jet : obj_bx_max_eta_range_array;
-    signal dphi_calc_jet_jet : obj_bx_max_eta_range_array;
-    signal dphi_calc_jet_mu : obj_bx_max_eta_range_array;
+    signal dphi_calc_eg_jet : obj_bx_max_phi_range_array;
+    signal dphi_calc_jet_jet : obj_bx_max_phi_range_array;
+    signal dphi_calc_jet_mu : obj_bx_max_phi_range_array;
     -- Correlation cuts
     signal dr_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
@@ -57,43 +57,49 @@ architecture rtl of l1menu is
     signal dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     -- Muon charge correlation    
     signal cc_double : obj_bx_muon_cc_double_array;
     signal cc_triple : obj_bx_muon_cc_triple_array;
     signal cc_quad : obj_bx_muon_cc_quad_array;
 -- Comparators outputs
     -- Object cuts
-    signal comp_pt_eg_bx_0_0x000a : std_logic;
-    signal comp_pt_jet_bx_0_0x0096 : std_logic;
-    signal comp_eta_jet_bx_0_0x00c6_0x0039 : std_logic;
-    signal comp_pt_jet_bx_0_0x00c8 : std_logic;
-    signal comp_pt_jet_bx_0_0x00dc : std_logic;
-    signal comp_pt_jet_bx_0_0x00be : std_logic;
-    signal comp_pt_jet_bx_0_0x0078 : std_logic;
-    signal comp_pt_jet_bx_0_0x0028 : std_logic;
-    signal comp_eta_jet_bx_0_0x008d_0x00ba : std_logic;
-    signal comp_eta_jet_bx_0_0x0045_0x0072 : std_logic;
-    signal comp_pt_jet_bx_0_0x00f0 : std_logic;
-    signal comp_count_asymet_bx_0_0x0028 : std_logic;
-    signal comp_count_asymet_bx_0_0x0032 : std_logic;
-    signal comp_pt_etm_bx_0_0x00f0 : std_logic;
-    signal comp_pt_etmhf_bx_0_0x00f0 : std_logic;
-    signal comp_pt_htt_bx_0_0x0230 : std_logic;
-    signal comp_count_mbt0hfm_bx_0_0x0001 : std_logic;
-    signal comp_count_mbt0hfp_bx_0_0x0001 : std_logic;
-    signal comp_pt_mu_bx_0_0x0001 : std_logic;
-    signal comp_qual_mu_bx_0_0xff00 : std_logic;
-    signal comp_qual_mu_bx_0_0xfff0 : std_logic;
-    signal comp_pt_eg_bx_0_0x0018 : std_logic;
-    signal comp_pt_jet_bx_0_0x0038 : std_logic;
-    signal comp_eta_jet_bx_0_0x00c2_0x003d : std_logic;
-    signal comp_pt_eg_bx_0_0x001e : std_logic;
-    signal comp_pt_jet_bx_0_0x003c : std_logic;
-    signal comp_pt_jet_bx_0_0x0046 : std_logic;
-    signal comp_pt_tau_bx_0_0x005a : std_logic;
-    signal comp_iso_tau_bx_0_0x000e : std_logic;
-    signal comp_pt_mu_bx_0_0x0007 : std_logic;
-    signal comp_qual_mu_bx_0_0xf000 : std_logic;
+    signal comp_pt_eg_bx_0_0x000a : std_logic_vector(0 to N_EG_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0096 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_eta_jet_bx_0_0x00c6_0x0039 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x00c8 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x00dc : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x00be : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0078 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0028 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_eta_jet_bx_0_0x008d_0x00ba : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_eta_jet_bx_0_0x0045_0x0072 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x00f0 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_count_asymet_bx_0_0x0028 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
+    signal comp_count_asymet_bx_0_0x0032 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
+    signal comp_pt_etm_bx_0_0x00f0 : std_logic_vector(0 to N_ETM_OBJECTS-1);
+    signal comp_pt_etmhf_bx_0_0x00f0 : std_logic_vector(0 to N_ETMHF_OBJECTS-1);
+    signal comp_pt_htt_bx_0_0x0230 : std_logic_vector(0 to N_HTT_OBJECTS-1);
+    signal comp_count_mbt0hfm_bx_0_0x0001 : std_logic_vector(0 to N_MBT0HFM_OBJECTS-1);
+    signal comp_count_mbt0hfp_bx_0_0x0001 : std_logic_vector(0 to N_MBT0HFP_OBJECTS-1);
+    signal comp_pt_mu_bx_0_0x0001 : std_logic_vector(0 to N_MU_OBJECTS-1);
+    signal comp_qual_mu_bx_0_0xff00 : std_logic_vector(0 to N_MU_OBJECTS-1);
+    signal comp_qual_mu_bx_0_0xfff0 : std_logic_vector(0 to N_MU_OBJECTS-1);
+    signal comp_pt_eg_bx_0_0x0018 : std_logic_vector(0 to N_EG_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0038 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_eta_jet_bx_0_0x00c2_0x003d : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_eg_bx_0_0x001e : std_logic_vector(0 to N_EG_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x003c : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0046 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_tau_bx_0_0x005a : std_logic_vector(0 to N_TAU_OBJECTS-1);
+    signal comp_iso_tau_bx_0_0x000e : std_logic_vector(0 to N_TAU_OBJECTS-1);
+    signal comp_pt_mu_bx_0_0x0007 : std_logic_vector(0 to N_MU_OBJECTS-1);
+    signal comp_qual_mu_bx_0_0xf000 : std_logic_vector(0 to N_MU_OBJECTS-1);
     -- Correlation cuts
     signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : std_logic;
     signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : std_logic;
@@ -106,40 +112,40 @@ architecture rtl of l1menu is
     signal comp_cc_quad_bx_0_bx_0_cc_os : std_logic;
 -- Conditions inputs
     -- Object cuts "and"
-    signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0096_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0082_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_00c8_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_00dc_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_00be_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0096_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0082_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0028_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0028_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0028_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0078_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0078_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_00f0_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_00f0_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_asymet_bx_0_count_0028 : std_logic;
-    signal comb_asymet_bx_0_count_0032 : std_logic;
-    signal comb_etm_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic;
-    signal comb_etmhf_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic;
-    signal comb_htt_bx_0_pt_0230_phi_0000_0000_0000_0000 : std_logic;
-    signal comb_mbt0hfm_bx_0_count_0001 : std_logic;
-    signal comb_mbt0hfp_bx_0_count_0001 : std_logic;
-    signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ff00_charge_ign : std_logic;
-    signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign : std_logic;
-    signal comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e : std_logic;
-    signal comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic;
-    signal comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign : std_logic;
+   signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0096_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0082_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_00c8_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_00dc_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_00be_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0096_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0082_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0028_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0028_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0028_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0078_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0078_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_00f0_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_jet_bx_0_pt_00f0_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_asymet_bx_0_count_0028 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
+   signal comb_asymet_bx_0_count_0032 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
+   signal comb_etm_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_ETM_OBJECTS-1);
+   signal comb_etmhf_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_ETMHF_OBJECTS-1);
+   signal comb_htt_bx_0_pt_0230_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_HTT_OBJECTS-1);
+   signal comb_mbt0hfm_bx_0_count_0001 : std_logic_vector(0 to N_MBT0HFM_OBJECTS-1);
+   signal comb_mbt0hfp_bx_0_count_0001 : std_logic_vector(0 to N_MBT0HFP_OBJECTS-1);
+   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ff00_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
+   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
+   signal comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
+   signal comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e : std_logic_vector(0 to N_TAU_OBJECTS-1);
+   signal comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
+   signal comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
 -- Signal definition for conditions names
     signal single_asymet_i33 : std_logic;
     signal single_asymet_i34 : std_logic;
@@ -367,9 +373,8 @@ begin
             conv.jet(bx(0)).pt_vector,
             cosh_deta_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0)),
-            inv_mass_jet_jet(bx(0),bx(0))
+            invmass_jet_jet(bx(0),bx(0))
        );
-
     calc_delta_r_jet_mu_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
