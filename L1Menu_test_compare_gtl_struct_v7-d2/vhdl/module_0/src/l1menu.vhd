@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 6ea6d396-5fdb-4b85-bb2f-dfeb7a4e288f
+-- 4d2b5b42-70ee-4104-91a8-cf502ae9dcc3
 
 -- Scale set:
 -- scales_2018_08_07
@@ -214,8 +214,8 @@ begin
 -- First stage: calculations
     calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(
-            data.muon(bx(0)).charge,
-            data.muon(bx(0)).charge,
+            data.mu(bx(0)).charge,
+            data.mu(bx(0)).charge,
             cc_double(bx(0),bx(0)),
             cc_triple(bx(0),bx(0)),
             cc_quad(bx(0),bx(0))
@@ -277,7 +277,8 @@ begin
   
     calc_dphi_eg_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
-            N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
+            N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t),
+            EG_JET_PHI_HALF_RANGE_BINS
         )
         port map(
             conv.eg(bx(0)).phi,
@@ -295,7 +296,8 @@ begin
   
     calc_dphi_jet_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
-            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
+            JET_JET_PHI_HALF_RANGE_BINS
         )
         port map(
             conv.jet(bx(0)).phi,
@@ -313,7 +315,8 @@ begin
   
     calc_dphi_jet_mu_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
-            N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
+            N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
+            JET_MU_PHI_HALF_RANGE_BINS
         )
         port map(
             conv.jet(bx(0)).phi,
