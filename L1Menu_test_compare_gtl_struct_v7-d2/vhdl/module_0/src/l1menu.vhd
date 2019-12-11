@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 46e6e3bc-58c9-41eb-aa05-ee8cc3af8775
+-- 23ba2737-29e0-4113-8b01-049895d62597
 
 -- Scale set:
 -- scales_2018_08_07
@@ -77,20 +77,13 @@ architecture rtl of l1menu is
 -- Comparators outputs
     -- Object cuts
     signal comp_pt_eg_bx_0_0x000a : std_logic_vector(0 to N_EG_OBJECTS-1);
-    signal comp_pt_undefined_bx_0_0x0000 : std_logic_vector(0 to N_UNDEFINED_OBJECTS-1);
     signal comp_pt_jet_bx_0_0x0096 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_eta_jet_bx_0_0x00c6_0x0039 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0082 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_jet_bx_0_0x00c8 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x003c : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_jet_bx_0_0x00dc : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0046 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_jet_bx_0_0x00be : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0028 : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0082 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_jet_bx_0_0x0078 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x008d_0x00ba : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x0045_0x0072 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x00f0 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_count_asymet_bx_0_0x0028 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
     signal comp_count_asymet_bx_0_0x0032 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
     signal comp_pt_etm_bx_0_0x00f0 : std_logic_vector(0 to N_ETM_OBJECTS-1);
@@ -105,6 +98,8 @@ architecture rtl of l1menu is
     signal comp_pt_jet_bx_0_0x0038 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_eta_jet_bx_0_0x00c2_0x003d : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_eg_bx_0_0x001e : std_logic_vector(0 to N_EG_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x003c : std_logic_vector(0 to N_JET_OBJECTS-1);
+    signal comp_pt_jet_bx_0_0x0046 : std_logic_vector(0 to N_JET_OBJECTS-1);
     signal comp_pt_tau_bx_0_0x005a : std_logic_vector(0 to N_TAU_OBJECTS-1);
     signal comp_iso_tau_bx_0_0x000e : std_logic_vector(0 to N_TAU_OBJECTS-1);
     signal comp_pt_mu_bx_0_0x0007 : std_logic_vector(0 to N_MU_OBJECTS-1);
@@ -452,15 +447,6 @@ begin
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x000a
         );
-    comp_pt_undefined_bx_0_0x0000_i: entity work.comparators_obj_cuts
-        generic map(
-            N_UNDEFINED_OBJECTS, UNDEFINED_PT_WIDTH,  
-            EQ,  
-            X"0000", X"0000", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.undefined(bx(0)).pt, comp_pt_undefined_bx_0_0x0000
-        );
     comp_pt_jet_bx_0_0x0096_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -478,15 +464,6 @@ begin
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00c6_0x0039
         );
-    comp_pt_jet_bx_0_0x0082_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
-            X"0082", X"0000", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0082
-        );
     comp_pt_jet_bx_0_0x00c8_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -495,15 +472,6 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00c8
-        );
-    comp_pt_jet_bx_0_0x003c_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
-            X"003c", X"0000", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x003c
         );
     comp_pt_jet_bx_0_0x00dc_i: entity work.comparators_obj_cuts
         generic map(
@@ -514,15 +482,6 @@ begin
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00dc
         );
-    comp_pt_jet_bx_0_0x0046_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
-            X"0046", X"0000", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0046
-        );
     comp_pt_jet_bx_0_0x00be_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -532,14 +491,14 @@ begin
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00be
         );
-    comp_pt_jet_bx_0_0x0028_i: entity work.comparators_obj_cuts
+    comp_pt_jet_bx_0_0x0082_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             EQ,  
-            X"0028", X"0000", X"0000", "ign"
+            X"0082", X"0000", X"0000", "ign"
         )
         port map(
-            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0028
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0082
         );
     comp_pt_jet_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
@@ -549,31 +508,6 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0078
-        );
-    comp_eta_jet_bx_0_0x008d_0x00ba_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_ETA_WIDTH,
-            ETA, X"008D", X"00BA", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x008d_0x00ba
-        );
-    comp_eta_jet_bx_0_0x0045_0x0072_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_ETA_WIDTH,
-            ETA, X"0045", X"0072", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x0045_0x0072
-        );
-    comp_pt_jet_bx_0_0x00f0_i: entity work.comparators_obj_cuts
-        generic map(
-            N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
-            X"00f0", X"0000", X"0000", "ign"
-        )
-        port map(
-            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00f0
         );
     comp_count_asymet_bx_0_0x0028_i: entity work.comparators_obj_cuts
         generic map(
@@ -693,6 +627,24 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x001e
+        );
+    comp_pt_jet_bx_0_0x003c_i: entity work.comparators_obj_cuts
+        generic map(
+            N_JET_OBJECTS, JET_PT_WIDTH,  
+            EQ,  
+            X"003c", X"0000", X"0000", "ign"
+        )
+        port map(
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x003c
+        );
+    comp_pt_jet_bx_0_0x0046_i: entity work.comparators_obj_cuts
+        generic map(
+            N_JET_OBJECTS, JET_PT_WIDTH,  
+            EQ,  
+            X"0046", X"0000", X"0000", "ign"
+        )
+        port map(
+            lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0046
         );
     comp_pt_tau_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
