@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 6aadc93d-0b72-4438-91ad-8eb7ca0fe3f4
+-- 851134a6-8c89-47cf-a8ae-0257921a8915
 
 -- Scale set:
 -- scales_2018_08_07
@@ -295,8 +295,8 @@ begin
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
         )
-        port map(
-            conv.jet(bx(0)).eta,
+        port map(    
+            conv.jet(bx(0)).eta_conv_mu,
             conv.mu(bx(0)).eta,
             deta_calc_jet_mu(bx(0),bx(0))
         );
@@ -371,8 +371,8 @@ begin
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
             JET_MU_PHI_HALF_RANGE_BINS
         )
-        port map(
-            conv.jet(bx(0)).phi,
+        port map(    
+            conv.jet(bx(0)).phi_conv_mu,
             conv.mu(bx(0)).phi,
             dphi_calc_jet_mu(bx(0),bx(0))
         );
