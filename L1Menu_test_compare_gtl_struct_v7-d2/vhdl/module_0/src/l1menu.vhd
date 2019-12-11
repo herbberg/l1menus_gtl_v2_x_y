@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 67037e06-7c83-49be-bcc0-fa53dc8f56cd
+-- e65d6079-e068-4af5-a6af-21fc970833ae
 
 -- Scale set:
 -- scales_2018_08_07
@@ -927,10 +927,12 @@ begin
 
     comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ff00_charge_ign <= 
     comp_pt_mu_bx_0_0x0001
+    and comp_qual_mu_bx_0_0xff00
     ;
 
     comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0001
+    and comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -953,6 +955,7 @@ begin
 
     comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x005a
+    and comp_iso_tau_bx_0_0x000e
     ;
 
     comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -962,6 +965,7 @@ begin
 
     comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x0007
+    and comp_qual_mu_bx_0_0xf000
     ;
 
     -- Instantiations of conditions
