@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 05655a44-4164-41b0-b24b-ea7028812c2d
+-- bb1e0917-fe39-41dd-bafd-0717568c61ac
 
 -- Scale set:
 -- scales_2018_08_07
@@ -119,7 +119,7 @@ architecture rtl of l1menu is
     signal comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140 : jet_jet_t;
     signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028 : jet_tau_t;
     -- Muon charge correlation
-    signal comp_cc_quad_bx_0_bx_0_cc_os : muon_cc_quad_t;
+    signal comp_cc_quad_bx_0_bx_0_cc_os : mu_cc_quad_t;
 -- Conditions inputs
     -- Object cuts "and"
    signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : eg_obj_t;
