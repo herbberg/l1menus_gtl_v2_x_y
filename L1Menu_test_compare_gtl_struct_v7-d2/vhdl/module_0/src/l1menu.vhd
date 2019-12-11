@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 48842132-7411-4907-9715-652bc27e5f0b
+-- 05655a44-4164-41b0-b24b-ea7028812c2d
 
 -- Scale set:
 -- scales_2018_08_07
@@ -76,86 +76,86 @@ architecture rtl of l1menu is
     signal cc_quad : obj_bx_muon_cc_quad_array;
 -- Comparators outputs
     -- Object cuts
-    signal comp_pt_eg_bx_0_0x000a : std_logic_vector(0 to N_EG_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0096 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x00c6_0x0039 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0082 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x00c8 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x003c : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x00dc : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0046 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x00be : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0028 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0078 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x008d_0x00ba : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x0045_0x0072 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x00f0 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_count_asymet_bx_0_0x0028 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
-    signal comp_count_asymet_bx_0_0x0032 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
-    signal comp_pt_etm_bx_0_0x00f0 : std_logic_vector(0 to N_ETM_OBJECTS-1);
-    signal comp_pt_etmhf_bx_0_0x00f0 : std_logic_vector(0 to N_ETMHF_OBJECTS-1);
-    signal comp_pt_htt_bx_0_0x0230 : std_logic_vector(0 to N_HTT_OBJECTS-1);
-    signal comp_count_mbt0hfm_bx_0_0x0001 : std_logic_vector(0 to N_MBT0HFM_OBJECTS-1);
-    signal comp_count_mbt0hfp_bx_0_0x0001 : std_logic_vector(0 to N_MBT0HFP_OBJECTS-1);
-    signal comp_pt_mu_bx_0_0x0001 : std_logic_vector(0 to N_MU_OBJECTS-1);
-    signal comp_qual_mu_bx_0_0xff00 : std_logic_vector(0 to N_MU_OBJECTS-1);
-    signal comp_qual_mu_bx_0_0xfff0 : std_logic_vector(0 to N_MU_OBJECTS-1);
-    signal comp_pt_eg_bx_0_0x0018 : std_logic_vector(0 to N_EG_OBJECTS-1);
-    signal comp_pt_jet_bx_0_0x0038 : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_eta_jet_bx_0_0x00c2_0x003d : std_logic_vector(0 to N_JET_OBJECTS-1);
-    signal comp_pt_eg_bx_0_0x001e : std_logic_vector(0 to N_EG_OBJECTS-1);
-    signal comp_pt_tau_bx_0_0x005a : std_logic_vector(0 to N_TAU_OBJECTS-1);
-    signal comp_iso_tau_bx_0_0x000e : std_logic_vector(0 to N_TAU_OBJECTS-1);
-    signal comp_pt_mu_bx_0_0x0007 : std_logic_vector(0 to N_MU_OBJECTS-1);
-    signal comp_qual_mu_bx_0_0xf000 : std_logic_vector(0 to N_MU_OBJECTS-1);
+    signal comp_pt_eg_bx_0_0x000a : eg_obj_t;
+    signal comp_pt_jet_bx_0_0x0096 : jet_obj_t;
+    signal comp_eta_jet_bx_0_0x00c6_0x0039 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x0082 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x00c8 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x003c : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x00dc : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x0046 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x00be : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x0028 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x0078 : jet_obj_t;
+    signal comp_eta_jet_bx_0_0x008d_0x00ba : jet_obj_t;
+    signal comp_eta_jet_bx_0_0x0045_0x0072 : jet_obj_t;
+    signal comp_pt_jet_bx_0_0x00f0 : jet_obj_t;
+    signal comp_count_asymet_bx_0_0x0028 : asymet_obj_t;
+    signal comp_count_asymet_bx_0_0x0032 : asymet_obj_t;
+    signal comp_pt_etm_bx_0_0x00f0 : etm_obj_t;
+    signal comp_pt_etmhf_bx_0_0x00f0 : etmhf_obj_t;
+    signal comp_pt_htt_bx_0_0x0230 : htt_obj_t;
+    signal comp_count_mbt0hfm_bx_0_0x0001 : mbt0hfm_obj_t;
+    signal comp_count_mbt0hfp_bx_0_0x0001 : mbt0hfp_obj_t;
+    signal comp_pt_mu_bx_0_0x0001 : mu_obj_t;
+    signal comp_qual_mu_bx_0_0xff00 : mu_obj_t;
+    signal comp_qual_mu_bx_0_0xfff0 : mu_obj_t;
+    signal comp_pt_eg_bx_0_0x0018 : eg_obj_t;
+    signal comp_pt_jet_bx_0_0x0038 : jet_obj_t;
+    signal comp_eta_jet_bx_0_0x00c2_0x003d : jet_obj_t;
+    signal comp_pt_eg_bx_0_0x001e : eg_obj_t;
+    signal comp_pt_tau_bx_0_0x005a : tau_obj_t;
+    signal comp_iso_tau_bx_0_0x000e : tau_obj_t;
+    signal comp_pt_mu_bx_0_0x0007 : mu_obj_t;
+    signal comp_qual_mu_bx_0_0xf000 : mu_obj_t;
     -- Correlation cuts
-    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : corr_cuts_array(0 to N_EG_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_MU_OBJECTS-1);
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_JET_OBJECTS-1);
-    signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028 : corr_cuts_array(0 to N_JET_OBJECTS-1, 0 to N_TAU_OBJECTS-1);
+    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : eg_jet_t;
+    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : jet_jet_t;
+    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : jet_mu_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140 : jet_jet_t;
+    signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028 : jet_tau_t;
     -- Muon charge correlation
-    signal comp_cc_quad_bx_0_bx_0_cc_os : muon_cc_quad_std_logic_array;
+    signal comp_cc_quad_bx_0_bx_0_cc_os : muon_cc_quad_t;
 -- Conditions inputs
     -- Object cuts "and"
-   signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0096_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0082_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_00c8_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_00dc_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_00be_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0096_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0082_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0028_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0028_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0028_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0078_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0078_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_00f0_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_jet_bx_0_pt_00f0_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_asymet_bx_0_count_0028 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
-   signal comb_asymet_bx_0_count_0032 : std_logic_vector(0 to N_ASYMET_OBJECTS-1);
-   signal comb_etm_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_ETM_OBJECTS-1);
-   signal comb_etmhf_bx_0_pt_00f0_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_ETMHF_OBJECTS-1);
-   signal comb_htt_bx_0_pt_0230_phi_0000_0000_0000_0000 : std_logic_vector(0 to N_HTT_OBJECTS-1);
-   signal comb_mbt0hfm_bx_0_count_0001 : std_logic_vector(0 to N_MBT0HFM_OBJECTS-1);
-   signal comb_mbt0hfp_bx_0_count_0001 : std_logic_vector(0 to N_MBT0HFP_OBJECTS-1);
-   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ff00_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
-   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
-   signal comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_EG_OBJECTS-1);
-   signal comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e : std_logic_vector(0 to N_TAU_OBJECTS-1);
-   signal comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : std_logic_vector(0 to N_JET_OBJECTS-1);
-   signal comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign : std_logic_vector(0 to N_MU_OBJECTS-1);
+   signal comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : eg_obj_t;
+   signal comb_jet_bx_0_pt_0096_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0082_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_00c8_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_00dc_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_00be_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0096_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0082_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0028_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0028_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0028_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0078_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_0078_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_00f0_eta_008d_00ba_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_jet_bx_0_pt_00f0_eta_0045_0072_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_asymet_bx_0_count_0028 : asymet_obj_t;
+   signal comb_asymet_bx_0_count_0032 : asymet_obj_t;
+   signal comb_etm_bx_0_pt_00f0_phi_0000_0000_0000_0000 : etm_obj_t;
+   signal comb_etmhf_bx_0_pt_00f0_phi_0000_0000_0000_0000 : etmhf_obj_t;
+   signal comb_htt_bx_0_pt_0230_phi_0000_0000_0000_0000 : htt_obj_t;
+   signal comb_mbt0hfm_bx_0_count_0001 : mbt0hfm_obj_t;
+   signal comb_mbt0hfp_bx_0_count_0001 : mbt0hfp_obj_t;
+   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ff00_charge_ign : mu_obj_t;
+   signal comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign : mu_obj_t;
+   signal comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : eg_obj_t;
+   signal comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : eg_obj_t;
+   signal comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e : tau_obj_t;
+   signal comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : jet_obj_t;
+   signal comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign : mu_obj_t;
 -- Signal definition for conditions names
     signal single_asymet_i33 : std_logic;
     signal single_asymet_i34 : std_logic;
