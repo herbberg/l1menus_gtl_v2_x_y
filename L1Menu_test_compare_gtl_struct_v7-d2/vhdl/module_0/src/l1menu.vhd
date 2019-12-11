@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- bb1e0917-fe39-41dd-bafd-0717568c61ac
+-- 67037e06-7c83-49be-bcc0-fa53dc8f56cd
 
 -- Scale set:
 -- scales_2018_08_07
@@ -445,7 +445,7 @@ begin
     comp_pt_eg_bx_0_0x000a_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"000a", X"0000", X"0000", "ign"
         )
         port map(
@@ -454,7 +454,7 @@ begin
     comp_pt_jet_bx_0_0x0096_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0096", X"0000", X"0000", "ign"
         )
         port map(
@@ -471,7 +471,7 @@ begin
     comp_pt_jet_bx_0_0x0082_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0082", X"0000", X"0000", "ign"
         )
         port map(
@@ -480,7 +480,7 @@ begin
     comp_pt_jet_bx_0_0x00c8_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00c8", X"0000", X"0000", "ign"
         )
         port map(
@@ -489,7 +489,7 @@ begin
     comp_pt_jet_bx_0_0x003c_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"003c", X"0000", X"0000", "ign"
         )
         port map(
@@ -498,7 +498,7 @@ begin
     comp_pt_jet_bx_0_0x00dc_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00dc", X"0000", X"0000", "ign"
         )
         port map(
@@ -507,7 +507,7 @@ begin
     comp_pt_jet_bx_0_0x0046_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0046", X"0000", X"0000", "ign"
         )
         port map(
@@ -516,7 +516,7 @@ begin
     comp_pt_jet_bx_0_0x00be_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00be", X"0000", X"0000", "ign"
         )
         port map(
@@ -525,7 +525,7 @@ begin
     comp_pt_jet_bx_0_0x0028_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0028", X"0000", X"0000", "ign"
         )
         port map(
@@ -534,7 +534,7 @@ begin
     comp_pt_jet_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0078", X"0000", X"0000", "ign"
         )
         port map(
@@ -559,7 +559,7 @@ begin
     comp_pt_jet_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00f0", X"0000", X"0000", "ign"
         )
         port map(
@@ -584,7 +584,7 @@ begin
     comp_pt_etm_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_ETM_OBJECTS, ETM_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00f0", X"0000", X"0000", "ign"
         )
         port map(
@@ -593,7 +593,7 @@ begin
     comp_pt_etmhf_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"00f0", X"0000", X"0000", "ign"
         )
         port map(
@@ -602,7 +602,7 @@ begin
     comp_pt_htt_bx_0_0x0230_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0230", X"0000", X"0000", "ign"
         )
         port map(
@@ -627,7 +627,7 @@ begin
     comp_pt_mu_bx_0_0x0001_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0001", X"0000", X"0000", "ign"
         )
         port map(
@@ -652,7 +652,7 @@ begin
     comp_pt_eg_bx_0_0x0018_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0018", X"0000", X"0000", "ign"
         )
         port map(
@@ -661,7 +661,7 @@ begin
     comp_pt_jet_bx_0_0x0038_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0038", X"0000", X"0000", "ign"
         )
         port map(
@@ -678,7 +678,7 @@ begin
     comp_pt_eg_bx_0_0x001e_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"001e", X"0000", X"0000", "ign"
         )
         port map(
@@ -687,7 +687,7 @@ begin
     comp_pt_tau_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"005a", X"0000", X"0000", "ign"
         )
         port map(
@@ -704,7 +704,7 @@ begin
     comp_pt_mu_bx_0_0x0007_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
-            EQ,  
+            GE,  
             X"0007", X"0000", X"0000", "ign"
         )
         port map(
