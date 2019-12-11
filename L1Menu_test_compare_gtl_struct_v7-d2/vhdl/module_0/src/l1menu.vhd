@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- e65d6079-e068-4af5-a6af-21fc970833ae
+-- 6aadc93d-0b72-4438-91ad-8eb7ca0fe3f4
 
 -- Scale set:
 -- scales_2018_08_07
@@ -109,15 +109,15 @@ architecture rtl of l1menu is
     signal comp_pt_mu_bx_0_0x0007 : mu_obj_t;
     signal comp_qual_mu_bx_0_0xf000 : mu_obj_t;
     -- Correlation cuts
-    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240 : eg_jet_t;
-    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140 : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140 : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140 : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140 : jet_jet_t;
-    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8 : jet_mu_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140 : jet_jet_t;
-    signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028 : jet_tau_t;
+    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084ca240 : eg_jet_t;
+    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000010c388d00_0x41a6642c78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41a6642c78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x00000ba43b740_0x41a6642c78140 : jet_jet_t;
+    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8 : jet_mu_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140 : jet_jet_t;
+    signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028 : jet_tau_t;
     -- Muon charge correlation
     signal comp_cc_quad_bx_0_bx_0_cc_os : mu_cc_quad_t;
 -- Conditions inputs
@@ -1294,7 +1294,7 @@ begin
             comb_eg_bx_0_pt_0018_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240,
+            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084ca240,
             cond_o => calo_calo_correlation_i7
         );
 
@@ -1310,7 +1310,7 @@ begin
             comb_eg_bx_0_pt_001e_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0038_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084CA240,
+            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084ca240,
             cond_o => calo_calo_correlation_i8
         );
 
@@ -1326,8 +1326,8 @@ begin
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000010C388D00_0x41A6642C78140,
+            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc, 
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000010c388d00_0x41a6642c78140,
             cond_o => invariant_mass_i10
         );
 
@@ -1343,8 +1343,8 @@ begin
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00001448C1B40_0x41A6642C78140,
+            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc, 
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41a6642c78140,
             cond_o => invariant_mass_i11
         );
 
@@ -1360,7 +1360,7 @@ begin
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
             cond_o => invariant_mass_i28
         );
 
@@ -1376,7 +1376,7 @@ begin
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ED00_0x41A6642C78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
             cond_o => invariant_mass_i30
         );
 
@@ -1392,8 +1392,8 @@ begin
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005DC, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00000BA43B740_0x41A6642C78140,
+            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc, 
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00000ba43b740_0x41a6642c78140,
             cond_o => invariant_mass_i9
         );
 
@@ -1409,7 +1409,7 @@ begin
             comb_jet_bx_0_pt_0046_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
-            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8,
+            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8,
             cond_o => calo_muon_correlation_i20
         );
 
@@ -1425,7 +1425,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
-            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274E8,
+            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8,
             cond_o => calo_muon_correlation_i21
         );
 
@@ -1444,8 +1444,8 @@ begin
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_3 => 
             comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000025B7F3D40_0x41A6642C78140, 
-            dr_ovrm => comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000A028,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140, 
+            dr_ovrm => comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028,
             cond_o => invariant_mass_ov_rm_i19
         );    
     -- Centrality assignment  
@@ -1458,62 +1458,91 @@ begin
     single_ext_i26 <= data.ext_cond(bx(0))(10);
 -- Instantiations of algorithms
 
+-- 0 L1_QuadMuOpen_OS : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}[CHGCOR_OS]
     l1_quad_mu_open_os <= quad_mu_i1;
     algo(17) <= l1_quad_mu_open_os;
+-- 1 L1_DoubleMu0 : comb{MU0[MU-QLTY_DBLE],MU0[MU-QLTY_DBLE]}
     l1_double_mu0 <= double_mu_i0;
     algo(15) <= l1_double_mu0;
+-- 2 L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4 : dist{EG12,JET28[JET-ETA_2p7]}[DR_MIN_0p4]
     l1_single_eg12_single_jet28_mid_eta2p7_min_dr0p4 <= calo_calo_correlation_i7;
     algo(24) <= l1_single_eg12_single_jet28_mid_eta2p7_min_dr0p4;
+-- 3 L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4 : dist{EG15,JET28[JET-ETA_2p7]}[DR_MIN_0p4]
     l1_single_eg15_single_jet28_mid_eta2p7_min_dr0p4 <= calo_calo_correlation_i8;
     algo(25) <= l1_single_eg15_single_jet28_mid_eta2p7_min_dr0p4;
+-- 4 L1_DoubleEG5 : comb{EG5,EG5}
     l1_double_eg5 <= double_eg_i2;
     algo(10) <= l1_double_eg5;
+-- 5 L1_SingleJet60_FWD3p0 : JET60[JET-ETA_FWD_3p00_NEG] OR JET60[JET-ETA_FWD_3p00_POS]
     l1_single_jet60_fwd3p0 <= single_jet_i3 or single_jet_i4;
     algo(12) <= l1_single_jet60_fwd3p0;
+-- 6 L1_SingleJet120_FWD3p0 : JET120[JET-ETA_FWD_3p00_NEG] OR JET120[JET-ETA_FWD_3p00_POS]
     l1_single_jet120_fwd3p0 <= single_jet_i5 or single_jet_i6;
     algo(11) <= l1_single_jet120_fwd3p0;
+-- 7 L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_250,DETA_MAX_1p5]
     l1_double_jet30er2p5_mass_min250_d_eta_max1p5 <= invariant_mass_i9;
     algo(21) <= l1_double_jet30er2p5_mass_min250_d_eta_max1p5;
+-- 8 L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_300,DETA_MAX_1p5]
     l1_double_jet30er2p5_mass_min300_d_eta_max1p5 <= invariant_mass_i10;
     algo(22) <= l1_double_jet30er2p5_mass_min300_d_eta_max1p5;
+-- 9 L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_330,DETA_MAX_1p5]
     l1_double_jet30er2p5_mass_min330_d_eta_max1p5 <= invariant_mass_i11;
     algo(23) <= l1_double_jet30er2p5_mass_min330_d_eta_max1p5;
+-- 10 L1_TripleMu0_OQ : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}
     l1_triple_mu0_oq <= triple_mu_i18;
     algo(16) <= l1_triple_mu0_oq;
+-- 11 L1_Mu3_Jet35er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET35[JET-ETA_2p52]}[DR_MAX_0p4]
     l1_mu3_jet35er2p5_d_r_max0p4 <= calo_muon_correlation_i20;
     algo(26) <= l1_mu3_jet35er2p5_d_r_max0p4;
+-- 12 L1_Mu3_Jet60er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET60[JET-ETA_2p52]}[DR_MAX_0p4]
     l1_mu3_jet60er2p5_d_r_max0p4 <= calo_muon_correlation_i21;
     algo(27) <= l1_mu3_jet60er2p5_d_r_max0p4;
+-- 13 L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp : mass_inv_orm{JET35,JET35,TAU45[TAU-ISO_0xE]}[MASS_MIN_450,ORMDR_0p2]
     l1_double_jet35_mass_min450_iso_tau45_rm_ovlp <= invariant_mass_ov_rm_i19;
     algo(28) <= l1_double_jet35_mass_min450_iso_tau45_rm_ovlp;
+-- 14 L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5 : comb{JET95,JET75,JET65} AND comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]}
     l1_triple_jet_95_75_65_double_jet_75_65_er2p5 <= triple_jet_i17 and double_jet_i13;
     algo(13) <= l1_triple_jet_95_75_65_double_jet_75_65_er2p5;
+-- 15 L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 : comb{JET95,JET75,JET65,JET20} AND comb{JET75[JET-ETA_2p52],JET65[JET-ETA_2p52]} AND (JET20[JET-ETA_FWD_3p00_NEG] OR JET20[JET-ETA_FWD_3p00_POS])
     l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0 <= quad_jet_i12 and double_jet_i13 and ( single_jet_i14 or single_jet_i15 );
     algo(14) <= l1_quad_jet_95_75_65_20_double_jet_75_65_er2p5_jet20_fwd3p0;
+-- 16 L1_QuadJet60er2p5 : comb{JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52],JET60[JET-ETA_2p52]}
     l1_quad_jet60er2p5 <= quad_jet_i16;
     algo(18) <= l1_quad_jet60er2p5;
+-- 17 L1_HTT280er : HTT280
     l1_htt280er <= single_htt_i22;
     algo(8) <= l1_htt280er;
+-- 18 L1_ETM120 : ETM120
     l1_etm120 <= single_etm_i23;
     algo(4) <= l1_etm120;
+-- 19 L1_ETMHF120 : ETMHF120
     l1_etmhf120 <= single_etmhf_i24;
     algo(5) <= l1_etmhf120;
+-- 20 L1_UnpairedBunchBptxPlus : EXT_BPTX_B1NotB2_VME
     l1_unpaired_bunch_bptx_plus <= single_ext_i25;
     algo(3) <= l1_unpaired_bunch_bptx_plus;
+-- 21 L1_UnpairedBunchBptxMinus : EXT_BPTX_B2NotB1_VME
     l1_unpaired_bunch_bptx_minus <= single_ext_i26;
     algo(2) <= l1_unpaired_bunch_bptx_minus;
+-- 22 L1_DoubleJet_100_30_DoubleJet30_Mass_Min620 : comb{JET100,JET30} AND mass_inv{JET30,JET30}[MASS_MIN_620]
     l1_double_jet_100_30_double_jet30_mass_min620 <= double_jet_i27 and invariant_mass_i28;
     algo(19) <= l1_double_jet_100_30_double_jet30_mass_min620;
+-- 23 L1_DoubleJet_110_35_DoubleJet35_Mass_Min620 : comb{JET110,JET35} AND mass_inv{JET35,JET35}[MASS_MIN_620]
     l1_double_jet_110_35_double_jet35_mass_min620 <= double_jet_i29 and invariant_mass_i30;
     algo(20) <= l1_double_jet_110_35_double_jet35_mass_min620;
+-- 24 L1_MinimumBiasHF0_AND_BptxAND : MBT0HFP1 AND MBT0HFM1
     l1_minimum_bias_hf0_and_bptx_and <= single_mbt0_hfp_i31 and single_mbt0_hfm_i32;
     algo(9) <= l1_minimum_bias_hf0_and_bptx_and;
+-- 25 L1_ETTAsym40 : ASYMET40
     l1_ett_asym40 <= single_asymet_i33;
     algo(6) <= l1_ett_asym40;
+-- 26 L1_ETTAsym50 : ASYMET50
     l1_ett_asym50 <= single_asymet_i34;
     algo(7) <= l1_ett_asym50;
+-- 27 L1_Centrality_50_100 : (CENT0 OR CENT1 OR CENT2)
     l1_centrality_50_100 <= ( single_cent0_i35 or single_cent1_i36 or single_cent2_i37 );
     algo(0) <= l1_centrality_50_100;
+-- 28 L1_Centrality_Saturation : CENT7
     l1_centrality_saturation <= single_cent7_i38;
     algo(1) <= l1_centrality_saturation;
 
