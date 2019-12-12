@@ -1,0 +1,1654 @@
+2019-12-12 13:10:50 INFO : svn revison r881497995
+2019-12-12 13:10:50 INFO : distributing menu...
+2019-12-12 13:10:50 INFO : loading resource information from JSON: /home/bergauer/github/herbberg/vhdl_prod_gtl_v2.x.y/tm-vhdlproducer/config/resource_default.json
+2019-12-12 13:10:50 INFO : :: listing resources...
+2019-12-12 13:10:50 INFO : thresholds:
+2019-12-12 13:10:50 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2019-12-12 13:10:50 INFO : instances:
+2019-12-12 13:10:50 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-12-12 13:10:50 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.12%, processors=0.33%: 
+2019-12-12 13:10:50 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2019-12-12 13:10:50 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2019-12-12 13:10:50 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2019-12-12 13:10:50 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-12-12 13:10:50 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2019-12-12 13:10:50 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2019-12-12 13:10:50 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2019-12-12 13:10:50 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.02%: 
+2019-12-12 13:10:50 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2019-12-12 13:10:50 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:50 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : | Algorithms sorted by payload (descending)                                   |
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-12-12 13:10:51 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2019-12-12 13:10:51 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-12-12 13:10:51 INFO : |   458 |    0.000% |  0.000% | L1_AlwaysTrue                                 |
+2019-12-12 13:10:51 INFO : |   486 |    0.000% |  0.000% | L1_BPTX_AND_Ref1_VME                          |
+2019-12-12 13:10:51 INFO : |   487 |    0.000% |  0.000% | L1_BPTX_AND_Ref3_VME                          |
+2019-12-12 13:10:51 INFO : |   488 |    0.000% |  0.000% | L1_BPTX_AND_Ref4_VME                          |
+2019-12-12 13:10:51 INFO : |   491 |    0.000% |  0.000% | L1_BPTX_BeamGas_B1_VME                        |
+2019-12-12 13:10:51 INFO : |   492 |    0.000% |  0.000% | L1_BPTX_BeamGas_B2_VME                        |
+2019-12-12 13:10:51 INFO : |   489 |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref1_VME                      |
+2019-12-12 13:10:51 INFO : |   490 |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref2_VME                      |
+2019-12-12 13:10:51 INFO : |   482 |    0.000% |  0.000% | L1_BPTX_NotOR_VME                             |
+2019-12-12 13:10:51 INFO : |   483 |    0.000% |  0.000% | L1_BPTX_OR_Ref3_VME                           |
+2019-12-12 13:10:51 INFO : |   484 |    0.000% |  0.000% | L1_BPTX_OR_Ref4_VME                           |
+2019-12-12 13:10:51 INFO : |   485 |    0.000% |  0.000% | L1_BPTX_RefAND_VME                            |
+2019-12-12 13:10:51 INFO : |   467 |    0.000% |  0.000% | L1_BptxMinus                                  |
+2019-12-12 13:10:51 INFO : |   464 |    0.000% |  0.000% | L1_BptxOR                                     |
+2019-12-12 13:10:51 INFO : |   466 |    0.000% |  0.000% | L1_BptxPlus                                   |
+2019-12-12 13:10:51 INFO : |   465 |    0.000% |  0.000% | L1_BptxXOR                                    |
+2019-12-12 13:10:51 INFO : |   477 |    0.000% |  0.000% | L1_FirstBunchAfterTrain                       |
+2019-12-12 13:10:51 INFO : |   472 |    0.000% |  0.000% | L1_FirstBunchBeforeTrain                      |
+2019-12-12 13:10:51 INFO : |   473 |    0.000% |  0.000% | L1_FirstBunchInTrain                          |
+2019-12-12 13:10:51 INFO : |   480 |    0.000% |  0.000% | L1_FirstCollisionInOrbit                      |
+2019-12-12 13:10:51 INFO : |   479 |    0.000% |  0.000% | L1_FirstCollisionInTrain                      |
+2019-12-12 13:10:51 INFO : |   500 |    0.000% |  0.000% | L1_HCAL_LaserMon_Trig                         |
+2019-12-12 13:10:51 INFO : |   501 |    0.000% |  0.000% | L1_HCAL_LaserMon_Veto                         |
+2019-12-12 13:10:51 INFO : |   471 |    0.000% |  0.000% | L1_IsolatedBunch                              |
+2019-12-12 13:10:51 INFO : |   476 |    0.000% |  0.000% | L1_LastBunchInTrain                           |
+2019-12-12 13:10:51 INFO : |   478 |    0.000% |  0.000% | L1_LastCollisionInTrain                       |
+2019-12-12 13:10:51 INFO : |   463 |    0.000% |  0.000% | L1_NotBptxOR                                  |
+2019-12-12 13:10:51 INFO : |   474 |    0.000% |  0.000% | L1_SecondBunchInTrain                         |
+2019-12-12 13:10:51 INFO : |   475 |    0.000% |  0.000% | L1_SecondLastBunchInTrain                     |
+2019-12-12 13:10:51 INFO : |   503 |    0.000% |  0.000% | L1_TOTEM_1                                    |
+2019-12-12 13:10:51 INFO : |   504 |    0.000% |  0.000% | L1_TOTEM_2                                    |
+2019-12-12 13:10:51 INFO : |   505 |    0.000% |  0.000% | L1_TOTEM_3                                    |
+2019-12-12 13:10:51 INFO : |   506 |    0.000% |  0.000% | L1_TOTEM_4                                    |
+2019-12-12 13:10:51 INFO : |   469 |    0.000% |  0.000% | L1_UnpairedBunchBptxMinus                     |
+2019-12-12 13:10:51 INFO : |   468 |    0.000% |  0.000% | L1_UnpairedBunchBptxPlus                      |
+2019-12-12 13:10:51 INFO : |   459 |    0.000% |  0.000% | L1_ZeroBias                                   |
+2019-12-12 13:10:51 INFO : |   460 |    0.000% |  0.000% | L1_ZeroBias_copy                              |
+2019-12-12 13:10:51 INFO : |   416 |    0.002% |  0.000% | L1_ETM120                                     |
+2019-12-12 13:10:51 INFO : |   417 |    0.002% |  0.000% | L1_ETM150                                     |
+2019-12-12 13:10:51 INFO : |   421 |    0.002% |  0.000% | L1_ETMHF100                                   |
+2019-12-12 13:10:51 INFO : |   422 |    0.002% |  0.000% | L1_ETMHF110                                   |
+2019-12-12 13:10:51 INFO : |   423 |    0.002% |  0.000% | L1_ETMHF120                                   |
+2019-12-12 13:10:51 INFO : |   443 |    0.002% |  0.000% | L1_ETMHF120_NotSecondBunchInTrain             |
+2019-12-12 13:10:51 INFO : |   424 |    0.002% |  0.000% | L1_ETMHF130                                   |
+2019-12-12 13:10:51 INFO : |   425 |    0.002% |  0.000% | L1_ETMHF140                                   |
+2019-12-12 13:10:51 INFO : |   426 |    0.002% |  0.000% | L1_ETMHF150                                   |
+2019-12-12 13:10:51 INFO : |   410 |    0.002% |  0.000% | L1_ETT1200                                    |
+2019-12-12 13:10:51 INFO : |   411 |    0.002% |  0.000% | L1_ETT1600                                    |
+2019-12-12 13:10:51 INFO : |   412 |    0.002% |  0.000% | L1_ETT2000                                    |
+2019-12-12 13:10:51 INFO : |   398 |    0.002% |  0.000% | L1_HTT120er                                   |
+2019-12-12 13:10:51 INFO : |   399 |    0.002% |  0.000% | L1_HTT160er                                   |
+2019-12-12 13:10:51 INFO : |   400 |    0.002% |  0.000% | L1_HTT200er                                   |
+2019-12-12 13:10:51 INFO : |   401 |    0.002% |  0.000% | L1_HTT255er                                   |
+2019-12-12 13:10:51 INFO : |   402 |    0.002% |  0.000% | L1_HTT280er                                   |
+2019-12-12 13:10:51 INFO : |   403 |    0.002% |  0.000% | L1_HTT320er                                   |
+2019-12-12 13:10:51 INFO : |   404 |    0.002% |  0.000% | L1_HTT360er                                   |
+2019-12-12 13:10:51 INFO : |   405 |    0.002% |  0.000% | L1_HTT400er                                   |
+2019-12-12 13:10:51 INFO : |   406 |    0.002% |  0.000% | L1_HTT450er                                   |
+2019-12-12 13:10:51 INFO : |   461 |    0.002% |  0.000% | L1_MinimumBiasHF0_AND_BptxAND                 |
+2019-12-12 13:10:51 INFO : |   429 |    0.004% |  0.000% | L1_ETMHF100_HTT60er                           |
+2019-12-12 13:10:51 INFO : |   430 |    0.004% |  0.000% | L1_ETMHF110_HTT60er                           |
+2019-12-12 13:10:51 INFO : |   444 |    0.004% |  0.000% | L1_ETMHF110_HTT60er_NotSecondBunchInTrain     |
+2019-12-12 13:10:51 INFO : |   431 |    0.004% |  0.000% | L1_ETMHF120_HTT60er                           |
+2019-12-12 13:10:51 INFO : |   432 |    0.004% |  0.000% | L1_ETMHF130_HTT60er                           |
+2019-12-12 13:10:51 INFO : |   428 |    0.004% |  0.000% | L1_ETMHF90_HTT60er                            |
+2019-12-12 13:10:51 INFO : |   160 |    0.024% |  0.000% | L1_SingleEG10er2p5                            |
+2019-12-12 13:10:51 INFO : |   161 |    0.024% |  0.000% | L1_SingleEG15er2p5                            |
+2019-12-12 13:10:51 INFO : |   162 |    0.024% |  0.000% | L1_SingleEG26er2p5                            |
+2019-12-12 13:10:51 INFO : |   166 |    0.024% |  0.000% | L1_SingleEG28er1p5                            |
+2019-12-12 13:10:51 INFO : |   165 |    0.024% |  0.000% | L1_SingleEG28er2p1                            |
+2019-12-12 13:10:51 INFO : |   164 |    0.024% |  0.000% | L1_SingleEG28er2p5                            |
+2019-12-12 13:10:51 INFO : |   167 |    0.024% |  0.000% | L1_SingleEG34er2p5                            |
+2019-12-12 13:10:51 INFO : |   168 |    0.024% |  0.000% | L1_SingleEG36er2p5                            |
+2019-12-12 13:10:51 INFO : |   169 |    0.024% |  0.000% | L1_SingleEG38er2p5                            |
+2019-12-12 13:10:51 INFO : |   170 |    0.024% |  0.000% | L1_SingleEG40er2p5                            |
+2019-12-12 13:10:51 INFO : |   171 |    0.024% |  0.000% | L1_SingleEG42er2p5                            |
+2019-12-12 13:10:51 INFO : |   172 |    0.024% |  0.000% | L1_SingleEG45er2p5                            |
+2019-12-12 13:10:51 INFO : |   173 |    0.024% |  0.000% | L1_SingleEG50                                 |
+2019-12-12 13:10:51 INFO : |   174 |    0.024% |  0.000% | L1_SingleEG60                                 |
+2019-12-12 13:10:51 INFO : |   159 |    0.024% |  0.000% | L1_SingleEG8er2p5                             |
+2019-12-12 13:10:51 INFO : |   184 |    0.024% |  0.000% | L1_SingleIsoEG24er1p5                         |
+2019-12-12 13:10:51 INFO : |   183 |    0.024% |  0.000% | L1_SingleIsoEG24er2p1                         |
+2019-12-12 13:10:51 INFO : |   187 |    0.024% |  0.000% | L1_SingleIsoEG26er1p5                         |
+2019-12-12 13:10:51 INFO : |   186 |    0.024% |  0.000% | L1_SingleIsoEG26er2p1                         |
+2019-12-12 13:10:51 INFO : |   185 |    0.024% |  0.000% | L1_SingleIsoEG26er2p5                         |
+2019-12-12 13:10:51 INFO : |   191 |    0.024% |  0.000% | L1_SingleIsoEG28er1p5                         |
+2019-12-12 13:10:51 INFO : |   190 |    0.024% |  0.000% | L1_SingleIsoEG28er2p1                         |
+2019-12-12 13:10:51 INFO : |   189 |    0.024% |  0.000% | L1_SingleIsoEG28er2p5                         |
+2019-12-12 13:10:51 INFO : |   193 |    0.024% |  0.000% | L1_SingleIsoEG30er2p1                         |
+2019-12-12 13:10:51 INFO : |   192 |    0.024% |  0.000% | L1_SingleIsoEG30er2p5                         |
+2019-12-12 13:10:51 INFO : |   195 |    0.024% |  0.000% | L1_SingleIsoEG32er2p1                         |
+2019-12-12 13:10:51 INFO : |   194 |    0.024% |  0.000% | L1_SingleIsoEG32er2p5                         |
+2019-12-12 13:10:51 INFO : |   196 |    0.024% |  0.000% | L1_SingleIsoEG34er2p5                         |
+2019-12-12 13:10:51 INFO : |   330 |    0.024% |  0.000% | L1_SingleJet10erHE                            |
+2019-12-12 13:10:51 INFO : |   312 |    0.024% |  0.000% | L1_SingleJet120                               |
+2019-12-12 13:10:51 INFO : |   319 |    0.024% |  0.000% | L1_SingleJet120er2p5                          |
+2019-12-12 13:10:51 INFO : |   331 |    0.024% |  0.000% | L1_SingleJet12erHE                            |
+2019-12-12 13:10:51 INFO : |   320 |    0.024% |  0.000% | L1_SingleJet140er2p5                          |
+2019-12-12 13:10:51 INFO : |   321 |    0.024% |  0.000% | L1_SingleJet160er2p5                          |
+2019-12-12 13:10:51 INFO : |   313 |    0.024% |  0.000% | L1_SingleJet180                               |
+2019-12-12 13:10:51 INFO : |   322 |    0.024% |  0.000% | L1_SingleJet180er2p5                          |
+2019-12-12 13:10:51 INFO : |   314 |    0.024% |  0.000% | L1_SingleJet200                               |
+2019-12-12 13:10:51 INFO : |   450 |    0.024% |  0.000% | L1_SingleJet20er2p5_NotBptxOR                 |
+2019-12-12 13:10:51 INFO : |   451 |    0.024% |  0.000% | L1_SingleJet20er2p5_NotBptxOR_3BX             |
+2019-12-12 13:10:51 INFO : |   309 |    0.024% |  0.000% | L1_SingleJet35                                |
+2019-12-12 13:10:51 INFO : |   316 |    0.024% |  0.000% | L1_SingleJet35er2p5                           |
+2019-12-12 13:10:51 INFO : |   452 |    0.024% |  0.000% | L1_SingleJet43er2p5_NotBptxOR_3BX             |
+2019-12-12 13:10:51 INFO : |   453 |    0.024% |  0.000% | L1_SingleJet46er2p5_NotBptxOR_3BX             |
+2019-12-12 13:10:51 INFO : |   310 |    0.024% |  0.000% | L1_SingleJet60                                |
+2019-12-12 13:10:51 INFO : |   317 |    0.024% |  0.000% | L1_SingleJet60er2p5                           |
+2019-12-12 13:10:51 INFO : |   329 |    0.024% |  0.000% | L1_SingleJet8erHE                             |
+2019-12-12 13:10:51 INFO : |   311 |    0.024% |  0.000% | L1_SingleJet90                                |
+2019-12-12 13:10:51 INFO : |   318 |    0.024% |  0.000% | L1_SingleJet90er2p5                           |
+2019-12-12 13:10:51 INFO : |   176 |    0.024% |  0.000% | L1_SingleLooseIsoEG26er1p5                    |
+2019-12-12 13:10:51 INFO : |   175 |    0.024% |  0.000% | L1_SingleLooseIsoEG26er2p5                    |
+2019-12-12 13:10:51 INFO : |   180 |    0.024% |  0.000% | L1_SingleLooseIsoEG28er1p5                    |
+2019-12-12 13:10:51 INFO : |   179 |    0.024% |  0.000% | L1_SingleLooseIsoEG28er2p1                    |
+2019-12-12 13:10:51 INFO : |   178 |    0.024% |  0.000% | L1_SingleLooseIsoEG28er2p5                    |
+2019-12-12 13:10:51 INFO : |   182 |    0.024% |  0.000% | L1_SingleLooseIsoEG30er1p5                    |
+2019-12-12 13:10:51 INFO : |   181 |    0.024% |  0.000% | L1_SingleLooseIsoEG30er2p5                    |
+2019-12-12 13:10:51 INFO : |   264 |    0.024% |  0.000% | L1_SingleTau120er2p1                          |
+2019-12-12 13:10:51 INFO : |   265 |    0.024% |  0.000% | L1_SingleTau130er2p1                          |
+2019-12-12 13:10:51 INFO : |   293 |    0.026% |  0.000% | L1_IsoTau40er2p1_ETMHF100                     |
+2019-12-12 13:10:51 INFO : |   294 |    0.026% |  0.000% | L1_IsoTau40er2p1_ETMHF110                     |
+2019-12-12 13:10:51 INFO : |   291 |    0.026% |  0.000% | L1_IsoTau40er2p1_ETMHF80                      |
+2019-12-12 13:10:51 INFO : |   292 |    0.026% |  0.000% | L1_IsoTau40er2p1_ETMHF90                      |
+2019-12-12 13:10:51 INFO : |   238 |    0.026% |  0.000% | L1_LooseIsoEG24er2p1_HTT100er                 |
+2019-12-12 13:10:51 INFO : |   239 |    0.026% |  0.000% | L1_LooseIsoEG26er2p1_HTT100er                 |
+2019-12-12 13:10:51 INFO : |   240 |    0.026% |  0.000% | L1_LooseIsoEG28er2p1_HTT100er                 |
+2019-12-12 13:10:51 INFO : |   241 |    0.026% |  0.000% | L1_LooseIsoEG30er2p1_HTT100er                 |
+2019-12-12 13:10:51 INFO : |   332 |    0.026% |  0.000% | L1_SingleJet140er2p5_ETMHF70                  |
+2019-12-12 13:10:51 INFO : |   333 |    0.026% |  0.000% | L1_SingleJet140er2p5_ETMHF80                  |
+2019-12-12 13:10:51 INFO : |   334 |    0.026% |  0.000% | L1_SingleJet140er2p5_ETMHF90                  |
+2019-12-12 13:10:51 INFO : |   205 |    0.048% |  0.000% | L1_DoubleEG_15_10_er2p5                       |
+2019-12-12 13:10:51 INFO : |   206 |    0.048% |  0.000% | L1_DoubleEG_20_10_er2p5                       |
+2019-12-12 13:10:51 INFO : |   207 |    0.048% |  0.000% | L1_DoubleEG_22_10_er2p5                       |
+2019-12-12 13:10:51 INFO : |   208 |    0.048% |  0.000% | L1_DoubleEG_25_12_er2p5                       |
+2019-12-12 13:10:51 INFO : |   209 |    0.048% |  0.000% | L1_DoubleEG_25_14_er2p5                       |
+2019-12-12 13:10:51 INFO : |   210 |    0.048% |  0.000% | L1_DoubleEG_27_14_er2p5                       |
+2019-12-12 13:10:51 INFO : |   212 |    0.048% |  0.000% | L1_DoubleEG_LooseIso20_10_er2p5               |
+2019-12-12 13:10:51 INFO : |   213 |    0.048% |  0.000% | L1_DoubleEG_LooseIso22_10_er2p5               |
+2019-12-12 13:10:51 INFO : |   214 |    0.048% |  0.000% | L1_DoubleEG_LooseIso22_12_er2p5               |
+2019-12-12 13:10:51 INFO : |   215 |    0.048% |  0.000% | L1_DoubleEG_LooseIso25_12_er2p5               |
+2019-12-12 13:10:51 INFO : |   269 |    0.048% |  0.000% | L1_DoubleIsoTau28er2p1                        |
+2019-12-12 13:10:51 INFO : |   270 |    0.048% |  0.000% | L1_DoubleIsoTau30er2p1                        |
+2019-12-12 13:10:51 INFO : |   271 |    0.048% |  0.000% | L1_DoubleIsoTau32er2p1                        |
+2019-12-12 13:10:51 INFO : |   272 |    0.048% |  0.000% | L1_DoubleIsoTau34er2p1                        |
+2019-12-12 13:10:51 INFO : |   273 |    0.048% |  0.000% | L1_DoubleIsoTau36er2p1                        |
+2019-12-12 13:10:51 INFO : |   341 |    0.048% |  0.000% | L1_DoubleJet100er2p5                          |
+2019-12-12 13:10:51 INFO : |   342 |    0.048% |  0.000% | L1_DoubleJet120er2p5                          |
+2019-12-12 13:10:51 INFO : |   343 |    0.048% |  0.000% | L1_DoubleJet150er2p5                          |
+2019-12-12 13:10:51 INFO : |   340 |    0.048% |  0.000% | L1_DoubleJet40er2p5                           |
+2019-12-12 13:10:51 INFO : |   217 |    0.048% |  0.000% | L1_DoubleLooseIsoEG22er2p1                    |
+2019-12-12 13:10:51 INFO : |   218 |    0.048% |  0.000% | L1_DoubleLooseIsoEG24er2p1                    |
+2019-12-12 13:10:51 INFO : |   267 |    0.048% |  0.000% | L1_DoubleTau70er2p1                           |
+2019-12-12 13:10:51 INFO : |   163 |    0.048% |  0.000% | L1_SingleEG28_FWD2p5                          |
+2019-12-12 13:10:51 INFO : |   188 |    0.048% |  0.000% | L1_SingleIsoEG28_FWD2p5                       |
+2019-12-12 13:10:51 INFO : |   327 |    0.048% |  0.000% | L1_SingleJet120_FWD3p0                        |
+2019-12-12 13:10:51 INFO : |   324 |    0.048% |  0.000% | L1_SingleJet35_FWD3p0                         |
+2019-12-12 13:10:51 INFO : |   325 |    0.048% |  0.000% | L1_SingleJet60_FWD3p0                         |
+2019-12-12 13:10:51 INFO : |   326 |    0.048% |  0.000% | L1_SingleJet90_FWD3p0                         |
+2019-12-12 13:10:51 INFO : |   177 |    0.048% |  0.000% | L1_SingleLooseIsoEG28_FWD2p5                  |
+2019-12-12 13:10:51 INFO : |   247 |    0.050% |  0.000% | L1_DoubleEG8er2p5_HTT260er                    |
+2019-12-12 13:10:51 INFO : |   248 |    0.050% |  0.000% | L1_DoubleEG8er2p5_HTT280er                    |
+2019-12-12 13:10:51 INFO : |   249 |    0.050% |  0.000% | L1_DoubleEG8er2p5_HTT300er                    |
+2019-12-12 13:10:51 INFO : |   250 |    0.050% |  0.000% | L1_DoubleEG8er2p5_HTT320er                    |
+2019-12-12 13:10:51 INFO : |   251 |    0.050% |  0.000% | L1_DoubleEG8er2p5_HTT340er                    |
+2019-12-12 13:10:51 INFO : |   228 |    0.072% |  0.000% | L1_TripleEG16er2p5                            |
+2019-12-12 13:10:51 INFO : |   224 |    0.072% |  0.000% | L1_TripleEG_16_12_8_er2p5                     |
+2019-12-12 13:10:51 INFO : |   225 |    0.072% |  0.000% | L1_TripleEG_16_15_8_er2p5                     |
+2019-12-12 13:10:51 INFO : |   226 |    0.072% |  0.000% | L1_TripleEG_18_17_8_er2p5                     |
+2019-12-12 13:10:51 INFO : |   227 |    0.072% |  0.000% | L1_TripleEG_18_18_12_er2p5                    |
+2019-12-12 13:10:51 INFO : |     6 |    0.080% |  0.000% | L1_SingleMu0_BMTF                             |
+2019-12-12 13:10:51 INFO : |     5 |    0.080% |  0.000% | L1_SingleMu0_DQ                               |
+2019-12-12 13:10:51 INFO : |     8 |    0.080% |  0.000% | L1_SingleMu0_EMTF                             |
+2019-12-12 13:10:51 INFO : |     7 |    0.080% |  0.000% | L1_SingleMu0_OMTF                             |
+2019-12-12 13:10:51 INFO : |    29 |    0.080% |  0.000% | L1_SingleMu10er1p5                            |
+2019-12-12 13:10:51 INFO : |    13 |    0.080% |  0.000% | L1_SingleMu12_DQ_BMTF                         |
+2019-12-12 13:10:51 INFO : |    15 |    0.080% |  0.000% | L1_SingleMu12_DQ_EMTF                         |
+2019-12-12 13:10:51 INFO : |    14 |    0.080% |  0.000% | L1_SingleMu12_DQ_OMTF                         |
+2019-12-12 13:10:51 INFO : |    30 |    0.080% |  0.000% | L1_SingleMu12er1p5                            |
+2019-12-12 13:10:51 INFO : |    31 |    0.080% |  0.000% | L1_SingleMu14er1p5                            |
+2019-12-12 13:10:51 INFO : |    16 |    0.080% |  0.000% | L1_SingleMu15_DQ                              |
+2019-12-12 13:10:51 INFO : |    32 |    0.080% |  0.000% | L1_SingleMu16er1p5                            |
+2019-12-12 13:10:51 INFO : |    17 |    0.080% |  0.000% | L1_SingleMu18                                 |
+2019-12-12 13:10:51 INFO : |    33 |    0.080% |  0.000% | L1_SingleMu18er1p5                            |
+2019-12-12 13:10:51 INFO : |    18 |    0.080% |  0.000% | L1_SingleMu20                                 |
+2019-12-12 13:10:51 INFO : |    19 |    0.080% |  0.000% | L1_SingleMu22                                 |
+2019-12-12 13:10:51 INFO : |    20 |    0.080% |  0.000% | L1_SingleMu22_BMTF                            |
+2019-12-12 13:10:51 INFO : |    22 |    0.080% |  0.000% | L1_SingleMu22_EMTF                            |
+2019-12-12 13:10:51 INFO : |    21 |    0.080% |  0.000% | L1_SingleMu22_OMTF                            |
+2019-12-12 13:10:51 INFO : |    23 |    0.080% |  0.000% | L1_SingleMu25                                 |
+2019-12-12 13:10:51 INFO : |     9 |    0.080% |  0.000% | L1_SingleMu3                                  |
+2019-12-12 13:10:51 INFO : |    10 |    0.080% |  0.000% | L1_SingleMu5                                  |
+2019-12-12 13:10:51 INFO : |    25 |    0.080% |  0.000% | L1_SingleMu6er1p5                             |
+2019-12-12 13:10:51 INFO : |    12 |    0.080% |  0.000% | L1_SingleMu7                                  |
+2019-12-12 13:10:51 INFO : |    11 |    0.080% |  0.000% | L1_SingleMu7_DQ                               |
+2019-12-12 13:10:51 INFO : |    26 |    0.080% |  0.000% | L1_SingleMu7er1p5                             |
+2019-12-12 13:10:51 INFO : |    27 |    0.080% |  0.000% | L1_SingleMu8er1p5                             |
+2019-12-12 13:10:51 INFO : |    28 |    0.080% |  0.000% | L1_SingleMu9er1p5                             |
+2019-12-12 13:10:51 INFO : |     0 |    0.080% |  0.000% | L1_SingleMuCosmics                            |
+2019-12-12 13:10:51 INFO : |     1 |    0.080% |  0.000% | L1_SingleMuCosmics_BMTF                       |
+2019-12-12 13:10:51 INFO : |     3 |    0.080% |  0.000% | L1_SingleMuCosmics_EMTF                       |
+2019-12-12 13:10:51 INFO : |     2 |    0.080% |  0.000% | L1_SingleMuCosmics_OMTF                       |
+2019-12-12 13:10:51 INFO : |     4 |    0.080% |  0.000% | L1_SingleMuOpen                               |
+2019-12-12 13:10:51 INFO : |   446 |    0.080% |  0.000% | L1_SingleMuOpen_NotBptxOR                     |
+2019-12-12 13:10:51 INFO : |   448 |    0.080% |  0.000% | L1_SingleMuOpen_er1p1_NotBptxOR_3BX           |
+2019-12-12 13:10:51 INFO : |   447 |    0.080% |  0.000% | L1_SingleMuOpen_er1p4_NotBptxOR_3BX           |
+2019-12-12 13:10:51 INFO : |   131 |    0.082% |  0.000% | L1_Mu6_HTT240er                               |
+2019-12-12 13:10:51 INFO : |   132 |    0.082% |  0.000% | L1_Mu6_HTT250er                               |
+2019-12-12 13:10:51 INFO : |   279 |    0.104% |  0.000% | L1_Mu18er2p1_Tau24er2p1                       |
+2019-12-12 13:10:51 INFO : |   280 |    0.104% |  0.000% | L1_Mu18er2p1_Tau26er2p1                       |
+2019-12-12 13:10:51 INFO : |    99 |    0.104% |  0.000% | L1_Mu20_EG10er2p5                             |
+2019-12-12 13:10:51 INFO : |   282 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau28er2p1                    |
+2019-12-12 13:10:51 INFO : |   283 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau30er2p1                    |
+2019-12-12 13:10:51 INFO : |   284 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau32er2p1                    |
+2019-12-12 13:10:51 INFO : |   285 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau34er2p1                    |
+2019-12-12 13:10:51 INFO : |   286 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau36er2p1                    |
+2019-12-12 13:10:51 INFO : |   287 |    0.104% |  0.000% | L1_Mu22er2p1_IsoTau40er2p1                    |
+2019-12-12 13:10:51 INFO : |   289 |    0.104% |  0.000% | L1_Mu22er2p1_Tau70er2p1                       |
+2019-12-12 13:10:51 INFO : |   119 |    0.104% |  0.000% | L1_Mu3_Jet30er2p5                             |
+2019-12-12 13:10:51 INFO : |    96 |    0.104% |  0.000% | L1_Mu5_EG23er2p5                              |
+2019-12-12 13:10:51 INFO : |   100 |    0.104% |  0.000% | L1_Mu5_LooseIsoEG20er2p5                      |
+2019-12-12 13:10:51 INFO : |    97 |    0.104% |  0.000% | L1_Mu7_EG20er2p5                              |
+2019-12-12 13:10:51 INFO : |    98 |    0.104% |  0.000% | L1_Mu7_EG23er2p5                              |
+2019-12-12 13:10:51 INFO : |   101 |    0.104% |  0.000% | L1_Mu7_LooseIsoEG20er2p5                      |
+2019-12-12 13:10:51 INFO : |   102 |    0.104% |  0.000% | L1_Mu7_LooseIsoEG23er2p5                      |
+2019-12-12 13:10:51 INFO : |   128 |    0.106% |  0.000% | L1_Mu3er1p5_Jet100er2p5_ETMHF40               |
+2019-12-12 13:10:51 INFO : |   129 |    0.106% |  0.000% | L1_Mu3er1p5_Jet100er2p5_ETMHF50               |
+2019-12-12 13:10:51 INFO : |   373 |    0.120% |  0.000% | L1_TripleJet_100_80_70_DoubleJet_80_70...     |
+2019-12-12 13:10:51 INFO : |   374 |    0.120% |  0.000% | L1_TripleJet_105_85_75_DoubleJet_85_75...     |
+2019-12-12 13:10:51 INFO : |   372 |    0.120% |  0.000% | L1_TripleJet_95_75_65_DoubleJet_75_65_...     |
+2019-12-12 13:10:51 INFO : |   104 |    0.128% |  0.000% | L1_Mu6_DoubleEG10er2p5                        |
+2019-12-12 13:10:51 INFO : |   105 |    0.128% |  0.000% | L1_Mu6_DoubleEG12er2p5                        |
+2019-12-12 13:10:51 INFO : |   106 |    0.128% |  0.000% | L1_Mu6_DoubleEG15er2p5                        |
+2019-12-12 13:10:51 INFO : |   107 |    0.128% |  0.000% | L1_Mu6_DoubleEG17er2p5                        |
+2019-12-12 13:10:51 INFO : |    40 |    0.160% |  0.000% | L1_DoubleMu0                                  |
+2019-12-12 13:10:51 INFO : |    39 |    0.160% |  0.000% | L1_DoubleMu0_OQ                               |
+2019-12-12 13:10:51 INFO : |    41 |    0.160% |  0.000% | L1_DoubleMu0_SQ                               |
+2019-12-12 13:10:51 INFO : |    42 |    0.160% |  0.000% | L1_DoubleMu0_SQ_OS                            |
+2019-12-12 13:10:51 INFO : |    55 |    0.160% |  0.000% | L1_DoubleMu0er1p5_SQ                          |
+2019-12-12 13:10:51 INFO : |    56 |    0.160% |  0.000% | L1_DoubleMu0er1p5_SQ_OS                       |
+2019-12-12 13:10:51 INFO : |    51 |    0.160% |  0.000% | L1_DoubleMu18er2p1                            |
+2019-12-12 13:10:51 INFO : |    60 |    0.160% |  0.000% | L1_DoubleMu4_SQ_OS                            |
+2019-12-12 13:10:51 INFO : |    62 |    0.160% |  0.000% | L1_DoubleMu4p5_SQ_OS                          |
+2019-12-12 13:10:51 INFO : |    64 |    0.160% |  0.000% | L1_DoubleMu4p5er2p0_SQ_OS                     |
+2019-12-12 13:10:51 INFO : |    44 |    0.160% |  0.000% | L1_DoubleMu8_SQ                               |
+2019-12-12 13:10:51 INFO : |    45 |    0.160% |  0.000% | L1_DoubleMu9_SQ                               |
+2019-12-12 13:10:51 INFO : |    46 |    0.160% |  0.000% | L1_DoubleMu_12_5                              |
+2019-12-12 13:10:51 INFO : |    47 |    0.160% |  0.000% | L1_DoubleMu_15_5_SQ                           |
+2019-12-12 13:10:51 INFO : |    48 |    0.160% |  0.000% | L1_DoubleMu_15_7                              |
+2019-12-12 13:10:51 INFO : |    49 |    0.160% |  0.000% | L1_DoubleMu_15_7_SQ                           |
+2019-12-12 13:10:51 INFO : |   150 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT220er                      |
+2019-12-12 13:10:51 INFO : |   151 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT240er                      |
+2019-12-12 13:10:51 INFO : |   152 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT260er                      |
+2019-12-12 13:10:51 INFO : |   145 |    0.164% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_HTT60er               |
+2019-12-12 13:10:51 INFO : |   109 |    0.184% |  0.000% | L1_DoubleMu4_SQ_EG9er2p5                      |
+2019-12-12 13:10:51 INFO : |   110 |    0.184% |  0.000% | L1_DoubleMu5_SQ_EG9er2p5                      |
+2019-12-12 13:10:51 INFO : |   147 |    0.186% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5            |
+2019-12-12 13:10:51 INFO : |   148 |    0.186% |  0.000% | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5            |
+2019-12-12 13:10:51 INFO : |   146 |    0.234% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_...     |
+2019-12-12 13:10:51 INFO : |    72 |    0.240% |  0.000% | L1_TripleMu0                                  |
+2019-12-12 13:10:51 INFO : |    71 |    0.240% |  0.000% | L1_TripleMu0_OQ                               |
+2019-12-12 13:10:51 INFO : |    73 |    0.240% |  0.000% | L1_TripleMu0_SQ                               |
+2019-12-12 13:10:51 INFO : |    74 |    0.240% |  0.000% | L1_TripleMu3                                  |
+2019-12-12 13:10:51 INFO : |    75 |    0.240% |  0.000% | L1_TripleMu3_SQ                               |
+2019-12-12 13:10:51 INFO : |    76 |    0.240% |  0.000% | L1_TripleMu_5SQ_3SQ_0OQ                       |
+2019-12-12 13:10:51 INFO : |    78 |    0.240% |  0.000% | L1_TripleMu_5_3_3                             |
+2019-12-12 13:10:51 INFO : |    79 |    0.240% |  0.000% | L1_TripleMu_5_3_3_SQ                          |
+2019-12-12 13:10:51 INFO : |    77 |    0.240% |  0.000% | L1_TripleMu_5_3p5_2p5                         |
+2019-12-12 13:10:51 INFO : |    80 |    0.240% |  0.000% | L1_TripleMu_5_5_3                             |
+2019-12-12 13:10:51 INFO : |    89 |    0.320% |  0.000% | L1_QuadMu0                                    |
+2019-12-12 13:10:51 INFO : |    88 |    0.320% |  0.000% | L1_QuadMu0_OQ                                 |
+2019-12-12 13:10:51 INFO : |    90 |    0.320% |  0.000% | L1_QuadMu0_SQ                                 |
+2019-12-12 13:10:51 INFO : |   197 |    0.384% |  0.924% | L1_IsoEG32er2p5_Mt40                          |
+2019-12-12 13:10:51 INFO : |   198 |    0.384% |  0.924% | L1_IsoEG32er2p5_Mt44                          |
+2019-12-12 13:10:51 INFO : |   199 |    0.384% |  0.924% | L1_IsoEG32er2p5_Mt48                          |
+2019-12-12 13:10:51 INFO : |   345 |    2.112% |  0.000% | L1_DoubleJet100er2p3_dEta_Max1p6              |
+2019-12-12 13:10:51 INFO : |   346 |    2.112% |  0.000% | L1_DoubleJet112er2p3_dEta_Max1p6              |
+2019-12-12 13:10:51 INFO : |    59 |    2.520% |  1.568% | L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4             |
+2019-12-12 13:10:51 INFO : |    58 |    2.520% |  1.568% | L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4             |
+2019-12-12 13:10:51 INFO : |    57 |    2.520% |  1.568% | L1_DoubleMu0er1p5_SQ_dR_Max1p4                |
+2019-12-12 13:10:51 INFO : |    54 |    2.520% |  1.568% | L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4             |
+2019-12-12 13:10:51 INFO : |    53 |    2.520% |  1.568% | L1_DoubleMu0er2p0_SQ_dR_Max1p4                |
+2019-12-12 13:10:51 INFO : |    61 |    2.520% |  1.568% | L1_DoubleMu4_SQ_OS_dR_Max1p2                  |
+2019-12-12 13:10:51 INFO : |    63 |    2.520% |  1.568% | L1_DoubleMu4p5_SQ_OS_dR_Max1p2                |
+2019-12-12 13:10:51 INFO : |    43 |    3.080% |  2.324% | L1_DoubleMu0_Mass_Min1                        |
+2019-12-12 13:10:51 INFO : |    66 |    3.080% |  2.324% | L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18           |
+2019-12-12 13:10:51 INFO : |    65 |    3.080% |  2.324% | L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7           |
+2019-12-12 13:10:51 INFO : |    50 |    3.080% |  2.324% | L1_DoubleMu_15_7_Mass_Min1                    |
+2019-12-12 13:10:51 INFO : |   494 |    3.200% |  0.000% | L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p6...     |
+2019-12-12 13:10:51 INFO : |    85 |    3.320% |  2.324% | L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_S...     |
+2019-12-12 13:10:51 INFO : |    86 |    3.320% |  2.324% | L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_...     |
+2019-12-12 13:10:51 INFO : |    83 |    3.320% |  2.324% | L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_O...     |
+2019-12-12 13:10:51 INFO : |    82 |    3.320% |  2.324% | L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p...     |
+2019-12-12 13:10:51 INFO : |    84 |    3.320% |  2.324% | L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_...     |
+2019-12-12 13:10:51 INFO : |   382 |    3.360% |  0.000% | L1_QuadJet60er2p5                             |
+2019-12-12 13:10:51 INFO : |   384 |    3.362% |  0.000% | L1_HTT280er_QuadJet_70_55_40_35_er2p4         |
+2019-12-12 13:10:51 INFO : |   385 |    3.362% |  0.000% | L1_HTT320er_QuadJet_70_55_40_40_er2p4         |
+2019-12-12 13:10:51 INFO : |   386 |    3.362% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_45_40_...     |
+2019-12-12 13:10:51 INFO : |   387 |    3.362% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_50_45_...     |
+2019-12-12 13:10:51 INFO : |   298 |    3.384% |  0.000% | L1_QuadJet36er2p5_IsoTau52er2p1               |
+2019-12-12 13:10:51 INFO : |   376 |    3.456% |  0.000% | L1_QuadJet_95_75_65_20_DoubleJet_75_65...     |
+2019-12-12 13:10:51 INFO : |   275 |    4.158% |  5.478% | L1_DoubleIsoTau28er2p1_Mass_Max80             |
+2019-12-12 13:10:51 INFO : |   274 |    4.158% |  5.478% | L1_DoubleIsoTau28er2p1_Mass_Max90             |
+2019-12-12 13:10:51 INFO : |   277 |    4.158% |  5.478% | L1_DoubleIsoTau30er2p1_Mass_Max80             |
+2019-12-12 13:10:51 INFO : |   276 |    4.158% |  5.478% | L1_DoubleIsoTau30er2p1_Mass_Max90             |
+2019-12-12 13:10:51 INFO : |   356 |    4.206% |  5.478% | L1_DoubleJet_100_30_DoubleJet30_Mass_M...     |
+2019-12-12 13:10:51 INFO : |   357 |    4.206% |  5.478% | L1_DoubleJet_110_35_DoubleJet35_Mass_M...     |
+2019-12-12 13:10:51 INFO : |   358 |    4.206% |  5.478% | L1_DoubleJet_115_40_DoubleJet40_Mass_M...     |
+2019-12-12 13:10:51 INFO : |   359 |    4.206% |  5.478% | L1_DoubleJet_120_45_DoubleJet45_Mass_M...     |
+2019-12-12 13:10:51 INFO : |   355 |    4.206% |  5.478% | L1_DoubleJet_90_30_DoubleJet30_Mass_Mi...     |
+2019-12-12 13:10:51 INFO : |   365 |    4.238% |  5.478% | L1_DoubleJet_80_30_Mass_Min420_Mu8            |
+2019-12-12 13:10:51 INFO : |   348 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min150_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   349 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min200_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   350 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min250_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   351 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min300_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   352 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min330_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   353 |    4.290% |  5.478% | L1_DoubleJet30er2p5_Mass_Min360_dEta_M...     |
+2019-12-12 13:10:51 INFO : |   366 |    4.318% |  5.478% | L1_DoubleJet_80_30_Mass_Min420_DoubleM...     |
+2019-12-12 13:10:51 INFO : |   257 |    4.608% |  8.064% | L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_...     |
+2019-12-12 13:10:51 INFO : |   259 |    4.608% |  8.064% | L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3     |
+2019-12-12 13:10:51 INFO : |   258 |    4.608% |  8.064% | L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_...     |
+2019-12-12 13:10:51 INFO : |   234 |    4.608% |  8.064% | L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3     |
+2019-12-12 13:10:51 INFO : |   235 |    4.608% |  8.064% | L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3     |
+2019-12-12 13:10:51 INFO : |   236 |    4.608% |  8.064% | L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3     |
+2019-12-12 13:10:51 INFO : |   112 |    7.238% |  7.802% | L1_DoubleMu3_OS_DoubleEG7p5Upsilon            |
+2019-12-12 13:10:51 INFO : |   113 |    7.238% |  7.802% | L1_DoubleMu5Upsilon_OS_DoubleEG3              |
+2019-12-12 13:10:51 INFO : |   126 |    9.408% |  5.376% | L1_Mu3_Jet120er2p5_dR_Max0p4                  |
+2019-12-12 13:10:51 INFO : |   125 |    9.408% |  5.376% | L1_Mu3_Jet120er2p5_dR_Max0p8                  |
+2019-12-12 13:10:51 INFO : |   121 |    9.408% |  5.376% | L1_Mu3_Jet16er2p5_dR_Max0p4                   |
+2019-12-12 13:10:51 INFO : |   122 |    9.408% |  5.376% | L1_Mu3_Jet35er2p5_dR_Max0p4                   |
+2019-12-12 13:10:51 INFO : |   123 |    9.408% |  5.376% | L1_Mu3_Jet60er2p5_dR_Max0p4                   |
+2019-12-12 13:10:51 INFO : |   124 |    9.408% |  5.376% | L1_Mu3_Jet80er2p5_dR_Max0p4                   |
+2019-12-12 13:10:51 INFO : |   134 |   11.520% |  5.376% | L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_Doub...     |
+2019-12-12 13:10:51 INFO : |   136 |   11.520% |  5.376% | L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_Doub...     |
+2019-12-12 13:10:51 INFO : |   135 |   11.520% |  5.376% | L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_Doub...     |
+2019-12-12 13:10:51 INFO : |   142 |   11.928% |  6.944% | L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_M...     |
+2019-12-12 13:10:51 INFO : |   143 |   11.928% |  6.944% | L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_M...     |
+2019-12-12 13:10:51 INFO : |   363 |   12.378% | 13.542% | L1_DoubleJet35_Mass_Min450_IsoTau45_Rm...     |
+2019-12-12 13:10:51 INFO : |   364 |   12.378% | 13.542% | L1_DoubleJet_80_30_Mass_Min420_IsoTau4...     |
+2019-12-12 13:10:51 INFO : |   360 |   24.972% | 32.868% | L1_DoubleJet_115_40_DoubleJet40_Mass_M...     |
+2019-12-12 13:10:51 INFO : |   361 |   24.972% | 32.868% | L1_DoubleJet_120_45_DoubleJet45_Mass_M...     |
+2019-12-12 13:10:51 INFO : |-------|-----------|---------|-----------------------------------------------|
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : distributing algorithms, shadow ratio: 0.0
+2019-12-12 13:10:51 INFO : starting algorithm distribution for 343 algorithms on 6 modules using shadow ratio of 0.0
+2019-12-12 13:10:51 INFO :  . adding L1_AlwaysTrue (458) to module 0
+2019-12-12 13:10:51 INFO :  +-- L1_FirstBunchInTrain shadowed ratio 20.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_SingleMuOpen_er1p1_NotBptxOR_3BX shadowed ratio 12.5 %
+2019-12-12 13:10:51 INFO :  +---- L1_SingleJet43er2p5_NotBptxOR_3BX shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  +----- L1_LastBunchInTrain shadowed ratio 16.7 %
+2019-12-12 13:10:51 INFO :  +------ L1_SingleMuOpen_NotBptxOR shadowed ratio 7.7 %
+2019-12-12 13:10:51 INFO :  +------- L1_ETMHF120_NotSecondBunchInTrain shadowed ratio 35.7 %
+2019-12-12 13:10:51 INFO :  +-------- L1_SingleMuOpen shadowed ratio 7.1 %
+2019-12-12 13:10:51 INFO :  +--------- L1_FirstBunchBeforeTrain shadowed ratio 35.7 %
+2019-12-12 13:10:51 INFO :  +---------- L1_MinimumBiasHF0_AND_BptxAND shadowed ratio 6.2 %
+2019-12-12 13:10:51 INFO :  +----------- L1_ETMHF120 shadowed ratio 6.2 %
+2019-12-12 13:10:51 INFO :  +------------ L1_SingleJet20er2p5_NotBptxOR shadowed ratio 5.9 %
+2019-12-12 13:10:51 INFO :  +------------- L1_SingleMuOpen_er1p4_NotBptxOR_3BX shadowed ratio 16.7 %
+2019-12-12 13:10:51 INFO :  +-------------- L1_ZeroBias_copy shadowed ratio 5.6 %
+2019-12-12 13:10:51 INFO :  +--------------- L1_BptxOR shadowed ratio 5.6 %
+2019-12-12 13:10:51 INFO :  +---------------- L1_SingleJet46er2p5_NotBptxOR_3BX shadowed ratio 15.8 %
+2019-12-12 13:10:51 INFO :  +----------------- L1_SingleJet20er2p5_NotBptxOR_3BX shadowed ratio 21.1 %
+2019-12-12 13:10:51 INFO :  +------------------ L1_NotBptxOR shadowed ratio 5.3 %
+2019-12-12 13:10:51 INFO :  +------------------- L1_ETMHF110_HTT60er_NotSecondBunchInTrain shadowed ratio 23.8 %
+2019-12-12 13:10:51 INFO :  +-------------------- L1_ETMHF90_HTT60er shadowed ratio 4.5 %
+2019-12-12 13:10:51 INFO :  +--------------------- L1_ETMHF110 shadowed ratio 4.5 %
+2019-12-12 13:10:51 INFO :  +---------------------- L1_ETMHF110_HTT60er shadowed ratio 9.1 %
+2019-12-12 13:10:51 INFO :  +----------------------- L1_ETMHF130_HTT60er shadowed ratio 4.3 %
+2019-12-12 13:10:51 INFO :  +------------------------ L1_IsoTau40er2p1_ETMHF110 shadowed ratio 4.2 %
+2019-12-12 13:10:51 INFO :  +------------------------- L1_IsoTau40er2p1_ETMHF100 shadowed ratio 4.0 %
+2019-12-12 13:10:51 INFO :  +-------------------------- L1_IsoTau40er2p1_ETMHF80 shadowed ratio 3.8 %
+2019-12-12 13:10:51 INFO :  +--------------------------- L1_Mu22er2p1_IsoTau40er2p1 shadowed ratio 3.7 %
+2019-12-12 13:10:51 INFO :  +---------------------------- L1_Mu22er2p1_IsoTau28er2p1 shadowed ratio 3.6 %
+2019-12-12 13:10:51 INFO :  +----------------------------- L1_FirstBunchAfterTrain shadowed ratio 17.9 %
+2019-12-12 13:10:51 INFO :  +------------------------------ L1_Mu22er2p1_IsoTau34er2p1 shadowed ratio 3.4 %
+2019-12-12 13:10:51 INFO :  +------------------------------- L1_Mu22er2p1_Tau70er2p1 shadowed ratio 3.3 %
+2019-12-12 13:10:51 INFO :  +-------------------------------- L1_Mu22er2p1_IsoTau30er2p1 shadowed ratio 3.2 %
+2019-12-12 13:10:51 INFO :  +--------------------------------- L1_Mu22er2p1_IsoTau32er2p1 shadowed ratio 3.1 %
+2019-12-12 13:10:51 INFO :  +---------------------------------- L1_SingleJet140er2p5_ETMHF80 shadowed ratio 3.0 %
+2019-12-12 13:10:51 INFO :  +----------------------------------- L1_ETMHF130 shadowed ratio 3.0 %
+2019-12-12 13:10:51 INFO :  +------------------------------------ L1_IsoTau40er2p1_ETMHF90 shadowed ratio 6.1 %
+2019-12-12 13:10:51 INFO :  +------------------------------------- L1_SingleJet140er2p5 shadowed ratio 3.0 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------- L1_ETMHF100 shadowed ratio 3.0 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------- L1_Mu22er2p1_IsoTau36er2p1 shadowed ratio 2.9 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------- L1_DoubleMu3_SQ_ETMHF50_HTT60er shadowed ratio 2.8 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------- L1_DoubleMu3_SQ_HTT240er shadowed ratio 2.7 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------ L1_DoubleMu3_SQ_HTT220er shadowed ratio 2.6 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------- L1_Mu3er1p5_Jet100er2p5_ETMHF50 shadowed ratio 2.5 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------- L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 shadowed ratio 2.4 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------- L1_Mu3er1p5_Jet100er2p5_ETMHF40 shadowed ratio 4.7 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------------- L1_SingleJet60er2p5 shadowed ratio 2.3 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------------- L1_SecondBunchInTrain shadowed ratio 11.6 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------ L1_IsolatedBunch shadowed ratio 11.6 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------- L1_SecondLastBunchInTrain shadowed ratio 11.6 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------------- L1_SingleJet140er2p5_ETMHF90 shadowed ratio 4.7 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 shadowed ratio 6.8 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------------------- L1_DoubleJet40er2p5 shadowed ratio 2.3 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------------------- L1_ETMHF100_HTT60er shadowed ratio 4.5 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------ L1_ZeroBias shadowed ratio 2.3 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------- L1_ETMHF120_HTT60er shadowed ratio 4.5 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------------------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 shadowed ratio 6.8 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------------------- L1_DoubleMu3_SQ_HTT260er shadowed ratio 2.2 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------------------------- L1_SingleJet140er2p5_ETMHF70 shadowed ratio 2.2 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------------------------- L1_Mu6_HTT240er shadowed ratio 2.1 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------ L1_Mu6_DoubleEG12er2p5 shadowed ratio 2.1 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------- L1_Mu6_HTT250er shadowed ratio 2.0 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------------------------- L1_Mu6_DoubleEG15er2p5 shadowed ratio 2.0 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------------------------- L1_Mu6_DoubleEG10er2p5 shadowed ratio 2.0 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------------------------------- L1_Mu6_DoubleEG17er2p5 shadowed ratio 1.9 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------------------------------- L1_DoubleEG8er2p5_HTT260er shadowed ratio 1.9 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------------ L1_DoubleEG8er2p5_HTT280er shadowed ratio 1.9 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------------- L1_DoubleEG8er2p5_HTT300er shadowed ratio 1.8 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------------------------------- L1_DoubleEG8er2p5_HTT320er shadowed ratio 1.8 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------------------------------- L1_DoubleEG8er2p5_HTT340er shadowed ratio 1.8 %
+2019-12-12 13:10:51 INFO :  +---------------------------------------------------------------------- L1_HTT320er shadowed ratio 1.8 %
+2019-12-12 13:10:51 INFO :  +----------------------------------------------------------------------- L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 shadowed ratio 1.7 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------------------ L1_HTT280er_QuadJet_70_55_40_35_er2p4 shadowed ratio 1.7 %
+2019-12-12 13:10:51 INFO :  +------------------------------------------------------------------------- L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 shadowed ratio 1.7 %
+2019-12-12 13:10:51 INFO :  +-------------------------------------------------------------------------- L1_HTT320er_QuadJet_70_55_40_40_er2p4 shadowed ratio 1.6 %
+2019-12-12 13:10:51 INFO :  +--------------------------------------------------------------------------- L1_HTT280er shadowed ratio 1.6 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SecondBunchInTrain 474 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_IsolatedBunch 471 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF90_HTT60er 428 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF130_HTT60er 432 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet140er2p5 320 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF100_HTT60er 429 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_HTT60er 145 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet20er2p5_NotBptxOR_3BX 451 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF110 294 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF80 333 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMuOpen_er1p4_NotBptxOR_3BX 447 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_FirstBunchBeforeTrain 472 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet40er2p5 340 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau32er2p1 284 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF100 421 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF80 291 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF120_NotSecondBunchInTrain 443 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF90 292 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMuOpen_NotBptxOR 446 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau34er2p1 285 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_HTT250er 132 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 148 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet60er2p5 317 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF110 422 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_IsoTau40er2p1_ETMHF100 293 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ZeroBias 459 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT220er 150 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF120_HTT60er 431 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT280er 248 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 386 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu3er1p5_Jet100er2p5_ETMHF40 128 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_MinimumBiasHF0_AND_BptxAND 461 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ZeroBias_copy 460 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT260er 247 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau30er2p1 283 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 387 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF90 334 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT320er 403 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_LastBunchInTrain 476 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT320er_QuadJet_70_55_40_40_er2p4 385 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF120 423 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_Tau70er2p1 289 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau28er2p1 282 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT260er 152 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SecondLastBunchInTrain 475 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT280er_QuadJet_70_55_40_35_er2p4 384 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMuOpen_er1p1_NotBptxOR_3BX 448 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF110_HTT60er_NotSecondBunchInTrain 444 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT300er 249 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_DoubleEG10er2p5 104 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau40er2p1 287 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF130 424 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_HTT280er 402 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 146 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_HTT240er 131 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet20er2p5_NotBptxOR 450 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT340er 251 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet43er2p5_NotBptxOR_3BX 452 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_ETMHF110_HTT60er 430 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_DoubleEG12er2p5 105 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu3er1p5_Jet100er2p5_ETMHF50 129 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_FirstBunchInTrain 473 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 147 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT240er 151 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_BptxOR 464 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu22er2p1_IsoTau36er2p1 286 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_NotBptxOR 463 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_FirstBunchAfterTrain 477 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet140er2p5_ETMHF70 332 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_DoubleEG15er2p5 106 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu6_DoubleEG17er2p5 107 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleEG8er2p5_HTT320er 250 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleJet46er2p5_NotBptxOR_3BX 453 to module 0
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMuOpen 4 to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_AND_Ref1_VME (486) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_AND_Ref3_VME (487) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_AND_Ref4_VME (488) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_BeamGas_B1_VME (491) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_BeamGas_B2_VME (492) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_BeamGas_Ref1_VME (489) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_BeamGas_Ref2_VME (490) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_NotOR_VME (482) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_OR_Ref3_VME (483) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_OR_Ref4_VME (484) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BPTX_RefAND_VME (485) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_BptxMinus (467) to module 1
+2019-12-12 13:10:51 INFO :  +-- L1_BptxXOR shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_BptxPlus shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_BptxXOR 465 to module 1
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_BptxPlus 466 to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_FirstCollisionInOrbit (480) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_FirstCollisionInTrain (479) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_HCAL_LaserMon_Trig (500) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_HCAL_LaserMon_Veto (501) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_LastCollisionInTrain (478) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TOTEM_1 (503) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TOTEM_2 (504) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TOTEM_3 (505) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TOTEM_4 (506) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_UnpairedBunchBptxMinus (469) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_UnpairedBunchBptxPlus (468) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_ETM120 (416) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_ETM150 (417) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_ETMHF140 (425) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_ETMHF150 (426) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_ETT1200 (410) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_ETT1600 (411) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_ETT2000 (412) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_HTT120er (398) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_HTT160er (399) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_HTT200er (400) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_HTT255er (401) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_HTT360er (404) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_HTT400er (405) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_HTT450er (406) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG10er2p5 (160) to module 5
+2019-12-12 13:10:51 INFO :  +-- L1_Mu20_EG10er2p5 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_SingleMu20 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMu20 18 to module 5
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu20_EG10er2p5 99 to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG15er2p5 (161) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG26er2p5 (162) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG28er1p5 (166) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG28er2p1 (165) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG28er2p5 (164) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG34er2p5 (167) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG36er2p5 (168) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG38er2p5 (169) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG40er2p5 (170) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG42er2p5 (171) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG45er2p5 (172) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG50 (173) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG60 (174) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG8er2p5 (159) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG24er1p5 (184) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG24er2p1 (183) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG26er1p5 (187) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG26er2p1 (186) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG26er2p5 (185) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG28er1p5 (191) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG28er2p1 (190) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG28er2p5 (189) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG30er2p1 (193) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG30er2p5 (192) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG32er2p1 (195) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG32er2p5 (194) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG34er2p5 (196) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet10erHE (330) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet120 (312) to module 3
+2019-12-12 13:10:51 INFO :  +-- L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 shadowed ratio 14.3 %
+2019-12-12 13:10:51 INFO :  +--- L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 shadowed ratio 7.7 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet60TT28 361 to module 3
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet60TT28 360 to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet120er2p5 (319) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet12erHE (331) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet160er2p5 (321) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet180 (313) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet180er2p5 (322) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet200 (314) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet35 (309) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet35er2p5 (316) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet60 (310) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet8erHE (329) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet90 (311) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet90er2p5 (318) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG26er1p5 (176) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG26er2p5 (175) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG28er1p5 (180) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG28er2p1 (179) to module 2
+2019-12-12 13:10:51 INFO :  +-- L1_LooseIsoEG28er2p1_HTT100er shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_LooseIsoEG30er2p1_HTT100er shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  +---- L1_LooseIsoEG24er2p1_HTT100er shadowed ratio 25.0 %
+2019-12-12 13:10:51 INFO :  +----- L1_LooseIsoEG26er2p1_HTT100er shadowed ratio 20.0 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_LooseIsoEG24er2p1_HTT100er 238 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_LooseIsoEG30er2p1_HTT100er 241 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_LooseIsoEG28er2p1_HTT100er 240 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_LooseIsoEG26er2p1_HTT100er 239 to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG28er2p5 (178) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG30er1p5 (182) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG30er2p5 (181) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleTau120er2p1 (264) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleTau130er2p1 (265) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_15_10_er2p5 (205) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_20_10_er2p5 (206) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_22_10_er2p5 (207) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_25_12_er2p5 (208) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_25_14_er2p5 (209) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_27_14_er2p5 (210) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_LooseIso20_10_er2p5 (212) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_LooseIso22_10_er2p5 (213) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_LooseIso22_12_er2p5 (214) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleEG_LooseIso25_12_er2p5 (215) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau28er2p1 (269) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau30er2p1 (270) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau32er2p1 (271) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau34er2p1 (272) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau36er2p1 (273) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet100er2p5 (341) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet120er2p5 (342) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet150er2p5 (343) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleLooseIsoEG22er2p1 (217) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleLooseIsoEG24er2p1 (218) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleTau70er2p1 (267) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleEG28_FWD2p5 (163) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleIsoEG28_FWD2p5 (188) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet120_FWD3p0 (327) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet35_FWD3p0 (324) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet60_FWD3p0 (325) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleJet90_FWD3p0 (326) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleLooseIsoEG28_FWD2p5 (177) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TripleEG16er2p5 (228) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleEG_16_12_8_er2p5 (224) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleEG_16_15_8_er2p5 (225) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_TripleEG_18_17_8_er2p5 (226) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TripleEG_18_18_12_er2p5 (227) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu0_BMTF (6) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu0_DQ (5) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu0_EMTF (8) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu0_OMTF (7) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu10er1p5 (29) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu12_DQ_BMTF (13) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu12_DQ_EMTF (15) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu12_DQ_OMTF (14) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu12er1p5 (30) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu14er1p5 (31) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu15_DQ (16) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu16er1p5 (32) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu18 (17) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu18er1p5 (33) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu22 (19) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu22_BMTF (20) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu22_EMTF (22) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu22_OMTF (21) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu25 (23) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu3 (9) to module 4
+2019-12-12 13:10:51 INFO :  +-- L1_Mu3_Jet30er2p5 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu3_Jet30er2p5 119 to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu5 (10) to module 2
+2019-12-12 13:10:51 INFO :  +-- L1_Mu5_EG23er2p5 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_Mu7_EG23er2p5 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  +---- L1_Mu5_LooseIsoEG20er2p5 shadowed ratio 25.0 %
+2019-12-12 13:10:51 INFO :  +----- L1_Mu7_EG20er2p5 shadowed ratio 20.0 %
+2019-12-12 13:10:51 INFO :  +------ L1_Mu7_LooseIsoEG20er2p5 shadowed ratio 40.0 %
+2019-12-12 13:10:51 INFO :  +------- L1_SingleMu7 shadowed ratio 20.0 %
+2019-12-12 13:10:51 INFO :  +-------- L1_Mu7_LooseIsoEG23er2p5 shadowed ratio 16.7 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu7_EG20er2p5 97 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu5_LooseIsoEG20er2p5 100 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_SingleMu7 12 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu7_LooseIsoEG20er2p5 101 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu7_EG23er2p5 98 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu5_EG23er2p5 96 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu7_LooseIsoEG23er2p5 102 to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu6er1p5 (25) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu7_DQ (11) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu7er1p5 (26) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu8er1p5 (27) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMu9er1p5 (28) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMuCosmics (0) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMuCosmics_BMTF (1) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMuCosmics_EMTF (3) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_SingleMuCosmics_OMTF (2) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_Mu18er2p1_Tau24er2p1 (279) to module 4
+2019-12-12 13:10:51 INFO :  +-- L1_Mu18er2p1_Tau26er2p1 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_Mu18er2p1_Tau26er2p1 280 to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5 (373) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5 (374) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5 (372) to module 5
+2019-12-12 13:10:51 INFO :  +-- L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 shadowed ratio 20.0 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Jet20_FWD3p0 376 to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0 (40) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0_OQ (39) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0_SQ (41) to module 1
+2019-12-12 13:10:51 INFO :  +-- L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_DoubleJet_80_30_Mass_Min420_Mu8 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ 366 to module 1
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet_80_30_Mass_Min420_Mu8 365 to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0_SQ_OS (42) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er1p5_SQ (55) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er1p5_SQ_OS (56) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu18er2p1 (51) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4_SQ_OS (60) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4p5_SQ_OS (62) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS (64) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu8_SQ (44) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu9_SQ (45) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu_12_5 (46) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu_15_5_SQ (47) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu_15_7 (48) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu_15_7_SQ (49) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4_SQ_EG9er2p5 (109) to module 4
+2019-12-12 13:10:51 INFO :  +-- L1_DoubleMu5_SQ_EG9er2p5 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleMu5_SQ_EG9er2p5 110 to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu0 (72) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu0_OQ (71) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu0_SQ (73) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu3 (74) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu3_SQ (75) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5SQ_3SQ_0OQ (76) to module 4
+2019-12-12 13:10:51 INFO :  +-- L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9 86 to module 4
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass_Max9 85 to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5_3_3 (78) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5_3_3_SQ (79) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5_3p5_2p5 (77) to module 2
+2019-12-12 13:10:51 INFO :  +-- L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 shadowed ratio 50.0 %
+2019-12-12 13:10:51 INFO :  +--- L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17 83 to module 2
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17 84 to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5_5_3 (80) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_QuadMu0 (89) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_QuadMu0_OQ (88) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_QuadMu0_SQ (90) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_IsoEG32er2p5_Mt40 (197) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_IsoEG32er2p5_Mt44 (198) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_IsoEG32er2p5_Mt48 (199) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet100er2p3_dEta_Max1p6 (345) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet112er2p3_dEta_Max1p6 (346) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4 (59) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4 (58) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er1p5_SQ_dR_Max1p4 (57) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4 (54) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0er2p0_SQ_dR_Max1p4 (53) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4_SQ_OS_dR_Max1p2 (61) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4p5_SQ_OS_dR_Max1p2 (63) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0_Mass_Min1 (43) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18 (66) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7 (65) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu_15_7_Mass_Min1 (50) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142 (494) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_Mass_5to17 (82) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_QuadJet60er2p5 (382) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_QuadJet36er2p5_IsoTau52er2p1 (298) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau28er2p1_Mass_Max80 (275) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau28er2p1_Mass_Max90 (274) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau30er2p1_Mass_Max80 (277) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleIsoTau30er2p1_Mass_Max90 (276) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet_100_30_DoubleJet30_Mass_Min620 (356) to module 2
+2019-12-12 13:10:51 INFO :  +-- L1_DoubleJet_90_30_DoubleJet30_Mass_Min620 shadowed ratio 33.3 %
+2019-12-12 13:10:51 INFO :  ... adding shadowed L1_DoubleJet_90_30_DoubleJet30_Mass_Min620 355 to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet_110_35_DoubleJet35_Mass_Min620 (357) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet_115_40_DoubleJet40_Mass_Min620 (358) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet_120_45_DoubleJet45_Mass_Min620 (359) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5 (348) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5 (349) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5 (350) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5 (351) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 (352) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet30er2p5_Mass_Min360_dEta_Max1p5 (353) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3 (257) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3 (259) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_Min0p3 (258) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3 (234) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3 (235) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3 (236) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu3_OS_DoubleEG7p5Upsilon (112) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu5Upsilon_OS_DoubleEG3 (113) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet120er2p5_dR_Max0p4 (126) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet120er2p5_dR_Max0p8 (125) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet16er2p5_dR_Max0p4 (121) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet35er2p5_dR_Max0p4 (122) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet60er2p5_dR_Max0p4 (123) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_Mu3_Jet80er2p5_dR_Max0p4 (124) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er2p3_dEta_Max1p6 (134) to module 4
+2019-12-12 13:10:51 INFO :  . adding L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er2p1_dEta_Max1p6 (136) to module 3
+2019-12-12 13:10:51 INFO :  . adding L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_DoubleJet40er2p3_dEta_Max1p6 (135) to module 2
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8 (142) to module 5
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8 (143) to module 1
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp (363) to module 0
+2019-12-12 13:10:51 INFO :  . adding L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp (364) to module 4
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : |------------|----------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : | Module     | Algorithm                                                      |
+2019-12-12 13:10:51 INFO : | ID | Index | Index | Name                                                   |
+2019-12-12 13:10:51 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |  0 |     0 |   458 | L1_AlwaysTrue                                          |
+2019-12-12 13:10:51 INFO : |  0 |     1 |   474 | L1_SecondBunchInTrain                                  |
+2019-12-12 13:10:51 INFO : |  0 |     2 |   471 | L1_IsolatedBunch                                       |
+2019-12-12 13:10:51 INFO : |  0 |     3 |   428 | L1_ETMHF90_HTT60er                                     |
+2019-12-12 13:10:51 INFO : |  0 |     4 |   432 | L1_ETMHF130_HTT60er                                    |
+2019-12-12 13:10:51 INFO : |  0 |     5 |   320 | L1_SingleJet140er2p5                                   |
+2019-12-12 13:10:51 INFO : |  0 |     6 |   429 | L1_ETMHF100_HTT60er                                    |
+2019-12-12 13:10:51 INFO : |  0 |     7 |   145 | L1_DoubleMu3_SQ_ETMHF50_HTT60er                        |
+2019-12-12 13:10:51 INFO : |  0 |     8 |   451 | L1_SingleJet20er2p5_NotBptxOR_3BX                      |
+2019-12-12 13:10:51 INFO : |  0 |     9 |   294 | L1_IsoTau40er2p1_ETMHF110                              |
+2019-12-12 13:10:51 INFO : |  0 |    10 |   333 | L1_SingleJet140er2p5_ETMHF80                           |
+2019-12-12 13:10:51 INFO : |  0 |    11 |   447 | L1_SingleMuOpen_er1p4_NotBptxOR_3BX                    |
+2019-12-12 13:10:51 INFO : |  0 |    12 |   472 | L1_FirstBunchBeforeTrain                               |
+2019-12-12 13:10:51 INFO : |  0 |    13 |   340 | L1_DoubleJet40er2p5                                    |
+2019-12-12 13:10:51 INFO : |  0 |    14 |   284 | L1_Mu22er2p1_IsoTau32er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    15 |   421 | L1_ETMHF100                                            |
+2019-12-12 13:10:51 INFO : |  0 |    16 |   291 | L1_IsoTau40er2p1_ETMHF80                               |
+2019-12-12 13:10:51 INFO : |  0 |    17 |   443 | L1_ETMHF120_NotSecondBunchInTrain                      |
+2019-12-12 13:10:51 INFO : |  0 |    18 |   292 | L1_IsoTau40er2p1_ETMHF90                               |
+2019-12-12 13:10:51 INFO : |  0 |    19 |   446 | L1_SingleMuOpen_NotBptxOR                              |
+2019-12-12 13:10:51 INFO : |  0 |    20 |   285 | L1_Mu22er2p1_IsoTau34er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    21 |   132 | L1_Mu6_HTT250er                                        |
+2019-12-12 13:10:51 INFO : |  0 |    22 |   148 | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5                     |
+2019-12-12 13:10:51 INFO : |  0 |    23 |   317 | L1_SingleJet60er2p5                                    |
+2019-12-12 13:10:51 INFO : |  0 |    24 |   422 | L1_ETMHF110                                            |
+2019-12-12 13:10:51 INFO : |  0 |    25 |   293 | L1_IsoTau40er2p1_ETMHF100                              |
+2019-12-12 13:10:51 INFO : |  0 |    26 |   459 | L1_ZeroBias                                            |
+2019-12-12 13:10:51 INFO : |  0 |    27 |   150 | L1_DoubleMu3_SQ_HTT220er                               |
+2019-12-12 13:10:51 INFO : |  0 |    28 |   431 | L1_ETMHF120_HTT60er                                    |
+2019-12-12 13:10:51 INFO : |  0 |    29 |   248 | L1_DoubleEG8er2p5_HTT280er                             |
+2019-12-12 13:10:51 INFO : |  0 |    30 |   386 | L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3            |
+2019-12-12 13:10:51 INFO : |  0 |    31 |   128 | L1_Mu3er1p5_Jet100er2p5_ETMHF40                        |
+2019-12-12 13:10:51 INFO : |  0 |    32 |   461 | L1_MinimumBiasHF0_AND_BptxAND                          |
+2019-12-12 13:10:51 INFO : |  0 |    33 |   460 | L1_ZeroBias_copy                                       |
+2019-12-12 13:10:51 INFO : |  0 |    34 |   247 | L1_DoubleEG8er2p5_HTT260er                             |
+2019-12-12 13:10:51 INFO : |  0 |    35 |   283 | L1_Mu22er2p1_IsoTau30er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    36 |   387 | L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3            |
+2019-12-12 13:10:51 INFO : |  0 |    37 |   334 | L1_SingleJet140er2p5_ETMHF90                           |
+2019-12-12 13:10:51 INFO : |  0 |    38 |   403 | L1_HTT320er                                            |
+2019-12-12 13:10:51 INFO : |  0 |    39 |   476 | L1_LastBunchInTrain                                    |
+2019-12-12 13:10:51 INFO : |  0 |    40 |   385 | L1_HTT320er_QuadJet_70_55_40_40_er2p4                  |
+2019-12-12 13:10:51 INFO : |  0 |    41 |   423 | L1_ETMHF120                                            |
+2019-12-12 13:10:51 INFO : |  0 |    42 |   289 | L1_Mu22er2p1_Tau70er2p1                                |
+2019-12-12 13:10:51 INFO : |  0 |    43 |   282 | L1_Mu22er2p1_IsoTau28er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    44 |   152 | L1_DoubleMu3_SQ_HTT260er                               |
+2019-12-12 13:10:51 INFO : |  0 |    45 |   475 | L1_SecondLastBunchInTrain                              |
+2019-12-12 13:10:51 INFO : |  0 |    46 |   384 | L1_HTT280er_QuadJet_70_55_40_35_er2p4                  |
+2019-12-12 13:10:51 INFO : |  0 |    47 |   448 | L1_SingleMuOpen_er1p1_NotBptxOR_3BX                    |
+2019-12-12 13:10:51 INFO : |  0 |    48 |   444 | L1_ETMHF110_HTT60er_NotSecondBunchInTrain              |
+2019-12-12 13:10:51 INFO : |  0 |    49 |   249 | L1_DoubleEG8er2p5_HTT300er                             |
+2019-12-12 13:10:51 INFO : |  0 |    50 |   104 | L1_Mu6_DoubleEG10er2p5                                 |
+2019-12-12 13:10:51 INFO : |  0 |    51 |   287 | L1_Mu22er2p1_IsoTau40er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    52 |   424 | L1_ETMHF130                                            |
+2019-12-12 13:10:51 INFO : |  0 |    53 |   402 | L1_HTT280er                                            |
+2019-12-12 13:10:51 INFO : |  0 |    54 |   146 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet...     |
+2019-12-12 13:10:51 INFO : |  0 |    55 |   131 | L1_Mu6_HTT240er                                        |
+2019-12-12 13:10:51 INFO : |  0 |    56 |   450 | L1_SingleJet20er2p5_NotBptxOR                          |
+2019-12-12 13:10:51 INFO : |  0 |    57 |   251 | L1_DoubleEG8er2p5_HTT340er                             |
+2019-12-12 13:10:51 INFO : |  0 |    58 |   452 | L1_SingleJet43er2p5_NotBptxOR_3BX                      |
+2019-12-12 13:10:51 INFO : |  0 |    59 |   430 | L1_ETMHF110_HTT60er                                    |
+2019-12-12 13:10:51 INFO : |  0 |    60 |   105 | L1_Mu6_DoubleEG12er2p5                                 |
+2019-12-12 13:10:51 INFO : |  0 |    61 |   129 | L1_Mu3er1p5_Jet100er2p5_ETMHF50                        |
+2019-12-12 13:10:51 INFO : |  0 |    62 |   473 | L1_FirstBunchInTrain                                   |
+2019-12-12 13:10:51 INFO : |  0 |    63 |   147 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5                     |
+2019-12-12 13:10:51 INFO : |  0 |    64 |   151 | L1_DoubleMu3_SQ_HTT240er                               |
+2019-12-12 13:10:51 INFO : |  0 |    65 |   464 | L1_BptxOR                                              |
+2019-12-12 13:10:51 INFO : |  0 |    66 |   286 | L1_Mu22er2p1_IsoTau36er2p1                             |
+2019-12-12 13:10:51 INFO : |  0 |    67 |   463 | L1_NotBptxOR                                           |
+2019-12-12 13:10:51 INFO : |  0 |    68 |   477 | L1_FirstBunchAfterTrain                                |
+2019-12-12 13:10:51 INFO : |  0 |    69 |   332 | L1_SingleJet140er2p5_ETMHF70                           |
+2019-12-12 13:10:51 INFO : |  0 |    70 |   106 | L1_Mu6_DoubleEG15er2p5                                 |
+2019-12-12 13:10:51 INFO : |  0 |    71 |   107 | L1_Mu6_DoubleEG17er2p5                                 |
+2019-12-12 13:10:51 INFO : |  0 |    72 |   250 | L1_DoubleEG8er2p5_HTT320er                             |
+2019-12-12 13:10:51 INFO : |  0 |    73 |   453 | L1_SingleJet46er2p5_NotBptxOR_3BX                      |
+2019-12-12 13:10:51 INFO : |  0 |    74 |     4 | L1_SingleMuOpen                                        |
+2019-12-12 13:10:51 INFO : |  0 |    75 |    82 | L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_M...     |
+2019-12-12 13:10:51 INFO : |  0 |    76 |   277 | L1_DoubleIsoTau30er2p1_Mass_Max80                      |
+2019-12-12 13:10:51 INFO : |  0 |    77 |   359 | L1_DoubleJet_120_45_DoubleJet45_Mass_Min620            |
+2019-12-12 13:10:51 INFO : |  0 |    78 |   352 | L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  0 |    79 |   234 | L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3              |
+2019-12-12 13:10:51 INFO : |  0 |    80 |   126 | L1_Mu3_Jet120er2p5_dR_Max0p4                           |
+2019-12-12 13:10:51 INFO : |  0 |    81 |   124 | L1_Mu3_Jet80er2p5_dR_Max0p4                            |
+2019-12-12 13:10:51 INFO : |  0 |    82 |   363 | L1_DoubleJet35_Mass_Min450_IsoTau45_RmOvlp             |
+2019-12-12 13:10:51 INFO : |  1 |     0 |   486 | L1_BPTX_AND_Ref1_VME                                   |
+2019-12-12 13:10:51 INFO : |  1 |     1 |   487 | L1_BPTX_AND_Ref3_VME                                   |
+2019-12-12 13:10:51 INFO : |  1 |     2 |   488 | L1_BPTX_AND_Ref4_VME                                   |
+2019-12-12 13:10:51 INFO : |  1 |     3 |   491 | L1_BPTX_BeamGas_B1_VME                                 |
+2019-12-12 13:10:51 INFO : |  1 |     4 |   492 | L1_BPTX_BeamGas_B2_VME                                 |
+2019-12-12 13:10:51 INFO : |  1 |     5 |   489 | L1_BPTX_BeamGas_Ref1_VME                               |
+2019-12-12 13:10:51 INFO : |  1 |     6 |   490 | L1_BPTX_BeamGas_Ref2_VME                               |
+2019-12-12 13:10:51 INFO : |  1 |     7 |   482 | L1_BPTX_NotOR_VME                                      |
+2019-12-12 13:10:51 INFO : |  1 |     8 |   483 | L1_BPTX_OR_Ref3_VME                                    |
+2019-12-12 13:10:51 INFO : |  1 |     9 |   484 | L1_BPTX_OR_Ref4_VME                                    |
+2019-12-12 13:10:51 INFO : |  1 |    10 |   485 | L1_BPTX_RefAND_VME                                     |
+2019-12-12 13:10:51 INFO : |  1 |    11 |   467 | L1_BptxMinus                                           |
+2019-12-12 13:10:51 INFO : |  1 |    12 |   465 | L1_BptxXOR                                             |
+2019-12-12 13:10:51 INFO : |  1 |    13 |   466 | L1_BptxPlus                                            |
+2019-12-12 13:10:51 INFO : |  1 |    14 |   480 | L1_FirstCollisionInOrbit                               |
+2019-12-12 13:10:51 INFO : |  1 |    15 |   479 | L1_FirstCollisionInTrain                               |
+2019-12-12 13:10:51 INFO : |  1 |    16 |   500 | L1_HCAL_LaserMon_Trig                                  |
+2019-12-12 13:10:51 INFO : |  1 |    17 |   501 | L1_HCAL_LaserMon_Veto                                  |
+2019-12-12 13:10:51 INFO : |  1 |    18 |   478 | L1_LastCollisionInTrain                                |
+2019-12-12 13:10:51 INFO : |  1 |    19 |   503 | L1_TOTEM_1                                             |
+2019-12-12 13:10:51 INFO : |  1 |    20 |   504 | L1_TOTEM_2                                             |
+2019-12-12 13:10:51 INFO : |  1 |    21 |   505 | L1_TOTEM_3                                             |
+2019-12-12 13:10:51 INFO : |  1 |    22 |   506 | L1_TOTEM_4                                             |
+2019-12-12 13:10:51 INFO : |  1 |    23 |   469 | L1_UnpairedBunchBptxMinus                              |
+2019-12-12 13:10:51 INFO : |  1 |    24 |   468 | L1_UnpairedBunchBptxPlus                               |
+2019-12-12 13:10:51 INFO : |  1 |    25 |   416 | L1_ETM120                                              |
+2019-12-12 13:10:51 INFO : |  1 |    26 |   411 | L1_ETT1600                                             |
+2019-12-12 13:10:51 INFO : |  1 |    27 |   401 | L1_HTT255er                                            |
+2019-12-12 13:10:51 INFO : |  1 |    28 |   161 | L1_SingleEG15er2p5                                     |
+2019-12-12 13:10:51 INFO : |  1 |    29 |   164 | L1_SingleEG28er2p5                                     |
+2019-12-12 13:10:51 INFO : |  1 |    30 |   170 | L1_SingleEG40er2p5                                     |
+2019-12-12 13:10:51 INFO : |  1 |    31 |   174 | L1_SingleEG60                                          |
+2019-12-12 13:10:51 INFO : |  1 |    32 |   187 | L1_SingleIsoEG26er1p5                                  |
+2019-12-12 13:10:51 INFO : |  1 |    33 |   189 | L1_SingleIsoEG28er2p5                                  |
+2019-12-12 13:10:51 INFO : |  1 |    34 |   196 | L1_SingleIsoEG34er2p5                                  |
+2019-12-12 13:10:51 INFO : |  1 |    35 |   321 | L1_SingleJet160er2p5                                   |
+2019-12-12 13:10:51 INFO : |  1 |    36 |   309 | L1_SingleJet35                                         |
+2019-12-12 13:10:51 INFO : |  1 |    37 |   311 | L1_SingleJet90                                         |
+2019-12-12 13:10:51 INFO : |  1 |    38 |   180 | L1_SingleLooseIsoEG28er1p5                             |
+2019-12-12 13:10:51 INFO : |  1 |    39 |   181 | L1_SingleLooseIsoEG30er2p5                             |
+2019-12-12 13:10:51 INFO : |  1 |    40 |   205 | L1_DoubleEG_15_10_er2p5                                |
+2019-12-12 13:10:51 INFO : |  1 |    41 |   208 | L1_DoubleEG_25_12_er2p5                                |
+2019-12-12 13:10:51 INFO : |  1 |    42 |   213 | L1_DoubleEG_LooseIso22_10_er2p5                        |
+2019-12-12 13:10:51 INFO : |  1 |    43 |   270 | L1_DoubleIsoTau30er2p1                                 |
+2019-12-12 13:10:51 INFO : |  1 |    44 |   341 | L1_DoubleJet100er2p5                                   |
+2019-12-12 13:10:51 INFO : |  1 |    45 |   218 | L1_DoubleLooseIsoEG24er2p1                             |
+2019-12-12 13:10:51 INFO : |  1 |    46 |   327 | L1_SingleJet120_FWD3p0                                 |
+2019-12-12 13:10:51 INFO : |  1 |    47 |   177 | L1_SingleLooseIsoEG28_FWD2p5                           |
+2019-12-12 13:10:51 INFO : |  1 |    48 |   226 | L1_TripleEG_18_17_8_er2p5                              |
+2019-12-12 13:10:51 INFO : |  1 |    49 |     8 | L1_SingleMu0_EMTF                                      |
+2019-12-12 13:10:51 INFO : |  1 |    50 |    15 | L1_SingleMu12_DQ_EMTF                                  |
+2019-12-12 13:10:51 INFO : |  1 |    51 |    16 | L1_SingleMu15_DQ                                       |
+2019-12-12 13:10:51 INFO : |  1 |    52 |    19 | L1_SingleMu22                                          |
+2019-12-12 13:10:51 INFO : |  1 |    53 |    23 | L1_SingleMu25                                          |
+2019-12-12 13:10:51 INFO : |  1 |    54 |    11 | L1_SingleMu7_DQ                                        |
+2019-12-12 13:10:51 INFO : |  1 |    55 |    28 | L1_SingleMu9er1p5                                      |
+2019-12-12 13:10:51 INFO : |  1 |    56 |     3 | L1_SingleMuCosmics_EMTF                                |
+2019-12-12 13:10:51 INFO : |  1 |    57 |   374 | L1_TripleJet_105_85_75_DoubleJet_85_75_er2p5           |
+2019-12-12 13:10:51 INFO : |  1 |    58 |    41 | L1_DoubleMu0_SQ                                        |
+2019-12-12 13:10:51 INFO : |  1 |    59 |   366 | L1_DoubleJet_80_30_Mass_Min420_DoubleMu0_SQ            |
+2019-12-12 13:10:51 INFO : |  1 |    60 |   365 | L1_DoubleJet_80_30_Mass_Min420_Mu8                     |
+2019-12-12 13:10:51 INFO : |  1 |    61 |   197 | L1_IsoEG32er2p5_Mt40                                   |
+2019-12-12 13:10:51 INFO : |  1 |    62 |   199 | L1_IsoEG32er2p5_Mt48                                   |
+2019-12-12 13:10:51 INFO : |  1 |    63 |   346 | L1_DoubleJet112er2p3_dEta_Max1p6                       |
+2019-12-12 13:10:51 INFO : |  1 |    64 |    54 | L1_DoubleMu0er2p0_SQ_OS_dR_Max1p4                      |
+2019-12-12 13:10:51 INFO : |  1 |    65 |    43 | L1_DoubleMu0_Mass_Min1                                 |
+2019-12-12 13:10:51 INFO : |  1 |    66 |   494 | L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142         |
+2019-12-12 13:10:51 INFO : |  1 |    67 |   274 | L1_DoubleIsoTau28er2p1_Mass_Max90                      |
+2019-12-12 13:10:51 INFO : |  1 |    68 |   358 | L1_DoubleJet_115_40_DoubleJet40_Mass_Min620            |
+2019-12-12 13:10:51 INFO : |  1 |    69 |   351 | L1_DoubleJet30er2p5_Mass_Min300_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  1 |    70 |   258 | L1_LooseIsoEG24er2p1_IsoTau27er2p1_dR_Min0p3           |
+2019-12-12 13:10:51 INFO : |  1 |    71 |   113 | L1_DoubleMu5Upsilon_OS_DoubleEG3                       |
+2019-12-12 13:10:51 INFO : |  1 |    72 |   123 | L1_Mu3_Jet60er2p5_dR_Max0p4                            |
+2019-12-12 13:10:51 INFO : |  1 |    73 |   143 | L1_DoubleMu3_dR_Max1p6_Jet90er2p5_dR_Max0p8            |
+2019-12-12 13:10:51 INFO : |  2 |     0 |   417 | L1_ETM150                                              |
+2019-12-12 13:10:51 INFO : |  2 |     1 |   412 | L1_ETT2000                                             |
+2019-12-12 13:10:51 INFO : |  2 |     2 |   404 | L1_HTT360er                                            |
+2019-12-12 13:10:51 INFO : |  2 |     3 |   162 | L1_SingleEG26er2p5                                     |
+2019-12-12 13:10:51 INFO : |  2 |     4 |   167 | L1_SingleEG34er2p5                                     |
+2019-12-12 13:10:51 INFO : |  2 |     5 |   171 | L1_SingleEG42er2p5                                     |
+2019-12-12 13:10:51 INFO : |  2 |     6 |   159 | L1_SingleEG8er2p5                                      |
+2019-12-12 13:10:51 INFO : |  2 |     7 |   186 | L1_SingleIsoEG26er2p1                                  |
+2019-12-12 13:10:51 INFO : |  2 |     8 |   193 | L1_SingleIsoEG30er2p1                                  |
+2019-12-12 13:10:51 INFO : |  2 |     9 |   330 | L1_SingleJet10erHE                                     |
+2019-12-12 13:10:51 INFO : |  2 |    10 |   313 | L1_SingleJet180                                        |
+2019-12-12 13:10:51 INFO : |  2 |    11 |   316 | L1_SingleJet35er2p5                                    |
+2019-12-12 13:10:51 INFO : |  2 |    12 |   318 | L1_SingleJet90er2p5                                    |
+2019-12-12 13:10:51 INFO : |  2 |    13 |   179 | L1_SingleLooseIsoEG28er2p1                             |
+2019-12-12 13:10:51 INFO : |  2 |    14 |   238 | L1_LooseIsoEG24er2p1_HTT100er                          |
+2019-12-12 13:10:51 INFO : |  2 |    15 |   241 | L1_LooseIsoEG30er2p1_HTT100er                          |
+2019-12-12 13:10:51 INFO : |  2 |    16 |   240 | L1_LooseIsoEG28er2p1_HTT100er                          |
+2019-12-12 13:10:51 INFO : |  2 |    17 |   239 | L1_LooseIsoEG26er2p1_HTT100er                          |
+2019-12-12 13:10:51 INFO : |  2 |    18 |   210 | L1_DoubleEG_27_14_er2p5                                |
+2019-12-12 13:10:51 INFO : |  2 |    19 |   215 | L1_DoubleEG_LooseIso25_12_er2p5                        |
+2019-12-12 13:10:51 INFO : |  2 |    20 |   272 | L1_DoubleIsoTau34er2p1                                 |
+2019-12-12 13:10:51 INFO : |  2 |    21 |   343 | L1_DoubleJet150er2p5                                   |
+2019-12-12 13:10:51 INFO : |  2 |    22 |   163 | L1_SingleEG28_FWD2p5                                   |
+2019-12-12 13:10:51 INFO : |  2 |    23 |   325 | L1_SingleJet60_FWD3p0                                  |
+2019-12-12 13:10:51 INFO : |  2 |    24 |   224 | L1_TripleEG_16_12_8_er2p5                              |
+2019-12-12 13:10:51 INFO : |  2 |    25 |     6 | L1_SingleMu0_BMTF                                      |
+2019-12-12 13:10:51 INFO : |  2 |    26 |    29 | L1_SingleMu10er1p5                                     |
+2019-12-12 13:10:51 INFO : |  2 |    27 |    30 | L1_SingleMu12er1p5                                     |
+2019-12-12 13:10:51 INFO : |  2 |    28 |    17 | L1_SingleMu18                                          |
+2019-12-12 13:10:51 INFO : |  2 |    29 |    22 | L1_SingleMu22_EMTF                                     |
+2019-12-12 13:10:51 INFO : |  2 |    30 |    10 | L1_SingleMu5                                           |
+2019-12-12 13:10:51 INFO : |  2 |    31 |    97 | L1_Mu7_EG20er2p5                                       |
+2019-12-12 13:10:51 INFO : |  2 |    32 |   100 | L1_Mu5_LooseIsoEG20er2p5                               |
+2019-12-12 13:10:51 INFO : |  2 |    33 |    12 | L1_SingleMu7                                           |
+2019-12-12 13:10:51 INFO : |  2 |    34 |   101 | L1_Mu7_LooseIsoEG20er2p5                               |
+2019-12-12 13:10:51 INFO : |  2 |    35 |    98 | L1_Mu7_EG23er2p5                                       |
+2019-12-12 13:10:51 INFO : |  2 |    36 |    96 | L1_Mu5_EG23er2p5                                       |
+2019-12-12 13:10:51 INFO : |  2 |    37 |   102 | L1_Mu7_LooseIsoEG23er2p5                               |
+2019-12-12 13:10:51 INFO : |  2 |    38 |   373 | L1_TripleJet_100_80_70_DoubleJet_80_70_er2p5           |
+2019-12-12 13:10:51 INFO : |  2 |    39 |    40 | L1_DoubleMu0                                           |
+2019-12-12 13:10:51 INFO : |  2 |    40 |    42 | L1_DoubleMu0_SQ_OS                                     |
+2019-12-12 13:10:51 INFO : |  2 |    41 |    56 | L1_DoubleMu0er1p5_SQ_OS                                |
+2019-12-12 13:10:51 INFO : |  2 |    42 |    60 | L1_DoubleMu4_SQ_OS                                     |
+2019-12-12 13:10:51 INFO : |  2 |    43 |    64 | L1_DoubleMu4p5er2p0_SQ_OS                              |
+2019-12-12 13:10:51 INFO : |  2 |    44 |    45 | L1_DoubleMu9_SQ                                        |
+2019-12-12 13:10:51 INFO : |  2 |    45 |    47 | L1_DoubleMu_15_5_SQ                                    |
+2019-12-12 13:10:51 INFO : |  2 |    46 |    49 | L1_DoubleMu_15_7_SQ                                    |
+2019-12-12 13:10:51 INFO : |  2 |    47 |    72 | L1_TripleMu0                                           |
+2019-12-12 13:10:51 INFO : |  2 |    48 |    73 | L1_TripleMu0_SQ                                        |
+2019-12-12 13:10:51 INFO : |  2 |    49 |    75 | L1_TripleMu3_SQ                                        |
+2019-12-12 13:10:51 INFO : |  2 |    50 |    78 | L1_TripleMu_5_3_3                                      |
+2019-12-12 13:10:51 INFO : |  2 |    51 |    79 | L1_TripleMu_5_3_3_SQ                                   |
+2019-12-12 13:10:51 INFO : |  2 |    52 |    77 | L1_TripleMu_5_3p5_2p5                                  |
+2019-12-12 13:10:51 INFO : |  2 |    53 |    83 | L1_TripleMu_5_3p5_2p5_DoubleMu_5_2p5_OS_Mass_5to17     |
+2019-12-12 13:10:51 INFO : |  2 |    54 |    84 | L1_TripleMu_5_4_2p5_DoubleMu_5_2p5_OS_Mass_5to17       |
+2019-12-12 13:10:51 INFO : |  2 |    55 |    58 | L1_DoubleMu0er1p5_SQ_OS_dR_Max1p4                      |
+2019-12-12 13:10:51 INFO : |  2 |    56 |    61 | L1_DoubleMu4_SQ_OS_dR_Max1p2                           |
+2019-12-12 13:10:51 INFO : |  2 |    57 |    65 | L1_DoubleMu4p5er2p0_SQ_OS_Mass_Min7                    |
+2019-12-12 13:10:51 INFO : |  2 |    58 |   298 | L1_QuadJet36er2p5_IsoTau52er2p1                        |
+2019-12-12 13:10:51 INFO : |  2 |    59 |   356 | L1_DoubleJet_100_30_DoubleJet30_Mass_Min620            |
+2019-12-12 13:10:51 INFO : |  2 |    60 |   355 | L1_DoubleJet_90_30_DoubleJet30_Mass_Min620             |
+2019-12-12 13:10:51 INFO : |  2 |    61 |   349 | L1_DoubleJet30er2p5_Mass_Min200_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  2 |    62 |   257 | L1_LooseIsoEG22er2p1_IsoTau26er2p1_dR_Min0p3           |
+2019-12-12 13:10:51 INFO : |  2 |    63 |   236 | L1_LooseIsoEG30er2p1_Jet34er2p5_dR_Min0p3              |
+2019-12-12 13:10:51 INFO : |  2 |    64 |   121 | L1_Mu3_Jet16er2p5_dR_Max0p4                            |
+2019-12-12 13:10:51 INFO : |  2 |    65 |   135 | L1_Mu12er2p3_Jet40er2p3_dR_Max0p4_DoubleJet40er...     |
+2019-12-12 13:10:51 INFO : |  3 |     0 |   425 | L1_ETMHF140                                            |
+2019-12-12 13:10:51 INFO : |  3 |     1 |   398 | L1_HTT120er                                            |
+2019-12-12 13:10:51 INFO : |  3 |     2 |   405 | L1_HTT400er                                            |
+2019-12-12 13:10:51 INFO : |  3 |     3 |   166 | L1_SingleEG28er1p5                                     |
+2019-12-12 13:10:51 INFO : |  3 |     4 |   168 | L1_SingleEG36er2p5                                     |
+2019-12-12 13:10:51 INFO : |  3 |     5 |   172 | L1_SingleEG45er2p5                                     |
+2019-12-12 13:10:51 INFO : |  3 |     6 |   184 | L1_SingleIsoEG24er1p5                                  |
+2019-12-12 13:10:51 INFO : |  3 |     7 |   185 | L1_SingleIsoEG26er2p5                                  |
+2019-12-12 13:10:51 INFO : |  3 |     8 |   192 | L1_SingleIsoEG30er2p5                                  |
+2019-12-12 13:10:51 INFO : |  3 |     9 |   312 | L1_SingleJet120                                        |
+2019-12-12 13:10:51 INFO : |  3 |    10 |   361 | L1_DoubleJet_120_45_DoubleJet45_Mass_Min620_Jet...     |
+2019-12-12 13:10:51 INFO : |  3 |    11 |   360 | L1_DoubleJet_115_40_DoubleJet40_Mass_Min620_Jet...     |
+2019-12-12 13:10:51 INFO : |  3 |    12 |   136 | L1_Mu12er2p3_Jet40er2p1_dR_Max0p4_DoubleJet40er...     |
+2019-12-12 13:10:51 INFO : |  4 |     0 |   426 | L1_ETMHF150                                            |
+2019-12-12 13:10:51 INFO : |  4 |     1 |   399 | L1_HTT160er                                            |
+2019-12-12 13:10:51 INFO : |  4 |     2 |   406 | L1_HTT450er                                            |
+2019-12-12 13:10:51 INFO : |  4 |     3 |   165 | L1_SingleEG28er2p1                                     |
+2019-12-12 13:10:51 INFO : |  4 |     4 |   169 | L1_SingleEG38er2p5                                     |
+2019-12-12 13:10:51 INFO : |  4 |     5 |   173 | L1_SingleEG50                                          |
+2019-12-12 13:10:51 INFO : |  4 |     6 |   183 | L1_SingleIsoEG24er2p1                                  |
+2019-12-12 13:10:51 INFO : |  4 |     7 |   191 | L1_SingleIsoEG28er1p5                                  |
+2019-12-12 13:10:51 INFO : |  4 |     8 |   195 | L1_SingleIsoEG32er2p1                                  |
+2019-12-12 13:10:51 INFO : |  4 |     9 |   319 | L1_SingleJet120er2p5                                   |
+2019-12-12 13:10:51 INFO : |  4 |    10 |   322 | L1_SingleJet180er2p5                                   |
+2019-12-12 13:10:51 INFO : |  4 |    11 |   310 | L1_SingleJet60                                         |
+2019-12-12 13:10:51 INFO : |  4 |    12 |   176 | L1_SingleLooseIsoEG26er1p5                             |
+2019-12-12 13:10:51 INFO : |  4 |    13 |   178 | L1_SingleLooseIsoEG28er2p5                             |
+2019-12-12 13:10:51 INFO : |  4 |    14 |   264 | L1_SingleTau120er2p1                                   |
+2019-12-12 13:10:51 INFO : |  4 |    15 |   206 | L1_DoubleEG_20_10_er2p5                                |
+2019-12-12 13:10:51 INFO : |  4 |    16 |   209 | L1_DoubleEG_25_14_er2p5                                |
+2019-12-12 13:10:51 INFO : |  4 |    17 |   214 | L1_DoubleEG_LooseIso22_12_er2p5                        |
+2019-12-12 13:10:51 INFO : |  4 |    18 |   271 | L1_DoubleIsoTau32er2p1                                 |
+2019-12-12 13:10:51 INFO : |  4 |    19 |   342 | L1_DoubleJet120er2p5                                   |
+2019-12-12 13:10:51 INFO : |  4 |    20 |   267 | L1_DoubleTau70er2p1                                    |
+2019-12-12 13:10:51 INFO : |  4 |    21 |   324 | L1_SingleJet35_FWD3p0                                  |
+2019-12-12 13:10:51 INFO : |  4 |    22 |   228 | L1_TripleEG16er2p5                                     |
+2019-12-12 13:10:51 INFO : |  4 |    23 |   227 | L1_TripleEG_18_18_12_er2p5                             |
+2019-12-12 13:10:51 INFO : |  4 |    24 |     7 | L1_SingleMu0_OMTF                                      |
+2019-12-12 13:10:51 INFO : |  4 |    25 |    14 | L1_SingleMu12_DQ_OMTF                                  |
+2019-12-12 13:10:51 INFO : |  4 |    26 |    32 | L1_SingleMu16er1p5                                     |
+2019-12-12 13:10:51 INFO : |  4 |    27 |    20 | L1_SingleMu22_BMTF                                     |
+2019-12-12 13:10:51 INFO : |  4 |    28 |     9 | L1_SingleMu3                                           |
+2019-12-12 13:10:51 INFO : |  4 |    29 |   119 | L1_Mu3_Jet30er2p5                                      |
+2019-12-12 13:10:51 INFO : |  4 |    30 |    27 | L1_SingleMu8er1p5                                      |
+2019-12-12 13:10:51 INFO : |  4 |    31 |     1 | L1_SingleMuCosmics_BMTF                                |
+2019-12-12 13:10:51 INFO : |  4 |    32 |   279 | L1_Mu18er2p1_Tau24er2p1                                |
+2019-12-12 13:10:51 INFO : |  4 |    33 |   280 | L1_Mu18er2p1_Tau26er2p1                                |
+2019-12-12 13:10:51 INFO : |  4 |    34 |    39 | L1_DoubleMu0_OQ                                        |
+2019-12-12 13:10:51 INFO : |  4 |    35 |    55 | L1_DoubleMu0er1p5_SQ                                   |
+2019-12-12 13:10:51 INFO : |  4 |    36 |    51 | L1_DoubleMu18er2p1                                     |
+2019-12-12 13:10:51 INFO : |  4 |    37 |    62 | L1_DoubleMu4p5_SQ_OS                                   |
+2019-12-12 13:10:51 INFO : |  4 |    38 |    44 | L1_DoubleMu8_SQ                                        |
+2019-12-12 13:10:51 INFO : |  4 |    39 |    46 | L1_DoubleMu_12_5                                       |
+2019-12-12 13:10:51 INFO : |  4 |    40 |    48 | L1_DoubleMu_15_7                                       |
+2019-12-12 13:10:51 INFO : |  4 |    41 |   109 | L1_DoubleMu4_SQ_EG9er2p5                               |
+2019-12-12 13:10:51 INFO : |  4 |    42 |   110 | L1_DoubleMu5_SQ_EG9er2p5                               |
+2019-12-12 13:10:51 INFO : |  4 |    43 |    71 | L1_TripleMu0_OQ                                        |
+2019-12-12 13:10:51 INFO : |  4 |    44 |    74 | L1_TripleMu3                                           |
+2019-12-12 13:10:51 INFO : |  4 |    45 |    76 | L1_TripleMu_5SQ_3SQ_0OQ                                |
+2019-12-12 13:10:51 INFO : |  4 |    46 |    86 | L1_TripleMu_5SQ_3SQ_0_DoubleMu_5_3_SQ_OS_Mass_Max9     |
+2019-12-12 13:10:51 INFO : |  4 |    47 |    85 | L1_TripleMu_5SQ_3SQ_0OQ_DoubleMu_5_3_SQ_OS_Mass...     |
+2019-12-12 13:10:51 INFO : |  4 |    48 |    59 | L1_DoubleMu0er1p4_SQ_OS_dR_Max1p4                      |
+2019-12-12 13:10:51 INFO : |  4 |    49 |    53 | L1_DoubleMu0er2p0_SQ_dR_Max1p4                         |
+2019-12-12 13:10:51 INFO : |  4 |    50 |    66 | L1_DoubleMu4p5er2p0_SQ_OS_Mass7to18                    |
+2019-12-12 13:10:51 INFO : |  4 |    51 |   382 | L1_QuadJet60er2p5                                      |
+2019-12-12 13:10:51 INFO : |  4 |    52 |   276 | L1_DoubleIsoTau30er2p1_Mass_Max90                      |
+2019-12-12 13:10:51 INFO : |  4 |    53 |   348 | L1_DoubleJet30er2p5_Mass_Min150_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  4 |    54 |   353 | L1_DoubleJet30er2p5_Mass_Min360_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  4 |    55 |   235 | L1_LooseIsoEG28er2p1_Jet34er2p5_dR_Min0p3              |
+2019-12-12 13:10:51 INFO : |  4 |    56 |   125 | L1_Mu3_Jet120er2p5_dR_Max0p8                           |
+2019-12-12 13:10:51 INFO : |  4 |    57 |   134 | L1_Mu10er2p3_Jet32er2p3_dR_Max0p4_DoubleJet32er...     |
+2019-12-12 13:10:51 INFO : |  4 |    58 |   364 | L1_DoubleJet_80_30_Mass_Min420_IsoTau40_RmOvlp         |
+2019-12-12 13:10:51 INFO : |  5 |     0 |   410 | L1_ETT1200                                             |
+2019-12-12 13:10:51 INFO : |  5 |     1 |   400 | L1_HTT200er                                            |
+2019-12-12 13:10:51 INFO : |  5 |     2 |   160 | L1_SingleEG10er2p5                                     |
+2019-12-12 13:10:51 INFO : |  5 |     3 |    18 | L1_SingleMu20                                          |
+2019-12-12 13:10:51 INFO : |  5 |     4 |    99 | L1_Mu20_EG10er2p5                                      |
+2019-12-12 13:10:51 INFO : |  5 |     5 |   190 | L1_SingleIsoEG28er2p1                                  |
+2019-12-12 13:10:51 INFO : |  5 |     6 |   194 | L1_SingleIsoEG32er2p5                                  |
+2019-12-12 13:10:51 INFO : |  5 |     7 |   331 | L1_SingleJet12erHE                                     |
+2019-12-12 13:10:51 INFO : |  5 |     8 |   314 | L1_SingleJet200                                        |
+2019-12-12 13:10:51 INFO : |  5 |     9 |   329 | L1_SingleJet8erHE                                      |
+2019-12-12 13:10:51 INFO : |  5 |    10 |   175 | L1_SingleLooseIsoEG26er2p5                             |
+2019-12-12 13:10:51 INFO : |  5 |    11 |   182 | L1_SingleLooseIsoEG30er1p5                             |
+2019-12-12 13:10:51 INFO : |  5 |    12 |   265 | L1_SingleTau130er2p1                                   |
+2019-12-12 13:10:51 INFO : |  5 |    13 |   207 | L1_DoubleEG_22_10_er2p5                                |
+2019-12-12 13:10:51 INFO : |  5 |    14 |   212 | L1_DoubleEG_LooseIso20_10_er2p5                        |
+2019-12-12 13:10:51 INFO : |  5 |    15 |   269 | L1_DoubleIsoTau28er2p1                                 |
+2019-12-12 13:10:51 INFO : |  5 |    16 |   273 | L1_DoubleIsoTau36er2p1                                 |
+2019-12-12 13:10:51 INFO : |  5 |    17 |   217 | L1_DoubleLooseIsoEG22er2p1                             |
+2019-12-12 13:10:51 INFO : |  5 |    18 |   188 | L1_SingleIsoEG28_FWD2p5                                |
+2019-12-12 13:10:51 INFO : |  5 |    19 |   326 | L1_SingleJet90_FWD3p0                                  |
+2019-12-12 13:10:51 INFO : |  5 |    20 |   225 | L1_TripleEG_16_15_8_er2p5                              |
+2019-12-12 13:10:51 INFO : |  5 |    21 |     5 | L1_SingleMu0_DQ                                        |
+2019-12-12 13:10:51 INFO : |  5 |    22 |    13 | L1_SingleMu12_DQ_BMTF                                  |
+2019-12-12 13:10:51 INFO : |  5 |    23 |    31 | L1_SingleMu14er1p5                                     |
+2019-12-12 13:10:51 INFO : |  5 |    24 |    33 | L1_SingleMu18er1p5                                     |
+2019-12-12 13:10:51 INFO : |  5 |    25 |    21 | L1_SingleMu22_OMTF                                     |
+2019-12-12 13:10:51 INFO : |  5 |    26 |    25 | L1_SingleMu6er1p5                                      |
+2019-12-12 13:10:51 INFO : |  5 |    27 |    26 | L1_SingleMu7er1p5                                      |
+2019-12-12 13:10:51 INFO : |  5 |    28 |     0 | L1_SingleMuCosmics                                     |
+2019-12-12 13:10:51 INFO : |  5 |    29 |     2 | L1_SingleMuCosmics_OMTF                                |
+2019-12-12 13:10:51 INFO : |  5 |    30 |   372 | L1_TripleJet_95_75_65_DoubleJet_75_65_er2p5            |
+2019-12-12 13:10:51 INFO : |  5 |    31 |   376 | L1_QuadJet_95_75_65_20_DoubleJet_75_65_er2p5_Je...     |
+2019-12-12 13:10:51 INFO : |  5 |    32 |    80 | L1_TripleMu_5_5_3                                      |
+2019-12-12 13:10:51 INFO : |  5 |    33 |    89 | L1_QuadMu0                                             |
+2019-12-12 13:10:51 INFO : |  5 |    34 |    88 | L1_QuadMu0_OQ                                          |
+2019-12-12 13:10:51 INFO : |  5 |    35 |    90 | L1_QuadMu0_SQ                                          |
+2019-12-12 13:10:51 INFO : |  5 |    36 |   198 | L1_IsoEG32er2p5_Mt44                                   |
+2019-12-12 13:10:51 INFO : |  5 |    37 |   345 | L1_DoubleJet100er2p3_dEta_Max1p6                       |
+2019-12-12 13:10:51 INFO : |  5 |    38 |    57 | L1_DoubleMu0er1p5_SQ_dR_Max1p4                         |
+2019-12-12 13:10:51 INFO : |  5 |    39 |    63 | L1_DoubleMu4p5_SQ_OS_dR_Max1p2                         |
+2019-12-12 13:10:51 INFO : |  5 |    40 |    50 | L1_DoubleMu_15_7_Mass_Min1                             |
+2019-12-12 13:10:51 INFO : |  5 |    41 |   275 | L1_DoubleIsoTau28er2p1_Mass_Max80                      |
+2019-12-12 13:10:51 INFO : |  5 |    42 |   357 | L1_DoubleJet_110_35_DoubleJet35_Mass_Min620            |
+2019-12-12 13:10:51 INFO : |  5 |    43 |   350 | L1_DoubleJet30er2p5_Mass_Min250_dEta_Max1p5            |
+2019-12-12 13:10:51 INFO : |  5 |    44 |   259 | L1_LooseIsoEG22er2p1_Tau70er2p1_dR_Min0p3              |
+2019-12-12 13:10:51 INFO : |  5 |    45 |   112 | L1_DoubleMu3_OS_DoubleEG7p5Upsilon                     |
+2019-12-12 13:10:51 INFO : |  5 |    46 |   122 | L1_Mu3_Jet35er2p5_dR_Max0p4                            |
+2019-12-12 13:10:51 INFO : |  5 |    47 |   142 | L1_DoubleMu0_dR_Max1p6_Jet90er2p5_dR_Max0p8            |
+2019-12-12 13:10:51 INFO : |----|-------|-------|--------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : | Name                                             | Modules                  |
+2019-12-12 13:10:51 INFO : |--------------------------------------------------|--------------------------|
+2019-12-12 13:10:51 INFO : | SingleEXT_i234                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i232                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i233                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i230                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i231                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i229                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i228                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i225                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i224                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i227                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i226                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i221                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i220                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i223                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i222                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i5                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i4                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i3                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i2                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i1                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i0                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i210                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i211                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i108                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i105                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i107                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i218                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i219                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i212                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i213                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i217                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i207                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i209                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEXT_i208                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMBT0HFM_i216                               | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMBT0HFP_i215                               | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i140                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i179                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i174                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i139                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i311                                 | 4                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i123                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleETM_i314                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleETM_i315                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i353                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i168                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i163                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i164                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i241                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i242                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i98                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i99                                    | 3                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i96                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i97                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i94                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i95                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i92                                    | 3                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i93                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i263                                 | 3                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i251                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i166                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETT_i324                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleETT_i322                                   | 5                        |
+2019-12-12 13:10:51 INFO : | SingleETT_i323                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleHTT_i100                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i103                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i102                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i101                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i104                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleETMHF_i240                                 | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i319                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i318                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i317                                    | 3                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i143                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i361                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i360                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i238                                   | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i236                                   | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i237                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i351                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i350                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i53                                     | 3                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i52                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i51                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i50                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i57                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i56                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i55                                     | 3                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i54                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i167                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i352                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i178                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i138                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i308                                   | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i307                                   | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i79                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i78                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i75                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i74                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i77                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i76                                    | 3                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i73                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i80                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i81                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i84                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i86                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i126                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i127                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i124                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i122                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i128                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i342                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i343                                    | 3                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i340                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i341                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i346                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i347                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i344                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i345                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i348                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i290                                   | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i291                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i248                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i82                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i83                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i85                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i250                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i253                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i339                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i337                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i161                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i160                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i39                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i38                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i37                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i125                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i289                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i288                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i287                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i158                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i159                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i156                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i157                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i44                                     | 3                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i325                                   | 3                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i320                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i321                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i67                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleTAU_i68                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i180                                   | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i48                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i49                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i40                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i41                                     | 3                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i42                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i43                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i45                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i46                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i47                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i112                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i111                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleJET_i110                                   | 0                        |
+2019-12-12 13:10:51 INFO : | SingleEG_i349                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i262                                   | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i260                                   | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i268                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i312                                   | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i313                                   | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i173                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i148                                   | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i146                                   | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i65                                     | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i280                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i214                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i69                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i145                                    | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i144                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i246                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i247                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i309                                   | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i357                                   | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i356                                   | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i206                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i87                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i88                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i279                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i278                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i90                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i150                                   | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleJET_i258                                   | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i64                                     | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i61                                     | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i63                                     | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i62                                     | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleEG_i269                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i72                                    | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i71                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleTAU_i70                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleEG_i283                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleJET_i261                                   | 5                        |
+2019-12-12 13:10:51 INFO : | TripleJET_i89                                    | 1                        |
+2019-12-12 13:10:51 INFO : | TripleEG_i244                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleEG_i66                                     | 1                        |
+2019-12-12 13:10:51 INFO : | TripleEG_i282                                    | 5                        |
+2019-12-12 13:10:51 INFO : | TripleEG_i281                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleJET_i259                                   | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i162                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i10                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i155                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i271                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i298                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i299                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i296                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i297                                    | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i294                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i295                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i293                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i109                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i106                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i19                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i18                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i15                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i14                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i17                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i16                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i11                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i13                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i12                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i249                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i141                                    | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i24                                     | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i25                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i26                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i27                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i20                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i21                                     | 2                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i22                                     | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i23                                     | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i7                                      | 0                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i6                                      | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i9                                      | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i8                                      | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i252                                    | 5                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i257                                    | 1                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i300                                    | 4                        |
+2019-12-12 13:10:51 INFO : | SingleMU_i301                                    | 5                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i165                                    | 0                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i169                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i243                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i170                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i292                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i30                                     | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i31                                     | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i198                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i192                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i193                                    | 1                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i194                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i195                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i196                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i197                                    | 2                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i176                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i177                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i256                                    | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i29                                     | 4                        |
+2019-12-12 13:10:51 INFO : | DoubleMU_i28                                     | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i286                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i245                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i33                                     | 4                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i32                                     | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i204                                    | 0                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i199                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i191                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i34                                     | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i172                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i188                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i189                                    | 4                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i186                                    | 2                        |
+2019-12-12 13:10:51 INFO : | TripleMU_i35                                     | 5                        |
+2019-12-12 13:10:51 INFO : | QuadMU_i284                                      | 5                        |
+2019-12-12 13:10:51 INFO : | QuadMU_i285                                      | 5                        |
+2019-12-12 13:10:51 INFO : | QuadMU_i36                                       | 5                        |
+2019-12-12 13:10:51 INFO : | TransverseMass_i58                               | 1                        |
+2019-12-12 13:10:51 INFO : | TransverseMass_i59                               | 5                        |
+2019-12-12 13:10:51 INFO : | TransverseMass_i60                               | 1                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i133                         | 1                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i255                         | 3                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i135                         | 4                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i137                         | 2                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i132                         | 5                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i118                         | 5                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i117                         | 4                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i185                         | 5                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i184                         | 4                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i181                         | 2                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i183                         | 2                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i267                         | 1                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i304                         | 5                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i302                         | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i338                               | 4                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i205                               | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i200                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i202                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i190                               | 4                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i171                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i175                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i187                               | 2                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i182                               | 2                        |
+2019-12-12 13:10:51 INFO : | MuonMuonCorrelation_i235                         | 1                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i306                                     | 5                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i129                                     | 0                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i239                                     | 0                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i142                                     | 2                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i91                                      | 4                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i130                                     | 0                        |
+2019-12-12 13:10:51 INFO : | QuadJET_i131                                     | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i151                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i330                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i331                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i332                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i333                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i334                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i335                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i336                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i201                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i203                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i149                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i147                               | 2                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i329                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i328                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i327                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i326                               | 3                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i358                               | 4                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i359                               | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i354                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i355                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i310                               | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i270                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i113                               | 1                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i114                               | 5                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i115                               | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i116                               | 4                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i266                               | 2                        |
+2019-12-12 13:10:51 INFO : | InvariantMass_i265                               | 4                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i121                         | 2                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i120                         | 4                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i154                         | 1                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i152                         | 5                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i153                         | 2                        |
+2019-12-12 13:10:51 INFO : | CaloCaloCorrelation_i119                         | 0                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i254                         | 3                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i136                         | 2                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i134                         | 4                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i305                         | 5                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i303                         | 1                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i273                         | 1                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i272                         | 2                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i275                         | 5                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i274                         | 0                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i277                         | 4                        |
+2019-12-12 13:10:51 INFO : | CaloMuonCorrelation_i276                         | 0                        |
+2019-12-12 13:10:51 INFO : | InvariantMassOvRm_i264                           | 4                        |
+2019-12-12 13:10:51 INFO : | InvariantMassOvRm_i316                           | 0                        |
+2019-12-12 13:10:51 INFO : |--------------------------------------------------|--------------------------|
+2019-12-12 13:10:51 INFO : |-----------------------------------------------------------------------------|
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                    |
+2019-12-12 13:10:51 INFO : |                                                                             |
+2019-12-12 13:10:51 INFO : |-------------------------------------|---------------------------------------|
+2019-12-12 13:10:51 INFO : | Module                              | Payload                               |
+2019-12-12 13:10:51 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2019-12-12 13:10:51 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-12-12 13:10:51 INFO : |  0 |         83 |         71 | 0.86 |    83.50% |  51.12% |                 |
+2019-12-12 13:10:51 INFO : |  1 |         74 |         79 | 1.07 |    80.42% |  55.84% |                 |
+2019-12-12 13:10:51 INFO : |  2 |         66 |         70 | 1.06 |    74.71% |  45.62% |                 |
+2019-12-12 13:10:51 INFO : |  3 |         13 |         24 | 1.85 |    74.46% |  65.63% |                 |
+2019-12-12 13:10:51 INFO : |  4 |         59 |         63 | 1.07 |    86.12% |  56.58% |                 |
+2019-12-12 13:10:51 INFO : |  5 |         48 |         55 | 1.15 |    79.61% |  51.00% |                 |
+2019-12-12 13:10:51 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2019-12-12 13:10:51 INFO : writing VHDL modules...
+2019-12-12 13:10:51 INFO : writing 343 algorithms to 6 module(s)
+2019-12-12 13:10:51 INFO : writing output for module: 0
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_0/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_0/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing output for module: 1
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_1/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_1/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing output for module: 2
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_2/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_2/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing output for module: 3
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_3/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_3/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing output for module: 4
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_4/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_4/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing output for module: 5
+2019-12-12 13:10:51 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_5/src/l1menu.vhd
+2019-12-12 13:10:51 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/vhdl/module_5/src/l1menu_pkg.vhd
+2019-12-12 13:10:51 INFO : writing updated XML file /home/bergauer/github/herbberg/l1menus/L1Menu_Collisions2018_v2_1_0-d1/xml/L1Menu_Collisions2018_v2_1_0-d1.xml
+2019-12-12 13:10:51 INFO : reading source XML menu file /home/bergauer/github/herbberg/l1menus/L1Menu_Collisions2018_v2_1_0-d1/xml/L1Menu_Collisions2018_v2_1_0-d1.xml
+2019-12-12 13:10:52 INFO : processing menu "L1Menu_Collisions2018_v2_1_0" ... 
+2019-12-12 13:10:52 INFO : updating menu information...
+2019-12-12 13:10:52 INFO : uuid_menu     : e36612e2-bee8-45eb-a685-f6cea687ce3d
+2019-12-12 13:10:52 INFO : uuid_firmware : 65209933-7e0e-4054-9ac0-881329c6382c
+2019-12-12 13:10:52 INFO : n_modules     : 6
+2019-12-12 13:10:52 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/xml/L1Menu_Collisions2018_v2_1_0-d90.xml
+2019-12-12 13:10:52 INFO : generating menu documentation...
+2019-12-12 13:10:52 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/xml/L1Menu_Collisions2018_v2_1_0-d90.xml
+2019-12-12 13:10:53 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/xml/L1Menu_Collisions2018_v2_1_0-d90.xml
+2019-12-12 13:10:54 INFO : patching filenames...
+2019-12-12 13:10:54 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/doc/L1Menu_Collisions2018_v2_1_0.twiki --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/doc/L1Menu_Collisions2018_v2_1_0-d90.twiki
+2019-12-12 13:10:54 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/doc/L1Menu_Collisions2018_v2_1_0.html --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_Collisions2018_v2_1_0-d90/doc/L1Menu_Collisions2018_v2_1_0-d90.html
+2019-12-12 13:10:54 INFO : done.

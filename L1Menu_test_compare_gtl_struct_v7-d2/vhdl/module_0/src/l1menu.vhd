@@ -13,7 +13,7 @@
 -- c2577a01-8fb4-4ced-9e9e-100c8cb51099
 
 -- Unique ID of firmware implementation:
--- 851134a6-8c89-47cf-a8ae-0257921a8915
+-- e9b3f413-1690-4dd2-9445-b2c6732016ee
 
 -- Scale set:
 -- scales_2018_08_07
@@ -108,7 +108,7 @@ architecture rtl of l1menu is
     signal comp_iso_tau_bx_0_0x000e : tau_obj_t;
     signal comp_pt_mu_bx_0_0x0007 : mu_obj_t;
     signal comp_qual_mu_bx_0_0xf000 : mu_obj_t;
-    -- Correlation cuts
+-- Correlation cuts
     signal comp_dr_eg_jet_bx_0_bx_0_0x0000000027100_0x00000084ca240 : eg_jet_t;
     signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc : jet_jet_t;
     signal comp_invmass_jet_jet_bx_0_bx_0_0x000010c388d00_0x41a6642c78140 : jet_jet_t;
@@ -118,7 +118,7 @@ architecture rtl of l1menu is
     signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8 : jet_mu_t;
     signal comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140 : jet_jet_t;
     signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028 : jet_tau_t;
-    -- Muon charge correlation
+-- Muon charge correlation
     signal comp_cc_quad_bx_0_bx_0_cc_os : mu_cc_quad_t;
 -- Conditions inputs
     -- Object cuts "and"
@@ -440,7 +440,7 @@ begin
             dphi_jet_tau(bx(0),bx(0)),
             dr_jet_tau(bx(0),bx(0))
         );
-
+    
 -- Second stage: comparisons
     comp_pt_eg_bx_0_0x000a_i: entity work.comparators_obj_cuts
         generic map(
@@ -1456,7 +1456,7 @@ begin
     -- External condition assignment
     single_ext_i25 <= data.ext_cond(bx(0))(9);
     single_ext_i26 <= data.ext_cond(bx(0))(10);
--- Instantiations of algorithms
+    -- Instantiations of algorithms
 
 -- 0 L1_QuadMuOpen_OS : comb{MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN],MU0[MU-QLTY_OPEN]}[CHGCOR_OS]
     l1_quad_mu_open_os <= quad_mu_i1;
