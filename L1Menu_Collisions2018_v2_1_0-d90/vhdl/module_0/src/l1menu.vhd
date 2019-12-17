@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 65209933-7e0e-4054-9ac0-881329c6382c
+-- 9727f49a-4a09-463f-adc1-73a58a6c678b
 
 -- Scale set:
 -- scales_2017_05_23
@@ -46,37 +46,44 @@ architecture rtl of l1menu is
     signal deta_calc_tau_tau : obj_bx_max_eta_range_array;
     signal deta_calc_jet_tau : obj_bx_max_eta_range_array;
     signal deta_calc_jet_mu : obj_bx_max_eta_range_array;
+    signal deta_calc_mu_mu : obj_bx_max_eta_range_array;
     signal dphi_calc_eg_jet : obj_bx_max_phi_range_array;
     signal dphi_calc_jet_jet : obj_bx_max_phi_range_array;
     signal dphi_calc_tau_tau : obj_bx_max_phi_range_array;
     signal dphi_calc_jet_tau : obj_bx_max_phi_range_array;
     signal dphi_calc_jet_mu : obj_bx_max_phi_range_array;
+    signal dphi_calc_mu_mu : obj_bx_max_phi_range_array;
     -- Correlation cuts
     signal dr_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal invmass_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal deta_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal dphi_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_eg_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_jet_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     -- Muon charge correlation    
     signal cc_double : obj_bx_muon_cc_double_array;
     signal cc_triple : obj_bx_muon_cc_triple_array;
@@ -157,14 +164,15 @@ architecture rtl of l1menu is
     signal comp_pt_jet_bx_0_0x003c : jet_obj_t;
     signal comp_pt_tau_bx_0_0x005a : tau_obj_t;
 -- Correlation cuts
-    signal comp_dr_eg_jet_bx_0_bx_0_0x0000000015f90_0x00000084ca240 : eg_jet_t;
-    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41a6642c78140 : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140 : jet_jet_t;
-    signal comp_invmass_tau_tau_bx_0_bx_0_0x0000000000000_0x000001312d000 : tau_tau_t;
-    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8 : jet_mu_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140 : jet_jet_t;
-    signal comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028 : jet_tau_t;
+    signal comp_dr_eg_jet_bx_0_bx_0_0x00000000015f90_0x000000084ca240 : eg_jet_t;
+    signal comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x000000000005dc : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x000001448c1b40_0x041a6642c78140 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140 : jet_jet_t;
+    signal comp_invmass_tau_tau_bx_0_bx_0_0x00000000000000_0x0000001312d000 : tau_tau_t;
+    signal comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8 : jet_mu_t;
+    signal comp_invmass_mu_mu_bx_0_bx_0_0x00000000bebc20_0x000000089ce520 : mu_mu_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x0000025b7f3d40_0x041a6642c78140 : jet_jet_t;
+    signal comp_dr_jet_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028 : jet_tau_t;
 -- Muon charge correlation
     signal comp_cc_double_bx_0_bx_0_cc_os : mu_cc_double_t;
 -- Conditions inputs
@@ -394,7 +402,7 @@ architecture rtl of l1menu is
     signal l1_last_bunch_in_train : std_logic;
     signal l1_first_bunch_after_train : std_logic;
 begin
--- First stage: calculations
+-- First stage: calculations  
     calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
         port map(
             data.mu(bx(0)).charge,
@@ -403,7 +411,7 @@ begin
             cc_triple(bx(0),bx(0)),
             cc_quad(bx(0),bx(0))
         );
-  
+    
     calc_deta_eg_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
@@ -412,7 +420,7 @@ begin
             conv.eg(bx(0)).eta,
             conv.jet(bx(0)).eta,
             deta_calc_eg_jet(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_eg_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
@@ -421,7 +429,7 @@ begin
             deta_calc_eg_jet(bx(0),bx(0)),
             deta_eg_jet(bx(0),bx(0))
         );
-  
+    
     calc_deta_jet_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -430,7 +438,7 @@ begin
             conv.jet(bx(0)).eta,
             conv.jet(bx(0)).eta,
             deta_calc_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_jet_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -439,7 +447,7 @@ begin
             deta_calc_jet_jet(bx(0),bx(0)),
             deta_jet_jet(bx(0),bx(0))
         );
-  
+    
     calc_deta_tau_tau_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t)
@@ -448,7 +456,7 @@ begin
             conv.tau(bx(0)).eta,
             conv.tau(bx(0)).eta,
             deta_calc_tau_tau(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_tau_tau_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t)
@@ -457,7 +465,7 @@ begin
             deta_calc_tau_tau(bx(0),bx(0)),
             deta_tau_tau(bx(0),bx(0))
         );
-  
+    
     calc_deta_jet_tau_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
@@ -466,7 +474,7 @@ begin
             conv.jet(bx(0)).eta,
             conv.tau(bx(0)).eta,
             deta_calc_jet_tau(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_jet_tau_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
@@ -475,7 +483,7 @@ begin
             deta_calc_jet_tau(bx(0),bx(0)),
             deta_jet_tau(bx(0),bx(0))
         );
-  
+    
     calc_deta_jet_mu_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -484,7 +492,7 @@ begin
             conv.jet(bx(0)).eta_conv_mu,
             conv.mu(bx(0)).eta,
             deta_calc_jet_mu(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_jet_mu_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -493,7 +501,25 @@ begin
             deta_calc_jet_mu(bx(0),bx(0)),
             deta_jet_mu(bx(0),bx(0))
         );
-  
+    
+    calc_deta_mu_mu_bx_0_bx_0_i: entity work.deta_calc
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t)
+        )
+        port map(
+            conv.mu(bx(0)).eta,
+            conv.mu(bx(0)).eta,
+            deta_calc_mu_mu(bx(0),bx(0))
+        );  
+    calc_deta_lut_mu_mu_bx_0_bx_0_i: entity work.deta_lut
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t)
+        )
+        port map(
+            deta_calc_mu_mu(bx(0),bx(0)),
+            deta_mu_mu(bx(0),bx(0))
+        );
+    
     calc_dphi_eg_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t),
@@ -503,7 +529,7 @@ begin
             conv.eg(bx(0)).phi,
             conv.jet(bx(0)).phi,
             dphi_calc_eg_jet(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_eg_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
@@ -512,7 +538,7 @@ begin
             dphi_calc_eg_jet(bx(0),bx(0)),
             dphi_eg_jet(bx(0),bx(0))
         );
-  
+    
     calc_dphi_jet_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
@@ -522,7 +548,7 @@ begin
             conv.jet(bx(0)).phi,
             conv.jet(bx(0)).phi,
             dphi_calc_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_jet_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -531,7 +557,7 @@ begin
             dphi_calc_jet_jet(bx(0),bx(0)),
             dphi_jet_jet(bx(0),bx(0))
         );
-  
+    
     calc_dphi_tau_tau_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t),
@@ -541,7 +567,7 @@ begin
             conv.tau(bx(0)).phi,
             conv.tau(bx(0)).phi,
             dphi_calc_tau_tau(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_tau_tau_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t)
@@ -550,7 +576,7 @@ begin
             dphi_calc_tau_tau(bx(0),bx(0)),
             dphi_tau_tau(bx(0),bx(0))
         );
-  
+    
     calc_dphi_jet_tau_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
@@ -560,7 +586,7 @@ begin
             conv.jet(bx(0)).phi,
             conv.tau(bx(0)).phi,
             dphi_calc_jet_tau(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_jet_tau_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
@@ -569,7 +595,7 @@ begin
             dphi_calc_jet_tau(bx(0),bx(0)),
             dphi_jet_tau(bx(0),bx(0))
         );
-  
+    
     calc_dphi_jet_mu_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
@@ -579,7 +605,7 @@ begin
             conv.jet(bx(0)).phi_conv_mu,
             conv.mu(bx(0)).phi,
             dphi_calc_jet_mu(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_jet_mu_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -588,6 +614,25 @@ begin
             dphi_calc_jet_mu(bx(0),bx(0)),
             dphi_jet_mu(bx(0),bx(0))
         );
+    
+    calc_dphi_mu_mu_bx_0_bx_0_i: entity work.dphi_calc
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t),
+            MU_MU_PHI_HALF_RANGE_BINS
+        )
+        port map(
+            conv.mu(bx(0)).phi,
+            conv.mu(bx(0)).phi,
+            dphi_calc_mu_mu(bx(0),bx(0))
+        );  
+    calc_dphi_lut_mu_mu_bx_0_bx_0_i: entity work.dphi_lut
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t)
+        )
+        port map(
+            dphi_calc_mu_mu(bx(0),bx(0)),
+            dphi_mu_mu(bx(0),bx(0))
+        );  
     calc_delta_r_eg_jet_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t)
@@ -596,7 +641,7 @@ begin
             deta_eg_jet(bx(0),bx(0)),
             dphi_eg_jet(bx(0),bx(0)),
             dr_eg_jet(bx(0),bx(0))
-        );
+        );  
     calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
@@ -604,7 +649,7 @@ begin
         port map(
             deta_calc_jet_jet(bx(0),bx(0)),
             cosh_deta_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_cos_dphi_jet_jet_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
@@ -612,7 +657,7 @@ begin
         port map(
             dphi_calc_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_inv_mass_jet_jet_bx_0_bx_0_i: entity work.invariant_mass
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
@@ -625,7 +670,7 @@ begin
             cosh_deta_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0)),
             invmass_jet_jet(bx(0),bx(0))
-       );
+       );  
     calc_cosh_deta_tau_tau_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (TAU_t,TAU_t)
@@ -633,7 +678,7 @@ begin
         port map(
             deta_calc_tau_tau(bx(0),bx(0)),
             cosh_deta_tau_tau(bx(0),bx(0))
-        );
+        );  
     calc_cos_dphi_tau_tau_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (TAU_t,TAU_t)
@@ -641,7 +686,7 @@ begin
         port map(
             dphi_calc_tau_tau(bx(0),bx(0)),
             cos_dphi_tau_tau(bx(0),bx(0))
-        );
+        );  
     calc_inv_mass_tau_tau_bx_0_bx_0_i: entity work.invariant_mass
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t),
@@ -654,7 +699,7 @@ begin
             cosh_deta_tau_tau(bx(0),bx(0)),
             cos_dphi_tau_tau(bx(0),bx(0)),
             invmass_tau_tau(bx(0),bx(0))
-       );
+       );  
     calc_delta_r_jet_mu_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -663,7 +708,36 @@ begin
             deta_jet_mu(bx(0),bx(0)),
             dphi_jet_mu(bx(0),bx(0)),
             dr_jet_mu(bx(0),bx(0))
-        );
+        );  
+    calc_cosh_deta_mu_mu_bx_0_bx_0_i: entity work.cosh_deta_lut
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (MU_t,MU_t)
+        )
+        port map(
+            deta_calc_mu_mu(bx(0),bx(0)),
+            cosh_deta_mu_mu(bx(0),bx(0))
+        );  
+    calc_cos_dphi_mu_mu_bx_0_bx_0_i: entity work.cos_dphi_lut
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (MU_t,MU_t)
+        )
+        port map(
+            dphi_calc_mu_mu(bx(0),bx(0)),
+            cos_dphi_mu_mu(bx(0),bx(0))
+        );  
+    calc_inv_mass_mu_mu_bx_0_bx_0_i: entity work.invariant_mass
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t),
+            MU_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH,
+            MU_MU_COSH_COS_VECTOR_WIDTH
+        )
+        port map(
+            conv.mu(bx(0)).pt_vector,
+            conv.mu(bx(0)).pt_vector,
+            cosh_deta_mu_mu(bx(0),bx(0)),
+            cos_dphi_mu_mu(bx(0),bx(0)),
+            invmass_mu_mu(bx(0),bx(0))
+       );  
     calc_delta_r_jet_tau_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t)
@@ -674,7 +748,7 @@ begin
             dr_jet_tau(bx(0),bx(0))
         );
     
--- Second stage: comparisons
+-- Second stage: comparisons  
     comp_pt_eg_bx_0_0x0010_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -683,7 +757,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0010
-        );
+        );  
     comp_eta_eg_bx_0_0x00c6_0x0039_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ETA_WIDTH,
@@ -691,7 +765,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).eta, comp_eta_eg_bx_0_0x00c6_0x0039
-        );
+        );  
     comp_pt_eg_bx_0_0x0022_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -700,7 +774,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0022
-        );
+        );  
     comp_pt_eg_bx_0_0x0014_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -709,7 +783,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0014
-        );
+        );  
     comp_pt_eg_bx_0_0x0018_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -718,34 +792,34 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0018
-        );
+        );  
     comp_pt_eg_bx_0_0x001e_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
             GE,  
-            X"001e", X"0000", X"0000", "ign"
+            X"001E", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x001e
-        );
+        );  
     comp_pt_jet_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"00f0", X"0000", X"0000", "ign"
+            X"00F0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00f0
-        );
+        );  
     comp_pt_jet_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"005a", X"0000", X"0000", "ign"
+            X"005A", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x005a
-        );
+        );  
     comp_pt_jet_bx_0_0x0050_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -754,7 +828,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0050
-        );
+        );  
     comp_eta_jet_bx_0_0x00c6_0x0039_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -762,16 +836,16 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00c6_0x0039
-        );
+        );  
     comp_pt_jet_bx_0_0x008c_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"008c", X"0000", X"0000", "ign"
+            X"008C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x008c
-        );
+        );  
     comp_eta_jet_bx_0_0x00c9_0x0036_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -779,16 +853,16 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00c9_0x0036
-        );
+        );  
     comp_pt_jet_bx_0_0x006e_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"006e", X"0000", X"0000", "ign"
+            X"006E", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x006e
-        );
+        );  
     comp_pt_jet_bx_0_0x0046_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -797,16 +871,16 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0046
-        );
+        );  
     comp_pt_jet_bx_0_0x00a0_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"00a0", X"0000", X"0000", "ign"
+            X"00A0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00a0
-        );
+        );  
     comp_eta_jet_bx_0_0x00cf_0x0030_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -814,7 +888,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00cf_0x0030
-        );
+        );  
     comp_pt_jet_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -823,7 +897,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0078
-        );
+        );  
     comp_eta_jet_bx_0_0x00cb_0x0034_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -831,7 +905,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00cb_0x0034
-        );
+        );  
     comp_pt_jet_bx_0_0x0064_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -840,7 +914,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0064
-        );
+        );  
     comp_pt_jet_bx_0_0x0028_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -849,7 +923,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0028
-        );
+        );  
     comp_pt_jet_bx_0_0x0056_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -858,25 +932,25 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0056
-        );
+        );  
     comp_pt_jet_bx_0_0x005c_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"005c", X"0000", X"0000", "ign"
+            X"005C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x005c
-        );
+        );  
     comp_pt_jet_bx_0_0x00c8_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"00c8", X"0000", X"0000", "ign"
+            X"00C8", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00c8
-        );
+        );  
     comp_pt_jet_bx_0_0x0118_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -885,7 +959,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0118
-        );
+        );  
     comp_pt_tau_bx_0_0x0050_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
@@ -894,7 +968,7 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x0050
-        );
+        );  
     comp_eta_tau_bx_0_0x00cf_0x0030_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_ETA_WIDTH,
@@ -902,7 +976,7 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).eta, comp_eta_tau_bx_0_0x00cf_0x0030
-        );
+        );  
     comp_iso_tau_bx_0_0x000e_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_ISO_WIDTH,
@@ -910,16 +984,16 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).iso, comp_iso_tau_bx_0_0x000e
-        );
+        );  
     comp_pt_tau_bx_0_0x008c_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
             GE,  
-            X"008c", X"0000", X"0000", "ign"
+            X"008C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x008c
-        );
+        );  
     comp_pt_tau_bx_0_0x0040_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
@@ -928,7 +1002,7 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x0040
-        );
+        );  
     comp_pt_tau_bx_0_0x0044_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
@@ -937,7 +1011,7 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x0044
-        );
+        );  
     comp_pt_tau_bx_0_0x0048_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
@@ -946,16 +1020,16 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x0048
-        );
+        );  
     comp_pt_tau_bx_0_0x003c_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
             GE,  
-            X"003c", X"0000", X"0000", "ign"
+            X"003C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x003c
-        );
+        );  
     comp_pt_tau_bx_0_0x0038_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
@@ -964,34 +1038,34 @@ begin
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x0038
-        );
+        );  
     comp_pt_etmhf_bx_0_0x00c8_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"00c8", X"0000", X"0000", "ign"
+            X"00C8", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x00c8
-        );
+        );  
     comp_pt_etmhf_bx_0_0x00dc_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"00dc", X"0000", X"0000", "ign"
+            X"00DC", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x00dc
-        );
+        );  
     comp_pt_etmhf_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"00f0", X"0000", X"0000", "ign"
+            X"00F0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x00f0
-        );
+        );  
     comp_pt_etmhf_bx_0_0x0104_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
@@ -1000,25 +1074,25 @@ begin
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x0104
-        );
+        );  
     comp_pt_etmhf_bx_0_0x00b4_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"00b4", X"0000", X"0000", "ign"
+            X"00B4", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x00b4
-        );
+        );  
     comp_pt_etmhf_bx_0_0x00a0_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"00a0", X"0000", X"0000", "ign"
+            X"00A0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x00a0
-        );
+        );  
     comp_pt_etmhf_bx_0_0x0064_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
@@ -1027,7 +1101,7 @@ begin
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x0064
-        );
+        );  
     comp_pt_etmhf_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
@@ -1036,7 +1110,7 @@ begin
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x0078
-        );
+        );  
     comp_pt_etmhf_bx_0_0x0050_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
@@ -1045,43 +1119,43 @@ begin
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x0050
-        );
+        );  
     comp_pt_etmhf_bx_0_0x008c_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
             GE,  
-            X"008c", X"0000", X"0000", "ign"
+            X"008C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x008c
-        );
+        );  
     comp_pt_htt_bx_0_0x01e0_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
             GE,  
-            X"01e0", X"0000", X"0000", "ign"
+            X"01E0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x01e0
-        );
+        );  
     comp_pt_htt_bx_0_0x01f4_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
             GE,  
-            X"01f4", X"0000", X"0000", "ign"
+            X"01F4", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x01f4
-        );
+        );  
     comp_pt_htt_bx_0_0x01b8_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
             GE,  
-            X"01b8", X"0000", X"0000", "ign"
+            X"01B8", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x01b8
-        );
+        );  
     comp_pt_htt_bx_0_0x0208_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -1090,7 +1164,7 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0208
-        );
+        );  
     comp_pt_htt_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -1099,7 +1173,7 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0078
-        );
+        );  
     comp_pt_htt_bx_0_0x0258_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -1108,16 +1182,16 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0258
-        );
+        );  
     comp_pt_htt_bx_0_0x02a8_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
             GE,  
-            X"02a8", X"0000", X"0000", "ign"
+            X"02A8", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x02a8
-        );
+        );  
     comp_pt_htt_bx_0_0x0230_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -1126,7 +1200,7 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0230
-        );
+        );  
     comp_pt_htt_bx_0_0x0280_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -1135,7 +1209,7 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0280
-        );
+        );  
     comp_count_mbt0hfm_bx_0_0x0001_i: entity work.comparators_obj_cuts
         generic map(
             N_MBT0HFM_OBJECTS, MBT0HFM_WIDTH,
@@ -1143,7 +1217,7 @@ begin
         )
         port map(
             lhc_clk, data.mbt0hfm(bx(0)).count, comp_count_mbt0hfm_bx_0_0x0001
-        );
+        );  
     comp_count_mbt0hfp_bx_0_0x0001_i: entity work.comparators_obj_cuts
         generic map(
             N_MBT0HFP_OBJECTS, MBT0HFP_WIDTH,
@@ -1151,7 +1225,7 @@ begin
         )
         port map(
             lhc_clk, data.mbt0hfp(bx(0)).count, comp_count_mbt0hfp_bx_0_0x0001
-        );
+        );  
     comp_pt_mu_bx_0_0x0007_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
@@ -1160,7 +1234,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x0007
-        );
+        );  
     comp_qual_mu_bx_0_0xf000_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_QUAL_WIDTH,
@@ -1168,7 +1242,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).qual, comp_qual_mu_bx_0_0xf000
-        );
+        );  
     comp_pt_mu_bx_0_0x0001_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
@@ -1177,7 +1251,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x0001
-        );
+        );  
     comp_eta_mu_bx_0_0x017f_0x0081_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_ETA_WIDTH,
@@ -1185,7 +1259,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).eta, comp_eta_mu_bx_0_0x017f_0x0081
-        );
+        );  
     comp_qual_mu_bx_0_0xfff0_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_QUAL_WIDTH,
@@ -1193,7 +1267,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).qual, comp_qual_mu_bx_0_0xfff0
-        );
+        );  
     comp_eta_mu_bx_0_0x019b_0x0065_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_ETA_WIDTH,
@@ -1201,16 +1275,16 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).eta, comp_eta_mu_bx_0_0x019b_0x0065
-        );
+        );  
     comp_pt_mu_bx_0_0x002d_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
             GE,  
-            X"002d", X"0000", X"0000", "ign"
+            X"002D", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x002d
-        );
+        );  
     comp_eta_mu_bx_0_0x013f_0x00c1_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_ETA_WIDTH,
@@ -1218,16 +1292,16 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).eta, comp_eta_mu_bx_0_0x013f_0x00c1
-        );
+        );  
     comp_pt_mu_bx_0_0x000d_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
             GE,  
-            X"000d", X"0000", X"0000", "ign"
+            X"000D", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x000d
-        );
+        );  
     comp_eta_mu_bx_0_0x0176_0x008a_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_ETA_WIDTH,
@@ -1235,16 +1309,16 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).eta, comp_eta_mu_bx_0_0x0176_0x008a
-        );
+        );  
     comp_pt_mu_bx_0_0x000b_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
             GE,  
-            X"000b", X"0000", X"0000", "ign"
+            X"000B", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x000b
-        );
+        );  
     comp_pt_mu_bx_0_0x0008_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
@@ -1253,7 +1327,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x0008
-        );
+        );  
     comp_pt_mu_bx_0_0x0006_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
@@ -1262,7 +1336,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x0006
-        );
+        );  
     comp_pt_eg_bx_0_0x0034_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -1271,7 +1345,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0034
-        );
+        );  
     comp_eta_eg_bx_0_0x00cf_0x0030_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ETA_WIDTH,
@@ -1279,7 +1353,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).eta, comp_eta_eg_bx_0_0x00cf_0x0030
-        );
+        );  
     comp_iso_eg_bx_0_0x000c_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ISO_WIDTH,
@@ -1287,7 +1361,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).iso, comp_iso_eg_bx_0_0x000c
-        );
+        );  
     comp_pt_jet_bx_0_0x0044_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -1296,105 +1370,115 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0044
-        );
+        );  
     comp_pt_jet_bx_0_0x003c_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"003c", X"0000", X"0000", "ign"
+            X"003C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x003c
-        );
+        );  
     comp_pt_tau_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
             N_TAU_OBJECTS, TAU_PT_WIDTH,  
             GE,  
-            X"005a", X"0000", X"0000", "ign"
+            X"005A", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.tau(bx(0)).pt, comp_pt_tau_bx_0_0x005a
-        );
-    comp_dr_eg_jet_bx_0_bx_0_0x0000000015f90_0x00000084ca240_i: entity work.comparators_corr_cuts
+        );  
+    comp_dr_eg_jet_bx_0_bx_0_0x00000000015f90_0x000000084ca240_i: entity work.comparators_corr_cuts
         generic map(
             N_EG_OBJECTS, N_JET_OBJECTS, (eg_t,jet_t),
             EG_JET_DELTAR_VECTOR_WIDTH, deltaR, 
-            X"0000000015F90", X"00000084CA240"        
+            X"00000000015F90", X"000000084CA240"        
         )
         port map(
             lhc_clk, 
-            dr_eg_jet(bx(0),bx(0)), comp_dr_eg_jet_bx_0_bx_0_0x0000000015f90_0x00000084ca240
-        );
-    comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc_i: entity work.comparators_corr_cuts
+            dr_eg_jet(bx(0),bx(0)), comp_dr_eg_jet_bx_0_bx_0_0x00000000015f90_0x000000084ca240
+        );  
+    comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x000000000005dc_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_DELTAETA_VECTOR_WIDTH, deltaEta, 
-            X"0000000000000", X"00000000005DC"        
+            X"00000000000000", X"000000000005DC"        
         )
         port map(
             lhc_clk, 
-            deta_jet_jet(bx(0),bx(0)), comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc
-        );
-    comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41a6642c78140_i: entity work.comparators_corr_cuts
+            deta_jet_jet(bx(0),bx(0)), comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x000000000005dc
+        );  
+    comp_invmass_jet_jet_bx_0_bx_0_0x000001448c1b40_0x041a6642c78140_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass, 
-            X"00001448C1B40", X"41A6642C78140"        
+            X"000001448C1B40", X"041A6642C78140"        
         )
         port map(
             lhc_clk, 
-            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41A6642C78140
-        );
-    comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140_i: entity work.comparators_corr_cuts
+            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x000001448c1b40_0x041A6642C78140
+        );  
+    comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass, 
-            X"000047999ED00", X"41A6642C78140"        
+            X"0000047999ED00", X"041A6642C78140"        
         )
         port map(
             lhc_clk, 
-            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41A6642C78140
-        );
-    comp_invmass_tau_tau_bx_0_bx_0_0x0000000000000_0x000001312d000_i: entity work.comparators_corr_cuts
+            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041A6642C78140
+        );  
+    comp_invmass_tau_tau_bx_0_bx_0_0x00000000000000_0x0000001312d000_i: entity work.comparators_corr_cuts
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t),
             TAU_TAU_MASS_VECTOR_WIDTH, mass, 
-            X"0000000000000", X"000001312D000"        
+            X"00000000000000", X"0000001312D000"        
         )
         port map(
             lhc_clk, 
-            invmass_tau_tau(bx(0),bx(0)), comp_invmass_tau_tau_bx_0_bx_0_0x0000000000000_0x000001312D000
-        );
-    comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8_i: entity work.comparators_corr_cuts
+            invmass_tau_tau(bx(0),bx(0)), comp_invmass_tau_tau_bx_0_bx_0_0x00000000000000_0x0000001312D000
+        );  
+    comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
             JET_MU_DELTAR_VECTOR_WIDTH, deltaR, 
-            X"0000000000000", X"00000000274E8"        
+            X"00000000000000", X"000000000274E8"        
         )
         port map(
             lhc_clk, 
-            dr_jet_mu(bx(0),bx(0)), comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8
-        );
-    comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140_i: entity work.comparators_corr_cuts
+            dr_jet_mu(bx(0),bx(0)), comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8
+        );  
+    comp_invmass_mu_mu_bx_0_bx_0_0x00000000bebc20_0x000000089ce520_i: entity work.comparators_corr_cuts
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t),
+            MU_MU_MASS_VECTOR_WIDTH, mass, 
+            X"00000000BEBC20", X"000000089CE520"        
+        )
+        port map(
+            lhc_clk, 
+            invmass_mu_mu(bx(0),bx(0)), comp_invmass_mu_mu_bx_0_bx_0_0x00000000bebc20_0x000000089CE520
+        );  
+    comp_invmass_jet_jet_bx_0_bx_0_0x0000025b7f3d40_0x041a6642c78140_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass, 
-            X"000025B7F3D40", X"41A6642C78140"        
+            X"0000025B7F3D40", X"041A6642C78140"        
         )
         port map(
             lhc_clk, 
-            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41A6642C78140
-        );
-    comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028_i: entity work.comparators_corr_cuts
+            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x0000025b7f3d40_0x041A6642C78140
+        );  
+    comp_dr_jet_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t),
             JET_TAU_DELTAR_VECTOR_WIDTH, deltaR, 
-            X"0000000000000", X"000000000A028"        
+            X"00000000000000", X"0000000000A028"        
         )
         port map(
             lhc_clk, 
-            dr_jet_tau(bx(0),bx(0)), comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028
-        );
+            dr_jet_tau(bx(0),bx(0)), comp_dr_jet_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028
+        );  
     comp_cc_double_bx_0_bx_0_cc_os_i: entity work.comparators_muon_charge_corr
         generic map(
             double, CC_OS
@@ -1409,27 +1493,42 @@ begin
     -- Creating condition inputs (combination of object cuts)
     comb_eg_bx_0_pt_0010_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0010
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_0022_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0022
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_0014_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0014
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_0018_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0018
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_001e_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x001e
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_00f0_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -1442,123 +1541,198 @@ begin
 
     comb_jet_bx_0_pt_0050_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_008c_eta_00c9_0036_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x008c
-    and comp_eta_jet_bx_0_0x00c9_0x0036
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c9_0x0036
+    )
     ;
 
     comb_jet_bx_0_pt_006e_eta_00c9_0036_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x006e
-    and comp_eta_jet_bx_0_0x00c9_0x0036
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c9_0x0036
+    )
     ;
 
     comb_jet_bx_0_pt_0050_eta_00c9_0036_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x00c9_0x0036
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c9_0x0036
+    )
     ;
 
     comb_jet_bx_0_pt_0046_eta_00c9_0036_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0046
-    and comp_eta_jet_bx_0_0x00c9_0x0036
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c9_0x0036
+    )
     ;
 
     comb_jet_bx_0_pt_00a0_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x00a0
-    and comp_eta_jet_bx_0_0x00cf_0x0030
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cf_0x0030
+    )
     ;
 
     comb_jet_bx_0_pt_0078_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0078
-    and comp_eta_jet_bx_0_0x00cf_0x0030
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cf_0x0030
+    )
     ;
 
     comb_jet_bx_0_pt_005a_eta_00cb_0034_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x005a
-    and comp_eta_jet_bx_0_0x00cb_0x0034
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cb_0x0034
+    )
     ;
 
     comb_jet_bx_0_pt_0050_eta_00cb_0034_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x00cb_0x0034
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cb_0x0034
+    )
     ;
 
     comb_jet_bx_0_pt_0064_eta_00cb_0034_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0064
-    and comp_eta_jet_bx_0_0x00cb_0x0034
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cb_0x0034
+    )
     ;
 
     comb_jet_bx_0_pt_0028_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0028
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_0056_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0056
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_005c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x005c
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_0078_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0078
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_00c8_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x00c8
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_0118_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0118
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_tau_bx_0_pt_0050_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x0050
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_tau_bx_0_pt_008c_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_tau_bx_0_0x008c
-    and comp_eta_tau_bx_0_0x00cf_0x0030
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
     ;
 
     comb_tau_bx_0_pt_0040_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x0040
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_tau_bx_0_pt_0044_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x0044
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_tau_bx_0_pt_0048_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x0048
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_tau_bx_0_pt_003c_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x003c
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_tau_bx_0_pt_0038_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x0038
-    and comp_eta_tau_bx_0_0x00cf_0x0030
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    (
+    comp_eta_tau_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_etmhf_bx_0_pt_00c8_phi_0000_0000_0000_0000 <= 
@@ -1645,72 +1819,104 @@ begin
 
     comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x0007
-    and comp_qual_mu_bx_0_0xf000
+    and 
+    comp_qual_mu_bx_0_0xf000
     ;
 
     comb_mu_bx_0_pt_0001_eta_017f_0081_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0001
-    and comp_eta_mu_bx_0_0x017f_0x0081
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    (
+    comp_eta_mu_bx_0_0x017f_0x0081
+    )
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_mu_bx_0_pt_0001_eta_019b_0065_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0001
-    and comp_eta_mu_bx_0_0x019b_0x0065
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    (
+    comp_eta_mu_bx_0_0x019b_0x0065
+    )
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_mu_bx_0_pt_002d_eta_013f_00c1_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x002d
-    and comp_eta_mu_bx_0_0x013f_0x00c1
-    and comp_qual_mu_bx_0_0xf000
+    and 
+    (
+    comp_eta_mu_bx_0_0x013f_0x00c1
+    )
+    and 
+    comp_qual_mu_bx_0_0xf000
     ;
 
     comb_mu_bx_0_pt_000d_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x000d
-    and comp_qual_mu_bx_0_0xf000
+    and 
+    comp_qual_mu_bx_0_0xf000
     ;
 
     comb_mu_bx_0_pt_0007_eta_0176_008a_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x0007
-    and comp_eta_mu_bx_0_0x0176_0x008a
-    and comp_qual_mu_bx_0_0xf000
+    and 
+    (
+    comp_eta_mu_bx_0_0x0176_0x008a
+    )
+    and 
+    comp_qual_mu_bx_0_0xf000
     ;
 
     comb_mu_bx_0_pt_0001_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0001
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_mu_bx_0_pt_000b_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x000b
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_mu_bx_0_pt_0008_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0008
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_mu_bx_0_pt_0006_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign <= 
     comp_pt_mu_bx_0_0x0006
-    and comp_qual_mu_bx_0_0xfff0
+    and 
+    comp_qual_mu_bx_0_0xfff0
     ;
 
     comb_eg_bx_0_pt_0034_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000c <= 
     comp_pt_eg_bx_0_0x0034
-    and comp_eta_eg_bx_0_0x00cf_0x0030
-    and comp_iso_eg_bx_0_0x000c
+    and 
+    (
+    comp_eta_eg_bx_0_0x00cf_0x0030
+    )
+    and 
+    comp_iso_eg_bx_0_0x000c
     ;
 
     comb_jet_bx_0_pt_0044_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0044
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x003c
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -1719,17 +1925,24 @@ begin
 
     comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e <= 
     comp_pt_tau_bx_0_0x005a
-    and comp_iso_tau_bx_0_0x000e
+    and 
+    comp_iso_tau_bx_0_0x000e
     ;
 
     comb_jet_bx_0_pt_00f0_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x00f0
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_jet_bx_0_pt_00a0_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x00a0
-    and comp_eta_jet_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c6_0x0039
+    )
     ;
 
     -- Instantiations of conditions
@@ -2425,7 +2638,7 @@ begin
             comb_eg_bx_0_pt_0034_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000c,
             in_2 => 
             comb_jet_bx_0_pt_0044_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x0000000015f90_0x00000084ca240,
+            delta_r => comp_dr_eg_jet_bx_0_bx_0_0x00000000015f90_0x000000084ca240,
             cond_o => calo_calo_correlation_i119
         );
 
@@ -2441,8 +2654,8 @@ begin
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x00000000005dc, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x00001448c1b40_0x41a6642c78140,
+            deta => comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x000000000005dc, 
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000001448c1b40_0x041a6642c78140,
             cond_o => invariant_mass_i115
         );
 
@@ -2458,7 +2671,7 @@ begin
             comb_jet_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i310
         );
 
@@ -2474,7 +2687,7 @@ begin
             comb_tau_bx_0_pt_003c_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e,
             in_2 => 
             comb_tau_bx_0_pt_003c_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e, 
-            inv_mass => comp_invmass_tau_tau_bx_0_bx_0_0x0000000000000_0x000001312d000,
+            inv_mass => comp_invmass_tau_tau_bx_0_bx_0_0x00000000000000_0x0000001312d000,
             cond_o => invariant_mass_i359
         );
 
@@ -2490,7 +2703,7 @@ begin
             comb_jet_bx_0_pt_00f0_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
-            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8,
+            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8,
             cond_o => calo_muon_correlation_i274
         );
 
@@ -2506,8 +2719,25 @@ begin
             comb_jet_bx_0_pt_00a0_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_mu_bx_0_pt_0007_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
-            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8,
+            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8,
             cond_o => calo_muon_correlation_i276
+        );
+
+    cond_invariant_mass_i205_i: entity work.correlation_conditions
+        generic map(
+            N_MU_OBJECTS, N_MU_OBJECTS,
+            ((0,7), (0,7), (0,0), (0,0)),
+            true
+        )
+        port map(
+            lhc_clk,
+            in_1 => 
+            comb_mu_bx_0_pt_000b_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign,
+            in_2 => 
+            comb_mu_bx_0_pt_0006_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_fff0_charge_ign, 
+            inv_mass => comp_invmass_mu_mu_bx_0_bx_0_0x00000000bebc20_0x000000089ce520,
+            charge_corr_double => comp_cc_double_bx_0_bx_0_cc_os,
+            cond_o => invariant_mass_i205
         );
 
     cond_invariant_mass_ov_rm_i316_i: entity work.correlation_conditions_ovrm
@@ -2525,8 +2755,8 @@ begin
             comb_jet_bx_0_pt_0046_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_3 => 
             comb_tau_bx_0_pt_005a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000e, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000025b7f3d40_0x41a6642c78140, 
-            dr_ovrm => comp_dr_jet_tau_bx_0_bx_0_0x0000000000000_0x000000000a028,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000025b7f3d40_0x041a6642c78140, 
+            dr_ovrm => comp_dr_jet_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028,
             cond_o => invariant_mass_ov_rm_i316
         );    
     -- Centrality assignment
@@ -2545,22 +2775,22 @@ begin
 
 -- 4 L1_SingleMuOpen : MU0[MU-QLTY_OPEN]
     l1_single_mu_open <= single_mu_i7;
-    algo(74) <= l1_single_mu_open;
+    algo(38) <= l1_single_mu_open;
 -- 82 L1_TripleMu_5_3p5_2p5_OQ_DoubleMu_5_2p5_OQ_OS_Mass_5to17 : comb{MU5[MU-QLTY_OPEN],MU3p5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]} AND mass_inv{MU5[MU-QLTY_OPEN],MU2p5[MU-QLTY_OPEN]}[MASS_MASS_5to17,CHGCOR_OS]
     l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17 <= triple_mu_i204 and invariant_mass_i205;
     algo(75) <= l1_triple_mu_5_3p5_2p5_oq_double_mu_5_2p5_oq_os_mass_5to17;
 -- 104 L1_Mu6_DoubleEG10er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG10[EG-ETA_2p52],EG10[EG-ETA_2p52]}
     l1_mu6_double_eg10er2p5 <= single_mu_i162 and double_eg_i214;
-    algo(50) <= l1_mu6_double_eg10er2p5;
+    algo(58) <= l1_mu6_double_eg10er2p5;
 -- 105 L1_Mu6_DoubleEG12er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG12[EG-ETA_2p52],EG12[EG-ETA_2p52]}
     l1_mu6_double_eg12er2p5 <= single_mu_i162 and double_eg_i246;
-    algo(60) <= l1_mu6_double_eg12er2p5;
+    algo(61) <= l1_mu6_double_eg12er2p5;
 -- 106 L1_Mu6_DoubleEG15er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG15[EG-ETA_2p52],EG15[EG-ETA_2p52]}
     l1_mu6_double_eg15er2p5 <= single_mu_i162 and double_eg_i247;
-    algo(70) <= l1_mu6_double_eg15er2p5;
+    algo(27) <= l1_mu6_double_eg15er2p5;
 -- 107 L1_Mu6_DoubleEG17er2p5 : MU6[MU-QLTY_SNGL] AND comb{EG17[EG-ETA_2p52],EG17[EG-ETA_2p52]}
     l1_mu6_double_eg17er2p5 <= single_mu_i162 and double_eg_i206;
-    algo(71) <= l1_mu6_double_eg17er2p5;
+    algo(29) <= l1_mu6_double_eg17er2p5;
 -- 124 L1_Mu3_Jet80er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET80[JET-ETA_2p52]}[DR_MAX_0p4]
     l1_mu3_jet80er2p5_d_r_max0p4 <= calo_muon_correlation_i276;
     algo(81) <= l1_mu3_jet80er2p5_d_r_max0p4;
@@ -2569,109 +2799,109 @@ begin
     algo(80) <= l1_mu3_jet120er2p5_d_r_max0p4;
 -- 128 L1_Mu3er1p5_Jet100er2p5_ETMHF40 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF40
     l1_mu3er1p5_jet100er2p5_etmhf40 <= single_mu_i249 and single_jet_i250 and single_etmhf_i251;
-    algo(31) <= l1_mu3er1p5_jet100er2p5_etmhf40;
+    algo(28) <= l1_mu3er1p5_jet100er2p5_etmhf40;
 -- 129 L1_Mu3er1p5_Jet100er2p5_ETMHF50 : MU3[MU-QLTY_SNGL,MU-ETA_1p5] AND JET100[JET-ETA_2p52] AND ETMHF50
     l1_mu3er1p5_jet100er2p5_etmhf50 <= single_mu_i249 and single_jet_i250 and single_etmhf_i166;
-    algo(61) <= l1_mu3er1p5_jet100er2p5_etmhf50;
+    algo(40) <= l1_mu3er1p5_jet100er2p5_etmhf50;
 -- 131 L1_Mu6_HTT240er : MU6[MU-QLTY_SNGL] AND HTT240
     l1_mu6_htt240er <= single_mu_i162 and single_htt_i163;
-    algo(55) <= l1_mu6_htt240er;
+    algo(74) <= l1_mu6_htt240er;
 -- 132 L1_Mu6_HTT250er : MU6[MU-QLTY_SNGL] AND HTT250
     l1_mu6_htt250er <= single_mu_i162 and single_htt_i164;
-    algo(21) <= l1_mu6_htt250er;
+    algo(15) <= l1_mu6_htt250er;
 -- 145 L1_DoubleMu3_SQ_ETMHF50_HTT60er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND HTT60
     l1_double_mu3_sq_etmhf50_htt60er <= double_mu_i165 and single_etmhf_i166 and single_htt_i179;
-    algo(7) <= l1_double_mu3_sq_etmhf50_htt60er;
+    algo(56) <= l1_double_mu3_sq_etmhf50_htt60er;
 -- 146 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND (JET60[JET-ETA_2p52] OR comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]})
     l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5 <= double_mu_i165 and single_etmhf_i166 and ( single_jet_i167 or double_jet_i87 );
-    algo(54) <= l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5;
+    algo(23) <= l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5;
 -- 147 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF50 AND JET60[JET-ETA_2p52]
     l1_double_mu3_sq_etmhf50_jet60er2p5 <= double_mu_i165 and single_etmhf_i166 and single_jet_i167;
-    algo(63) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
+    algo(39) <= l1_double_mu3_sq_etmhf50_jet60er2p5;
 -- 148 L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND ETMHF60 AND JET60[JET-ETA_2p52]
     l1_double_mu3_sq_etmhf60_jet60er2p5 <= double_mu_i165 and single_etmhf_i240 and single_jet_i167;
-    algo(22) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
+    algo(26) <= l1_double_mu3_sq_etmhf60_jet60er2p5;
 -- 150 L1_DoubleMu3_SQ_HTT220er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT220
     l1_double_mu3_sq_htt220er <= double_mu_i165 and single_htt_i168;
-    algo(27) <= l1_double_mu3_sq_htt220er;
+    algo(31) <= l1_double_mu3_sq_htt220er;
 -- 151 L1_DoubleMu3_SQ_HTT240er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT240
     l1_double_mu3_sq_htt240er <= double_mu_i165 and single_htt_i163;
     algo(64) <= l1_double_mu3_sq_htt240er;
 -- 152 L1_DoubleMu3_SQ_HTT260er : comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]} AND HTT260
     l1_double_mu3_sq_htt260er <= double_mu_i165 and single_htt_i174;
-    algo(44) <= l1_double_mu3_sq_htt260er;
+    algo(46) <= l1_double_mu3_sq_htt260er;
 -- 234 L1_LooseIsoEG26er2p1_Jet34er2p5_dR_Min0p3 : dist{EG26[EG-ETA_2p13,EG-ISO_0xC],JET34[JET-ETA_2p52]}[DR_MIN_0p3]
     l1_loose_iso_eg26er2p1_jet34er2p5_d_r_min0p3 <= calo_calo_correlation_i119;
     algo(79) <= l1_loose_iso_eg26er2p1_jet34er2p5_d_r_min0p3;
 -- 247 L1_DoubleEG8er2p5_HTT260er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT260
     l1_double_eg8er2p5_htt260er <= double_eg_i173 and single_htt_i174;
-    algo(34) <= l1_double_eg8er2p5_htt260er;
+    algo(72) <= l1_double_eg8er2p5_htt260er;
 -- 248 L1_DoubleEG8er2p5_HTT280er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT280
     l1_double_eg8er2p5_htt280er <= double_eg_i173 and single_htt_i96;
-    algo(29) <= l1_double_eg8er2p5_htt280er;
+    algo(10) <= l1_double_eg8er2p5_htt280er;
 -- 249 L1_DoubleEG8er2p5_HTT300er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT300
     l1_double_eg8er2p5_htt300er <= double_eg_i173 and single_htt_i241;
-    algo(49) <= l1_double_eg8er2p5_htt300er;
+    algo(42) <= l1_double_eg8er2p5_htt300er;
 -- 250 L1_DoubleEG8er2p5_HTT320er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT320
     l1_double_eg8er2p5_htt320er <= double_eg_i173 and single_htt_i97;
-    algo(72) <= l1_double_eg8er2p5_htt320er;
+    algo(30) <= l1_double_eg8er2p5_htt320er;
 -- 251 L1_DoubleEG8er2p5_HTT340er : comb{EG8[EG-ETA_2p52],EG8[EG-ETA_2p52]} AND HTT340
     l1_double_eg8er2p5_htt340er <= double_eg_i173 and single_htt_i242;
-    algo(57) <= l1_double_eg8er2p5_htt340er;
+    algo(5) <= l1_double_eg8er2p5_htt340er;
 -- 277 L1_DoubleIsoTau30er2p1_Mass_Max80 : mass_inv{TAU30[TAU-ETA_2p13,TAU-ISO_0xE],TAU30[TAU-ETA_2p13,TAU-ISO_0xE]}[MASS_MAX_80]
     l1_double_iso_tau30er2p1_mass_max80 <= invariant_mass_i359;
     algo(76) <= l1_double_iso_tau30er2p1_mass_max80;
 -- 282 L1_Mu22er2p1_IsoTau28er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU28[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau28er2p1 <= single_mu_i141 and single_tau_i361;
-    algo(43) <= l1_mu22er2p1_iso_tau28er2p1;
+    algo(6) <= l1_mu22er2p1_iso_tau28er2p1;
 -- 283 L1_Mu22er2p1_IsoTau30er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU30[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau30er2p1 <= single_mu_i141 and single_tau_i360;
-    algo(35) <= l1_mu22er2p1_iso_tau30er2p1;
+    algo(9) <= l1_mu22er2p1_iso_tau30er2p1;
 -- 284 L1_Mu22er2p1_IsoTau32er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU32[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau32er2p1 <= single_mu_i141 and single_tau_i159;
-    algo(14) <= l1_mu22er2p1_iso_tau32er2p1;
+    algo(50) <= l1_mu22er2p1_iso_tau32er2p1;
 -- 285 L1_Mu22er2p1_IsoTau34er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU34[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau34er2p1 <= single_mu_i141 and single_tau_i160;
-    algo(20) <= l1_mu22er2p1_iso_tau34er2p1;
+    algo(14) <= l1_mu22er2p1_iso_tau34er2p1;
 -- 286 L1_Mu22er2p1_IsoTau36er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU36[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau36er2p1 <= single_mu_i141 and single_tau_i161;
-    algo(66) <= l1_mu22er2p1_iso_tau36er2p1;
+    algo(54) <= l1_mu22er2p1_iso_tau36er2p1;
 -- 287 L1_Mu22er2p1_IsoTau40er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU40[TAU-ETA_2p13,TAU-ISO_0xE]
     l1_mu22er2p1_iso_tau40er2p1 <= single_mu_i141 and single_tau_i138;
-    algo(51) <= l1_mu22er2p1_iso_tau40er2p1;
+    algo(11) <= l1_mu22er2p1_iso_tau40er2p1;
 -- 289 L1_Mu22er2p1_Tau70er2p1 : MU22[MU-QLTY_SNGL,MU-ETA_2p10] AND TAU70[TAU-ETA_2p13]
     l1_mu22er2p1_tau70er2p1 <= single_mu_i141 and single_tau_i158;
-    algo(42) <= l1_mu22er2p1_tau70er2p1;
+    algo(44) <= l1_mu22er2p1_tau70er2p1;
 -- 291 L1_IsoTau40er2p1_ETMHF80 : TAU40[TAU-ETA_2p13,TAU-ISO_0xE] AND ETMHF80
     l1_iso_tau40er2p1_etmhf80 <= single_tau_i138 and single_etmhf_i140;
-    algo(16) <= l1_iso_tau40er2p1_etmhf80;
+    algo(69) <= l1_iso_tau40er2p1_etmhf80;
 -- 292 L1_IsoTau40er2p1_ETMHF90 : TAU40[TAU-ETA_2p13,TAU-ISO_0xE] AND ETMHF90
     l1_iso_tau40er2p1_etmhf90 <= single_tau_i138 and single_etmhf_i139;
-    algo(18) <= l1_iso_tau40er2p1_etmhf90;
+    algo(34) <= l1_iso_tau40er2p1_etmhf90;
 -- 293 L1_IsoTau40er2p1_ETMHF100 : TAU40[TAU-ETA_2p13,TAU-ISO_0xE] AND ETMHF100
     l1_iso_tau40er2p1_etmhf100 <= single_tau_i138 and single_etmhf_i101;
-    algo(25) <= l1_iso_tau40er2p1_etmhf100;
+    algo(60) <= l1_iso_tau40er2p1_etmhf100;
 -- 294 L1_IsoTau40er2p1_ETMHF110 : TAU40[TAU-ETA_2p13,TAU-ISO_0xE] AND ETMHF110
     l1_iso_tau40er2p1_etmhf110 <= single_tau_i138 and single_etmhf_i102;
-    algo(9) <= l1_iso_tau40er2p1_etmhf110;
+    algo(45) <= l1_iso_tau40er2p1_etmhf110;
 -- 317 L1_SingleJet60er2p5 : JET60[JET-ETA_2p52]
     l1_single_jet60er2p5 <= single_jet_i167;
-    algo(23) <= l1_single_jet60er2p5;
+    algo(49) <= l1_single_jet60er2p5;
 -- 320 L1_SingleJet140er2p5 : JET140[JET-ETA_2p52]
     l1_single_jet140er2p5 <= single_jet_i253;
-    algo(5) <= l1_single_jet140er2p5;
+    algo(7) <= l1_single_jet140er2p5;
 -- 332 L1_SingleJet140er2p5_ETMHF70 : JET140[JET-ETA_2p52] AND ETMHF70
     l1_single_jet140er2p5_etmhf70 <= single_jet_i253 and single_etmhf_i353;
-    algo(69) <= l1_single_jet140er2p5_etmhf70;
+    algo(3) <= l1_single_jet140er2p5_etmhf70;
 -- 333 L1_SingleJet140er2p5_ETMHF80 : JET140[JET-ETA_2p52] AND ETMHF80
     l1_single_jet140er2p5_etmhf80 <= single_jet_i253 and single_etmhf_i140;
-    algo(10) <= l1_single_jet140er2p5_etmhf80;
+    algo(66) <= l1_single_jet140er2p5_etmhf80;
 -- 334 L1_SingleJet140er2p5_ETMHF90 : JET140[JET-ETA_2p52] AND ETMHF90
     l1_single_jet140er2p5_etmhf90 <= single_jet_i253 and single_etmhf_i139;
-    algo(37) <= l1_single_jet140er2p5_etmhf90;
+    algo(17) <= l1_single_jet140er2p5_etmhf90;
 -- 340 L1_DoubleJet40er2p5 : comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]}
     l1_double_jet40er2p5 <= double_jet_i87;
-    algo(13) <= l1_double_jet40er2p5;
+    algo(16) <= l1_double_jet40er2p5;
 -- 352 L1_DoubleJet30er2p5_Mass_Min330_dEta_Max1p5 : mass_inv{JET30[JET-ETA_2p52],JET30[JET-ETA_2p52]}[MASS_MIN_330,DETA_MAX_1p5]
     l1_double_jet30er2p5_mass_min330_d_eta_max1p5 <= invariant_mass_i115;
     algo(78) <= l1_double_jet30er2p5_mass_min330_d_eta_max1p5;
@@ -2683,114 +2913,114 @@ begin
     algo(82) <= l1_double_jet35_mass_min450_iso_tau45_rm_ovlp;
 -- 384 L1_HTT280er_QuadJet_70_55_40_35_er2p4 : HTT280 AND comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET35[JET-ETA_2p4]}
     l1_htt280er_quad_jet_70_55_40_35_er2p4 <= single_htt_i96 and quad_jet_i129;
-    algo(46) <= l1_htt280er_quad_jet_70_55_40_35_er2p4;
+    algo(57) <= l1_htt280er_quad_jet_70_55_40_35_er2p4;
 -- 385 L1_HTT320er_QuadJet_70_55_40_40_er2p4 : HTT320 AND comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET40[JET-ETA_2p4]}
     l1_htt320er_quad_jet_70_55_40_40_er2p4 <= single_htt_i97 and quad_jet_i130;
-    algo(40) <= l1_htt320er_quad_jet_70_55_40_40_er2p4;
+    algo(22) <= l1_htt320er_quad_jet_70_55_40_40_er2p4;
 -- 386 L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 : HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET45[JET-ETA_2p3],JET40[JET-ETA_2p3]}
     l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3 <= single_htt_i97 and quad_jet_i131;
-    algo(30) <= l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3;
+    algo(63) <= l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3;
 -- 387 L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 : HTT320 AND comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET50[JET-ETA_2p3],JET45[JET-ETA_2p3]}
     l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3 <= single_htt_i97 and quad_jet_i239;
-    algo(36) <= l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3;
+    algo(41) <= l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3;
 -- 402 L1_HTT280er : HTT280
     l1_htt280er <= single_htt_i96;
-    algo(53) <= l1_htt280er;
+    algo(12) <= l1_htt280er;
 -- 403 L1_HTT320er : HTT320
     l1_htt320er <= single_htt_i97;
-    algo(38) <= l1_htt320er;
+    algo(8) <= l1_htt320er;
 -- 421 L1_ETMHF100 : ETMHF100
     l1_etmhf100 <= single_etmhf_i101;
-    algo(15) <= l1_etmhf100;
+    algo(19) <= l1_etmhf100;
 -- 422 L1_ETMHF110 : ETMHF110
     l1_etmhf110 <= single_etmhf_i102;
-    algo(24) <= l1_etmhf110;
+    algo(67) <= l1_etmhf110;
 -- 423 L1_ETMHF120 : ETMHF120
     l1_etmhf120 <= single_etmhf_i103;
-    algo(41) <= l1_etmhf120;
+    algo(2) <= l1_etmhf120;
 -- 424 L1_ETMHF130 : ETMHF130
     l1_etmhf130 <= single_etmhf_i104;
-    algo(52) <= l1_etmhf130;
+    algo(51) <= l1_etmhf130;
 -- 428 L1_ETMHF90_HTT60er : ETMHF90 AND HTT60
     l1_etmhf90_htt60er <= single_etmhf_i139 and single_htt_i179;
-    algo(3) <= l1_etmhf90_htt60er;
+    algo(32) <= l1_etmhf90_htt60er;
 -- 429 L1_ETMHF100_HTT60er : ETMHF100 AND HTT60
     l1_etmhf100_htt60er <= single_etmhf_i101 and single_htt_i179;
-    algo(6) <= l1_etmhf100_htt60er;
+    algo(68) <= l1_etmhf100_htt60er;
 -- 430 L1_ETMHF110_HTT60er : ETMHF110 AND HTT60
     l1_etmhf110_htt60er <= single_etmhf_i102 and single_htt_i179;
-    algo(59) <= l1_etmhf110_htt60er;
+    algo(18) <= l1_etmhf110_htt60er;
 -- 431 L1_ETMHF120_HTT60er : ETMHF120 AND HTT60
     l1_etmhf120_htt60er <= single_etmhf_i103 and single_htt_i179;
-    algo(28) <= l1_etmhf120_htt60er;
+    algo(65) <= l1_etmhf120_htt60er;
 -- 432 L1_ETMHF130_HTT60er : ETMHF130 AND HTT60
     l1_etmhf130_htt60er <= single_etmhf_i104 and single_htt_i179;
-    algo(4) <= l1_etmhf130_htt60er;
+    algo(36) <= l1_etmhf130_htt60er;
 -- 443 L1_ETMHF120_NotSecondBunchInTrain : ETMHF120 AND ((EXT_BPTX_OR_VME-2) OR ( NOT EXT_ZeroBias_BPTX_AND_VME-1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+2))
     l1_etmhf120_not_second_bunch_in_train <= single_etmhf_i103 and ( ( single_ext_i207 ) or ( not single_ext_i213 ) or ( not single_ext_i208 ) or ( not single_ext_i210 ) or ( not single_ext_i211 ) );
-    algo(17) <= l1_etmhf120_not_second_bunch_in_train;
+    algo(53) <= l1_etmhf120_not_second_bunch_in_train;
 -- 444 L1_ETMHF110_HTT60er_NotSecondBunchInTrain : ETMHF110 AND HTT60 AND ((EXT_BPTX_OR_VME-2) OR ( NOT EXT_ZeroBias_BPTX_AND_VME-1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+1) OR ( NOT EXT_ZeroBias_BPTX_AND_VME+2))
     l1_etmhf110_htt60er_not_second_bunch_in_train <= single_etmhf_i102 and single_htt_i179 and ( ( single_ext_i207 ) or ( not single_ext_i213 ) or ( not single_ext_i208 ) or ( not single_ext_i210 ) or ( not single_ext_i211 ) );
-    algo(48) <= l1_etmhf110_htt60er_not_second_bunch_in_train;
+    algo(37) <= l1_etmhf110_htt60er_not_second_bunch_in_train;
 -- 446 L1_SingleMuOpen_NotBptxOR : MU0[MU-QLTY_OPEN] AND ( NOT EXT_BPTX_OR_VME)
     l1_single_mu_open_not_bptx_or <= single_mu_i7 and ( not single_ext_i105 );
-    algo(19) <= l1_single_mu_open_not_bptx_or;
+    algo(20) <= l1_single_mu_open_not_bptx_or;
 -- 447 L1_SingleMuOpen_er1p4_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p4] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
     l1_single_mu_open_er1p4_not_bptx_or_3_bx <= single_mu_i106 and ( not single_ext_i107 ) and ( not single_ext_i105 ) and ( not single_ext_i108 );
-    algo(11) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
+    algo(47) <= l1_single_mu_open_er1p4_not_bptx_or_3_bx;
 -- 448 L1_SingleMuOpen_er1p1_NotBptxOR_3BX : MU0[MU-QLTY_OPEN,MU-ETA_1p1] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
     l1_single_mu_open_er1p1_not_bptx_or_3_bx <= single_mu_i109 and ( not single_ext_i107 ) and ( not single_ext_i105 ) and ( not single_ext_i108 );
-    algo(47) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
+    algo(48) <= l1_single_mu_open_er1p1_not_bptx_or_3_bx;
 -- 450 L1_SingleJet20er2p5_NotBptxOR : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME)
     l1_single_jet20er2p5_not_bptx_or <= single_jet_i110 and ( not single_ext_i105 );
-    algo(56) <= l1_single_jet20er2p5_not_bptx_or;
+    algo(59) <= l1_single_jet20er2p5_not_bptx_or;
 -- 451 L1_SingleJet20er2p5_NotBptxOR_3BX : JET20[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
     l1_single_jet20er2p5_not_bptx_or_3_bx <= single_jet_i110 and ( not single_ext_i107 ) and ( not single_ext_i105 ) and ( not single_ext_i108 );
-    algo(8) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
+    algo(52) <= l1_single_jet20er2p5_not_bptx_or_3_bx;
 -- 452 L1_SingleJet43er2p5_NotBptxOR_3BX : JET43[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
     l1_single_jet43er2p5_not_bptx_or_3_bx <= single_jet_i111 and ( not single_ext_i107 ) and ( not single_ext_i105 ) and ( not single_ext_i108 );
-    algo(58) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
+    algo(1) <= l1_single_jet43er2p5_not_bptx_or_3_bx;
 -- 453 L1_SingleJet46er2p5_NotBptxOR_3BX : JET46[JET-ETA_2p52] AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1)
     l1_single_jet46er2p5_not_bptx_or_3_bx <= single_jet_i112 and ( not single_ext_i107 ) and ( not single_ext_i105 ) and ( not single_ext_i108 );
-    algo(73) <= l1_single_jet46er2p5_not_bptx_or_3_bx;
+    algo(70) <= l1_single_jet46er2p5_not_bptx_or_3_bx;
 -- 458 L1_AlwaysTrue : EXT_ZeroBias_BPTX_AND_VME OR ( NOT EXT_ZeroBias_BPTX_AND_VME)
     l1_always_true <= single_ext_i208 or ( not single_ext_i208 );
     algo(0) <= l1_always_true;
 -- 459 L1_ZeroBias : EXT_ZeroBias_BPTX_AND_VME
     l1_zero_bias <= single_ext_i208;
-    algo(26) <= l1_zero_bias;
+    algo(24) <= l1_zero_bias;
 -- 460 L1_ZeroBias_copy : EXT_ZeroBias_BPTX_AND_VME
     l1_zero_bias_copy <= single_ext_i208;
-    algo(33) <= l1_zero_bias_copy;
+    algo(35) <= l1_zero_bias_copy;
 -- 461 L1_MinimumBiasHF0_AND_BptxAND : (MBT0HFP1 AND MBT0HFM1) AND EXT_ZeroBias_BPTX_AND_VME
     l1_minimum_bias_hf0_and_bptx_and <= ( single_mbt0_hfp_i215 and single_mbt0_hfm_i216 ) and single_ext_i208;
-    algo(32) <= l1_minimum_bias_hf0_and_bptx_and;
+    algo(13) <= l1_minimum_bias_hf0_and_bptx_and;
 -- 463 L1_NotBptxOR :  NOT EXT_BPTX_OR_VME
     l1_not_bptx_or <= not single_ext_i105;
-    algo(67) <= l1_not_bptx_or;
+    algo(43) <= l1_not_bptx_or;
 -- 464 L1_BptxOR : EXT_BPTX_OR_VME
     l1_bptx_or <= single_ext_i105;
-    algo(65) <= l1_bptx_or;
+    algo(55) <= l1_bptx_or;
 -- 471 L1_IsolatedBunch : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
     l1_isolated_bunch <= ( not single_ext_i207 ) and ( not single_ext_i107 ) and single_ext_i208 and ( not single_ext_i108 ) and ( not single_ext_i209 );
-    algo(2) <= l1_isolated_bunch;
+    algo(73) <= l1_isolated_bunch;
 -- 472 L1_FirstBunchBeforeTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND ( NOT EXT_BPTX_OR_VME) AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
     l1_first_bunch_before_train <= ( not single_ext_i207 ) and ( not single_ext_i107 ) and ( not single_ext_i105 ) and single_ext_i210 and single_ext_i211;
-    algo(12) <= l1_first_bunch_before_train;
+    algo(25) <= l1_first_bunch_before_train;
 -- 473 L1_FirstBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND ( NOT EXT_BPTX_OR_VME-1) AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
     l1_first_bunch_in_train <= ( not single_ext_i207 ) and ( not single_ext_i107 ) and single_ext_i208 and single_ext_i210 and single_ext_i211;
-    algo(62) <= l1_first_bunch_in_train;
+    algo(33) <= l1_first_bunch_in_train;
 -- 474 L1_SecondBunchInTrain : ( NOT EXT_BPTX_OR_VME-2) AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND EXT_ZeroBias_BPTX_AND_VME+2
     l1_second_bunch_in_train <= ( not single_ext_i207 ) and single_ext_i213 and single_ext_i208 and single_ext_i210 and single_ext_i211;
-    algo(1) <= l1_second_bunch_in_train;
+    algo(4) <= l1_second_bunch_in_train;
 -- 475 L1_SecondLastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND EXT_ZeroBias_BPTX_AND_VME+1 AND ( NOT EXT_BPTX_OR_VME+2)
     l1_second_last_bunch_in_train <= single_ext_i212 and single_ext_i213 and single_ext_i208 and single_ext_i210 and ( not single_ext_i209 );
-    algo(45) <= l1_second_last_bunch_in_train;
+    algo(71) <= l1_second_last_bunch_in_train;
 -- 476 L1_LastBunchInTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND EXT_ZeroBias_BPTX_AND_VME AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
     l1_last_bunch_in_train <= single_ext_i212 and single_ext_i213 and single_ext_i208 and ( not single_ext_i108 ) and ( not single_ext_i209 );
-    algo(39) <= l1_last_bunch_in_train;
+    algo(62) <= l1_last_bunch_in_train;
 -- 477 L1_FirstBunchAfterTrain : EXT_ZeroBias_BPTX_AND_VME-2 AND EXT_ZeroBias_BPTX_AND_VME-1 AND ( NOT EXT_BPTX_OR_VME) AND ( NOT EXT_BPTX_OR_VME+1) AND ( NOT EXT_BPTX_OR_VME+2)
     l1_first_bunch_after_train <= single_ext_i212 and single_ext_i213 and ( not single_ext_i105 ) and ( not single_ext_i108 ) and ( not single_ext_i209 );
-    algo(68) <= l1_first_bunch_after_train;
+    algo(21) <= l1_first_bunch_after_train;
 
 end architecture rtl;

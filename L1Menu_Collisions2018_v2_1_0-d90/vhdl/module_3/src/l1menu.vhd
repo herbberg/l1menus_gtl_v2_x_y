@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 65209933-7e0e-4054-9ac0-881329c6382c
+-- 9727f49a-4a09-463f-adc1-73a58a6c678b
 
 -- Scale set:
 -- scales_2017_05_23
@@ -87,9 +87,9 @@ architecture rtl of l1menu is
     signal comp_eta_mu_bx_0_0x012d_0x00d3 : mu_obj_t;
     signal comp_qual_mu_bx_0_0xf000 : mu_obj_t;
 -- Correlation cuts
-    signal comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x0000000000640 : jet_jet_t;
-    signal comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140 : jet_jet_t;
-    signal comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8 : jet_mu_t;
+    signal comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x00000000000640 : jet_jet_t;
+    signal comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140 : jet_jet_t;
+    signal comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8 : jet_mu_t;
 -- Muon charge correlation
 -- Conditions inputs
     -- Object cuts "and"
@@ -152,7 +152,7 @@ architecture rtl of l1menu is
     signal l1_etmhf140 : std_logic;
 begin
 -- First stage: calculations
-  
+    
     calc_deta_jet_jet_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -161,7 +161,7 @@ begin
             conv.jet(bx(0)).eta,
             conv.jet(bx(0)).eta,
             deta_calc_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_jet_jet_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -170,7 +170,7 @@ begin
             deta_calc_jet_jet(bx(0),bx(0)),
             deta_jet_jet(bx(0),bx(0))
         );
-  
+    
     calc_deta_jet_mu_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -179,7 +179,7 @@ begin
             conv.jet(bx(0)).eta_conv_mu,
             conv.mu(bx(0)).eta,
             deta_calc_jet_mu(bx(0),bx(0))
-        );
+        );  
     calc_deta_lut_jet_mu_bx_0_bx_0_i: entity work.deta_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -188,7 +188,7 @@ begin
             deta_calc_jet_mu(bx(0),bx(0)),
             deta_jet_mu(bx(0),bx(0))
         );
-  
+    
     calc_dphi_jet_jet_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
@@ -198,7 +198,7 @@ begin
             conv.jet(bx(0)).phi,
             conv.jet(bx(0)).phi,
             dphi_calc_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_jet_jet_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
@@ -207,7 +207,7 @@ begin
             dphi_calc_jet_jet(bx(0),bx(0)),
             dphi_jet_jet(bx(0),bx(0))
         );
-  
+    
     calc_dphi_jet_mu_bx_0_bx_0_i: entity work.dphi_calc
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
@@ -217,7 +217,7 @@ begin
             conv.jet(bx(0)).phi_conv_mu,
             conv.mu(bx(0)).phi,
             dphi_calc_jet_mu(bx(0),bx(0))
-        );
+        );  
     calc_dphi_lut_jet_mu_bx_0_bx_0_i: entity work.dphi_lut
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -225,7 +225,7 @@ begin
         port map(
             dphi_calc_jet_mu(bx(0),bx(0)),
             dphi_jet_mu(bx(0),bx(0))
-        );
+        );  
     calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
@@ -233,7 +233,7 @@ begin
         port map(
             deta_calc_jet_jet(bx(0),bx(0)),
             cosh_deta_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_cos_dphi_jet_jet_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
@@ -241,7 +241,7 @@ begin
         port map(
             dphi_calc_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0))
-        );
+        );  
     calc_inv_mass_jet_jet_bx_0_bx_0_i: entity work.invariant_mass
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
@@ -254,7 +254,7 @@ begin
             cosh_deta_jet_jet(bx(0),bx(0)),
             cos_dphi_jet_jet(bx(0),bx(0)),
             invmass_jet_jet(bx(0),bx(0))
-       );
+       );  
     calc_delta_r_jet_mu_bx_0_bx_0_i: entity work.delta_r
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t)
@@ -265,7 +265,7 @@ begin
             dr_jet_mu(bx(0),bx(0))
         );
     
--- Second stage: comparisons
+-- Second stage: comparisons  
     comp_pt_eg_bx_0_0x0030_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -274,7 +274,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0030
-        );
+        );  
     comp_eta_eg_bx_0_0x00dd_0x0022_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ETA_WIDTH,
@@ -282,7 +282,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).eta, comp_eta_eg_bx_0_0x00dd_0x0022
-        );
+        );  
     comp_iso_eg_bx_0_0x000a_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ISO_WIDTH,
@@ -290,7 +290,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).iso, comp_iso_eg_bx_0_0x000a
-        );
+        );  
     comp_pt_eg_bx_0_0x0038_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -299,16 +299,16 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0038
-        );
+        );  
     comp_pt_eg_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
             GE,  
-            X"005a", X"0000", X"0000", "ign"
+            X"005A", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x005a
-        );
+        );  
     comp_eta_eg_bx_0_0x00c6_0x0039_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_ETA_WIDTH,
@@ -316,7 +316,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).eta, comp_eta_eg_bx_0_0x00c6_0x0039
-        );
+        );  
     comp_pt_eg_bx_0_0x0048_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -325,7 +325,7 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0048
-        );
+        );  
     comp_pt_eg_bx_0_0x0034_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
@@ -334,34 +334,34 @@ begin
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x0034
-        );
+        );  
     comp_pt_eg_bx_0_0x003c_i: entity work.comparators_obj_cuts
         generic map(
             N_EG_OBJECTS, EG_PT_WIDTH,  
             GE,  
-            X"003c", X"0000", X"0000", "ign"
+            X"003C", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.eg(bx(0)).pt, comp_pt_eg_bx_0_0x003c
-        );
+        );  
     comp_pt_jet_bx_0_0x00e6_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"00e6", X"0000", X"0000", "ign"
+            X"00E6", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00e6
-        );
+        );  
     comp_pt_jet_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"00f0", X"0000", X"0000", "ign"
+            X"00F0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x00f0
-        );
+        );  
     comp_pt_etmhf_bx_0_0x0118_i: entity work.comparators_obj_cuts
         generic map(
             N_ETMHF_OBJECTS, ETMHF_PT_WIDTH,  
@@ -370,16 +370,16 @@ begin
         )
         port map(
             lhc_clk, data.etmhf(bx(0)).pt, comp_pt_etmhf_bx_0_0x0118
-        );
+        );  
     comp_pt_htt_bx_0_0x00f0_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
             GE,  
-            X"00f0", X"0000", X"0000", "ign"
+            X"00F0", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x00f0
-        );
+        );  
     comp_pt_htt_bx_0_0x0320_i: entity work.comparators_obj_cuts
         generic map(
             N_HTT_OBJECTS, HTT_PT_WIDTH,  
@@ -388,7 +388,7 @@ begin
         )
         port map(
             lhc_clk, data.htt(bx(0)).pt, comp_pt_htt_bx_0_0x0320
-        );
+        );  
     comp_pt_jet_bx_0_0x0050_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -397,7 +397,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0050
-        );
+        );  
     comp_eta_jet_bx_0_0x00cf_0x0030_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -405,7 +405,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00cf_0x0030
-        );
+        );  
     comp_eta_jet_bx_0_0x00c2_0x003d_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -413,7 +413,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x00c2_0x003d
-        );
+        );  
     comp_pt_jet_bx_0_0x0078_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
@@ -422,7 +422,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x0078
-        );
+        );  
     comp_eta_jet_bx_0_0x008d_0x00ba_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -430,7 +430,7 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x008d_0x00ba
-        );
+        );  
     comp_eta_jet_bx_0_0x0045_0x0072_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_ETA_WIDTH,
@@ -438,16 +438,16 @@ begin
         )
         port map(
             lhc_clk, data.jet(bx(0)).eta, comp_eta_jet_bx_0_0x0045_0x0072
-        );
+        );  
     comp_pt_jet_bx_0_0x005a_i: entity work.comparators_obj_cuts
         generic map(
             N_JET_OBJECTS, JET_PT_WIDTH,  
             GE,  
-            X"005a", X"0000", X"0000", "ign"
+            X"005A", X"0000", X"0000", "ign"
         )
         port map(
             lhc_clk, data.jet(bx(0)).pt, comp_pt_jet_bx_0_0x005a
-        );
+        );  
     comp_pt_mu_bx_0_0x0019_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_PT_WIDTH,  
@@ -456,7 +456,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).pt, comp_pt_mu_bx_0_0x0019
-        );
+        );  
     comp_eta_mu_bx_0_0x012d_0x00d3_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_ETA_WIDTH,
@@ -464,7 +464,7 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).eta, comp_eta_mu_bx_0_0x012d_0x00d3
-        );
+        );  
     comp_qual_mu_bx_0_0xf000_i: entity work.comparators_obj_cuts
         generic map(
             N_MU_OBJECTS, MU_QUAL_WIDTH,
@@ -472,71 +472,92 @@ begin
         )
         port map(
             lhc_clk, data.mu(bx(0)).qual, comp_qual_mu_bx_0_0xf000
-        );
-    comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x0000000000640_i: entity work.comparators_corr_cuts
+        );  
+    comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x00000000000640_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_DELTAETA_VECTOR_WIDTH, deltaEta, 
-            X"0000000000000", X"0000000000640"        
+            X"00000000000000", X"00000000000640"        
         )
         port map(
             lhc_clk, 
-            deta_jet_jet(bx(0),bx(0)), comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x0000000000640
-        );
-    comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140_i: entity work.comparators_corr_cuts
+            deta_jet_jet(bx(0),bx(0)), comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x00000000000640
+        );  
+    comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t),
             JET_JET_MASS_VECTOR_WIDTH, mass, 
-            X"000047999ED00", X"41A6642C78140"        
+            X"0000047999ED00", X"041A6642C78140"        
         )
         port map(
             lhc_clk, 
-            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41A6642C78140
-        );
-    comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8_i: entity work.comparators_corr_cuts
+            invmass_jet_jet(bx(0),bx(0)), comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041A6642C78140
+        );  
+    comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_MU_OBJECTS, (jet_t,mu_t),
             JET_MU_DELTAR_VECTOR_WIDTH, deltaR, 
-            X"0000000000000", X"00000000274E8"        
+            X"00000000000000", X"000000000274E8"        
         )
         port map(
             lhc_clk, 
-            dr_jet_mu(bx(0),bx(0)), comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8
+            dr_jet_mu(bx(0),bx(0)), comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8
         );
 
 -- Third stage: conditions and algos
     -- Creating condition inputs (combination of object cuts)
     comb_eg_bx_0_pt_0030_eta_00dd_0022_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000a <= 
     comp_pt_eg_bx_0_0x0030
-    and comp_eta_eg_bx_0_0x00dd_0x0022
-    and comp_iso_eg_bx_0_0x000a
+    and 
+    (
+    comp_eta_eg_bx_0_0x00dd_0x0022
+    )
+    and 
+    comp_iso_eg_bx_0_0x000a
     ;
 
     comb_eg_bx_0_pt_0038_eta_00dd_0022_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0038
-    and comp_eta_eg_bx_0_0x00dd_0x0022
+    and 
+    (
+    comp_eta_eg_bx_0_0x00dd_0x0022
+    )
     ;
 
     comb_eg_bx_0_pt_005a_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x005a
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_0048_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_eg_bx_0_0x0048
-    and comp_eta_eg_bx_0_0x00c6_0x0039
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
     ;
 
     comb_eg_bx_0_pt_0034_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000a <= 
     comp_pt_eg_bx_0_0x0034
-    and comp_eta_eg_bx_0_0x00c6_0x0039
-    and comp_iso_eg_bx_0_0x000a
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
+    and 
+    comp_iso_eg_bx_0_0x000a
     ;
 
     comb_eg_bx_0_pt_003c_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000a <= 
     comp_pt_eg_bx_0_0x003c
-    and comp_eta_eg_bx_0_0x00c6_0x0039
-    and comp_iso_eg_bx_0_0x000a
+    and 
+    (
+    comp_eta_eg_bx_0_0x00c6_0x0039
+    )
+    and 
+    comp_iso_eg_bx_0_0x000a
     ;
 
     comb_jet_bx_0_pt_00e6_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -561,12 +582,18 @@ begin
 
     comb_jet_bx_0_pt_0050_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x00cf_0x0030
+    and 
+    (
+    comp_eta_jet_bx_0_0x00cf_0x0030
+    )
     ;
 
     comb_jet_bx_0_pt_0050_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x00c2_0x003d
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c2_0x003d
+    )
     ;
 
     comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
@@ -575,25 +602,40 @@ begin
 
     comb_jet_bx_0_pt_0050_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x0050
-    and comp_eta_jet_bx_0_0x008d_0x00ba
-    and comp_eta_jet_bx_0_0x0045_0x0072
+    and 
+    (
+    comp_eta_jet_bx_0_0x008d_0x00ba
+    or 
+    comp_eta_jet_bx_0_0x0045_0x0072
+    )
     ;
 
     comb_jet_bx_0_pt_005a_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x005a
-    and comp_eta_jet_bx_0_0x00c2_0x003d
+    and 
+    (
+    comp_eta_jet_bx_0_0x00c2_0x003d
+    )
     ;
 
     comb_jet_bx_0_pt_005a_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f <= 
     comp_pt_jet_bx_0_0x005a
-    and comp_eta_jet_bx_0_0x008d_0x00ba
-    and comp_eta_jet_bx_0_0x0045_0x0072
+    and 
+    (
+    comp_eta_jet_bx_0_0x008d_0x00ba
+    or 
+    comp_eta_jet_bx_0_0x0045_0x0072
+    )
     ;
 
     comb_mu_bx_0_pt_0019_eta_012d_00d3_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign <= 
     comp_pt_mu_bx_0_0x0019
-    and comp_eta_mu_bx_0_0x012d_0x00d3
-    and comp_qual_mu_bx_0_0xf000
+    and 
+    (
+    comp_eta_mu_bx_0_0x012d_0x00d3
+    )
+    and 
+    comp_qual_mu_bx_0_0xf000
     ;
 
     -- Instantiations of conditions
@@ -741,7 +783,7 @@ begin
             comb_jet_bx_0_pt_0050_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            deta => comp_deta_jet_jet_bx_0_bx_0_0x0000000000000_0x0000000000640,
+            deta => comp_deta_jet_jet_bx_0_bx_0_0x00000000000000_0x00000000000640,
             cond_o => calo_calo_correlation_i255
         );
 
@@ -757,7 +799,7 @@ begin
             comb_jet_bx_0_pt_0050_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i326
         );
 
@@ -773,7 +815,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i327
         );
 
@@ -789,7 +831,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i328
         );
 
@@ -805,7 +847,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i329
         );
 
@@ -821,7 +863,7 @@ begin
             comb_jet_bx_0_pt_0050_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i330
         );
 
@@ -837,7 +879,7 @@ begin
             comb_jet_bx_0_pt_0050_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_0050_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i331
         );
 
@@ -853,7 +895,7 @@ begin
             comb_jet_bx_0_pt_005a_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i332
         );
 
@@ -869,7 +911,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i333
         );
 
@@ -885,7 +927,7 @@ begin
             comb_jet_bx_0_pt_0078_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i334
         );
 
@@ -901,7 +943,7 @@ begin
             comb_jet_bx_0_pt_005a_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_00c2_003d_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i335
         );
 
@@ -917,7 +959,7 @@ begin
             comb_jet_bx_0_pt_005a_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_jet_bx_0_pt_005a_eta_008d_00ba_0045_0072_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
-            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x000047999ed00_0x41a6642c78140,
+            inv_mass => comp_invmass_jet_jet_bx_0_bx_0_0x0000047999ed00_0x041a6642c78140,
             cond_o => invariant_mass_i336
         );
 
@@ -933,7 +975,7 @@ begin
             comb_jet_bx_0_pt_0050_eta_00cf_0030_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             in_2 => 
             comb_mu_bx_0_pt_0019_eta_012d_00d3_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_f000_charge_ign, 
-            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x0000000000000_0x00000000274e8,
+            delta_r => comp_dr_jet_mu_bx_0_bx_0_0x00000000000000_0x000000000274e8,
             cond_o => calo_muon_correlation_i254
         );
     
