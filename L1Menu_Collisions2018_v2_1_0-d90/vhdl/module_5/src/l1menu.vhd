@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 9727f49a-4a09-463f-adc1-73a58a6c678b
+-- 6f715b00-06f8-4843-a271-837ea6722770
 
 -- Scale set:
 -- scales_2017_05_23
@@ -608,7 +608,7 @@ begin
         );  
     calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
-            N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
             deta_calc_jet_jet(bx(0),bx(0)),
@@ -616,7 +616,7 @@ begin
         );  
     calc_cos_dphi_jet_jet_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
             dphi_calc_jet_jet(bx(0),bx(0)),
@@ -637,7 +637,7 @@ begin
        );  
     calc_cosh_deta_eg_eg_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
-            N_EG_OBJECTS, N_EG_OBJECTS, (EG_t,EG_t)
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t)
         )
         port map(
             deta_calc_eg_eg(bx(0),bx(0)),
@@ -645,7 +645,7 @@ begin
         );  
     calc_cos_dphi_eg_eg_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_EG_OBJECTS, N_EG_OBJECTS, (EG_t,EG_t)
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t)
         )
         port map(
             dphi_calc_eg_eg(bx(0),bx(0)),
@@ -666,7 +666,7 @@ begin
        );  
     calc_cosh_deta_tau_tau_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
-            N_TAU_OBJECTS, N_TAU_OBJECTS, (TAU_t,TAU_t)
+            N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t)
         )
         port map(
             deta_calc_tau_tau(bx(0),bx(0)),
@@ -674,7 +674,7 @@ begin
         );  
     calc_cos_dphi_tau_tau_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_TAU_OBJECTS, N_TAU_OBJECTS, (TAU_t,TAU_t)
+            N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t)
         )
         port map(
             dphi_calc_tau_tau(bx(0),bx(0)),
@@ -695,7 +695,7 @@ begin
        );  
     calc_cos_dphi_eg_etm_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_EG_OBJECTS, N_ETM_OBJECTS, (EG_t,ETM_t)
+            N_EG_OBJECTS, N_ETM_OBJECTS, (eg_t,etm_t)
         )
         port map(
             dphi_calc_eg_etm(bx(0),bx(0)),
@@ -725,7 +725,7 @@ begin
         );  
     calc_cosh_deta_mu_mu_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
-            N_MU_OBJECTS, N_MU_OBJECTS, (MU_t,MU_t)
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t)
         )
         port map(
             deta_calc_mu_mu(bx(0),bx(0)),
@@ -733,7 +733,7 @@ begin
         );  
     calc_cos_dphi_mu_mu_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_MU_OBJECTS, N_MU_OBJECTS, (MU_t,MU_t)
+            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t)
         )
         port map(
             dphi_calc_mu_mu(bx(0),bx(0)),
@@ -2731,7 +2731,7 @@ begin
     algo(22) <= l1_single_mu12_dq_bmtf;
 -- 18 L1_SingleMu20 : MU20[MU-QLTY_SNGL]
     l1_single_mu20 <= single_mu_i22;
-    algo(3) <= l1_single_mu20;
+    algo(4) <= l1_single_mu20;
 -- 21 L1_SingleMu22_OMTF : MU22[MU-QLTY_SNGL,MU-ETA_OMTF_POS,MU-ETA_OMTF_NEG]
     l1_single_mu22_omtf <= single_mu_i25;
     algo(25) <= l1_single_mu22_omtf;
@@ -2770,7 +2770,7 @@ begin
     algo(35) <= l1_quad_mu0_sq;
 -- 99 L1_Mu20_EG10er2p5 : MU20[MU-QLTY_SNGL] AND EG10[EG-ETA_2p52]
     l1_mu20_eg10er2p5 <= single_mu_i22 and single_eg_i38;
-    algo(4) <= l1_mu20_eg10er2p5;
+    algo(3) <= l1_mu20_eg10er2p5;
 -- 112 L1_DoubleMu3_OS_DoubleEG7p5Upsilon : mass_inv{MU3[MU-QLTY_DBLE,MU-ETA_2p3],MU3[MU-QLTY_DBLE,MU-ETA_2p3]}[MASS_MASS_0to14,CHGCOR_OS] AND mass_inv{EG7p5[EG-ETA_2p13],EG7p5[EG-ETA_2p13]}[MASS_MASS_0to20]
     l1_double_mu3_os_double_eg7p5_upsilon <= invariant_mass_i202 and invariant_mass_i203;
     algo(45) <= l1_double_mu3_os_double_eg7p5_upsilon;

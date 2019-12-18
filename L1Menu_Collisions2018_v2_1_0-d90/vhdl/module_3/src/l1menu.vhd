@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- 9727f49a-4a09-463f-adc1-73a58a6c678b
+-- 6f715b00-06f8-4843-a271-837ea6722770
 
 -- Scale set:
 -- scales_2017_05_23
@@ -228,7 +228,7 @@ begin
         );  
     calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
-            N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
             deta_calc_jet_jet(bx(0),bx(0)),
@@ -236,7 +236,7 @@ begin
         );  
     calc_cos_dphi_jet_jet_bx_0_bx_0_i: entity work.cos_dphi_lut
         generic map(
-            N_JET_OBJECTS, N_JET_OBJECTS, (JET_t,JET_t)
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t)
         )
         port map(
             dphi_calc_jet_jet(bx(0),bx(0)),
