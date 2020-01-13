@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 7c8ea8a6-cf3c-4b34-a527-d94efd5851c5
+-- 3e9e0455-0cbe-4a02-8217-60ae653f2f0d
 
 -- Scale set:
 -- scales_2017_05_23
@@ -41,8 +41,10 @@ end l1menu;
 architecture rtl of l1menu is
 -- Calculations outputs
     -- Differences
+    signal deta_calc_eg_eg : obj_bx_max_eta_range_array;
     signal deta_calc_eg_tau : obj_bx_max_eta_range_array;
     signal deta_calc_mu_mu : obj_bx_max_eta_range_array;
+    signal dphi_calc_eg_eg : obj_bx_max_phi_range_array;
     signal dphi_calc_eg_tau : obj_bx_max_phi_range_array;
     signal dphi_calc_mu_mu : obj_bx_max_phi_range_array;
     -- Correlation cuts
@@ -52,10 +54,13 @@ architecture rtl of l1menu is
     signal dr_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_mu_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal dphi_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dphi_mu_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cosh_deta_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cosh_deta_mu_mu :  obj_bx_corr_cuts_std_logic_array;
+    signal cos_dphi_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     -- Muon charge correlation    
@@ -143,6 +148,24 @@ architecture rtl of l1menu is
 begin
 -- First stage: calculations
   
+    calc_deta_eg_eg_bx_0_bx_0_i: entity work.deta_calc
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0))
+        )
+        port map(
+            conv.eg(bx(0)).eta,
+            conv.eg(bx(0)).eta,
+            deta_calc_eg_eg(bx(0),bx(0))
+        );
+    calc_deta_lut_eg_eg_bx_0_bx_0_i: entity work.deta_lut
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0))
+        )
+        port map(
+            deta_calc_eg_eg(bx(0),bx(0)),
+            deta_eg_eg(bx(0),bx(0))
+        );
+  
     calc_deta_eg_tau_bx_0_bx_0_i: entity work.deta_calc
         generic map(
             N_EG_OBJECTS, N_TAU_OBJECTS, (eg_t,tau_t), (bx(0),bx(0))
@@ -177,6 +200,25 @@ begin
         port map(
             deta_calc_mu_mu(bx(-2),bx(-1)),
             deta_mu_mu(bx(-2),bx(-1))
+        );
+  
+    calc_dphi_eg_eg_bx_0_bx_0_i: entity work.dphi_calc
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0)),
+            EG_EG_PHI_HALF_RANGE_BINS
+        )
+        port map(
+            conv.eg(bx(0)).phi,
+            conv.eg(bx(0)).phi,
+            dphi_calc_eg_eg(bx(0),bx(0))
+        );
+    calc_dphi_lut_eg_eg_bx_0_bx_0_i: entity work.dphi_lut
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0))
+        )
+        port map(
+            dphi_calc_eg_eg(bx(0),bx(0)),
+            dphi_eg_eg(bx(0),bx(0))
         );
   
     calc_dphi_eg_tau_bx_0_bx_0_i: entity work.dphi_calc

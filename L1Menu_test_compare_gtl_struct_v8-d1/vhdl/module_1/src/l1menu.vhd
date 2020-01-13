@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 7c8ea8a6-cf3c-4b34-a527-d94efd5851c5
+-- 3e9e0455-0cbe-4a02-8217-60ae653f2f0d
 
 -- Scale set:
 -- scales_2017_05_23
@@ -41,6 +41,7 @@ end l1menu;
 architecture rtl of l1menu is
 -- Calculations outputs
     -- Differences
+    signal deta_calc_tau_tau : obj_bx_max_eta_range_array;
     signal deta_calc_tau_jet : obj_bx_max_eta_range_array;
     signal deta_calc_jet_mu : obj_bx_max_eta_range_array;
     signal deta_calc_mu_mu : obj_bx_max_eta_range_array;
@@ -112,6 +113,24 @@ architecture rtl of l1menu is
     signal l1_test_20 : std_logic;
 begin
 -- First stage: calculations
+  
+    calc_deta_tau_tau_bx_m1_bx_m2_i: entity work.deta_calc
+        generic map(
+            N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t), (bx(-1),bx(-2))
+        )
+        port map(
+            conv.tau(bx(-1)).eta,
+            conv.tau(bx(-2)).eta,
+            deta_calc_tau_tau(bx(-1),bx(-2))
+        );
+    calc_deta_lut_tau_tau_bx_m1_bx_m2_i: entity work.deta_lut
+        generic map(
+            N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t), (bx(-1),bx(-2))
+        )
+        port map(
+            deta_calc_tau_tau(bx(-1),bx(-2)),
+            deta_tau_tau(bx(-1),bx(-2))
+        );
   
     calc_deta_tau_jet_bx_m1_bx_p2_i: entity work.deta_calc
         generic map(
