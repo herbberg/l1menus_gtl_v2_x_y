@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 3e9e0455-0cbe-4a02-8217-60ae653f2f0d
+-- d4223b40-c799-434b-97cf-c0ab42fc8c47
 
 -- Scale set:
 -- scales_2017_05_23
@@ -55,9 +55,11 @@ architecture rtl of l1menu is
     signal transmass_tau_etm :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_jet :  obj_bx_corr_cuts_std_logic_array;
+    signal tbpt_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal dr_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_eg_eg :  obj_bx_corr_cuts_std_logic_array;
+    signal tbpt_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal dr_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_tau :  obj_bx_corr_cuts_std_logic_array;
@@ -97,9 +99,11 @@ architecture rtl of l1menu is
     signal comp_transmass_tau_etm_bx_p1_bx_m1_0x00000000000000_0x00000001312d00 : tau_etm_t;
     signal comp_invmass_mu_mu_bx_0_bx_p1_0x00000000000000_0x0000000bebc200 : mu_mu_t;
     signal comp_deta_jet_jet_bx_m2_bx_m1_0x00000000000000_0x000000000005dc : jet_jet_t;
+    signal comp_tbpt_jet_jet_bx_m2_bx_m1_0x00000253734d80_0x00000253734d80 : jet_jet_t;
     signal comp_dr_jet_tau_bx_m2_bx_p1_0x00000000000000_0x0000000000a028 : jet_tau_t;
     signal comp_deta_eg_eg_bx_0_bx_0_0x00000000000000_0x000000000005dc : eg_eg_t;
     signal comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312d00 : eg_eg_t;
+    signal comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80 : eg_eg_t;
     signal comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028 : eg_tau_t;
 -- Muon charge correlation
 -- Conditions inputs
@@ -530,6 +534,17 @@ begin
             lhc_clk, 
             deta_jet_jet(bx(-2),bx(-1)), comp_deta_jet_jet_bx_m2_bx_m1_0x00000000000000_0x000000000005dc
         );
+    comp_tbpt_jet_jet_bxm2_bxm1_0x00000253734d80_i: entity work.conditions_corr_cuts
+        generic map(
+            N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t), (bx(-2),bx(-1)),
+            JET_JET_TBPT_VECTOR_WIDTH, twoBodyPt, 
+            X"00000253734D80"        
+        )
+        port map(
+            lhc_clk, 
+            tbpt_jet_jet(bx(-2),bx(-1)), comp_tbpt_jet_jet_bx_m2_bx_m1_0x00000253734d80_0x00000253734d80
+        );
+
     comp_dr_jet_tau_bx_m2_bx_p1_0x00000000000000_0x0000000000a028_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_TAU_OBJECTS, (jet_t,tau_t), (bx(-2),bx(1)),
@@ -560,6 +575,17 @@ begin
             lhc_clk, 
             invmass_eg_eg(bx(0),bx(0)), comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312D00
         );
+    comp_tbpt_eg_eg_bx0_bx0_0x00000253734d80_i: entity work.conditions_corr_cuts
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0)),
+            EG_EG_TBPT_VECTOR_WIDTH, twoBodyPt, 
+            X"00000253734D80"        
+        )
+        port map(
+            lhc_clk, 
+            tbpt_eg_eg(bx(0),bx(0)), comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80
+        );
+
     comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028_i: entity work.comparators_corr_cuts
         generic map(
             N_EG_OBJECTS, N_TAU_OBJECTS, (eg_t,tau_t), (bx(0),bx(0)),
@@ -662,7 +688,7 @@ begin
             in_3 => 
             comb_tau_bx_p1_pt_0050_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_jet_jet_bx_m2_bx_m1_0x00000000000000_0x000000000005dc, 
-            tbpt => comp_tbpt_jet_jet_bx_m2_bx_m1_0x00000253734d80, 
+            tbpt => comp_tbpt_jet_jet_bx_m2_bx_m1_0x00000253734d80_0x00000253734d80, 
             dr_ovrm => comp_dr_jet_tau_bx_m2_bx_p1_0x00000000000000_0x0000000000a028,
             cond_o => calo_calo_correlation_ov_rm_i2
         );
@@ -683,7 +709,7 @@ begin
             comb_tau_bx_0_pt_008c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_eg_eg_bx_0_bx_0_0x00000000000000_0x000000000005dc, 
             inv_mass => comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312d00, 
-            tbpt => comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80, 
+            tbpt => comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80, 
             dr_ovrm => comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028,
             cond_o => invariant_mass_ov_rm_i17
         );    

@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 3e9e0455-0cbe-4a02-8217-60ae653f2f0d
+-- d4223b40-c799-434b-97cf-c0ab42fc8c47
 
 -- Scale set:
 -- scales_2017_05_23
@@ -51,6 +51,7 @@ architecture rtl of l1menu is
     signal invmass_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_eg_eg :  obj_bx_corr_cuts_std_logic_array;
+    signal tbpt_eg_eg :  obj_bx_corr_cuts_std_logic_array;
     signal dr_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_eg_tau :  obj_bx_corr_cuts_std_logic_array;
     signal deta_mu_mu :  obj_bx_corr_cuts_std_logic_array;
@@ -100,6 +101,7 @@ architecture rtl of l1menu is
     signal comp_invmass_mu_mu_bx_m2_bx_m1_0x00000000000000_0x0000000bebc200 : mu_mu_t;
     signal comp_deta_eg_eg_bx_0_bx_0_0x00000000000000_0x000000000005dc : eg_eg_t;
     signal comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312d00 : eg_eg_t;
+    signal comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80 : eg_eg_t;
     signal comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028 : eg_tau_t;
 -- Muon charge correlation
 -- Conditions inputs
@@ -600,6 +602,17 @@ begin
             lhc_clk, 
             invmass_eg_eg(bx(0),bx(0)), comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312D00
         );
+    comp_tbpt_eg_eg_bx0_bx0_0x00000253734d80_i: entity work.conditions_corr_cuts
+        generic map(
+            N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0)),
+            EG_EG_TBPT_VECTOR_WIDTH, twoBodyPt, 
+            X"00000253734D80"        
+        )
+        port map(
+            lhc_clk, 
+            tbpt_eg_eg(bx(0),bx(0)), comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80
+        );
+
     comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028_i: entity work.comparators_corr_cuts
         generic map(
             N_EG_OBJECTS, N_TAU_OBJECTS, (eg_t,tau_t), (bx(0),bx(0)),
@@ -734,7 +747,7 @@ begin
             comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             comb_2 =>
             comb_eg_bx_0_pt_0014_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            tbpt => tbpt_eg_eg_bx_0_bx_0_0x00000253734d80,
+            tbpt => tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80,
             cond_o => double_eg_i0
         );
     cond_quad_jet_i12_i: entity work.combinatorial_conditions
@@ -860,7 +873,7 @@ begin
             comb_tau_bx_0_pt_008c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_eg_eg_bx_0_bx_0_0x00000000000000_0x000000000005dc, 
             inv_mass => comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312d00, 
-            tbpt => comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80, 
+            tbpt => comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80, 
             dr_ovrm => comp_dr_eg_tau_bx_0_bx_0_0x00000000000000_0x0000000000a028,
             cond_o => invariant_mass_ov_rm_i18
         );    

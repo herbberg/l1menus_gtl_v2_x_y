@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 3e9e0455-0cbe-4a02-8217-60ae653f2f0d
+-- d4223b40-c799-434b-97cf-c0ab42fc8c47
 
 -- Scale set:
 -- scales_2017_05_23
@@ -52,6 +52,7 @@ architecture rtl of l1menu is
     signal invmass_jet_mu :  obj_bx_corr_cuts_std_logic_array;
     signal invmass_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     signal deta_tau_tau :  obj_bx_corr_cuts_std_logic_array;
+    signal tbpt_tau_tau :  obj_bx_corr_cuts_std_logic_array;
     signal dr_tau_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_tau_jet :  obj_bx_corr_cuts_std_logic_array;
     signal deta_jet_mu :  obj_bx_corr_cuts_std_logic_array;
@@ -84,6 +85,7 @@ architecture rtl of l1menu is
     signal comp_invmass_jet_mu_bx_m1_bx_p2_0x00000000000000_0x0000000bebc200 : jet_mu_t;
     signal comp_invmass_mu_mu_bx_m1_bx_0_0x00000000000000_0x0000000bebc200 : mu_mu_t;
     signal comp_deta_tau_tau_bx_m1_bx_m2_0x00000000000000_0x000000000005dc : tau_tau_t;
+    signal comp_tbpt_tau_tau_bx_m1_bx_m2_0x00000253734d80_0x00000253734d80 : tau_tau_t;
     signal comp_dr_tau_jet_bx_m1_bx_p2_0x00000000000000_0x0000000000a028 : tau_jet_t;
 -- Muon charge correlation
 -- Conditions inputs
@@ -422,6 +424,17 @@ begin
             lhc_clk, 
             deta_tau_tau(bx(-1),bx(-2)), comp_deta_tau_tau_bx_m1_bx_m2_0x00000000000000_0x000000000005dc
         );
+    comp_tbpt_tau_tau_bxm1_bxm2_0x00000253734d80_i: entity work.conditions_corr_cuts
+        generic map(
+            N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t), (bx(-1),bx(-2)),
+            TAU_TAU_TBPT_VECTOR_WIDTH, twoBodyPt, 
+            X"00000253734D80"        
+        )
+        port map(
+            lhc_clk, 
+            tbpt_tau_tau(bx(-1),bx(-2)), comp_tbpt_tau_tau_bx_m1_bx_m2_0x00000253734d80_0x00000253734d80
+        );
+
     comp_dr_tau_jet_bx_m1_bx_p2_0x00000000000000_0x0000000000a028_i: entity work.comparators_corr_cuts
         generic map(
             N_TAU_OBJECTS, N_JET_OBJECTS, (tau_t,jet_t), (bx(-1),bx(2)),
@@ -580,7 +593,7 @@ begin
             in_3 => 
             comb_jet_bx_p2_pt_0038_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f, 
             deta => comp_deta_tau_tau_bx_m1_bx_m2_0x00000000000000_0x000000000005dc, 
-            tbpt => comp_tbpt_tau_tau_bx_m1_bx_m2_0x00000253734d80, 
+            tbpt => comp_tbpt_tau_tau_bx_m1_bx_m2_0x00000253734d80_0x00000253734d80, 
             dr_ovrm => comp_dr_tau_jet_bx_m1_bx_p2_0x00000000000000_0x0000000000a028,
             cond_o => calo_calo_correlation_ov_rm_i28
         );    
