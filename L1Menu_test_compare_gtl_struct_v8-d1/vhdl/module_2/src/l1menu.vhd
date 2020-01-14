@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- fc8947cc-1165-4041-9a39-d7b797848edd
+-- c0d65e95-93a8-4004-ac78-0b5b0adaa25f
 
 -- Scale set:
 -- scales_2017_05_23
@@ -747,7 +747,7 @@ begin
             comb_eg_bx_0_pt_000a_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             comb_2 =>
             comb_eg_bx_0_pt_0014_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
-            tbpt => tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80,
+            tbpt => comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_0x00000253734d80,
             cond_o => double_eg_i0
         );
     cond_quad_jet_i12_i: entity work.combinatorial_conditions

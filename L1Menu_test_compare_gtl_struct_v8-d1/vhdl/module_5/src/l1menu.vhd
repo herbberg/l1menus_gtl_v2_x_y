@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- fc8947cc-1165-4041-9a39-d7b797848edd
+-- c0d65e95-93a8-4004-ac78-0b5b0adaa25f
 
 -- Scale set:
 -- scales_2017_05_23

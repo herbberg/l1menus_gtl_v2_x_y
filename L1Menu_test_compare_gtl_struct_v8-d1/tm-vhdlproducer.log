@@ -1,252 +1,252 @@
-2020-01-14 14:23:42 INFO : distributing menu...
-2020-01-14 14:23:42 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer_dev_3_x_y/tmVhdlProducer/config/resource_default.json
-2020-01-14 14:23:42 INFO : :: listing resources...
-2020-01-14 14:23:42 INFO : thresholds:
-2020-01-14 14:23:42 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
-2020-01-14 14:23:42 INFO : instances:
-2020-01-14 14:23:42 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-01-14 14:23:42 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
-2020-01-14 14:23:42 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
-2020-01-14 14:23:42 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
-2020-01-14 14:23:42 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
-2020-01-14 14:23:42 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-01-14 14:23:42 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
-2020-01-14 14:23:42 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
-2020-01-14 14:23:42 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
-2020-01-14 14:23:42 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
-2020-01-14 14:23:42 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
-2020-01-14 14:23:42 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : | Algorithms sorted by payload (descending)                                   |
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-01-14 14:23:42 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
-2020-01-14 14:23:42 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-01-14 14:23:42 INFO : |     5 |    0.384% |  0.924% | L1_test_5                                     |
-2020-01-14 14:23:42 INFO : |     7 |    0.400% |  0.000% | L1_test_7                                     |
-2020-01-14 14:23:42 INFO : |     0 |    3.348% | 21.978% | L1_test_0                                     |
-2020-01-14 14:23:42 INFO : |     3 |    4.200% |  8.064% | L1_test_3                                     |
-2020-01-14 14:23:42 INFO : |     4 |    4.992% |  0.000% | L1_test_4                                     |
-2020-01-14 14:23:42 INFO : |    13 |    7.040% |  5.312% | L1_test_13                                    |
-2020-01-14 14:23:42 INFO : |    14 |    7.040% |  5.312% | L1_test_14                                    |
-2020-01-14 14:23:42 INFO : |    15 |    7.040% |  5.312% | L1_test_15                                    |
-2020-01-14 14:23:42 INFO : |    16 |    7.040% |  5.312% | L1_test_16                                    |
-2020-01-14 14:23:42 INFO : |    17 |   11.652% | 30.042% | L1_test_17                                    |
-2020-01-14 14:23:42 INFO : |    18 |   11.652% | 30.042% | L1_test_18                                    |
-2020-01-14 14:23:42 INFO : |    19 |   11.652% | 30.042% | L1_test_19                                    |
-2020-01-14 14:23:42 INFO : |     2 |   11.652% | 30.042% | L1_test_2                                     |
-2020-01-14 14:23:42 INFO : |    20 |   11.652% | 30.042% | L1_test_20                                    |
-2020-01-14 14:23:42 INFO : |    10 |   13.830% | 35.520% | L1_test_10                                    |
-2020-01-14 14:23:42 INFO : |    11 |   13.830% | 35.520% | L1_test_11                                    |
-2020-01-14 14:23:42 INFO : |    12 |   13.830% | 35.520% | L1_test_12                                    |
-2020-01-14 14:23:42 INFO : |     6 |   13.830% | 35.520% | L1_test_6                                     |
-2020-01-14 14:23:42 INFO : |     9 |   13.830% | 35.520% | L1_test_9                                     |
-2020-01-14 14:23:42 INFO : |     1 |   16.320% | 13.344% | L1_test_1                                     |
-2020-01-14 14:23:42 INFO : |     8 |   16.800% |  0.000% | L1_test_8                                     |
-2020-01-14 14:23:42 INFO : |-------|-----------|---------|-----------------------------------------------|
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : distributing algorithms, shadow ratio: 0.0
-2020-01-14 14:23:42 INFO : starting algorithm distribution for 21 algorithms on 6 modules using shadow ratio of 0.0
-2020-01-14 14:23:42 INFO :  . adding L1_test_5 (5) to module 0
-2020-01-14 14:23:42 INFO :  . adding L1_test_7 (7) to module 1
-2020-01-14 14:23:42 INFO :  . adding L1_test_0 (0) to module 2
-2020-01-14 14:23:42 INFO :  . adding L1_test_3 (3) to module 3
-2020-01-14 14:23:42 INFO :  . adding L1_test_4 (4) to module 4
-2020-01-14 14:23:42 INFO :  . adding L1_test_13 (13) to module 5
-2020-01-14 14:23:42 INFO :  . adding L1_test_14 (14) to module 0
-2020-01-14 14:23:42 INFO :  . adding L1_test_15 (15) to module 1
-2020-01-14 14:23:42 INFO :  . adding L1_test_16 (16) to module 2
-2020-01-14 14:23:42 INFO :  . adding L1_test_17 (17) to module 3
-2020-01-14 14:23:42 INFO :  . adding L1_test_18 (18) to module 4
-2020-01-14 14:23:42 INFO :  . adding L1_test_19 (19) to module 5
-2020-01-14 14:23:42 INFO :  . adding L1_test_2 (2) to module 0
-2020-01-14 14:23:42 INFO :  . adding L1_test_20 (20) to module 1
-2020-01-14 14:23:42 INFO :  . adding L1_test_10 (10) to module 2
-2020-01-14 14:23:42 INFO :  . adding L1_test_11 (11) to module 3
-2020-01-14 14:23:42 INFO :  . adding L1_test_12 (12) to module 4
-2020-01-14 14:23:42 INFO :  . adding L1_test_6 (6) to module 5
-2020-01-14 14:23:42 INFO :  . adding L1_test_9 (9) to module 0
-2020-01-14 14:23:42 INFO :  . adding L1_test_1 (1) to module 1
-2020-01-14 14:23:42 INFO :  . adding L1_test_8 (8) to module 2
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : |------------|----------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : | Module     | Algorithm                                                      |
-2020-01-14 14:23:42 INFO : | ID | Index | Index | Name                                                   |
-2020-01-14 14:23:42 INFO : |----|-------|-------|--------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |  0 |     0 |     5 | L1_test_5                                              |
-2020-01-14 14:23:42 INFO : |  0 |     1 |    14 | L1_test_14                                             |
-2020-01-14 14:23:42 INFO : |  0 |     2 |     2 | L1_test_2                                              |
-2020-01-14 14:23:42 INFO : |  0 |     3 |     9 | L1_test_9                                              |
-2020-01-14 14:23:42 INFO : |  1 |     0 |     7 | L1_test_7                                              |
-2020-01-14 14:23:42 INFO : |  1 |     1 |    15 | L1_test_15                                             |
-2020-01-14 14:23:42 INFO : |  1 |     2 |    20 | L1_test_20                                             |
-2020-01-14 14:23:42 INFO : |  1 |     3 |     1 | L1_test_1                                              |
-2020-01-14 14:23:42 INFO : |  2 |     0 |     0 | L1_test_0                                              |
-2020-01-14 14:23:42 INFO : |  2 |     1 |    16 | L1_test_16                                             |
-2020-01-14 14:23:42 INFO : |  2 |     2 |    10 | L1_test_10                                             |
-2020-01-14 14:23:42 INFO : |  2 |     3 |     8 | L1_test_8                                              |
-2020-01-14 14:23:42 INFO : |  3 |     0 |     3 | L1_test_3                                              |
-2020-01-14 14:23:42 INFO : |  3 |     1 |    17 | L1_test_17                                             |
-2020-01-14 14:23:42 INFO : |  3 |     2 |    11 | L1_test_11                                             |
-2020-01-14 14:23:42 INFO : |  4 |     0 |     4 | L1_test_4                                              |
-2020-01-14 14:23:42 INFO : |  4 |     1 |    18 | L1_test_18                                             |
-2020-01-14 14:23:42 INFO : |  4 |     2 |    12 | L1_test_12                                             |
-2020-01-14 14:23:42 INFO : |  5 |     0 |    13 | L1_test_13                                             |
-2020-01-14 14:23:42 INFO : |  5 |     1 |    19 | L1_test_19                                             |
-2020-01-14 14:23:42 INFO : |  5 |     2 |     6 | L1_test_6                                              |
-2020-01-14 14:23:42 INFO : |----|-------|-------|--------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : | Condition distribution, sorted by weight (ascending)                        |
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : | Name                                             | Modules                  |
-2020-01-14 14:23:42 INFO : |--------------------------------------------------|--------------------------|
-2020-01-14 14:23:42 INFO : | SingleMU_i10                                     | 1                        |
-2020-01-14 14:23:42 INFO : | SingleMU_i11                                     | 1                        |
-2020-01-14 14:23:42 INFO : | SingleMU_i7                                      | 1                        |
-2020-01-14 14:23:42 INFO : | SingleMU_i8                                      | 1                        |
-2020-01-14 14:23:42 INFO : | SingleMU_i9                                      | 1                        |
-2020-01-14 14:23:42 INFO : | TransverseMass_i5                                | 0                        |
-2020-01-14 14:23:42 INFO : | DoubleEG_i0                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJET_i12                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJET_i13                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJET_i14                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJET_i15                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJET_i16                                      | 2                        |
-2020-01-14 14:23:42 INFO : | QuadJETOvRm_i3                                   | 3                        |
-2020-01-14 14:23:42 INFO : | CaloMuonCorrelation_i4                           | 4                        |
-2020-01-14 14:23:42 INFO : | InvariantMass_i21                                | 5                        |
-2020-01-14 14:23:42 INFO : | InvariantMass_i22                                | 0                        |
-2020-01-14 14:23:42 INFO : | InvariantMass_i23                                | 1                        |
-2020-01-14 14:23:42 INFO : | InvariantMass_i24                                | 2                        |
-2020-01-14 14:23:42 INFO : | CaloCaloCorrelationOvRm_i2                       | 0                        |
-2020-01-14 14:23:42 INFO : | CaloCaloCorrelationOvRm_i25                      | 3                        |
-2020-01-14 14:23:42 INFO : | CaloCaloCorrelationOvRm_i26                      | 4                        |
-2020-01-14 14:23:42 INFO : | CaloCaloCorrelationOvRm_i27                      | 5                        |
-2020-01-14 14:23:42 INFO : | CaloCaloCorrelationOvRm_i28                      | 1                        |
-2020-01-14 14:23:42 INFO : | InvariantMassOvRm_i17                            | 0                        |
-2020-01-14 14:23:42 INFO : | InvariantMassOvRm_i18                            | 2                        |
-2020-01-14 14:23:42 INFO : | InvariantMassOvRm_i19                            | 3                        |
-2020-01-14 14:23:42 INFO : | InvariantMassOvRm_i20                            | 4                        |
-2020-01-14 14:23:42 INFO : | InvariantMassOvRm_i6                             | 5                        |
-2020-01-14 14:23:42 INFO : | InvariantMass_i1                                 | 1                        |
-2020-01-14 14:23:42 INFO : |--------------------------------------------------|--------------------------|
-2020-01-14 14:23:42 INFO : |-----------------------------------------------------------------------------|
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                    |
-2020-01-14 14:23:42 INFO : |                                                                             |
-2020-01-14 14:23:42 INFO : |-------------------------------------|---------------------------------------|
-2020-01-14 14:23:42 INFO : | Module                              | Payload                               |
-2020-01-14 14:23:42 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
-2020-01-14 14:23:42 INFO : |----|------------|------------|------|-----------|---------|-----------------|
-2020-01-14 14:23:42 INFO : |  0 |          4 |          4 | 1.00 |    49.91% |  71.80% |                 |
-2020-01-14 14:23:42 INFO : |  1 |          4 |          8 | 2.00 |    52.41% |  48.70% |                 |
-2020-01-14 14:23:42 INFO : |  2 |          4 |          8 | 2.00 |    58.02% |  62.81% |                 |
-2020-01-14 14:23:42 INFO : |  3 |          3 |          3 | 1.00 |    46.68% |  73.63% |                 |
-2020-01-14 14:23:42 INFO : |  4 |          3 |          3 | 1.00 |    47.47% |  65.56% |                 |
-2020-01-14 14:23:42 INFO : |  5 |          3 |          3 | 1.00 |    49.52% |  70.87% |                 |
-2020-01-14 14:23:42 INFO : |----|------------|------------|------|-----------|---------|-----------------|
-2020-01-14 14:23:42 INFO : writing VHDL modules...
-2020-01-14 14:23:42 INFO : writing 21 algorithms to 6 module(s)
-2020-01-14 14:23:42 INFO : writing output for module: 0
-2020-01-14 14:23:42 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_0/src/l1menu.vhd
-2020-01-14 14:23:42 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_0/src/l1menu_pkg.vhd
-2020-01-14 14:23:42 INFO : writing output for module: 1
-2020-01-14 14:23:42 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_1/src/l1menu.vhd
-2020-01-14 14:23:42 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_1/src/l1menu_pkg.vhd
-2020-01-14 14:23:42 INFO : writing output for module: 2
-2020-01-14 14:23:43 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_2/src/l1menu.vhd
-2020-01-14 14:23:43 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_2/src/l1menu_pkg.vhd
-2020-01-14 14:23:43 INFO : writing output for module: 3
-2020-01-14 14:23:43 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_3/src/l1menu.vhd
-2020-01-14 14:23:43 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_3/src/l1menu_pkg.vhd
-2020-01-14 14:23:43 INFO : writing output for module: 4
-2020-01-14 14:23:43 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_4/src/l1menu.vhd
-2020-01-14 14:23:43 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_4/src/l1menu_pkg.vhd
-2020-01-14 14:23:43 INFO : writing output for module: 5
-2020-01-14 14:23:43 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_5/src/l1menu.vhd
-2020-01-14 14:23:43 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_5/src/l1menu_pkg.vhd
-2020-01-14 14:23:43 INFO : writing updated XML file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
-2020-01-14 14:23:43 INFO : reading source XML menu file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
-2020-01-14 14:23:43 INFO : processing menu "L1Menu_test_compare_gtl_struct_v8" ... 
-2020-01-14 14:23:43 INFO : updating menu information...
-2020-01-14 14:23:43 INFO : uuid_menu     : dfda5134-41bb-44ca-b09b-2ec83164a685
-2020-01-14 14:23:43 INFO : uuid_firmware : fc8947cc-1165-4041-9a39-d7b797848edd
-2020-01-14 14:23:43 INFO : n_modules     : 6
-2020-01-14 14:23:43 INFO : writing target XML menu file /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
-2020-01-14 14:23:43 INFO : generating menu documentation...
-2020-01-14 14:23:43 INFO : writing HTML documentation /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
-2020-01-14 14:23:44 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
-2020-01-14 14:23:45 INFO : patching filenames...
-2020-01-14 14:23:45 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8.twiki --> /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8-d1.twiki
-2020-01-14 14:23:45 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8.html --> /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8-d1.html
-2020-01-14 14:23:45 INFO : done.
+2020-01-14 15:36:36 INFO : distributing menu...
+2020-01-14 15:36:36 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer_dev_3_x_y/tmVhdlProducer/config/resource_default.json
+2020-01-14 15:36:36 INFO : :: listing resources...
+2020-01-14 15:36:36 INFO : thresholds:
+2020-01-14 15:36:36 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2020-01-14 15:36:36 INFO : instances:
+2020-01-14 15:36:36 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-14 15:36:36 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2020-01-14 15:36:36 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2020-01-14 15:36:36 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2020-01-14 15:36:36 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2020-01-14 15:36:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-14 15:36:36 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2020-01-14 15:36:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-14 15:36:36 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-01-14 15:36:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-14 15:36:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-14 15:36:36 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : | Algorithms sorted by payload (descending)                                   |
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-14 15:36:36 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2020-01-14 15:36:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-14 15:36:36 INFO : |     5 |    0.384% |  0.924% | L1_test_5                                     |
+2020-01-14 15:36:36 INFO : |     7 |    0.400% |  0.000% | L1_test_7                                     |
+2020-01-14 15:36:36 INFO : |     0 |    3.348% | 21.978% | L1_test_0                                     |
+2020-01-14 15:36:36 INFO : |     3 |    4.200% |  8.064% | L1_test_3                                     |
+2020-01-14 15:36:36 INFO : |     4 |    4.992% |  0.000% | L1_test_4                                     |
+2020-01-14 15:36:36 INFO : |    13 |    7.040% |  5.312% | L1_test_13                                    |
+2020-01-14 15:36:36 INFO : |    14 |    7.040% |  5.312% | L1_test_14                                    |
+2020-01-14 15:36:36 INFO : |    15 |    7.040% |  5.312% | L1_test_15                                    |
+2020-01-14 15:36:36 INFO : |    16 |    7.040% |  5.312% | L1_test_16                                    |
+2020-01-14 15:36:36 INFO : |    17 |   11.652% | 30.042% | L1_test_17                                    |
+2020-01-14 15:36:36 INFO : |    18 |   11.652% | 30.042% | L1_test_18                                    |
+2020-01-14 15:36:36 INFO : |    19 |   11.652% | 30.042% | L1_test_19                                    |
+2020-01-14 15:36:36 INFO : |     2 |   11.652% | 30.042% | L1_test_2                                     |
+2020-01-14 15:36:36 INFO : |    20 |   11.652% | 30.042% | L1_test_20                                    |
+2020-01-14 15:36:36 INFO : |    10 |   13.830% | 35.520% | L1_test_10                                    |
+2020-01-14 15:36:36 INFO : |    11 |   13.830% | 35.520% | L1_test_11                                    |
+2020-01-14 15:36:36 INFO : |    12 |   13.830% | 35.520% | L1_test_12                                    |
+2020-01-14 15:36:36 INFO : |     6 |   13.830% | 35.520% | L1_test_6                                     |
+2020-01-14 15:36:36 INFO : |     9 |   13.830% | 35.520% | L1_test_9                                     |
+2020-01-14 15:36:36 INFO : |     1 |   16.320% | 13.344% | L1_test_1                                     |
+2020-01-14 15:36:36 INFO : |     8 |   16.800% |  0.000% | L1_test_8                                     |
+2020-01-14 15:36:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : distributing algorithms, shadow ratio: 0.0
+2020-01-14 15:36:36 INFO : starting algorithm distribution for 21 algorithms on 6 modules using shadow ratio of 0.0
+2020-01-14 15:36:36 INFO :  . adding L1_test_5 (5) to module 0
+2020-01-14 15:36:36 INFO :  . adding L1_test_7 (7) to module 1
+2020-01-14 15:36:36 INFO :  . adding L1_test_0 (0) to module 2
+2020-01-14 15:36:36 INFO :  . adding L1_test_3 (3) to module 3
+2020-01-14 15:36:36 INFO :  . adding L1_test_4 (4) to module 4
+2020-01-14 15:36:36 INFO :  . adding L1_test_13 (13) to module 5
+2020-01-14 15:36:36 INFO :  . adding L1_test_14 (14) to module 0
+2020-01-14 15:36:36 INFO :  . adding L1_test_15 (15) to module 1
+2020-01-14 15:36:36 INFO :  . adding L1_test_16 (16) to module 2
+2020-01-14 15:36:36 INFO :  . adding L1_test_17 (17) to module 3
+2020-01-14 15:36:36 INFO :  . adding L1_test_18 (18) to module 4
+2020-01-14 15:36:36 INFO :  . adding L1_test_19 (19) to module 5
+2020-01-14 15:36:36 INFO :  . adding L1_test_2 (2) to module 0
+2020-01-14 15:36:36 INFO :  . adding L1_test_20 (20) to module 1
+2020-01-14 15:36:36 INFO :  . adding L1_test_10 (10) to module 2
+2020-01-14 15:36:36 INFO :  . adding L1_test_11 (11) to module 3
+2020-01-14 15:36:36 INFO :  . adding L1_test_12 (12) to module 4
+2020-01-14 15:36:36 INFO :  . adding L1_test_6 (6) to module 5
+2020-01-14 15:36:36 INFO :  . adding L1_test_9 (9) to module 0
+2020-01-14 15:36:36 INFO :  . adding L1_test_1 (1) to module 1
+2020-01-14 15:36:36 INFO :  . adding L1_test_8 (8) to module 2
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : |------------|----------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : | Module     | Algorithm                                                      |
+2020-01-14 15:36:36 INFO : | ID | Index | Index | Name                                                   |
+2020-01-14 15:36:36 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |  0 |     0 |     5 | L1_test_5                                              |
+2020-01-14 15:36:36 INFO : |  0 |     1 |    14 | L1_test_14                                             |
+2020-01-14 15:36:36 INFO : |  0 |     2 |     2 | L1_test_2                                              |
+2020-01-14 15:36:36 INFO : |  0 |     3 |     9 | L1_test_9                                              |
+2020-01-14 15:36:36 INFO : |  1 |     0 |     7 | L1_test_7                                              |
+2020-01-14 15:36:36 INFO : |  1 |     1 |    15 | L1_test_15                                             |
+2020-01-14 15:36:36 INFO : |  1 |     2 |    20 | L1_test_20                                             |
+2020-01-14 15:36:36 INFO : |  1 |     3 |     1 | L1_test_1                                              |
+2020-01-14 15:36:36 INFO : |  2 |     0 |     0 | L1_test_0                                              |
+2020-01-14 15:36:36 INFO : |  2 |     1 |    16 | L1_test_16                                             |
+2020-01-14 15:36:36 INFO : |  2 |     2 |    10 | L1_test_10                                             |
+2020-01-14 15:36:36 INFO : |  2 |     3 |     8 | L1_test_8                                              |
+2020-01-14 15:36:36 INFO : |  3 |     0 |     3 | L1_test_3                                              |
+2020-01-14 15:36:36 INFO : |  3 |     1 |    17 | L1_test_17                                             |
+2020-01-14 15:36:36 INFO : |  3 |     2 |    11 | L1_test_11                                             |
+2020-01-14 15:36:36 INFO : |  4 |     0 |     4 | L1_test_4                                              |
+2020-01-14 15:36:36 INFO : |  4 |     1 |    18 | L1_test_18                                             |
+2020-01-14 15:36:36 INFO : |  4 |     2 |    12 | L1_test_12                                             |
+2020-01-14 15:36:36 INFO : |  5 |     0 |    13 | L1_test_13                                             |
+2020-01-14 15:36:36 INFO : |  5 |     1 |    19 | L1_test_19                                             |
+2020-01-14 15:36:36 INFO : |  5 |     2 |     6 | L1_test_6                                              |
+2020-01-14 15:36:36 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : | Name                                             | Modules                  |
+2020-01-14 15:36:36 INFO : |--------------------------------------------------|--------------------------|
+2020-01-14 15:36:36 INFO : | SingleMU_i10                                     | 1                        |
+2020-01-14 15:36:36 INFO : | SingleMU_i11                                     | 1                        |
+2020-01-14 15:36:36 INFO : | SingleMU_i7                                      | 1                        |
+2020-01-14 15:36:36 INFO : | SingleMU_i8                                      | 1                        |
+2020-01-14 15:36:36 INFO : | SingleMU_i9                                      | 1                        |
+2020-01-14 15:36:36 INFO : | TransverseMass_i5                                | 0                        |
+2020-01-14 15:36:36 INFO : | DoubleEG_i0                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJET_i12                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJET_i13                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJET_i14                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJET_i15                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJET_i16                                      | 2                        |
+2020-01-14 15:36:36 INFO : | QuadJETOvRm_i3                                   | 3                        |
+2020-01-14 15:36:36 INFO : | CaloMuonCorrelation_i4                           | 4                        |
+2020-01-14 15:36:36 INFO : | InvariantMass_i21                                | 5                        |
+2020-01-14 15:36:36 INFO : | InvariantMass_i22                                | 0                        |
+2020-01-14 15:36:36 INFO : | InvariantMass_i23                                | 1                        |
+2020-01-14 15:36:36 INFO : | InvariantMass_i24                                | 2                        |
+2020-01-14 15:36:36 INFO : | CaloCaloCorrelationOvRm_i2                       | 0                        |
+2020-01-14 15:36:36 INFO : | CaloCaloCorrelationOvRm_i25                      | 3                        |
+2020-01-14 15:36:36 INFO : | CaloCaloCorrelationOvRm_i26                      | 4                        |
+2020-01-14 15:36:36 INFO : | CaloCaloCorrelationOvRm_i27                      | 5                        |
+2020-01-14 15:36:36 INFO : | CaloCaloCorrelationOvRm_i28                      | 1                        |
+2020-01-14 15:36:36 INFO : | InvariantMassOvRm_i17                            | 0                        |
+2020-01-14 15:36:36 INFO : | InvariantMassOvRm_i18                            | 2                        |
+2020-01-14 15:36:36 INFO : | InvariantMassOvRm_i19                            | 3                        |
+2020-01-14 15:36:36 INFO : | InvariantMassOvRm_i20                            | 4                        |
+2020-01-14 15:36:36 INFO : | InvariantMassOvRm_i6                             | 5                        |
+2020-01-14 15:36:36 INFO : | InvariantMass_i1                                 | 1                        |
+2020-01-14 15:36:36 INFO : |--------------------------------------------------|--------------------------|
+2020-01-14 15:36:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                    |
+2020-01-14 15:36:36 INFO : |                                                                             |
+2020-01-14 15:36:36 INFO : |-------------------------------------|---------------------------------------|
+2020-01-14 15:36:36 INFO : | Module                              | Payload                               |
+2020-01-14 15:36:36 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2020-01-14 15:36:36 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-01-14 15:36:36 INFO : |  0 |          4 |          4 | 1.00 |    49.91% |  71.80% |                 |
+2020-01-14 15:36:36 INFO : |  1 |          4 |          8 | 2.00 |    52.41% |  48.70% |                 |
+2020-01-14 15:36:36 INFO : |  2 |          4 |          8 | 2.00 |    58.02% |  62.81% |                 |
+2020-01-14 15:36:36 INFO : |  3 |          3 |          3 | 1.00 |    46.68% |  73.63% |                 |
+2020-01-14 15:36:36 INFO : |  4 |          3 |          3 | 1.00 |    47.47% |  65.56% |                 |
+2020-01-14 15:36:36 INFO : |  5 |          3 |          3 | 1.00 |    49.52% |  70.87% |                 |
+2020-01-14 15:36:36 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-01-14 15:36:36 INFO : writing VHDL modules...
+2020-01-14 15:36:36 INFO : writing 21 algorithms to 6 module(s)
+2020-01-14 15:36:36 INFO : writing output for module: 0
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_0/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_0/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing output for module: 1
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_1/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_1/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing output for module: 2
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_2/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_2/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing output for module: 3
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_3/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_3/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing output for module: 4
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_4/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_4/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing output for module: 5
+2020-01-14 15:36:36 INFO : l1menu.vhd              : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_5/src/l1menu.vhd
+2020-01-14 15:36:36 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/vhdl/module_5/src/l1menu_pkg.vhd
+2020-01-14 15:36:36 INFO : writing updated XML file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
+2020-01-14 15:36:36 INFO : reading source XML menu file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
+2020-01-14 15:36:36 INFO : processing menu "L1Menu_test_compare_gtl_struct_v8" ... 
+2020-01-14 15:36:36 INFO : updating menu information...
+2020-01-14 15:36:36 INFO : uuid_menu     : dfda5134-41bb-44ca-b09b-2ec83164a685
+2020-01-14 15:36:36 INFO : uuid_firmware : c0d65e95-93a8-4004-ac78-0b5b0adaa25f
+2020-01-14 15:36:36 INFO : n_modules     : 6
+2020-01-14 15:36:36 INFO : writing target XML menu file /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
+2020-01-14 15:36:37 INFO : generating menu documentation...
+2020-01-14 15:36:37 INFO : writing HTML documentation /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
+2020-01-14 15:36:37 INFO : writing TWIKI page template /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/xml/L1Menu_test_compare_gtl_struct_v8-d1.xml
+2020-01-14 15:36:38 INFO : patching filenames...
+2020-01-14 15:36:38 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8.twiki --> /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8-d1.twiki
+2020-01-14 15:36:38 INFO : /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8.html --> /home/bergauer/L1Menu_test_compare_gtl_struct_v8-d1/doc/L1Menu_test_compare_gtl_struct_v8-d1.html
+2020-01-14 15:36:38 INFO : done.
