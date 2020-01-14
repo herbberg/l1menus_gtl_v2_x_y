@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- d4223b40-c799-434b-97cf-c0ab42fc8c47
+-- faee5610-5ad6-4dc1-aed4-17ac66511076
 
 -- Scale set:
 -- scales_2017_05_23
@@ -424,7 +424,7 @@ begin
             lhc_clk, 
             deta_tau_tau(bx(-1),bx(-2)), comp_deta_tau_tau_bx_m1_bx_m2_0x00000000000000_0x000000000005dc
         );
-    comp_tbpt_tau_tau_bxm1_bxm2_0x00000253734d80_i: entity work.conditions_corr_cuts
+    comp_tbpt_tau_tau_bx_m1_bx_m2_0x00000253734d80_i: entity work.comparators_corr_cuts
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t), (bx(-1),bx(-2)),
             TAU_TAU_TBPT_VECTOR_WIDTH, twoBodyPt, 

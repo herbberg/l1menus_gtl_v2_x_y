@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- d4223b40-c799-434b-97cf-c0ab42fc8c47
+-- faee5610-5ad6-4dc1-aed4-17ac66511076
 
 -- Scale set:
 -- scales_2017_05_23
@@ -534,7 +534,7 @@ begin
             lhc_clk, 
             deta_jet_jet(bx(-2),bx(-1)), comp_deta_jet_jet_bx_m2_bx_m1_0x00000000000000_0x000000000005dc
         );
-    comp_tbpt_jet_jet_bxm2_bxm1_0x00000253734d80_i: entity work.conditions_corr_cuts
+    comp_tbpt_jet_jet_bx_m2_bx_m1_0x00000253734d80_i: entity work.comparators_corr_cuts
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS, (jet_t,jet_t), (bx(-2),bx(-1)),
             JET_JET_TBPT_VECTOR_WIDTH, twoBodyPt, 
@@ -575,7 +575,7 @@ begin
             lhc_clk, 
             invmass_eg_eg(bx(0),bx(0)), comp_invmass_eg_eg_bx_0_bx_0_0x00000000000000_0x00000001312D00
         );
-    comp_tbpt_eg_eg_bx0_bx0_0x00000253734d80_i: entity work.conditions_corr_cuts
+    comp_tbpt_eg_eg_bx_0_bx_0_0x00000253734d80_i: entity work.comparators_corr_cuts
         generic map(
             N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(0),bx(0)),
             EG_EG_TBPT_VECTOR_WIDTH, twoBodyPt, 
