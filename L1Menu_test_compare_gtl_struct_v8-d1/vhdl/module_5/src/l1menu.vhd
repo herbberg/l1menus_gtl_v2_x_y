@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- faee5610-5ad6-4dc1-aed4-17ac66511076
+-- fc8947cc-1165-4041-9a39-d7b797848edd
 
 -- Scale set:
 -- scales_2017_05_23
@@ -458,7 +458,7 @@ begin
         generic map(
             N_TAU_OBJECTS, N_TAU_OBJECTS, (tau_t,tau_t), (bx(-1),bx(0)),
             TAU_TAU_TBPT_VECTOR_WIDTH, twoBodyPt, 
-            X"00000253734D80"        
+            X"00000253734D80", X"00000253734D80"        
         )
         port map(
             lhc_clk, 
@@ -499,7 +499,7 @@ begin
         generic map(
             N_EG_OBJECTS, N_EG_OBJECTS, (eg_t,eg_t), (bx(-1),bx(1)),
             EG_EG_TBPT_VECTOR_WIDTH, twoBodyPt, 
-            X"00000253734D80"        
+            X"00000253734D80", X"00000253734D80"        
         )
         port map(
             lhc_clk, 
