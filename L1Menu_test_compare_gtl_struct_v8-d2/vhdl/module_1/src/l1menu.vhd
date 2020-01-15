@@ -13,7 +13,7 @@
 -- dfda5134-41bb-44ca-b09b-2ec83164a685
 
 -- Unique ID of firmware implementation:
--- 509fa69d-a996-41ab-9243-4dd0b03ddfac
+-- a6afab83-aba8-4e9c-bfec-9b3b74650236
 
 -- Scale set:
 -- scales_2017_05_23
@@ -304,7 +304,7 @@ begin
        );
     calc_twobody_pt_tau_tau_bx_m1_bx_m2_i: entity work.twobody_pt
         generic map(
-            N_TAU_OBJECTS, N_TAU_OBJECTS
+            N_TAU_OBJECTS, N_TAU_OBJECTS,
             TAU_PT_VECTOR_WIDTH, TAU_PT_VECTOR_WIDTH
         )
         port map(
