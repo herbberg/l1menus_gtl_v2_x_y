@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1Menu_test_compare_gtl_struct_v10</title>
+  <meta name="description" content="Test conditions with different bx and others (based on v9, but removed tbpt cuts from conditions with objects with different bx)">
+  <meta name="generator" content="tm-reporter 2.7.3">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- style customizations -->
+  <style>
+    /* Fixing anchor offset for fixed top navbar */
+    h1:before,
+    h2:before {
+        height: 38px;
+        content: "";
+        display:block;
+    }
+    a.anchor {
+      visibility:hidden;
+      position:relative;
+      top:-68px;
+    }
+    .panel-heading h3 {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+    .panel-heading a.top {
+        float: right;
+    }
+    pre .curl {
+        font-weight: bold;
+    }
+    pre .cut {
+        color: darkmagenta;
+    }
+    pre .function {
+        font-weight: bold;
+        color: darkblue;
+    }
+    pre .keyword {
+        font-weight: bold;
+        color: blue;
+    }
+    pre .vhdlop {
+        font-weight: bold;
+        color: darkmagenta;
+    }
+    pre .vhdlsig {
+        color: brown;
+    }
+    .vhdl,
+    .expression {
+        white-space: normal;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    .informative {
+        font-size: .9em;
+        color: darkgray;
+    }
+    h3 .informative {
+        font-size: .6em;
+    }
+    .footer {
+        float: right;
+        font-size: .9em;
+        color: darkgray;
+    }
+  </style>
+</head>
+<body role="document">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Top</span></a></li>
+          <li class=""><a href="#algorithms"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Algorithms</span></a></li>
+          <li class=""><a href="#cuts"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Cuts</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <a name="top"></a>
+
+    <header class="page-header">
+      <h1>L1Menu_test_compare_gtl_struct_v10</h1>
+    </header>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Comment:</strong> Test conditions with different bx and others (based on v9, but removed tbpt cuts from conditions with objects with different bx)</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> 65d432fd-c6bd-4e26-bd6a-d6525d08e0c4</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> 54037b61-3cb6-4e40-b473-7abdb11873f1</li>
+      <li class="list-group-item"><strong>Grammar Version:</strong> 0.7</li>
+      <li class="list-group-item"><strong>Scale Set:</strong> scales_2017_05_23</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
+    </ul>
+    <hr />
+
+    <a name="algorithms"></a>
+
+    <header class="page-header">
+      <h2>Algorithms</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_0>0</a></td>
+        <td><a href=#L1_test_0>L1_test_0</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_1>1</a></td>
+        <td><a href=#L1_test_1>L1_test_1</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_2>2</a></td>
+        <td><a href=#L1_test_2>L1_test_2</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_4>4</a></td>
+        <td><a href=#L1_test_4>L1_test_4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_5>5</a></td>
+        <td><a href=#L1_test_5>L1_test_5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_6>6</a></td>
+        <td><a href=#L1_test_6>L1_test_6</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_7>7</a></td>
+        <td><a href=#L1_test_7>L1_test_7</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_8>8</a></td>
+        <td><a href=#L1_test_8>L1_test_8</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_9>9</a></td>
+        <td><a href=#L1_test_9>L1_test_9</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_10>10</a></td>
+        <td><a href=#L1_test_10>L1_test_10</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_11>11</a></td>
+        <td><a href=#L1_test_11>L1_test_11</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_12>12</a></td>
+        <td><a href=#L1_test_12>L1_test_12</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_13>13</a></td>
+        <td><a href=#L1_test_13>L1_test_13</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_14>14</a></td>
+        <td><a href=#L1_test_14>L1_test_14</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_15>15</a></td>
+        <td><a href=#L1_test_15>L1_test_15</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_16>16</a></td>
+        <td><a href=#L1_test_16>L1_test_16</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_17>17</a></td>
+        <td><a href=#L1_test_17>L1_test_17</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_18>18</a></td>
+        <td><a href=#L1_test_18>L1_test_18</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_19>19</a></td>
+        <td><a href=#L1_test_19>L1_test_19</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_test_20>20</a></td>
+        <td><a href=#L1_test_20>L1_test_20</a></td>
+      </tr>
+    </table>
+    <hr />
+    <a class="anchor" name="L1_test_0"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>0 L1_test_0 <span class="informative">(Module 2)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>EG5, EG10<span class="curl">}</span>[TBPT_10]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_0</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_eg_i0</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{EG5,EG10}[TBPT_10]</strong> : <code>double_eg_i0</code>
+          <ul>
+            <li>Object: EG5
+              <ul>
+                <li>
+                  
+                    Threshold: 5.0 GeV
+                    : <code>0xa</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#TBPT_10">TBPT_10</a></li>
+            <ul><li>
+              
+                TwoBodyPt: 10.0
+                : <code>[99.9]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_1"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>1 L1_test_1 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>JET10-1, MU10+2<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_1</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i1</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{JET10-1,MU10+2}[MASS_MASS_0to20]</strong> : <code>invariant_mass_i1</code>
+          <ul>
+            <li>Object: JET10-1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x14</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10+2
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_2"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>2 L1_test_2 <span class="informative">(Module 5)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist_orm</span><span class="curl">{</span>JET20-2, JET30-1, TAU40+1<span class="curl">}</span>[DETA_MAX_1p5, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_2</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_ov_rm_i2</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist_orm{JET20-2,JET30-1,TAU40+1}[DETA_MAX_1p5,ORMDR_0p2]</strong> : <code>calo_calo_correlation_ov_rm_i2</code>
+          <ul>
+            <li>Object: JET20-2
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x28</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET30-1
+              <ul>
+                <li>
+                  
+                    Threshold: 30.0 GeV
+                    : <code>0x3c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU40+1
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>4 L1_test_4 <span class="informative">(Module 3)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist</span><span class="curl">{</span>MU20-2, EG25+2<span class="curl">}</span>[DETA_MAX_1p5]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_muon_correlation_i3</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist{MU20-2,EG25+2}[DETA_MAX_1p5]</strong> : <code>calo_muon_correlation_i3</code>
+          <ul>
+            <li>Object: MU20-2
+              <ul>
+                <li>
+                  
+                    Threshold: 20.0 GeV
+                    : <code>0x29</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG25+2
+              <ul>
+                <li>
+                  
+                    Threshold: 25.0 GeV
+                    : <code>0x32</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>5 L1_test_5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_trv</span><span class="curl">{</span>TAU34+1, ETM120-1<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">transverse_mass_i4</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_trv{TAU34+1,ETM120-1}[MASS_MASS_0to20]</strong> : <code>transverse_mass_i4</code>
+          <ul>
+            <li>Object: TAU34+1
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: ETM120-1
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_6"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>6 L1_test_6 <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>EG60-1, EG50+1, TAU70-2<span class="curl">}</span>[DETA_MAX_1p5, MASS_MASS_0to20, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_6</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i5</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{EG60-1,EG50+1,TAU70-2}[DETA_MAX_1p5,MASS_MASS_0to20,ORMDR_0p2]</strong> : <code>invariant_mass_ov_rm_i5</code>
+          <ul>
+            <li>Object: EG60-1
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG50+1
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU70-2
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_7"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>7 L1_test_7 <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">MU10+2 <span class="keyword">AND</span> MU10+1 <span class="keyword">AND</span> MU10 <span class="keyword">AND</span> MU10-1 <span class="keyword">AND</span> MU10-2</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_7</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i6</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_mu_i7</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_mu_i8</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_mu_i9</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_mu_i10</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>MU10+2</strong> : <code>single_mu_i6</code>
+          <ul>
+            <li>Object: MU10+2
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>MU10+1</strong> : <code>single_mu_i7</code>
+          <ul>
+            <li>Object: MU10+1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>MU10</strong> : <code>single_mu_i8</code>
+          <ul>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>MU10-1</strong> : <code>single_mu_i9</code>
+          <ul>
+            <li>Object: MU10-1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>MU10-2</strong> : <code>single_mu_i10</code>
+          <ul>
+            <li>Object: MU10-2
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_8"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>8 L1_test_8 <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>JET23-2, JET32-2, JET34-2, JET36-2<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET23-1, JET32-1, JET34-1, JET36-1<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET23, JET32, JET34, JET36<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET23+1, JET32+1, JET34+1, JET36+1<span class="curl">}</span> <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET23+2, JET32+2, JET34+2, JET36+2<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_8</span> <span class="vhdlop"><=</span> <span class="vhdlsig">quad_jet_i11</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i12</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i13</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i14</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i15</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{JET23-2,JET32-2,JET34-2,JET36-2}</strong> : <code>quad_jet_i11</code>
+          <ul>
+            <li>Object: JET23-2
+              <ul>
+                <li>
+                  
+                    Threshold: 23.0 GeV
+                    : <code>0x2e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET32-2
+              <ul>
+                <li>
+                  
+                    Threshold: 32.0 GeV
+                    : <code>0x40</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET34-2
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET36-2
+              <ul>
+                <li>
+                  
+                    Threshold: 36.0 GeV
+                    : <code>0x48</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET23-1,JET32-1,JET34-1,JET36-1}</strong> : <code>quad_jet_i12</code>
+          <ul>
+            <li>Object: JET23-1
+              <ul>
+                <li>
+                  
+                    Threshold: 23.0 GeV
+                    : <code>0x2e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET32-1
+              <ul>
+                <li>
+                  
+                    Threshold: 32.0 GeV
+                    : <code>0x40</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET34-1
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET36-1
+              <ul>
+                <li>
+                  
+                    Threshold: 36.0 GeV
+                    : <code>0x48</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET23,JET32,JET34,JET36}</strong> : <code>quad_jet_i13</code>
+          <ul>
+            <li>Object: JET23
+              <ul>
+                <li>
+                  
+                    Threshold: 23.0 GeV
+                    : <code>0x2e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET32
+              <ul>
+                <li>
+                  
+                    Threshold: 32.0 GeV
+                    : <code>0x40</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET34
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET36
+              <ul>
+                <li>
+                  
+                    Threshold: 36.0 GeV
+                    : <code>0x48</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET23+1,JET32+1,JET34+1,JET36+1}</strong> : <code>quad_jet_i14</code>
+          <ul>
+            <li>Object: JET23+1
+              <ul>
+                <li>
+                  
+                    Threshold: 23.0 GeV
+                    : <code>0x2e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET32+1
+              <ul>
+                <li>
+                  
+                    Threshold: 32.0 GeV
+                    : <code>0x40</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET34+1
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET36+1
+              <ul>
+                <li>
+                  
+                    Threshold: 36.0 GeV
+                    : <code>0x48</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET23+2,JET32+2,JET34+2,JET36+2}</strong> : <code>quad_jet_i15</code>
+          <ul>
+            <li>Object: JET23+2
+              <ul>
+                <li>
+                  
+                    Threshold: 23.0 GeV
+                    : <code>0x2e</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET32+2
+              <ul>
+                <li>
+                  
+                    Threshold: 32.0 GeV
+                    : <code>0x40</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET34+2
+              <ul>
+                <li>
+                  
+                    Threshold: 34.0 GeV
+                    : <code>0x44</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET36+2
+              <ul>
+                <li>
+                  
+                    Threshold: 36.0 GeV
+                    : <code>0x48</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_9"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>9 L1_test_9 <span class="informative">(Module 5)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>EG60, EG50, TAU70<span class="curl">}</span>[DETA_MAX_1p5, MASS_MASS_0to20, ORMDR_0p2, TBPT_10]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_9</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i16</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{EG60,EG50,TAU70}[DETA_MAX_1p5,MASS_MASS_0to20,ORMDR_0p2,TBPT_10]</strong> : <code>invariant_mass_ov_rm_i16</code>
+          <ul>
+            <li>Object: EG60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#TBPT_10">TBPT_10</a></li>
+            <ul><li>
+              
+                TwoBodyPt: 10.0
+                : <code>[99.9]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_10"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>10 L1_test_10 <span class="informative">(Module 2)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>EG62, EG52, TAU70<span class="curl">}</span>[DETA_MAX_1p5, MASS_MASS_0to20, ORMDR_0p2, TBPT_10]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_10</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i17</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{EG62,EG52,TAU70}[DETA_MAX_1p5,MASS_MASS_0to20,ORMDR_0p2,TBPT_10]</strong> : <code>invariant_mass_ov_rm_i17</code>
+          <ul>
+            <li>Object: EG62
+              <ul>
+                <li>
+                  
+                    Threshold: 62.0 GeV
+                    : <code>0x7c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG52
+              <ul>
+                <li>
+                  
+                    Threshold: 52.0 GeV
+                    : <code>0x68</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#TBPT_10">TBPT_10</a></li>
+            <ul><li>
+              
+                TwoBodyPt: 10.0
+                : <code>[99.9]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_11"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>11 L1_test_11 <span class="informative">(Module 3)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>EG64, EG54, TAU70<span class="curl">}</span>[DETA_MAX_1p5, MASS_MASS_0to20, ORMDR_0p2, TBPT_10]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_11</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i18</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{EG64,EG54,TAU70}[DETA_MAX_1p5,MASS_MASS_0to20,ORMDR_0p2,TBPT_10]</strong> : <code>invariant_mass_ov_rm_i18</code>
+          <ul>
+            <li>Object: EG64
+              <ul>
+                <li>
+                  
+                    Threshold: 64.0 GeV
+                    : <code>0x80</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG54
+              <ul>
+                <li>
+                  
+                    Threshold: 54.0 GeV
+                    : <code>0x6c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#TBPT_10">TBPT_10</a></li>
+            <ul><li>
+              
+                TwoBodyPt: 10.0
+                : <code>[99.9]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_12"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>12 L1_test_12 <span class="informative">(Module 4)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv_orm</span><span class="curl">{</span>EG66, EG56, TAU70<span class="curl">}</span>[DETA_MAX_1p5, MASS_MASS_0to20, ORMDR_0p2, TBPT_10]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_12</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_ov_rm_i19</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv_orm{EG66,EG56,TAU70}[DETA_MAX_1p5,MASS_MASS_0to20,ORMDR_0p2,TBPT_10]</strong> : <code>invariant_mass_ov_rm_i19</code>
+          <ul>
+            <li>Object: EG66
+              <ul>
+                <li>
+                  
+                    Threshold: 66.0 GeV
+                    : <code>0x84</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: EG56
+              <ul>
+                <li>
+                  
+                    Threshold: 56.0 GeV
+                    : <code>0x70</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#TBPT_10">TBPT_10</a></li>
+            <ul><li>
+              
+                TwoBodyPt: 10.0
+                : <code>[99.9]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_13"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>13 L1_test_13 <span class="informative">(Module 4)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>MU10+1, MU10+2<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_13</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i20</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{MU10+1,MU10+2}[MASS_MASS_0to20]</strong> : <code>invariant_mass_i20</code>
+          <ul>
+            <li>Object: MU10+1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10+2
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_14"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>14 L1_test_14 <span class="informative">(Module 5)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>MU10, MU10+1<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_14</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i21</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{MU10,MU10+1}[MASS_MASS_0to20]</strong> : <code>invariant_mass_i21</code>
+          <ul>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10+1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_15"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>15 L1_test_15 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>MU10-1, MU10<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_15</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i22</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{MU10-1,MU10}[MASS_MASS_0to20]</strong> : <code>invariant_mass_i22</code>
+          <ul>
+            <li>Object: MU10-1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_16"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>16 L1_test_16 <span class="informative">(Module 1)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">mass_inv</span><span class="curl">{</span>MU10-2, MU10-1<span class="curl">}</span>[MASS_MASS_0to20]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_16</span> <span class="vhdlop"><=</span> <span class="vhdlsig">invariant_mass_i23</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>mass_inv{MU10-2,MU10-1}[MASS_MASS_0to20]</strong> : <code>invariant_mass_i23</code>
+          <ul>
+            <li>Object: MU10-2
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU10-1
+              <ul>
+                <li>
+                  
+                    Threshold: 10.0 GeV
+                    : <code>0x15</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#MASS_MASS_0to20">MASS_MASS_0to20</a></li>
+            <ul><li>
+              
+                Mass: [0.0, 20.0]
+                : <code>[0.0, 200.0]</code>
+                  <code>precision: 1</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_17"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>17 L1_test_17 <span class="informative">(Module 2)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist_orm</span><span class="curl">{</span>TAU27-1, TAU27, JET28<span class="curl">}</span>[DETA_MAX_1p5, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_17</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_ov_rm_i24</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist_orm{TAU27-1,TAU27,JET28}[DETA_MAX_1p5,ORMDR_0p2]</strong> : <code>calo_calo_correlation_ov_rm_i24</code>
+          <ul>
+            <li>Object: TAU27-1
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU27
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_18"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>18 L1_test_18 <span class="informative">(Module 3)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist_orm</span><span class="curl">{</span>TAU27-1, TAU27, JET28-2<span class="curl">}</span>[DETA_MAX_1p5, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_18</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_ov_rm_i25</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist_orm{TAU27-1,TAU27,JET28-2}[DETA_MAX_1p5,ORMDR_0p2]</strong> : <code>calo_calo_correlation_ov_rm_i25</code>
+          <ul>
+            <li>Object: TAU27-1
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU27
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28-2
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_19"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>19 L1_test_19 <span class="informative">(Module 4)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist_orm</span><span class="curl">{</span>TAU27-1, TAU27, JET28+2<span class="curl">}</span>[DETA_MAX_1p5, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_19</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_ov_rm_i26</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist_orm{TAU27-1,TAU27,JET28+2}[DETA_MAX_1p5,ORMDR_0p2]</strong> : <code>calo_calo_correlation_ov_rm_i26</code>
+          <ul>
+            <li>Object: TAU27-1
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU27
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28+2
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_test_20"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>20 L1_test_20 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">dist_orm</span><span class="curl">{</span>TAU27-1, TAU27-2, JET28+2<span class="curl">}</span>[DETA_MAX_1p5, ORMDR_0p2]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_test_20</span> <span class="vhdlop"><=</span> <span class="vhdlsig">calo_calo_correlation_ov_rm_i27</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>dist_orm{TAU27-1,TAU27-2,JET28+2}[DETA_MAX_1p5,ORMDR_0p2]</strong> : <code>calo_calo_correlation_ov_rm_i27</code>
+          <ul>
+            <li>Object: TAU27-1
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: TAU27-2
+              <ul>
+                <li>
+                  
+                    Threshold: 27.0 GeV
+                    : <code>0x36</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET28+2
+              <ul>
+                <li>
+                  
+                    Threshold: 28.0 GeV
+                    : <code>0x38</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Cut: <a href="#ORMDR_0p2">ORMDR_0p2</a></li>
+            <ul><li>
+              
+                ORM-Delta-R: [0.0, 0.2]
+                : <code>[0.0, 0.041]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+            <li>Cut: <a href="#DETA_MAX_1p5">DETA_MAX_1p5</a></li>
+            <ul><li>
+              
+                Delta-Eta: [0.0, 1.5]
+                : <code>[0.0, 1.5]</code>
+                  <code>precision: 3</code>
+              
+          </li></ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <a name="cuts"></a>
+
+    <header class="page-header">
+      <h2>Cuts</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Minimum (hw/emu)</th>
+        <th>Maximum (hw/emu)</th>
+        <th>Data (hw/emu)</th>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="DETA_MAX_1p5"></a> DETA_MAX_1p5</td>
+        <td>0.0</td>
+        <td>1.5</td>
+        <td><code>0.0</code></td>
+        <td><code>1.5</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MASS_MASS_0to20"></a> MASS_MASS_0to20</td>
+        <td>0.0</td>
+        <td>20.0</td>
+        <td><code>0.0</code></td>
+        <td><code>200.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="TBPT_10"></a> TBPT_10</td>
+        <td>10.0</td>
+        <td>0.0</td>
+        <td><code>99.9</code></td>
+        <td><code>0.0</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="ORMDR_0p2"></a> ORMDR_0p2</td>
+        <td>0.0</td>
+        <td>0.2</td>
+        <td><code>0.0</code></td>
+        <td><code>0.041</code></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <p>Generated by tm-reporter v2.7.3 on 2020-01-22 10:43:57.</p>
+    </fooer>
+
+  </main><!-- /container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
