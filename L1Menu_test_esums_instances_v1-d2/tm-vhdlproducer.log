@@ -1,0 +1,350 @@
+2020-01-24 10:05:36 INFO : distributing menu...
+2020-01-24 10:05:36 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer_dev_3_x_y/tmVhdlProducer/config/resource_default.json
+2020-01-24 10:05:36 INFO : :: listing resources...
+2020-01-24 10:05:36 INFO : thresholds:
+2020-01-24 10:05:36 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2020-01-24 10:05:36 INFO : instances:
+2020-01-24 10:05:36 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-24 10:05:36 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2020-01-24 10:05:36 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2020-01-24 10:05:36 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2020-01-24 10:05:36 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2020-01-24 10:05:36 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-24 10:05:36 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2020-01-24 10:05:36 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-01-24 10:05:36 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-01-24 10:05:36 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-01-24 10:05:36 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-01-24 10:05:36 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : | Algorithms sorted by payload (descending)                                   |
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-24 10:05:36 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2020-01-24 10:05:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-24 10:05:36 INFO : |   416 |    0.002% |  0.000% | L1_ETM120                                     |
+2020-01-24 10:05:36 INFO : |   417 |    0.002% |  0.000% | L1_ETM150                                     |
+2020-01-24 10:05:36 INFO : |   421 |    0.002% |  0.000% | L1_ETMHF100                                   |
+2020-01-24 10:05:36 INFO : |   422 |    0.002% |  0.000% | L1_ETMHF110                                   |
+2020-01-24 10:05:36 INFO : |   423 |    0.002% |  0.000% | L1_ETMHF120                                   |
+2020-01-24 10:05:36 INFO : |   443 |    0.002% |  0.000% | L1_ETMHF120_NotSecondBunchInTrain             |
+2020-01-24 10:05:36 INFO : |   424 |    0.002% |  0.000% | L1_ETMHF130                                   |
+2020-01-24 10:05:36 INFO : |   425 |    0.002% |  0.000% | L1_ETMHF140                                   |
+2020-01-24 10:05:36 INFO : |   426 |    0.002% |  0.000% | L1_ETMHF150                                   |
+2020-01-24 10:05:36 INFO : |   410 |    0.002% |  0.000% | L1_ETT1200                                    |
+2020-01-24 10:05:36 INFO : |   411 |    0.002% |  0.000% | L1_ETT1600                                    |
+2020-01-24 10:05:36 INFO : |   412 |    0.002% |  0.000% | L1_ETT2000                                    |
+2020-01-24 10:05:36 INFO : |   398 |    0.002% |  0.000% | L1_HTT120er                                   |
+2020-01-24 10:05:36 INFO : |   399 |    0.002% |  0.000% | L1_HTT160er                                   |
+2020-01-24 10:05:36 INFO : |   400 |    0.002% |  0.000% | L1_HTT200er                                   |
+2020-01-24 10:05:36 INFO : |   401 |    0.002% |  0.000% | L1_HTT255er                                   |
+2020-01-24 10:05:36 INFO : |   402 |    0.002% |  0.000% | L1_HTT280er                                   |
+2020-01-24 10:05:36 INFO : |   403 |    0.002% |  0.000% | L1_HTT320er                                   |
+2020-01-24 10:05:36 INFO : |   404 |    0.002% |  0.000% | L1_HTT360er                                   |
+2020-01-24 10:05:36 INFO : |   405 |    0.002% |  0.000% | L1_HTT400er                                   |
+2020-01-24 10:05:36 INFO : |   406 |    0.002% |  0.000% | L1_HTT450er                                   |
+2020-01-24 10:05:36 INFO : |   461 |    0.002% |  0.000% | L1_MinimumBiasHF0_AND_BptxAND                 |
+2020-01-24 10:05:36 INFO : |   429 |    0.004% |  0.000% | L1_ETMHF100_HTT60er                           |
+2020-01-24 10:05:36 INFO : |   430 |    0.004% |  0.000% | L1_ETMHF110_HTT60er                           |
+2020-01-24 10:05:36 INFO : |   444 |    0.004% |  0.000% | L1_ETMHF110_HTT60er_NotSecondBunchInTrain     |
+2020-01-24 10:05:36 INFO : |   431 |    0.004% |  0.000% | L1_ETMHF120_HTT60er                           |
+2020-01-24 10:05:36 INFO : |   432 |    0.004% |  0.000% | L1_ETMHF130_HTT60er                           |
+2020-01-24 10:05:36 INFO : |   428 |    0.004% |  0.000% | L1_ETMHF90_HTT60er                            |
+2020-01-24 10:05:36 INFO : |   131 |    0.082% |  0.000% | L1_Mu6_HTT240er                               |
+2020-01-24 10:05:36 INFO : |   132 |    0.082% |  0.000% | L1_Mu6_HTT250er                               |
+2020-01-24 10:05:36 INFO : |   150 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT220er                      |
+2020-01-24 10:05:36 INFO : |   151 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT240er                      |
+2020-01-24 10:05:36 INFO : |   152 |    0.162% |  0.000% | L1_DoubleMu3_SQ_HTT260er                      |
+2020-01-24 10:05:36 INFO : |   145 |    0.164% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_HTT60er               |
+2020-01-24 10:05:36 INFO : |   147 |    0.186% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5            |
+2020-01-24 10:05:36 INFO : |   148 |    0.186% |  0.000% | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5            |
+2020-01-24 10:05:36 INFO : |   146 |    0.234% |  0.000% | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_...     |
+2020-01-24 10:05:36 INFO : |   384 |    3.362% |  0.000% | L1_HTT280er_QuadJet_70_55_40_35_er2p4         |
+2020-01-24 10:05:36 INFO : |   385 |    3.362% |  0.000% | L1_HTT320er_QuadJet_70_55_40_40_er2p4         |
+2020-01-24 10:05:36 INFO : |   386 |    3.362% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_45_40_...     |
+2020-01-24 10:05:36 INFO : |   387 |    3.362% |  0.000% | L1_HTT320er_QuadJet_80_60_er2p1_50_45_...     |
+2020-01-24 10:05:36 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : distributing algorithms, shadow ratio: 0.0
+2020-01-24 10:05:36 INFO : starting algorithm distribution for 41 algorithms on 6 modules using shadow ratio of 0.0
+2020-01-24 10:05:36 INFO :  . adding L1_ETM120 (416) to module 0
+2020-01-24 10:05:36 INFO :  . adding L1_ETM150 (417) to module 1
+2020-01-24 10:05:36 INFO :  . adding L1_ETMHF100 (421) to module 2
+2020-01-24 10:05:36 INFO :  +-- L1_ETMHF100_HTT60er shadowed ratio 50.0 %
+2020-01-24 10:05:36 INFO :  +--- L1_ETMHF90_HTT60er shadowed ratio 33.3 %
+2020-01-24 10:05:36 INFO :  +---- L1_ETMHF130_HTT60er shadowed ratio 25.0 %
+2020-01-24 10:05:36 INFO :  +----- L1_ETMHF130 shadowed ratio 25.0 %
+2020-01-24 10:05:36 INFO :  +------ L1_ETMHF110_HTT60er shadowed ratio 20.0 %
+2020-01-24 10:05:36 INFO :  +------- L1_ETMHF110 shadowed ratio 20.0 %
+2020-01-24 10:05:36 INFO :  +-------- L1_DoubleMu3_SQ_ETMHF50_HTT60er shadowed ratio 14.3 %
+2020-01-24 10:05:36 INFO :  +--------- L1_DoubleMu3_SQ_HTT220er shadowed ratio 12.5 %
+2020-01-24 10:05:36 INFO :  +---------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 shadowed ratio 20.0 %
+2020-01-24 10:05:36 INFO :  +----------- L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 shadowed ratio 18.2 %
+2020-01-24 10:05:36 INFO :  +------------ L1_ETMHF110_HTT60er_NotSecondBunchInTrain shadowed ratio 12.5 %
+2020-01-24 10:05:36 INFO :  +------------- L1_MinimumBiasHF0_AND_BptxAND shadowed ratio 5.6 %
+2020-01-24 10:05:36 INFO :  +-------------- L1_ETMHF120_HTT60er shadowed ratio 5.3 %
+2020-01-24 10:05:36 INFO :  +--------------- L1_DoubleMu3_SQ_HTT240er shadowed ratio 5.0 %
+2020-01-24 10:05:36 INFO :  +---------------- L1_ETMHF120 shadowed ratio 5.0 %
+2020-01-24 10:05:36 INFO :  +----------------- L1_DoubleMu3_SQ_HTT260er shadowed ratio 4.8 %
+2020-01-24 10:05:36 INFO :  +------------------ L1_ETMHF120_NotSecondBunchInTrain shadowed ratio 28.6 %
+2020-01-24 10:05:36 INFO :  +------------------- L1_Mu6_HTT240er shadowed ratio 4.5 %
+2020-01-24 10:05:36 INFO :  +-------------------- L1_Mu6_HTT250er shadowed ratio 4.3 %
+2020-01-24 10:05:36 INFO :  +--------------------- L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 shadowed ratio 13.0 %
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF130 424 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 148 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF110_HTT60er_NotSecondBunchInTrain 444 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF100_HTT60er 429 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_MinimumBiasHF0_AND_BptxAND 461 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT220er 150 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT240er 151 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF120_HTT60er 431 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF120 423 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF120_NotSecondBunchInTrain 443 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF90_HTT60er 428 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_HTT260er 152 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_Mu6_HTT250er 132 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF110 422 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF130_HTT60er 432 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_ETMHF110_HTT60er 430 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 146 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_HTT60er 145 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_Mu6_HTT240er 131 to module 2
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 147 to module 2
+2020-01-24 10:05:36 INFO :  . adding L1_ETMHF140 (425) to module 3
+2020-01-24 10:05:36 INFO :  . adding L1_ETMHF150 (426) to module 4
+2020-01-24 10:05:36 INFO :  . adding L1_ETT1200 (410) to module 5
+2020-01-24 10:05:36 INFO :  . adding L1_ETT1600 (411) to module 0
+2020-01-24 10:05:36 INFO :  . adding L1_ETT2000 (412) to module 1
+2020-01-24 10:05:36 INFO :  . adding L1_HTT120er (398) to module 3
+2020-01-24 10:05:36 INFO :  . adding L1_HTT160er (399) to module 4
+2020-01-24 10:05:36 INFO :  . adding L1_HTT200er (400) to module 5
+2020-01-24 10:05:36 INFO :  . adding L1_HTT255er (401) to module 0
+2020-01-24 10:05:36 INFO :  . adding L1_HTT280er (402) to module 1
+2020-01-24 10:05:36 INFO :  +-- L1_HTT280er_QuadJet_70_55_40_35_er2p4 shadowed ratio 50.0 %
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_HTT280er_QuadJet_70_55_40_35_er2p4 384 to module 1
+2020-01-24 10:05:36 INFO :  . adding L1_HTT320er (403) to module 3
+2020-01-24 10:05:36 INFO :  +-- L1_HTT320er_QuadJet_70_55_40_40_er2p4 shadowed ratio 50.0 %
+2020-01-24 10:05:36 INFO :  +--- L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 shadowed ratio 33.3 %
+2020-01-24 10:05:36 INFO :  +---- L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 shadowed ratio 25.0 %
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_HTT320er_QuadJet_70_55_40_40_er2p4 385 to module 3
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 387 to module 3
+2020-01-24 10:05:36 INFO :  ... adding shadowed L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 386 to module 3
+2020-01-24 10:05:36 INFO :  . adding L1_HTT360er (404) to module 4
+2020-01-24 10:05:36 INFO :  . adding L1_HTT400er (405) to module 5
+2020-01-24 10:05:36 INFO :  . adding L1_HTT450er (406) to module 0
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.0                       |
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : |------------|----------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : | Module     | Algorithm                                                      |
+2020-01-24 10:05:36 INFO : | ID | Index | Index | Name                                                   |
+2020-01-24 10:05:36 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |  0 |     0 |   416 | L1_ETM120                                              |
+2020-01-24 10:05:36 INFO : |  0 |     1 |   411 | L1_ETT1600                                             |
+2020-01-24 10:05:36 INFO : |  0 |     2 |   401 | L1_HTT255er                                            |
+2020-01-24 10:05:36 INFO : |  0 |     3 |   406 | L1_HTT450er                                            |
+2020-01-24 10:05:36 INFO : |  1 |     0 |   417 | L1_ETM150                                              |
+2020-01-24 10:05:36 INFO : |  1 |     1 |   412 | L1_ETT2000                                             |
+2020-01-24 10:05:36 INFO : |  1 |     2 |   402 | L1_HTT280er                                            |
+2020-01-24 10:05:36 INFO : |  1 |     3 |   384 | L1_HTT280er_QuadJet_70_55_40_35_er2p4                  |
+2020-01-24 10:05:36 INFO : |  2 |     0 |   421 | L1_ETMHF100                                            |
+2020-01-24 10:05:36 INFO : |  2 |     1 |   424 | L1_ETMHF130                                            |
+2020-01-24 10:05:36 INFO : |  2 |     2 |   148 | L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5                     |
+2020-01-24 10:05:36 INFO : |  2 |     3 |   444 | L1_ETMHF110_HTT60er_NotSecondBunchInTrain              |
+2020-01-24 10:05:36 INFO : |  2 |     4 |   429 | L1_ETMHF100_HTT60er                                    |
+2020-01-24 10:05:36 INFO : |  2 |     5 |   461 | L1_MinimumBiasHF0_AND_BptxAND                          |
+2020-01-24 10:05:36 INFO : |  2 |     6 |   150 | L1_DoubleMu3_SQ_HTT220er                               |
+2020-01-24 10:05:36 INFO : |  2 |     7 |   151 | L1_DoubleMu3_SQ_HTT240er                               |
+2020-01-24 10:05:36 INFO : |  2 |     8 |   431 | L1_ETMHF120_HTT60er                                    |
+2020-01-24 10:05:36 INFO : |  2 |     9 |   423 | L1_ETMHF120                                            |
+2020-01-24 10:05:36 INFO : |  2 |    10 |   443 | L1_ETMHF120_NotSecondBunchInTrain                      |
+2020-01-24 10:05:36 INFO : |  2 |    11 |   428 | L1_ETMHF90_HTT60er                                     |
+2020-01-24 10:05:36 INFO : |  2 |    12 |   152 | L1_DoubleMu3_SQ_HTT260er                               |
+2020-01-24 10:05:36 INFO : |  2 |    13 |   132 | L1_Mu6_HTT250er                                        |
+2020-01-24 10:05:36 INFO : |  2 |    14 |   422 | L1_ETMHF110                                            |
+2020-01-24 10:05:36 INFO : |  2 |    15 |   432 | L1_ETMHF130_HTT60er                                    |
+2020-01-24 10:05:36 INFO : |  2 |    16 |   430 | L1_ETMHF110_HTT60er                                    |
+2020-01-24 10:05:36 INFO : |  2 |    17 |   146 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet...     |
+2020-01-24 10:05:36 INFO : |  2 |    18 |   145 | L1_DoubleMu3_SQ_ETMHF50_HTT60er                        |
+2020-01-24 10:05:36 INFO : |  2 |    19 |   131 | L1_Mu6_HTT240er                                        |
+2020-01-24 10:05:36 INFO : |  2 |    20 |   147 | L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5                     |
+2020-01-24 10:05:36 INFO : |  3 |     0 |   425 | L1_ETMHF140                                            |
+2020-01-24 10:05:36 INFO : |  3 |     1 |   398 | L1_HTT120er                                            |
+2020-01-24 10:05:36 INFO : |  3 |     2 |   403 | L1_HTT320er                                            |
+2020-01-24 10:05:36 INFO : |  3 |     3 |   385 | L1_HTT320er_QuadJet_70_55_40_40_er2p4                  |
+2020-01-24 10:05:36 INFO : |  3 |     4 |   387 | L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3            |
+2020-01-24 10:05:36 INFO : |  3 |     5 |   386 | L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3            |
+2020-01-24 10:05:36 INFO : |  4 |     0 |   426 | L1_ETMHF150                                            |
+2020-01-24 10:05:36 INFO : |  4 |     1 |   399 | L1_HTT160er                                            |
+2020-01-24 10:05:36 INFO : |  4 |     2 |   404 | L1_HTT360er                                            |
+2020-01-24 10:05:36 INFO : |  5 |     0 |   410 | L1_ETT1200                                             |
+2020-01-24 10:05:36 INFO : |  5 |     1 |   400 | L1_HTT200er                                            |
+2020-01-24 10:05:36 INFO : |  5 |     2 |   405 | L1_HTT400er                                            |
+2020-01-24 10:05:36 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : | Condition distribution, sorted by weight (ascending)                        |
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : | Name                                             | Modules                  |
+2020-01-24 10:05:36 INFO : |--------------------------------------------------|--------------------------|
+2020-01-24 10:05:36 INFO : | SingleEXT_i28                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleEXT_i39                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleEXT_i40                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleEXT_i41                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleEXT_i42                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleMBT0HFM_i27                                | 2                        |
+2020-01-24 10:05:36 INFO : | SingleMBT0HFP_i26                                | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i10                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i11                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i12                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i20                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i24                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i30                                  | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i32                                  | 3                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i33                                  | 4                        |
+2020-01-24 10:05:36 INFO : | SingleETMHF_i9                                   | 2                        |
+2020-01-24 10:05:36 INFO : | SingleETM_i34                                    | 0                        |
+2020-01-24 10:05:36 INFO : | SingleETM_i35                                    | 1                        |
+2020-01-24 10:05:36 INFO : | SingleETT_i36                                    | 5                        |
+2020-01-24 10:05:36 INFO : | SingleETT_i37                                    | 0                        |
+2020-01-24 10:05:36 INFO : | SingleETT_i38                                    | 1                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i0                                     | 3                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i1                                     | 4                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i17                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i18                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i2                                     | 5                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i23                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i25                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i3                                     | 0                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i31                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i4                                     | 1                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i5                                     | 3                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i6                                     | 4                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i7                                     | 5                        |
+2020-01-24 10:05:36 INFO : | SingleHTT_i8                                     | 0                        |
+2020-01-24 10:05:36 INFO : | SingleJET_i21                                    | 2                        |
+2020-01-24 10:05:36 INFO : | DoubleJET_i22                                    | 2                        |
+2020-01-24 10:05:36 INFO : | SingleMU_i16                                     | 2                        |
+2020-01-24 10:05:36 INFO : | DoubleMU_i19                                     | 2                        |
+2020-01-24 10:05:36 INFO : | QuadJET_i13                                      | 1                        |
+2020-01-24 10:05:36 INFO : | QuadJET_i14                                      | 3                        |
+2020-01-24 10:05:36 INFO : | QuadJET_i15                                      | 3                        |
+2020-01-24 10:05:36 INFO : | QuadJET_i29                                      | 3                        |
+2020-01-24 10:05:36 INFO : |--------------------------------------------------|--------------------------|
+2020-01-24 10:05:36 INFO : |-----------------------------------------------------------------------------|
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.0                    |
+2020-01-24 10:05:36 INFO : |                                                                             |
+2020-01-24 10:05:36 INFO : |-------------------------------------|---------------------------------------|
+2020-01-24 10:05:36 INFO : | Module                              | Payload                               |
+2020-01-24 10:05:36 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2020-01-24 10:05:36 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-01-24 10:05:36 INFO : |  0 |          4 |          4 | 1.00 |    17.01% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |  1 |          4 |          4 | 1.00 |    20.37% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |  2 |         21 |         23 | 1.10 |    17.34% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |  3 |          6 |          6 | 1.00 |    27.09% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |  4 |          3 |          3 | 1.00 |    17.01% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |  5 |          3 |          3 | 1.00 |    17.01% |   0.00% |                 |
+2020-01-24 10:05:36 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-01-24 10:05:36 INFO : writing VHDL modules...
+2020-01-24 10:05:36 INFO : writing 41 algorithms to 6 module(s)
+2020-01-24 10:05:36 INFO : writing output for module: 0
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_0/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_0/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing output for module: 1
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_1/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_1/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing output for module: 2
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_2/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_2/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing output for module: 3
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_3/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_3/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing output for module: 4
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_4/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_4/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing output for module: 5
+2020-01-24 10:05:37 INFO : l1menu.vhd              : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_5/src/l1menu.vhd
+2020-01-24 10:05:37 INFO : l1menu_pkg.vhd          : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/vhdl/module_5/src/l1menu_pkg.vhd
+2020-01-24 10:05:37 INFO : writing updated XML file /home/bergauer/L1Menu_test_esums_instances_v1.xml
+2020-01-24 10:05:37 INFO : reading source XML menu file /home/bergauer/L1Menu_test_esums_instances_v1.xml
+2020-01-24 10:05:37 INFO : processing menu "L1Menu_test_esums_instances_v1" ... 
+2020-01-24 10:05:37 INFO : updating menu information...
+2020-01-24 10:05:37 INFO : uuid_menu     : f7b5ee69-e72e-4011-aa54-9fdcb44159a6
+2020-01-24 10:05:37 INFO : uuid_firmware : 0f60d609-97a3-4ed7-b9ca-23c30a19b2c6
+2020-01-24 10:05:37 INFO : n_modules     : 6
+2020-01-24 10:05:37 INFO : writing target XML menu file /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/xml/L1Menu_test_esums_instances_v1-d2.xml
+2020-01-24 10:05:37 INFO : generating menu documentation...
+2020-01-24 10:05:37 INFO : writing HTML documentation /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/xml/L1Menu_test_esums_instances_v1-d2.xml
+2020-01-24 10:05:38 INFO : writing TWIKI page template /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/xml/L1Menu_test_esums_instances_v1-d2.xml
+2020-01-24 10:05:39 INFO : patching filenames...
+2020-01-24 10:05:39 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/doc/L1Menu_test_esums_instances_v1.html --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/doc/L1Menu_test_esums_instances_v1-d2.html
+2020-01-24 10:05:39 INFO : /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/doc/L1Menu_test_esums_instances_v1.twiki --> /home/bergauer/github/herbberg/l1menus_gtl_v2_x_y/L1Menu_test_esums_instances_v1-d2/doc/L1Menu_test_esums_instances_v1-d2.twiki
+2020-01-24 10:05:39 INFO : done.
