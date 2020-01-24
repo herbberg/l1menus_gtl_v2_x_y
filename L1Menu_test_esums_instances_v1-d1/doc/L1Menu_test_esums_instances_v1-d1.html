@@ -1,0 +1,3008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html" charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1Menu_test_esums_instances_v1</title>
+  <meta name="description" content="test esums instances">
+  <meta name="generator" content="tm-reporter 2.7.3">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- style customizations -->
+  <style>
+    /* Fixing anchor offset for fixed top navbar */
+    h1:before,
+    h2:before {
+        height: 38px;
+        content: "";
+        display:block;
+    }
+    a.anchor {
+      visibility:hidden;
+      position:relative;
+      top:-68px;
+    }
+    .panel-heading h3 {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+    .panel-heading a.top {
+        float: right;
+    }
+    pre .curl {
+        font-weight: bold;
+    }
+    pre .cut {
+        color: darkmagenta;
+    }
+    pre .function {
+        font-weight: bold;
+        color: darkblue;
+    }
+    pre .keyword {
+        font-weight: bold;
+        color: blue;
+    }
+    pre .vhdlop {
+        font-weight: bold;
+        color: darkmagenta;
+    }
+    pre .vhdlsig {
+        color: brown;
+    }
+    .vhdl,
+    .expression {
+        white-space: normal;
+        word-wrap: normal;
+        word-break: keep-all;
+    }
+    .informative {
+        font-size: .9em;
+        color: darkgray;
+    }
+    h3 .informative {
+        font-size: .6em;
+    }
+    .footer {
+        float: right;
+        font-size: .9em;
+        color: darkgray;
+    }
+  </style>
+</head>
+<body role="document">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#top"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Top</span></a></li>
+          <li class=""><a href="#algorithms"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Algorithms</span></a></li>
+          <li class=""><a href="#cuts"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Cuts</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <a name="top"></a>
+
+    <header class="page-header">
+      <h1>L1Menu_test_esums_instances_v1</h1>
+    </header>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Comment:</strong> test esums instances</li>
+      <li class="list-group-item"><strong>Firmware UUID:</strong> 0192500b-b6f5-4bad-97c3-cd089407f968</li>
+      <li class="list-group-item"><strong>Menu UUID:</strong> f7b5ee69-e72e-4011-aa54-9fdcb44159a6</li>
+      <li class="list-group-item"><strong>Grammar Version:</strong> 0.7</li>
+      <li class="list-group-item"><strong>Scale Set:</strong> scales_2017_05_23</li>
+      <li class="list-group-item"><strong>External Signals Set:</strong> L1ExternalConditionsCabling_20180319</li>
+    </ul>
+    <hr />
+
+    <a name="algorithms"></a>
+
+    <header class="page-header">
+      <h2>Algorithms</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu6_HTT240er>131</a></td>
+        <td><a href=#L1_Mu6_HTT240er>L1_Mu6_HTT240er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_Mu6_HTT250er>132</a></td>
+        <td><a href=#L1_Mu6_HTT250er>L1_Mu6_HTT250er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_HTT60er>145</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_HTT60er>L1_DoubleMu3_SQ_ETMHF50_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5>146</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5>L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5>147</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5>L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5>148</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5>L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_HTT220er>150</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_HTT220er>L1_DoubleMu3_SQ_HTT220er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_HTT240er>151</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_HTT240er>L1_DoubleMu3_SQ_HTT240er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_DoubleMu3_SQ_HTT260er>152</a></td>
+        <td><a href=#L1_DoubleMu3_SQ_HTT260er>L1_DoubleMu3_SQ_HTT260er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT280er_QuadJet_70_55_40_35_er2p4>384</a></td>
+        <td><a href=#L1_HTT280er_QuadJet_70_55_40_35_er2p4>L1_HTT280er_QuadJet_70_55_40_35_er2p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT320er_QuadJet_70_55_40_40_er2p4>385</a></td>
+        <td><a href=#L1_HTT320er_QuadJet_70_55_40_40_er2p4>L1_HTT320er_QuadJet_70_55_40_40_er2p4</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3>386</a></td>
+        <td><a href=#L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3>L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3>387</a></td>
+        <td><a href=#L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3>L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT120er>398</a></td>
+        <td><a href=#L1_HTT120er>L1_HTT120er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT160er>399</a></td>
+        <td><a href=#L1_HTT160er>L1_HTT160er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT200er>400</a></td>
+        <td><a href=#L1_HTT200er>L1_HTT200er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT255er>401</a></td>
+        <td><a href=#L1_HTT255er>L1_HTT255er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT280er>402</a></td>
+        <td><a href=#L1_HTT280er>L1_HTT280er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT320er>403</a></td>
+        <td><a href=#L1_HTT320er>L1_HTT320er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT360er>404</a></td>
+        <td><a href=#L1_HTT360er>L1_HTT360er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT400er>405</a></td>
+        <td><a href=#L1_HTT400er>L1_HTT400er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_HTT450er>406</a></td>
+        <td><a href=#L1_HTT450er>L1_HTT450er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETT1200>410</a></td>
+        <td><a href=#L1_ETT1200>L1_ETT1200</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETT1600>411</a></td>
+        <td><a href=#L1_ETT1600>L1_ETT1600</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETT2000>412</a></td>
+        <td><a href=#L1_ETT2000>L1_ETT2000</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETM120>416</a></td>
+        <td><a href=#L1_ETM120>L1_ETM120</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETM150>417</a></td>
+        <td><a href=#L1_ETM150>L1_ETM150</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF100>421</a></td>
+        <td><a href=#L1_ETMHF100>L1_ETMHF100</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF110>422</a></td>
+        <td><a href=#L1_ETMHF110>L1_ETMHF110</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF120>423</a></td>
+        <td><a href=#L1_ETMHF120>L1_ETMHF120</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF130>424</a></td>
+        <td><a href=#L1_ETMHF130>L1_ETMHF130</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF140>425</a></td>
+        <td><a href=#L1_ETMHF140>L1_ETMHF140</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF150>426</a></td>
+        <td><a href=#L1_ETMHF150>L1_ETMHF150</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF90_HTT60er>428</a></td>
+        <td><a href=#L1_ETMHF90_HTT60er>L1_ETMHF90_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF100_HTT60er>429</a></td>
+        <td><a href=#L1_ETMHF100_HTT60er>L1_ETMHF100_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF110_HTT60er>430</a></td>
+        <td><a href=#L1_ETMHF110_HTT60er>L1_ETMHF110_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF120_HTT60er>431</a></td>
+        <td><a href=#L1_ETMHF120_HTT60er>L1_ETMHF120_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF130_HTT60er>432</a></td>
+        <td><a href=#L1_ETMHF130_HTT60er>L1_ETMHF130_HTT60er</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF120_NotSecondBunchInTrain>443</a></td>
+        <td><a href=#L1_ETMHF120_NotSecondBunchInTrain>L1_ETMHF120_NotSecondBunchInTrain</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_ETMHF110_HTT60er_NotSecondBunchInTrain>444</a></td>
+        <td><a href=#L1_ETMHF110_HTT60er_NotSecondBunchInTrain>L1_ETMHF110_HTT60er_NotSecondBunchInTrain</a></td>
+      </tr>
+      <tr>
+        <td><a href=#L1_MinimumBiasHF0_AND_BptxAND>461</a></td>
+        <td><a href=#L1_MinimumBiasHF0_AND_BptxAND>L1_MinimumBiasHF0_AND_BptxAND</a></td>
+      </tr>
+    </table>
+    <hr />
+    <a class="anchor" name="L1_Mu6_HTT240er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>131 L1_Mu6_HTT240er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">MU6[MU-QLTY_SNGL] <span class="keyword">AND</span> HTT240</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu6_htt240er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i16</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i17</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY: https://indico.cern.ch/event/623066/contributions/2513193/attachments/1426266/2189134/L1shoppinglist.pdf</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>MU6[MU-QLTY_SNGL]</strong> : <code>single_mu_i16</code>
+          <ul>
+            <li>Object: MU6
+              <ul>
+                <li>
+                  
+                    Threshold: 6.0 GeV
+                    : <code>0xd</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT240</strong> : <code>single_htt_i17</code>
+          <ul>
+            <li>Object: HTT240
+              <ul>
+                <li>
+                  
+                    Threshold: 240.0 GeV
+                    : <code>0x1e0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_Mu6_HTT250er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>132 L1_Mu6_HTT250er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">MU6[MU-QLTY_SNGL] <span class="keyword">AND</span> HTT250</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_mu6_htt250er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_mu_i16</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i18</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>MU6[MU-QLTY_SNGL]</strong> : <code>single_mu_i16</code>
+          <ul>
+            <li>Object: MU6
+              <ul>
+                <li>
+                  
+                    Threshold: 6.0 GeV
+                    : <code>0xd</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT250</strong> : <code>single_htt_i18</code>
+          <ul>
+            <li>Object: HTT250
+              <ul>
+                <li>
+                  
+                    Threshold: 250.0 GeV
+                    : <code>0x1f4</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_ETMHF50_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>145 L1_DoubleMu3_SQ_ETMHF50_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> ETMHF50 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_etmhf50_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_etmhf_i20</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-491</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>ETMHF50</strong> : <code>single_etmhf_i20</code>
+          <ul>
+            <li>Object: ETMHF50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>146 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5_OR_DoubleJet40er2p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> ETMHF50 <span class="keyword">AND</span> (JET60[JET-ETA_2p52] <span class="keyword">OR</span> <span class="function">comb</span><span class="curl">{</span>JET40[JET-ETA_2p52], JET40[JET-ETA_2p52]<span class="curl">}</span>)</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_etmhf50_jet60er2p5_or_double_jet40er2p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_etmhf_i20</span> <span class="vhdlop">and</span> ( <span class="vhdlsig">single_jet_i21</span> <span class="vhdlop">or</span> <span class="vhdlsig">double_jet_i22</span> )</pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-491</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>ETMHF50</strong> : <code>single_etmhf_i20</code>
+          <ul>
+            <li>Object: ETMHF50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET60[JET-ETA_2p52]</strong> : <code>single_jet_i21</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET40[JET-ETA_2p52],JET40[JET-ETA_2p52]}</strong> : <code>double_jet_i22</code>
+          <ul>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>147 L1_DoubleMu3_SQ_ETMHF50_Jet60er2p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> ETMHF50 <span class="keyword">AND</span> JET60[JET-ETA_2p52]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_etmhf50_jet60er2p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_etmhf_i20</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_jet_i21</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-491</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>ETMHF50</strong> : <code>single_etmhf_i20</code>
+          <ul>
+            <li>Object: ETMHF50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET60[JET-ETA_2p52]</strong> : <code>single_jet_i21</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>148 L1_DoubleMu3_SQ_ETMHF60_Jet60er2p5 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> ETMHF60 <span class="keyword">AND</span> JET60[JET-ETA_2p52]</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_etmhf60_jet60er2p5</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_etmhf_i30</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_jet_i21</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-491</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>ETMHF60</strong> : <code>single_etmhf_i30</code>
+          <ul>
+            <li>Object: ETMHF60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>JET60[JET-ETA_2p52]</strong> : <code>single_jet_i21</code>
+          <ul>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p52">JET-ETA_2p52</a> [-2.523, 2.523]
+                    : <code>[0xc6, 0x39]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_HTT220er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>150 L1_DoubleMu3_SQ_HTT220er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> HTT220</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_htt220er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i23</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>Added by L1DPG</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT220</strong> : <code>single_htt_i23</code>
+          <ul>
+            <li>Object: HTT220
+              <ul>
+                <li>
+                  
+                    Threshold: 220.0 GeV
+                    : <code>0x1b8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_HTT240er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>151 L1_DoubleMu3_SQ_HTT240er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> HTT240</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_htt240er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i17</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>Added by L1DPG</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT240</strong> : <code>single_htt_i17</code>
+          <ul>
+            <li>Object: HTT240
+              <ul>
+                <li>
+                  
+                    Threshold: 240.0 GeV
+                    : <code>0x1e0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_DoubleMu3_SQ_HTT260er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>152 L1_DoubleMu3_SQ_HTT260er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression"><span class="function">comb</span><span class="curl">{</span>MU3[MU-QLTY_SNGL], MU3[MU-QLTY_SNGL]<span class="curl">}</span> <span class="keyword">AND</span> HTT260</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_double_mu3_sq_htt260er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">double_mu_i19</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i31</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-491</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>comb{MU3[MU-QLTY_SNGL],MU3[MU-QLTY_SNGL]}</strong> : <code>double_mu_i19</code>
+          <ul>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: MU3
+              <ul>
+                <li>
+                  
+                    Threshold: 3.0 GeV
+                    : <code>0x7</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Quality: <a href="#MU-QLTY_SNGL">MU-QLTY_SNGL</a>:
+                    <code>0xf000</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT260</strong> : <code>single_htt_i31</code>
+          <ul>
+            <li>Object: HTT260
+              <ul>
+                <li>
+                  
+                    Threshold: 260.0 GeV
+                    : <code>0x208</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT280er_QuadJet_70_55_40_35_er2p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>384 L1_HTT280er_QuadJet_70_55_40_35_er2p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT280 <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET70[JET-ETA_2p4], JET55[JET-ETA_2p4], JET40[JET-ETA_2p4], JET35[JET-ETA_2p4]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt280er_quad_jet_70_55_40_35_er2p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i4</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i13</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
+https://its.cern.ch/jira/browse/CMSLITDPG-462
+https://its.cern.ch/jira/browse/CMSLITDPG-506
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-84</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT280</strong> : <code>single_htt_i4</code>
+          <ul>
+            <li>Object: HTT280
+              <ul>
+                <li>
+                  
+                    Threshold: 280.0 GeV
+                    : <code>0x230</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET35[JET-ETA_2p4]}</strong> : <code>quad_jet_i13</code>
+          <ul>
+            <li>Object: JET70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET55
+              <ul>
+                <li>
+                  
+                    Threshold: 55.0 GeV
+                    : <code>0x6e</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET35
+              <ul>
+                <li>
+                  
+                    Threshold: 35.0 GeV
+                    : <code>0x46</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT320er_QuadJet_70_55_40_40_er2p4"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>385 L1_HTT320er_QuadJet_70_55_40_40_er2p4 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT320 <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET70[JET-ETA_2p4], JET55[JET-ETA_2p4], JET40[JET-ETA_2p4], JET40[JET-ETA_2p4]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt320er_quad_jet_70_55_40_40_er2p4</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i5</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i14</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
+https://its.cern.ch/jira/browse/CMSLITDPG-462
+https://its.cern.ch/jira/browse/CMSLITDPG-506
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-159</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT320</strong> : <code>single_htt_i5</code>
+          <ul>
+            <li>Object: HTT320
+              <ul>
+                <li>
+                  
+                    Threshold: 320.0 GeV
+                    : <code>0x280</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET70[JET-ETA_2p4],JET55[JET-ETA_2p4],JET40[JET-ETA_2p4],JET40[JET-ETA_2p4]}</strong> : <code>quad_jet_i14</code>
+          <ul>
+            <li>Object: JET70
+              <ul>
+                <li>
+                  
+                    Threshold: 70.0 GeV
+                    : <code>0x8c</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET55
+              <ul>
+                <li>
+                  
+                    Threshold: 55.0 GeV
+                    : <code>0x6e</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p4">JET-ETA_2p4</a> [-2.392, 2.392]
+                    : <code>[0xc9, 0x36]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>386 L1_HTT320er_QuadJet_80_60_er2p1_45_40_er2p3 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT320 <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET80[JET-ETA_2p13], JET60[JET-ETA_2p13], JET45[JET-ETA_2p3], JET40[JET-ETA_2p3]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt320er_quad_jet_80_60_er2p1_45_40_er2p3</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i5</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i15</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
+https://its.cern.ch/jira/browse/CMSLITDPG-462
+https://its.cern.ch/jira/browse/CMSLITDPG-506
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-159</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT320</strong> : <code>single_htt_i5</code>
+          <ul>
+            <li>Object: HTT320
+              <ul>
+                <li>
+                  
+                    Threshold: 320.0 GeV
+                    : <code>0x280</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET45[JET-ETA_2p3],JET40[JET-ETA_2p3]}</strong> : <code>quad_jet_i15</code>
+          <ul>
+            <li>Object: JET80
+              <ul>
+                <li>
+                  
+                    Threshold: 80.0 GeV
+                    : <code>0xa0</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p13">JET-ETA_2p13</a> [-2.131, 2.131]
+                    : <code>[0xcf, 0x30]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p13">JET-ETA_2p13</a> [-2.131, 2.131]
+                    : <code>[0xcf, 0x30]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET45
+              <ul>
+                <li>
+                  
+                    Threshold: 45.0 GeV
+                    : <code>0x5a</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p3">JET-ETA_2p3</a> [-2.305, 2.305]
+                    : <code>[0xcb, 0x34]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET40
+              <ul>
+                <li>
+                  
+                    Threshold: 40.0 GeV
+                    : <code>0x50</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p3">JET-ETA_2p3</a> [-2.305, 2.305]
+                    : <code>[0xcb, 0x34]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>387 L1_HTT320er_QuadJet_80_60_er2p1_50_45_er2p3 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT320 <span class="keyword">AND</span> <span class="function">comb</span><span class="curl">{</span>JET80[JET-ETA_2p13], JET60[JET-ETA_2p13], JET50[JET-ETA_2p3], JET45[JET-ETA_2p3]<span class="curl">}</span></pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt320er_quad_jet_80_60_er2p1_50_45_er2p3</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i5</span> <span class="vhdlop">and</span> <span class="vhdlsig">quad_jet_i29</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for TOP/BTagCSV PD
+https://its.cern.ch/jira/browse/CMSLITDPG-462
+https://its.cern.ch/jira/browse/CMSLITDPG-506
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+
+https://its.cern.ch/jira/browse/CMSLITDPG-159</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT320</strong> : <code>single_htt_i5</code>
+          <ul>
+            <li>Object: HTT320
+              <ul>
+                <li>
+                  
+                    Threshold: 320.0 GeV
+                    : <code>0x280</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>comb{JET80[JET-ETA_2p13],JET60[JET-ETA_2p13],JET50[JET-ETA_2p3],JET45[JET-ETA_2p3]}</strong> : <code>quad_jet_i29</code>
+          <ul>
+            <li>Object: JET80
+              <ul>
+                <li>
+                  
+                    Threshold: 80.0 GeV
+                    : <code>0xa0</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p13">JET-ETA_2p13</a> [-2.131, 2.131]
+                    : <code>[0xcf, 0x30]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p13">JET-ETA_2p13</a> [-2.131, 2.131]
+                    : <code>[0xcf, 0x30]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET50
+              <ul>
+                <li>
+                  
+                    Threshold: 50.0 GeV
+                    : <code>0x64</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p3">JET-ETA_2p3</a> [-2.305, 2.305]
+                    : <code>[0xcb, 0x34]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+            <li>Object: JET45
+              <ul>
+                <li>
+                  
+                    Threshold: 45.0 GeV
+                    : <code>0x5a</code>
+                  
+                </li>
+      
+                <li>
+                  
+                    Eta: <a href="#JET-ETA_2p3">JET-ETA_2p3</a> [-2.305, 2.305]
+                    : <code>[0xcb, 0x34]</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT120er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>398 L1_HTT120er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT120</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt120er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i0</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-140</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT120</strong> : <code>single_htt_i0</code>
+          <ul>
+            <li>Object: HTT120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT160er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>399 L1_HTT160er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT160</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt160er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i1</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-140</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT160</strong> : <code>single_htt_i1</code>
+          <ul>
+            <li>Object: HTT160
+              <ul>
+                <li>
+                  
+                    Threshold: 160.0 GeV
+                    : <code>0x140</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT200er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>400 L1_HTT200er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT200</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt200er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i2</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-140</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT200</strong> : <code>single_htt_i2</code>
+          <ul>
+            <li>Object: HTT200
+              <ul>
+                <li>
+                  
+                    Threshold: 200.0 GeV
+                    : <code>0x190</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT255er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>401 L1_HTT255er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT255</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt255er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i3</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-140</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT255</strong> : <code>single_htt_i3</code>
+          <ul>
+            <li>Object: HTT255
+              <ul>
+                <li>
+                  
+                    Threshold: 255.0 GeV
+                    : <code>0x1fe</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT280er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>402 L1_HTT280er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT280</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt280er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i4</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT280</strong> : <code>single_htt_i4</code>
+          <ul>
+            <li>Object: HTT280
+              <ul>
+                <li>
+                  
+                    Threshold: 280.0 GeV
+                    : <code>0x230</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT320er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>403 L1_HTT320er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT320</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt320er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i5</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT320</strong> : <code>single_htt_i5</code>
+          <ul>
+            <li>Object: HTT320
+              <ul>
+                <li>
+                  
+                    Threshold: 320.0 GeV
+                    : <code>0x280</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT360er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>404 L1_HTT360er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT360</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt360er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i6</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for Scouting PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT360</strong> : <code>single_htt_i6</code>
+          <ul>
+            <li>Object: HTT360
+              <ul>
+                <li>
+                  
+                    Threshold: 360.0 GeV
+                    : <code>0x2d0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT400er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>405 L1_HTT400er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT400</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt400er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i7</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT400</strong> : <code>single_htt_i7</code>
+          <ul>
+            <li>Object: HTT400
+              <ul>
+                <li>
+                  
+                    Threshold: 400.0 GeV
+                    : <code>0x320</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_HTT450er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>406 L1_HTT450er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">HTT450</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_htt450er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_htt_i8</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>HTT450</strong> : <code>single_htt_i8</code>
+          <ul>
+            <li>Object: HTT450
+              <ul>
+                <li>
+                  
+                    Threshold: 450.0 GeV
+                    : <code>0x384</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETT1200"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>410 L1_ETT1200 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETT1200</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_ett1200</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ett_i36</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): High Threshold ETT seeds
+https://its.cern.ch/jira/browse/CMSLITDPG-527</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETT1200</strong> : <code>single_ett_i36</code>
+          <ul>
+            <li>Object: ETT1200
+              <ul>
+                <li>
+                  
+                    Threshold: 1200.0 GeV
+                    : <code>0x960</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETT1600"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>411 L1_ETT1600 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETT1600</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_ett1600</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ett_i37</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): High Threshold ETT seeds
+https://its.cern.ch/jira/browse/CMSLITDPG-527</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETT1600</strong> : <code>single_ett_i37</code>
+          <ul>
+            <li>Object: ETT1600
+              <ul>
+                <li>
+                  
+                    Threshold: 1600.0 GeV
+                    : <code>0xc80</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETT2000"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>412 L1_ETT2000 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETT2000</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_ett2000</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_ett_i38</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): High Threshold ETT seeds
+https://its.cern.ch/jira/browse/CMSLITDPG-527</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETT2000</strong> : <code>single_ett_i38</code>
+          <ul>
+            <li>Object: ETT2000
+              <ul>
+                <li>
+                  
+                    Threshold: 2000.0 GeV
+                    : <code>0xfa0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETM120"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>416 L1_ETM120 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETM120</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etm120</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etm_i34</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for JetHT / MET / HTMHT PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETM120</strong> : <code>single_etm_i34</code>
+          <ul>
+            <li>Object: ETM120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETM150"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>417 L1_ETM150 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETM150</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etm150</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etm_i35</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for JetHT / MET / HTMHT PDs
+https://its.cern.ch/jira/browse/CMSLITDPG-499</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETM150</strong> : <code>single_etm_i35</code>
+          <ul>
+            <li>Object: ETM150
+              <ul>
+                <li>
+                  
+                    Threshold: 150.0 GeV
+                    : <code>0x12c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF100"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>421 L1_ETMHF100 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF100</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf100</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i9</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF100</strong> : <code>single_etmhf_i9</code>
+          <ul>
+            <li>Object: ETMHF100
+              <ul>
+                <li>
+                  
+                    Threshold: 100.0 GeV
+                    : <code>0xc8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF110"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>422 L1_ETMHF110 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF110</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf110</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i10</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF110</strong> : <code>single_etmhf_i10</code>
+          <ul>
+            <li>Object: ETMHF110
+              <ul>
+                <li>
+                  
+                    Threshold: 110.0 GeV
+                    : <code>0xdc</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF120"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>423 L1_ETMHF120 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF120</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf120</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i11</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>SUSY</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF120</strong> : <code>single_etmhf_i11</code>
+          <ul>
+            <li>Object: ETMHF120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF130"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>424 L1_ETMHF130 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF130</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf130</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i12</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF130</strong> : <code>single_etmhf_i12</code>
+          <ul>
+            <li>Object: ETMHF130
+              <ul>
+                <li>
+                  
+                    Threshold: 130.0 GeV
+                    : <code>0x104</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF140"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>425 L1_ETMHF140 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF140</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf140</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i32</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF140</strong> : <code>single_etmhf_i32</code>
+          <ul>
+            <li>Object: ETMHF140
+              <ul>
+                <li>
+                  
+                    Threshold: 140.0 GeV
+                    : <code>0x118</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF150"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>426 L1_ETMHF150 <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF150</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf150</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i33</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF150</strong> : <code>single_etmhf_i33</code>
+          <ul>
+            <li>Object: ETMHF150
+              <ul>
+                <li>
+                  
+                    Threshold: 150.0 GeV
+                    : <code>0x12c</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF90_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>428 L1_ETMHF90_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF90 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf90_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i24</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-134 https://its.cern.ch/jira/browse/CMSHLT-1541</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF90</strong> : <code>single_etmhf_i24</code>
+          <ul>
+            <li>Object: ETMHF90
+              <ul>
+                <li>
+                  
+                    Threshold: 90.0 GeV
+                    : <code>0xb4</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF100_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>429 L1_ETMHF100_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF100 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf100_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i9</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-134</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF100</strong> : <code>single_etmhf_i9</code>
+          <ul>
+            <li>Object: ETMHF100
+              <ul>
+                <li>
+                  
+                    Threshold: 100.0 GeV
+                    : <code>0xc8</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF110_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>430 L1_ETMHF110_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF110 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf110_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i10</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-134</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF110</strong> : <code>single_etmhf_i10</code>
+          <ul>
+            <li>Object: ETMHF110
+              <ul>
+                <li>
+                  
+                    Threshold: 110.0 GeV
+                    : <code>0xdc</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF120_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>431 L1_ETMHF120_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF120 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf120_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i11</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>https://its.cern.ch/jira/browse/CMSLITDPG-134</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF120</strong> : <code>single_etmhf_i11</code>
+          <ul>
+            <li>Object: ETMHF120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF130_HTT60er"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>432 L1_ETMHF130_HTT60er <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF130 <span class="keyword">AND</span> HTT60</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf130_htt60er</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i12</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span></pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+https://its.cern.ch/jira/browse/CMSLITDPG-134
+
+Added by L1 Menu Team (L1T-DPG)</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF130</strong> : <code>single_etmhf_i12</code>
+          <ul>
+            <li>Object: ETMHF130
+              <ul>
+                <li>
+                  
+                    Threshold: 130.0 GeV
+                    : <code>0x104</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF120_NotSecondBunchInTrain"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>443 L1_ETMHF120_NotSecondBunchInTrain <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF120 <span class="keyword">AND</span> ((EXT_BPTX_OR_VME-2) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME-1) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME+1) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME+2))</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf120_not_second_bunch_in_train</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i11</span> <span class="vhdlop">and</span> ( ( <span class="vhdlsig">single_ext_i39</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i40</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i28</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i41</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i42</span> ) )</pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+Added by L1 Menu Team (L1T-DPG)</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF120</strong> : <code>single_etmhf_i11</code>
+          <ul>
+            <li>Object: ETMHF120
+              <ul>
+                <li>
+                  
+                    Threshold: 120.0 GeV
+                    : <code>0xf0</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_BPTX_OR_VME-2</strong> : <code>single_ext_i39</code>
+          <ul>
+            <li>Object: EXT_BPTX_OR_VME-2
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME-1</strong> : <code>single_ext_i40</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME-1
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME</strong> : <code>single_ext_i28</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME+1</strong> : <code>single_ext_i41</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME+1
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME+2</strong> : <code>single_ext_i42</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME+2
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_ETMHF110_HTT60er_NotSecondBunchInTrain"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>444 L1_ETMHF110_HTT60er_NotSecondBunchInTrain <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">ETMHF110 <span class="keyword">AND</span> HTT60 <span class="keyword">AND</span> ((EXT_BPTX_OR_VME-2) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME-1) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME+1) <span class="keyword">OR</span> ( <span class="keyword">NOT</span> EXT_ZeroBias_BPTX_AND_VME+2))</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_etmhf110_htt60er_not_second_bunch_in_train</span> <span class="vhdlop"><=</span> <span class="vhdlsig">single_etmhf_i10</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_htt_i25</span> <span class="vhdlop">and</span> ( ( <span class="vhdlsig">single_ext_i39</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i40</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i28</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i41</span> ) <span class="vhdlop">or</span> ( <span class="vhdlop">not</span> <span class="vhdlsig">single_ext_i42</span> ) )</pre></p>
+        <p><strong>Comment</strong></p>
+        <p><pre>L1 Menu (2018 v1): Seeds for SUSY
+https://its.cern.ch/jira/browse/CMSLITDPG-509
+https://its.cern.ch/jira/browse/CMSLITDPG-499
+https://its.cern.ch/jira/browse/CMSLITDPG-472
+
+Added by L1 Menu Team (L1T-DPG)</pre></p>
+  
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>ETMHF110</strong> : <code>single_etmhf_i10</code>
+          <ul>
+            <li>Object: ETMHF110
+              <ul>
+                <li>
+                  
+                    Threshold: 110.0 GeV
+                    : <code>0xdc</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>HTT60</strong> : <code>single_htt_i25</code>
+          <ul>
+            <li>Object: HTT60
+              <ul>
+                <li>
+                  
+                    Threshold: 60.0 GeV
+                    : <code>0x78</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_BPTX_OR_VME-2</strong> : <code>single_ext_i39</code>
+          <ul>
+            <li>Object: EXT_BPTX_OR_VME-2
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME-1</strong> : <code>single_ext_i40</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME-1
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME</strong> : <code>single_ext_i28</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME+1</strong> : <code>single_ext_i41</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME+1
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME+2</strong> : <code>single_ext_i42</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME+2
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <a class="anchor" name="L1_MinimumBiasHF0_AND_BptxAND"></a>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>461 L1_MinimumBiasHF0_AND_BptxAND <span class="informative">(Module 0)</span></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>Logical Expression</strong></p>
+        <p><pre class="expression">(MBT0HFP1 <span class="keyword">AND</span> MBT0HFM1) <span class="keyword">AND</span> EXT_ZeroBias_BPTX_AND_VME</pre></p>
+
+        <p><strong>VHDL Expression</strong></p>
+        <p><pre class="vhdl"><span class="vhdlsig">l1_minimum_bias_hf0_and_bptx_and</span> <span class="vhdlop"><=</span> ( <span class="vhdlsig">single_mbt0_hfp_i26</span> <span class="vhdlop">and</span> <span class="vhdlsig">single_mbt0_hfm_i27</span> ) <span class="vhdlop">and</span> <span class="vhdlsig">single_ext_i28</span></pre></p>
+
+        <p><strong>Conditions</strong></p>
+        <ul>
+        <li><strong>MBT0HFP1</strong> : <code>single_mbt0_hfp_i26</code>
+          <ul>
+            <li>Object: MBT0HFP1
+              <ul>
+                <li>
+                  
+                    Count: <a href="#MBT0HFP-COUNT_1">MBT0HFP-COUNT_1</a> 1
+                    : <code>0x1</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>MBT0HFM1</strong> : <code>single_mbt0_hfm_i27</code>
+          <ul>
+            <li>Object: MBT0HFM1
+              <ul>
+                <li>
+                  
+                    Count: <a href="#MBT0HFM-COUNT_1">MBT0HFM-COUNT_1</a> 1
+                    : <code>0x1</code>
+                  
+                </li>
+      
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        <li><strong>EXT_ZeroBias_BPTX_AND_VME</strong> : <code>single_ext_i28</code>
+          <ul>
+            <li>Object: EXT_ZeroBias_BPTX_AND_VME
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <a name="cuts"></a>
+
+    <header class="page-header">
+      <h2>Cuts</h2>
+    </header>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+        <th>Minimum (hw/emu)</th>
+        <th>Maximum (hw/emu)</th>
+        <th>Data (hw/emu)</th>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p52"></a> JET-ETA_2p52</td>
+        <td>-2.523</td>
+        <td>2.523</td>
+        <td><code>-2.523</code></td>
+        <td><code>2.523</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p4"></a> JET-ETA_2p4</td>
+        <td>-2.392</td>
+        <td>2.392</td>
+        <td><code>-2.392</code></td>
+        <td><code>2.392</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p13"></a> JET-ETA_2p13</td>
+        <td>-2.131</td>
+        <td>2.131</td>
+        <td><code>-2.131</code></td>
+        <td><code>2.131</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="JET-ETA_2p3"></a> JET-ETA_2p3</td>
+        <td>-2.305</td>
+        <td>2.305</td>
+        <td><code>-2.305</code></td>
+        <td><code>2.305</code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MU-QLTY_SNGL"></a> MU-QLTY_SNGL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><code>0xf000</code></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MBT0HFP-COUNT_1"></a> MBT0HFP-COUNT_1</td>
+        <td>1.0</td>
+        <td></td>
+        <td><code>1.0</code></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="anchor" name="MBT0HFM-COUNT_1"></a> MBT0HFM-COUNT_1</td>
+        <td>1.0</td>
+        <td></td>
+        <td><code>1.0</code></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <p>Generated by tm-reporter v2.7.3 on 2020-01-24 08:28:36.</p>
+    </fooer>
+
+  </main><!-- /container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
