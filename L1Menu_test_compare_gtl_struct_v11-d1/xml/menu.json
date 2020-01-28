@@ -1,0 +1,17 @@
+{
+  "firmware_uuid" : "ccc18988-999f-4d95-86ef-15f65fbbc38e",
+  "menu_uuid"     : "cf20b3d8-7f9f-4e98-ab57-5c2c7a5db555",
+  "n_modules"     : 6,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_quad_eg_tau_ormdr", 0, 5, 0],
+    ["L1_triple_eg_taormdr", 1, 2, 0],
+    ["L1_double_jet_m2_m1_deta_tau_p1_ormdr", 2, 0, 1],
+    ["L1_double_eg_tau_ormdr", 3, 1, 0],
+    ["L1_single_eg_tau_ormdr", 4, 0, 0],
+    ["L1_quad_eg_tau_m1_ormdr", 5, 4, 0],
+    ["L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr", 6, 1, 1],
+    ["L1_quad_eg_p1_tau_ormdr", 7, 3, 0],
+    ["L1_quad_jets", 8, 2, 1]
+  ]
+}

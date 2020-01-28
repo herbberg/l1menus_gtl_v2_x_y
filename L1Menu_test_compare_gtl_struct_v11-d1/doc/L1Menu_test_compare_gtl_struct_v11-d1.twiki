@@ -1,0 +1,95 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_compare_gtl_struct_v11.html" }%
+
+---+!! !L1Menu_test_compare_gtl_struct_v11
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_compare_gtl_struct_v11 | 0.7 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_compare_gtl_struct_v11 |
+|Menu UUID: | cf20b3d8-7f9f-4e98-ab57-5c2c7a5db555 |
+|Firmware UUID: | ccc18988-999f-4d95-86ef-15f65fbbc38e  |
+|Associated L1 scale DB key: | scales_2017_05_23 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 9 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !E/gamma algorithm triggers: | 6 |
+      | !Cross algorithm triggers: | 1 |
+      | !Correlation algorithm triggers: | 1 |
+      | !Mass algorithm triggers: | 1 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !E/gamma algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_tau_ormdr ][L1_quad_eg_tau_ormdr]]   | L1_quad_eg_tau_ormdr  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_triple_eg_taormdr ][L1_triple_eg_taormdr]]   | L1_triple_eg_taormdr  | 1 |  |
+|[[%GET{"REPORTER_URL"}%#L1_double_eg_tau_ormdr ][L1_double_eg_tau_ormdr]]   | L1_double_eg_tau_ormdr  | 3 |  |
+|[[%GET{"REPORTER_URL"}%#L1_single_eg_tau_ormdr ][L1_single_eg_tau_ormdr]]   | L1_single_eg_tau_ormdr  | 4 |  |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_tau_m1_ormdr ][L1_quad_eg_tau_m1_ormdr]]   | L1_quad_eg_tau_m1_ormdr  | 5 |  |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_p1_tau_ormdr ][L1_quad_eg_p1_tau_ormdr]]   | L1_quad_eg_p1_tau_ormdr  | 7 |  |
+!E/gamma algorithm triggers: 6 bits defined
+---++++ !Cross algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_quad_jets ][L1_quad_jets]]   | L1_quad_jets  | 8 |  |
+!Cross algorithm triggers: 1 bits defined
+---++++ !Correlation algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_double_jet_m2_m1_deta_tau_p1_ormdr ][L1_double_jet_m2_m1_deta_tau_p1_ormdr]]   | L1_double_jet_m2_m1_deta_tau_p1_ormdr  | 2 |  |
+!Correlation algorithm triggers: 1 bits defined
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr ][L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr]]   | L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr  | 6 |  |
+!Mass algorithm triggers: 1 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_tau_ormdr ][L1_quad_eg_tau_ormdr]]   |L1_quad_eg_tau_ormdr |0 |5 |
+|[[%GET{"REPORTER_URL"}%#L1_triple_eg_taormdr ][L1_triple_eg_taormdr]]   |L1_triple_eg_taormdr |1 |2 |
+|[[%GET{"REPORTER_URL"}%#L1_double_jet_m2_m1_deta_tau_p1_ormdr ][L1_double_jet_m2_m1_deta_tau_p1_ormdr]]   |L1_double_jet_m2_m1_deta_tau_p1_ormdr |2 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_double_eg_tau_ormdr ][L1_double_eg_tau_ormdr]]   |L1_double_eg_tau_ormdr |3 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_single_eg_tau_ormdr ][L1_single_eg_tau_ormdr]]   |L1_single_eg_tau_ormdr |4 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_tau_m1_ormdr ][L1_quad_eg_tau_m1_ormdr]]   |L1_quad_eg_tau_m1_ormdr |5 |4 |
+|[[%GET{"REPORTER_URL"}%#L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr ][L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr]]   |L1_double_eg_m1_p1_deta_mass_tau_m2_ormdr |6 |1 |
+|[[%GET{"REPORTER_URL"}%#L1_quad_eg_p1_tau_ormdr ][L1_quad_eg_p1_tau_ormdr]]   |L1_quad_eg_p1_tau_ormdr |7 |3 |
+|[[%GET{"REPORTER_URL"}%#L1_quad_jets ][L1_quad_jets]]   |L1_quad_jets |8 |2 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
