@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- d2f1046e-e336-4df3-97cd-c4913821408e
+-- d96756e2-ee2b-4327-9d02-8b1a11db1154
 
 -- Scale set:
 -- scales_2017_05_23
@@ -2272,10 +2272,10 @@ begin
             comb_jet_bx_0_pt_0082_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             cond_o => triple_jet_i261
         );
-    single_ett_i322 => 
-        comb_ett_bx_0_pt_0960_phi_0000_0000_0000_0000(0);
-    single_htt_i94 => 
-        comb_htt_bx_0_pt_0190_phi_0000_0000_0000_0000(0);
+        single_ett_i322 <= 
+            comb_ett_bx_0_pt_0960_phi_0000_0000_0000_0000(0);
+        single_htt_i94 <= 
+            comb_htt_bx_0_pt_0190_phi_0000_0000_0000_0000(0);
     cond_quad_mu_i284_i: entity work.combinatorial_conditions
         generic map(
             N_MU_OBJECTS, 4,
@@ -2574,7 +2574,7 @@ begin
             in_1 => 
             comb_eg_bx_0_pt_0040_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000a,
             in_2 => 
-        comb_etm_bx_0_pt_0014_phi_0000_0000_0000_0000 
+            comb_etm_bx_0_pt_0014_phi_0000_0000_0000_0000, 
             trans_mass => comp_transmass_eg_etm_bx_0_bx_0_0x00000005c50d00_0x041a6642c78140,
             cond_o => transverse_mass_i59
         );

@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- d2f1046e-e336-4df3-97cd-c4913821408e
+-- d96756e2-ee2b-4327-9d02-8b1a11db1154
 
 -- Scale set:
 -- scales_2017_05_23
@@ -2371,14 +2371,14 @@ begin
             comb_jet_bx_0_pt_008c_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             cond_o => triple_jet_i259
         );
-    single_etm_i315 => 
-        comb_etm_bx_0_pt_012c_phi_0000_0000_0000_0000(0);
-    single_ett_i324 => 
-        comb_ett_bx_0_pt_0fa0_phi_0000_0000_0000_0000(0);
-    single_htt_i123 => 
-        comb_htt_bx_0_pt_00c8_phi_0000_0000_0000_0000(0);
-    single_htt_i98 => 
-        comb_htt_bx_0_pt_02d0_phi_0000_0000_0000_0000(0);
+        single_etm_i315 <= 
+            comb_etm_bx_0_pt_012c_phi_0000_0000_0000_0000(0);
+        single_ett_i324 <= 
+            comb_ett_bx_0_pt_0fa0_phi_0000_0000_0000_0000(0);
+        single_htt_i123 <= 
+            comb_htt_bx_0_pt_00c8_phi_0000_0000_0000_0000(0);
+        single_htt_i98 <= 
+            comb_htt_bx_0_pt_02d0_phi_0000_0000_0000_0000(0);
     cond_double_mu_i169_i: entity work.combinatorial_conditions
         generic map(
             N_MU_OBJECTS, 2,
@@ -2884,7 +2884,7 @@ begin
     algo(30) <= l1_single_mu5;
 -- 12 L1_SingleMu7 : MU7[MU-QLTY_SNGL]
     l1_single_mu7 <= single_mu_i16;
-    algo(31) <= l1_single_mu7;
+    algo(32) <= l1_single_mu7;
 -- 17 L1_SingleMu18 : MU18[MU-QLTY_SNGL]
     l1_single_mu18 <= single_mu_i21;
     algo(28) <= l1_single_mu18;
@@ -2971,7 +2971,7 @@ begin
     algo(36) <= l1_mu7_loose_iso_eg20er2p5;
 -- 102 L1_Mu7_LooseIsoEG23er2p5 : MU7[MU-QLTY_SNGL] AND EG23[EG-ETA_2p52,EG-ISO_0xC]
     l1_mu7_loose_iso_eg23er2p5 <= single_mu_i16 and single_eg_i128;
-    algo(32) <= l1_mu7_loose_iso_eg23er2p5;
+    algo(31) <= l1_mu7_loose_iso_eg23er2p5;
 -- 121 L1_Mu3_Jet16er2p5_dR_Max0p4 : dist{MU3[MU-QLTY_SNGL],JET16[JET-ETA_2p52]}[DR_MAX_0p4]
     l1_mu3_jet16er2p5_d_r_max0p4 <= calo_muon_correlation_i272;
     algo(64) <= l1_mu3_jet16er2p5_d_r_max0p4;

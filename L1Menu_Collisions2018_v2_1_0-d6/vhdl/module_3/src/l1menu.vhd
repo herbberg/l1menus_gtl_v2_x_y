@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- d2f1046e-e336-4df3-97cd-c4913821408e
+-- d96756e2-ee2b-4327-9d02-8b1a11db1154
 
 -- Scale set:
 -- scales_2017_05_23
@@ -735,12 +735,12 @@ begin
             comb_jet_bx_0_pt_00f0_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             cond_o => single_jet_i76
         );
-    single_etmhf_i263 => 
-        comb_etmhf_bx_0_pt_0118_phi_0000_0000_0000_0000(0);
-    single_htt_i92 => 
-        comb_htt_bx_0_pt_00f0_phi_0000_0000_0000_0000(0);
-    single_htt_i99 => 
-        comb_htt_bx_0_pt_0320_phi_0000_0000_0000_0000(0);
+        single_etmhf_i263 <= 
+            comb_etmhf_bx_0_pt_0118_phi_0000_0000_0000_0000(0);
+        single_htt_i92 <= 
+            comb_htt_bx_0_pt_00f0_phi_0000_0000_0000_0000(0);
+        single_htt_i99 <= 
+            comb_htt_bx_0_pt_0320_phi_0000_0000_0000_0000(0);
     cond_calo_calo_correlation_i255_i: entity work.correlation_conditions
         generic map(
             N_JET_OBJECTS, N_JET_OBJECTS,

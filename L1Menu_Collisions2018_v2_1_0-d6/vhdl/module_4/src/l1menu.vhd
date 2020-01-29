@@ -13,7 +13,7 @@
 -- e36612e2-bee8-45eb-a685-f6cea687ce3d
 
 -- Unique ID of firmware implementation:
--- d2f1046e-e336-4df3-97cd-c4913821408e
+-- d96756e2-ee2b-4327-9d02-8b1a11db1154
 
 -- Scale set:
 -- scales_2017_05_23
@@ -2298,12 +2298,12 @@ begin
             comb_eg_bx_0_pt_0018_eta_00c6_0039_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f,
             cond_o => triple_eg_i283
         );
-    single_etmhf_i311 => 
-        comb_etmhf_bx_0_pt_012c_phi_0000_0000_0000_0000(0);
-    single_htt_i100 => 
-        comb_htt_bx_0_pt_0384_phi_0000_0000_0000_0000(0);
-    single_htt_i93 => 
-        comb_htt_bx_0_pt_0140_phi_0000_0000_0000_0000(0);
+        single_etmhf_i311 <= 
+            comb_etmhf_bx_0_pt_012c_phi_0000_0000_0000_0000(0);
+        single_htt_i100 <= 
+            comb_htt_bx_0_pt_0384_phi_0000_0000_0000_0000(0);
+        single_htt_i93 <= 
+            comb_htt_bx_0_pt_0140_phi_0000_0000_0000_0000(0);
     cond_double_mu_i176_i: entity work.combinatorial_conditions
         generic map(
             N_MU_OBJECTS, 2,
