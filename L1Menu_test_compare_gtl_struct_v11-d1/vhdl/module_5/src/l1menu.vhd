@@ -13,13 +13,13 @@
 -- cf20b3d8-7f9f-4e98-ab57-5c2c7a5db555
 
 -- Unique ID of firmware implementation:
--- ccc18988-999f-4d95-86ef-15f65fbbc38e
+-- 2c016b5c-43d6-4090-94f9-db09a5e80811
 
 -- Scale set:
 -- scales_2017_05_23
 
 -- VHDL producer version
--- v3.1.1
+-- v3.0.0
 -- ========================================================
 
 library ieee;
@@ -68,7 +68,7 @@ begin
         generic map(
             N_EG_OBJECTS, N_TAU_OBJECTS, 4,
             ((0,11), (0,11), (0,11), (0,11)),
-            ((0,11), (0,0), (0,0), (0,0)),
+            ((0,11), (0,0), (0,0), (0,0))
         )
         port map(
             lhc_clk,
