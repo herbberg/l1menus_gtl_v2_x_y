@@ -1,0 +1,1870 @@
+2020-02-11 12:08:38 INFO : distributing menu...
+2020-02-11 12:08:38 INFO : loading resource information from JSON: /home/bergauer/github/cms-l1-globaltrigger/tm-vhdlproducer_dev_3_x_y/tmVhdlProducer/config/resource_default.json
+2020-02-11 12:08:38 INFO : :: listing resources...
+2020-02-11 12:08:38 INFO : thresholds:
+2020-02-11 12:08:38 INFO :  * floor: sliceLUTs=17.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * ceiling: sliceLUTs=90.00%, processors=100.00%
+2020-02-11 12:08:38 INFO : instances:
+2020-02-11 12:08:38 INFO :  * MuonCondition[ muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * MuonCondition[ muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.08%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :  * MuonCondition[ muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :  * MuonCondition[ muon, muon, muon, muon ]: sliceLUTs=0.01%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :  * CaloCondition[ calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * CaloCondition[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :  * CaloCondition[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * CaloCondition[ calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * CaloConditionOvRm[ calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :  * CaloConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.05%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :  * CaloConditionOvRm[ calo, calo, calo, calo, calo ]: sliceLUTs=0.07%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :  * CorrelationCondition[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.00%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-11 12:08:38 INFO :  * CorrelationCondition[ calo, muon ]: sliceLUTs=0.05%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.01%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.05%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.00%, processors=0.39%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.12%, processors=0.14%: 
+2020-02-11 12:08:38 INFO :  * CorrelationCondition[ calo, esum ]: sliceLUTs=0.02%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.04%, processors=0.41%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.01%, processors=0.08%: 
+2020-02-11 12:08:38 INFO :  * CorrelationCondition[ muon, esum ]: sliceLUTs=0.08%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.61%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.02%, processors=0.14%: 
+2020-02-11 12:08:38 INFO :  * CorrelationCondition[ muon, muon ]: sliceLUTs=0.04%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.01%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.04%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.03%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.07%, processors=0.08%: 
+2020-02-11 12:08:38 INFO :    * chgcor: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :  * CorrelationConditionOvRm[ calo, calo ]: sliceLUTs=0.03%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-11 12:08:38 INFO :  * CorrelationConditionOvRm[ calo, calo, calo ]: sliceLUTs=0.10%, processors=0.00%
+2020-02-11 12:08:38 INFO :    * deta: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dphi: sliceLUTs=0.00%, processors=0.00%: 
+2020-02-11 12:08:38 INFO :    * dr: sliceLUTs=0.03%, processors=0.06%: 
+2020-02-11 12:08:38 INFO :    * tbpt: sliceLUTs=0.02%, processors=0.33%: 
+2020-02-11 12:08:38 INFO :    * mass: sliceLUTs=0.03%, processors=0.08%: 
+2020-02-11 12:08:38 INFO :  * EsumsCondition[ esum ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * MinBiasCondition[ bias ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * ExternalCondition[ ext ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * TowerCountCondition[ count ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO :  * SignalCondition[ signal ]: sliceLUTs=0.00%, processors=0.00%
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : | Algorithms sorted by payload (descending)                                   |
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-11 12:08:38 INFO : | Index | SliceLUTs | DSPs    | Name                                          |
+2020-02-11 12:08:38 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-11 12:08:38 INFO : |   106 |    0.000% |  0.000% | L1_AlwaysTrue                                 |
+2020-02-11 12:08:38 INFO : |   133 |    0.000% |  0.000% | L1_BPTX_AND_Ref1_VME                          |
+2020-02-11 12:08:38 INFO : |   134 |    0.000% |  0.000% | L1_BPTX_AND_Ref3_VME                          |
+2020-02-11 12:08:38 INFO : |   135 |    0.000% |  0.000% | L1_BPTX_AND_Ref4_VME                          |
+2020-02-11 12:08:38 INFO : |   138 |    0.000% |  0.000% | L1_BPTX_BeamGas_B1_VME                        |
+2020-02-11 12:08:38 INFO : |   139 |    0.000% |  0.000% | L1_BPTX_BeamGas_B2_VME                        |
+2020-02-11 12:08:38 INFO : |   136 |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref1_VME                      |
+2020-02-11 12:08:38 INFO : |   137 |    0.000% |  0.000% | L1_BPTX_BeamGas_Ref2_VME                      |
+2020-02-11 12:08:38 INFO : |   129 |    0.000% |  0.000% | L1_BPTX_NotOR_VME                             |
+2020-02-11 12:08:38 INFO : |   130 |    0.000% |  0.000% | L1_BPTX_OR_Ref3_VME                           |
+2020-02-11 12:08:38 INFO : |   131 |    0.000% |  0.000% | L1_BPTX_OR_Ref4_VME                           |
+2020-02-11 12:08:38 INFO : |   132 |    0.000% |  0.000% | L1_BPTX_RefAND_VME                            |
+2020-02-11 12:08:38 INFO : |   113 |    0.000% |  0.000% | L1_BptxMinus                                  |
+2020-02-11 12:08:38 INFO : |   115 |    0.000% |  0.000% | L1_BptxMinus_NotBptxPlus                      |
+2020-02-11 12:08:38 INFO : |   109 |    0.000% |  0.000% | L1_BptxOR                                     |
+2020-02-11 12:08:38 INFO : |   112 |    0.000% |  0.000% | L1_BptxPlus                                   |
+2020-02-11 12:08:38 INFO : |   114 |    0.000% |  0.000% | L1_BptxPlus_NotBptxMinus                      |
+2020-02-11 12:08:38 INFO : |   111 |    0.000% |  0.000% | L1_BptxXOR                                    |
+2020-02-11 12:08:38 INFO : |   495 |    0.000% |  0.000% | L1_Castor1                                    |
+2020-02-11 12:08:38 INFO : |   505 |    0.000% |  0.000% | L1_CastorHighJet                              |
+2020-02-11 12:08:38 INFO : |   506 |    0.000% |  0.000% | L1_CastorHighJet_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   496 |    0.000% |  0.000% | L1_CastorMediumJet                            |
+2020-02-11 12:08:38 INFO : |   497 |    0.000% |  0.000% | L1_CastorMediumJet_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   503 |    0.000% |  0.000% | L1_CastorMuon                                 |
+2020-02-11 12:08:38 INFO : |   504 |    0.000% |  0.000% | L1_CastorMuon_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   172 |    0.000% |  0.000% | L1_Centrality_30_100                          |
+2020-02-11 12:08:38 INFO : |   173 |    0.000% |  0.000% | L1_Centrality_50_100                          |
+2020-02-11 12:08:38 INFO : |   176 |    0.000% |  0.000% | L1_Centrality_Saturation                      |
+2020-02-11 12:08:38 INFO : |   122 |    0.000% |  0.000% | L1_FirstBunchAfterTrain                       |
+2020-02-11 12:08:38 INFO : |   123 |    0.000% |  0.000% | L1_FirstBunchBeforeTrain                      |
+2020-02-11 12:08:38 INFO : |   119 |    0.000% |  0.000% | L1_FirstBunchInTrain                          |
+2020-02-11 12:08:38 INFO : |   127 |    0.000% |  0.000% | L1_FirstCollisionInOrbit                      |
+2020-02-11 12:08:38 INFO : |   128 |    0.000% |  0.000% | L1_FirstCollisionInOrbit_Centrality30_...     |
+2020-02-11 12:08:38 INFO : |   126 |    0.000% |  0.000% | L1_FirstCollisionInTrain                      |
+2020-02-11 12:08:38 INFO : |   118 |    0.000% |  0.000% | L1_IsolatedBunch                              |
+2020-02-11 12:08:38 INFO : |   121 |    0.000% |  0.000% | L1_LastBunchInTrain                           |
+2020-02-11 12:08:38 INFO : |   125 |    0.000% |  0.000% | L1_LastCollisionInTrain                       |
+2020-02-11 12:08:38 INFO : |   110 |    0.000% |  0.000% | L1_NotBptxOR                                  |
+2020-02-11 12:08:38 INFO : |   120 |    0.000% |  0.000% | L1_SecondBunchInTrain                         |
+2020-02-11 12:08:38 INFO : |   124 |    0.000% |  0.000% | L1_SecondLastBunchInTrain                     |
+2020-02-11 12:08:38 INFO : |    91 |    0.000% |  0.000% | L1_TOTEM_1                                    |
+2020-02-11 12:08:38 INFO : |    92 |    0.000% |  0.000% | L1_TOTEM_2                                    |
+2020-02-11 12:08:38 INFO : |    93 |    0.000% |  0.000% | L1_TOTEM_3                                    |
+2020-02-11 12:08:38 INFO : |    94 |    0.000% |  0.000% | L1_TOTEM_4                                    |
+2020-02-11 12:08:38 INFO : |   117 |    0.000% |  0.000% | L1_UnpairedBunchBptxMinus                     |
+2020-02-11 12:08:38 INFO : |   116 |    0.000% |  0.000% | L1_UnpairedBunchBptxPlus                      |
+2020-02-11 12:08:38 INFO : |    95 |    0.000% |  0.000% | L1_ZDCM                                       |
+2020-02-11 12:08:38 INFO : |    97 |    0.000% |  0.000% | L1_ZDCM_BptxAND                               |
+2020-02-11 12:08:38 INFO : |    99 |    0.000% |  0.000% | L1_ZDCM_ZDCP_BptxAND                          |
+2020-02-11 12:08:38 INFO : |    96 |    0.000% |  0.000% | L1_ZDCP                                       |
+2020-02-11 12:08:38 INFO : |    98 |    0.000% |  0.000% | L1_ZDCP_BptxAND                               |
+2020-02-11 12:08:38 INFO : |   107 |    0.000% |  0.000% | L1_ZeroBias                                   |
+2020-02-11 12:08:38 INFO : |   108 |    0.000% |  0.000% | L1_ZeroBias_copy                              |
+2020-02-11 12:08:38 INFO : |   507 |    0.002% |  0.000% | L1_CastorHighJet_MinimumBiasHF1_OR_Bpt...     |
+2020-02-11 12:08:38 INFO : |   508 |    0.002% |  0.000% | L1_CastorHighJet_NotMinimumBiasHF2_AND...     |
+2020-02-11 12:08:38 INFO : |   509 |    0.002% |  0.000% | L1_CastorHighJet_NotMinimumBiasHF2_OR_...     |
+2020-02-11 12:08:38 INFO : |   510 |    0.002% |  0.000% | L1_CastorHighJet_OR_MinimumBiasHF1_AND...     |
+2020-02-11 12:08:38 INFO : |   511 |    0.002% |  0.000% | L1_CastorHighJet_OR_MinimumBiasHF2_AND...     |
+2020-02-11 12:08:38 INFO : |   498 |    0.002% |  0.000% | L1_CastorMediumJet_MinimumBiasHF1_OR_B...     |
+2020-02-11 12:08:38 INFO : |   500 |    0.002% |  0.000% | L1_CastorMediumJet_NotMinimumBiasHF2_A...     |
+2020-02-11 12:08:38 INFO : |   499 |    0.002% |  0.000% | L1_CastorMediumJet_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   174 |    0.002% |  0.000% | L1_Centrality_20_100_MinimumBiasHF1_AN...     |
+2020-02-11 12:08:38 INFO : |   175 |    0.002% |  0.000% | L1_Centrality_30_100_MinimumBiasHF1_AN...     |
+2020-02-11 12:08:38 INFO : |    84 |    0.002% |  0.000% | L1_ETMHF100                                   |
+2020-02-11 12:08:38 INFO : |    80 |    0.002% |  0.000% | L1_ETT2000                                    |
+2020-02-11 12:08:38 INFO : |    77 |    0.002% |  0.000% | L1_ETT5                                       |
+2020-02-11 12:08:38 INFO : |   432 |    0.002% |  0.000% | L1_ETT5_BptxAND                               |
+2020-02-11 12:08:38 INFO : |   407 |    0.002% |  0.000% | L1_ETTAsym40                                  |
+2020-02-11 12:08:38 INFO : |   413 |    0.002% |  0.000% | L1_ETTAsym40_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   408 |    0.002% |  0.000% | L1_ETTAsym50                                  |
+2020-02-11 12:08:38 INFO : |   414 |    0.002% |  0.000% | L1_ETTAsym50_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   409 |    0.002% |  0.000% | L1_ETTAsym60                                  |
+2020-02-11 12:08:38 INFO : |   415 |    0.002% |  0.000% | L1_ETTAsym60_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   410 |    0.002% |  0.000% | L1_ETTAsym70                                  |
+2020-02-11 12:08:38 INFO : |   416 |    0.002% |  0.000% | L1_ETTAsym70_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   411 |    0.002% |  0.000% | L1_ETTAsym80                                  |
+2020-02-11 12:08:38 INFO : |   417 |    0.002% |  0.000% | L1_ETTAsym80_BptxAND                          |
+2020-02-11 12:08:38 INFO : |    69 |    0.002% |  0.000% | L1_HTT120er                                   |
+2020-02-11 12:08:38 INFO : |    70 |    0.002% |  0.000% | L1_HTT200er                                   |
+2020-02-11 12:08:38 INFO : |    71 |    0.002% |  0.000% | L1_HTT280er                                   |
+2020-02-11 12:08:38 INFO : |    72 |    0.002% |  0.000% | L1_HTT360er                                   |
+2020-02-11 12:08:38 INFO : |   140 |    0.002% |  0.000% | L1_MinimumBiasHF0_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |   143 |    0.002% |  0.000% | L1_MinimumBiasHF0_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |   152 |    0.002% |  0.000% | L1_MinimumBiasHF1_AND                         |
+2020-02-11 12:08:38 INFO : |   154 |    0.002% |  0.000% | L1_MinimumBiasHF1_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |   153 |    0.002% |  0.000% | L1_MinimumBiasHF1_OR                          |
+2020-02-11 12:08:38 INFO : |   155 |    0.002% |  0.000% | L1_MinimumBiasHF1_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |   156 |    0.002% |  0.000% | L1_MinimumBiasHF1_XOR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |   162 |    0.002% |  0.000% | L1_MinimumBiasHF2_AND                         |
+2020-02-11 12:08:38 INFO : |   164 |    0.002% |  0.000% | L1_MinimumBiasHF2_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |   163 |    0.002% |  0.000% | L1_MinimumBiasHF2_OR                          |
+2020-02-11 12:08:38 INFO : |   165 |    0.002% |  0.000% | L1_MinimumBiasHF2_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |   141 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_AND_BptxAND              |
+2020-02-11 12:08:38 INFO : |   145 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_1      |
+2020-02-11 12:08:38 INFO : |   146 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_2      |
+2020-02-11 12:08:38 INFO : |   147 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_4      |
+2020-02-11 12:08:38 INFO : |   142 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_OR_BptxAND               |
+2020-02-11 12:08:38 INFO : |   148 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_1       |
+2020-02-11 12:08:38 INFO : |   149 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_2       |
+2020-02-11 12:08:38 INFO : |   150 |    0.002% |  0.000% | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_4       |
+2020-02-11 12:08:38 INFO : |   158 |    0.002% |  0.000% | L1_NotMinimumBiasHF1_AND                      |
+2020-02-11 12:08:38 INFO : |   159 |    0.002% |  0.000% | L1_NotMinimumBiasHF1_OR                       |
+2020-02-11 12:08:38 INFO : |   160 |    0.002% |  0.000% | L1_NotMinimumBiasHF1_OR_BptxAND               |
+2020-02-11 12:08:38 INFO : |   166 |    0.002% |  0.000% | L1_NotMinimumBiasHF2_AND                      |
+2020-02-11 12:08:38 INFO : |   167 |    0.002% |  0.000% | L1_NotMinimumBiasHF2_AND_BptxAND              |
+2020-02-11 12:08:38 INFO : |   169 |    0.002% |  0.000% | L1_NotMinimumBiasHF2_OR                       |
+2020-02-11 12:08:38 INFO : |   170 |    0.002% |  0.000% | L1_NotMinimumBiasHF2_OR_BptxAND               |
+2020-02-11 12:08:38 INFO : |   102 |    0.002% |  0.000% | L1_ZDC_AND_OR_MinimumBiasHF1_AND_BptxAND      |
+2020-02-11 12:08:38 INFO : |   103 |    0.002% |  0.000% | L1_ZDC_AND_OR_MinimumBiasHF1_OR_BptxAND       |
+2020-02-11 12:08:38 INFO : |   104 |    0.002% |  0.000% | L1_ZDC_AND_OR_MinimumBiasHF2_AND_BptxAND      |
+2020-02-11 12:08:38 INFO : |   105 |    0.002% |  0.000% | L1_ZDC_AND_OR_MinimumBiasHF2_OR_BptxAND       |
+2020-02-11 12:08:38 INFO : |   100 |    0.002% |  0.000% | L1_ZDC_OR_OR_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   101 |    0.002% |  0.000% | L1_ZDC_OR_OR_MinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   472 |    0.004% |  0.000% | L1_ETT35_NotETT80_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   473 |    0.004% |  0.000% | L1_ETT40_NotETT95_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   474 |    0.004% |  0.000% | L1_ETT45_NotETT110_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   475 |    0.004% |  0.000% | L1_ETT50_NotETT120_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   476 |    0.004% |  0.000% | L1_ETT55_NotETT130_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   436 |    0.004% |  0.000% | L1_ETT5_ETTAsym40_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   437 |    0.004% |  0.000% | L1_ETT5_ETTAsym50_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   438 |    0.004% |  0.000% | L1_ETT5_ETTAsym60_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   439 |    0.004% |  0.000% | L1_ETT5_ETTAsym70_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   440 |    0.004% |  0.000% | L1_ETT5_ETTAsym80_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   433 |    0.004% |  0.000% | L1_ETT5_MinimumBiasHF1_OR_BptxAND             |
+2020-02-11 12:08:38 INFO : |   471 |    0.004% |  0.000% | L1_ETT5_NotETT30_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   434 |    0.004% |  0.000% | L1_ETT5_NotMinimumBiasHF2_OR                  |
+2020-02-11 12:08:38 INFO : |   419 |    0.004% |  0.000% | L1_ETTAsym40_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   424 |    0.004% |  0.000% | L1_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   420 |    0.004% |  0.000% | L1_ETTAsym50_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   425 |    0.004% |  0.000% | L1_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   421 |    0.004% |  0.000% | L1_ETTAsym60_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   426 |    0.004% |  0.000% | L1_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   422 |    0.004% |  0.000% | L1_ETTAsym70_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   427 |    0.004% |  0.000% | L1_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   423 |    0.004% |  0.000% | L1_ETTAsym80_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   428 |    0.004% |  0.000% | L1_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   157 |    0.004% |  0.000% | L1_MinimumBiasHF1_AND_OR_ETT10_BptxAND        |
+2020-02-11 12:08:38 INFO : |   488 |    0.004% |  0.000% | L1_NotETT100_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   491 |    0.004% |  0.000% | L1_NotETT110_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   492 |    0.004% |  0.000% | L1_NotETT110_MinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   489 |    0.004% |  0.000% | L1_NotETT150_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   493 |    0.004% |  0.000% | L1_NotETT150_MinimumBiasHF1_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   494 |    0.004% |  0.000% | L1_NotETT150_MinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |   490 |    0.004% |  0.000% | L1_NotETT200_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   485 |    0.004% |  0.000% | L1_NotETT20_MinimumBiasHF1_AND_BptxAND        |
+2020-02-11 12:08:38 INFO : |   478 |    0.004% |  0.000% | L1_NotETT20_MinimumBiasHF1_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   481 |    0.004% |  0.000% | L1_NotETT20_MinimumBiasHF2_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   486 |    0.004% |  0.000% | L1_NotETT80_MinimumBiasHF1_AND_BptxAND        |
+2020-02-11 12:08:38 INFO : |   479 |    0.004% |  0.000% | L1_NotETT80_MinimumBiasHF1_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   482 |    0.004% |  0.000% | L1_NotETT80_MinimumBiasHF2_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   487 |    0.004% |  0.000% | L1_NotETT95_MinimumBiasHF1_AND_BptxAND        |
+2020-02-11 12:08:38 INFO : |   480 |    0.004% |  0.000% | L1_NotETT95_MinimumBiasHF1_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   483 |    0.004% |  0.000% | L1_NotETT95_MinimumBiasHF2_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |   448 |    0.006% |  0.000% | L1_ETT10_ETTAsym50_MinimumBiasHF1_OR_B...     |
+2020-02-11 12:08:38 INFO : |   449 |    0.006% |  0.000% | L1_ETT10_ETTAsym55_MinimumBiasHF1_OR_B...     |
+2020-02-11 12:08:38 INFO : |   451 |    0.006% |  0.000% | L1_ETT50_ETTAsym40_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   458 |    0.006% |  0.000% | L1_ETT50_ETTAsym40_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   452 |    0.006% |  0.000% | L1_ETT50_ETTAsym50_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   459 |    0.006% |  0.000% | L1_ETT50_ETTAsym50_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   453 |    0.006% |  0.000% | L1_ETT50_ETTAsym55_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   454 |    0.006% |  0.000% | L1_ETT50_ETTAsym60_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   460 |    0.006% |  0.000% | L1_ETT50_ETTAsym60_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   455 |    0.006% |  0.000% | L1_ETT50_ETTAsym65_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   456 |    0.006% |  0.000% | L1_ETT50_ETTAsym70_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   461 |    0.006% |  0.000% | L1_ETT50_ETTAsym70_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   457 |    0.006% |  0.000% | L1_ETT50_ETTAsym80_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   462 |    0.006% |  0.000% | L1_ETT50_ETTAsym80_NotMinimumBiasHF2_O...     |
+2020-02-11 12:08:38 INFO : |   441 |    0.006% |  0.000% | L1_ETT5_ETTAsym50_NotMinimumBiasHF2_OR...     |
+2020-02-11 12:08:38 INFO : |   464 |    0.006% |  0.000% | L1_ETT60_ETTAsym60_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   465 |    0.006% |  0.000% | L1_ETT60_ETTAsym65_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   466 |    0.006% |  0.000% | L1_ETT65_ETTAsym70_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   467 |    0.006% |  0.000% | L1_ETT65_ETTAsym80_MinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   442 |    0.006% |  0.000% | L1_ETT8_ETTAsym50_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |   443 |    0.006% |  0.000% | L1_ETT8_ETTAsym55_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |   444 |    0.006% |  0.000% | L1_ETT8_ETTAsym60_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |   445 |    0.006% |  0.000% | L1_ETT8_ETTAsym65_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |   446 |    0.006% |  0.000% | L1_ETT8_ETTAsym70_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |   447 |    0.006% |  0.000% | L1_ETT8_ETTAsym80_MinimumBiasHF1_OR_Bp...     |
+2020-02-11 12:08:38 INFO : |    39 |    0.024% |  0.000% | L1_SingleEG10er2p5                            |
+2020-02-11 12:08:38 INFO : |   347 |    0.024% |  0.000% | L1_SingleEG12_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   348 |    0.024% |  0.000% | L1_SingleEG15_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   365 |    0.024% |  0.000% | L1_SingleEG15_Centrality_30_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |   370 |    0.024% |  0.000% | L1_SingleEG15_Centrality_50_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |    40 |    0.024% |  0.000% | L1_SingleEG15er2p5                            |
+2020-02-11 12:08:38 INFO : |   349 |    0.024% |  0.000% | L1_SingleEG21_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   366 |    0.024% |  0.000% | L1_SingleEG21_Centrality_30_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |   371 |    0.024% |  0.000% | L1_SingleEG21_Centrality_50_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |    41 |    0.024% |  0.000% | L1_SingleEG26er2p5                            |
+2020-02-11 12:08:38 INFO : |    34 |    0.024% |  0.000% | L1_SingleEG3                                  |
+2020-02-11 12:08:38 INFO : |   350 |    0.024% |  0.000% | L1_SingleEG30_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   344 |    0.024% |  0.000% | L1_SingleEG3_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   363 |    0.024% |  0.000% | L1_SingleEG3_Centrality_30_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |   368 |    0.024% |  0.000% | L1_SingleEG3_Centrality_50_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |    35 |    0.024% |  0.000% | L1_SingleEG5                                  |
+2020-02-11 12:08:38 INFO : |    36 |    0.024% |  0.000% | L1_SingleEG50                                 |
+2020-02-11 12:08:38 INFO : |   345 |    0.024% |  0.000% | L1_SingleEG5_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   346 |    0.024% |  0.000% | L1_SingleEG7_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   364 |    0.024% |  0.000% | L1_SingleEG7_Centrality_30_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |   369 |    0.024% |  0.000% | L1_SingleEG7_Centrality_50_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |    38 |    0.024% |  0.000% | L1_SingleEG8er2p5                             |
+2020-02-11 12:08:38 INFO : |   354 |    0.024% |  0.000% | L1_SingleIsoEG12_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   355 |    0.024% |  0.000% | L1_SingleIsoEG15_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   356 |    0.024% |  0.000% | L1_SingleIsoEG21_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   352 |    0.024% |  0.000% | L1_SingleIsoEG3_BptxAND                       |
+2020-02-11 12:08:38 INFO : |   353 |    0.024% |  0.000% | L1_SingleIsoEG7_BptxAND                       |
+2020-02-11 12:08:38 INFO : |    52 |    0.024% |  0.000% | L1_SingleJet120                               |
+2020-02-11 12:08:38 INFO : |    57 |    0.024% |  0.000% | L1_SingleJet120er2p5                          |
+2020-02-11 12:08:38 INFO : |   260 |    0.024% |  0.000% | L1_SingleJet16_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   283 |    0.024% |  0.000% | L1_SingleJet16_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   296 |    0.024% |  0.000% | L1_SingleJet16_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |    54 |    0.024% |  0.000% | L1_SingleJet200                               |
+2020-02-11 12:08:38 INFO : |   261 |    0.024% |  0.000% | L1_SingleJet24_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   284 |    0.024% |  0.000% | L1_SingleJet24_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   297 |    0.024% |  0.000% | L1_SingleJet24_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   262 |    0.024% |  0.000% | L1_SingleJet28_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   285 |    0.024% |  0.000% | L1_SingleJet28_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   298 |    0.024% |  0.000% | L1_SingleJet28_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   263 |    0.024% |  0.000% | L1_SingleJet32_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   286 |    0.024% |  0.000% | L1_SingleJet32_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   299 |    0.024% |  0.000% | L1_SingleJet32_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |    49 |    0.024% |  0.000% | L1_SingleJet35                                |
+2020-02-11 12:08:38 INFO : |    56 |    0.024% |  0.000% | L1_SingleJet35er2p5                           |
+2020-02-11 12:08:38 INFO : |   264 |    0.024% |  0.000% | L1_SingleJet36_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   287 |    0.024% |  0.000% | L1_SingleJet36_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   300 |    0.024% |  0.000% | L1_SingleJet36_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   265 |    0.024% |  0.000% | L1_SingleJet40_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   288 |    0.024% |  0.000% | L1_SingleJet40_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   301 |    0.024% |  0.000% | L1_SingleJet40_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   266 |    0.024% |  0.000% | L1_SingleJet44_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   289 |    0.024% |  0.000% | L1_SingleJet44_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   302 |    0.024% |  0.000% | L1_SingleJet44_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   267 |    0.024% |  0.000% | L1_SingleJet48_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   290 |    0.024% |  0.000% | L1_SingleJet48_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   303 |    0.024% |  0.000% | L1_SingleJet48_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   268 |    0.024% |  0.000% | L1_SingleJet56_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   291 |    0.024% |  0.000% | L1_SingleJet56_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   304 |    0.024% |  0.000% | L1_SingleJet56_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |    50 |    0.024% |  0.000% | L1_SingleJet60                                |
+2020-02-11 12:08:38 INFO : |   269 |    0.024% |  0.000% | L1_SingleJet60_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   292 |    0.024% |  0.000% | L1_SingleJet60_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   305 |    0.024% |  0.000% | L1_SingleJet60_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |    59 |    0.024% |  0.000% | L1_SingleJet60er2p5                           |
+2020-02-11 12:08:38 INFO : |   270 |    0.024% |  0.000% | L1_SingleJet64_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   293 |    0.024% |  0.000% | L1_SingleJet64_Centrality_30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   306 |    0.024% |  0.000% | L1_SingleJet64_Centrality_50_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |   271 |    0.024% |  0.000% | L1_SingleJet72_BptxAND                        |
+2020-02-11 12:08:38 INFO : |    48 |    0.024% |  0.000% | L1_SingleJet8                                 |
+2020-02-11 12:08:38 INFO : |   272 |    0.024% |  0.000% | L1_SingleJet80_BptxAND                        |
+2020-02-11 12:08:38 INFO : |   259 |    0.024% |  0.000% | L1_SingleJet8_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   282 |    0.024% |  0.000% | L1_SingleJet8_Centrality_30_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |   295 |    0.024% |  0.000% | L1_SingleJet8_Centrality_50_100_BptxAND       |
+2020-02-11 12:08:38 INFO : |    51 |    0.024% |  0.000% | L1_SingleJet90                                |
+2020-02-11 12:08:38 INFO : |   502 |    0.026% |  0.000% | L1_CastorMediumJet_SingleEG5_MinimumBi...     |
+2020-02-11 12:08:38 INFO : |   360 |    0.026% |  0.000% | L1_SingleEG3_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   358 |    0.026% |  0.000% | L1_SingleEG3_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   361 |    0.026% |  0.000% | L1_SingleEG5_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   359 |    0.026% |  0.000% | L1_SingleEG5_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   399 |    0.048% |  0.000% | L1_DoubleEG10_BptxAND                         |
+2020-02-11 12:08:38 INFO : |    43 |    0.048% |  0.000% | L1_DoubleEG2                                  |
+2020-02-11 12:08:38 INFO : |   396 |    0.048% |  0.000% | L1_DoubleEG2_BptxAND                          |
+2020-02-11 12:08:38 INFO : |    44 |    0.048% |  0.000% | L1_DoubleEG5                                  |
+2020-02-11 12:08:38 INFO : |   397 |    0.048% |  0.000% | L1_DoubleEG5_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   398 |    0.048% |  0.000% | L1_DoubleEG8_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   325 |    0.048% |  0.000% | L1_DoubleJet16And12_MidEta2p7_BptxAND         |
+2020-02-11 12:08:38 INFO : |   331 |    0.048% |  0.000% | L1_DoubleJet16And12_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   337 |    0.048% |  0.000% | L1_DoubleJet16And12_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   324 |    0.048% |  0.000% | L1_DoubleJet16And8_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |   330 |    0.048% |  0.000% | L1_DoubleJet16And8_MidEta2p7_Centralit...     |
+2020-02-11 12:08:38 INFO : |   336 |    0.048% |  0.000% | L1_DoubleJet16And8_MidEta2p7_Centralit...     |
+2020-02-11 12:08:38 INFO : |   327 |    0.048% |  0.000% | L1_DoubleJet20And12_MidEta2p7_BptxAND         |
+2020-02-11 12:08:38 INFO : |   333 |    0.048% |  0.000% | L1_DoubleJet20And12_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   339 |    0.048% |  0.000% | L1_DoubleJet20And12_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   326 |    0.048% |  0.000% | L1_DoubleJet20And8_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |   332 |    0.048% |  0.000% | L1_DoubleJet20And8_MidEta2p7_Centralit...     |
+2020-02-11 12:08:38 INFO : |   338 |    0.048% |  0.000% | L1_DoubleJet20And8_MidEta2p7_Centralit...     |
+2020-02-11 12:08:38 INFO : |   328 |    0.048% |  0.000% | L1_DoubleJet28And16_MidEta2p7_BptxAND         |
+2020-02-11 12:08:38 INFO : |   334 |    0.048% |  0.000% | L1_DoubleJet28And16_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   340 |    0.048% |  0.000% | L1_DoubleJet28And16_MidEta2p7_Centrali...     |
+2020-02-11 12:08:38 INFO : |   382 |    0.048% |  0.000% | L1_SingleEG12_SingleJet32_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   383 |    0.048% |  0.000% | L1_SingleEG12_SingleJet40_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   388 |    0.048% |  0.000% | L1_SingleEG15_SingleJet28_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   389 |    0.048% |  0.000% | L1_SingleEG15_SingleJet44_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   390 |    0.048% |  0.000% | L1_SingleEG15_SingleJet56_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   391 |    0.048% |  0.000% | L1_SingleEG15_SingleJet60_MidEta2p7_Bp...     |
+2020-02-11 12:08:38 INFO : |   373 |    0.048% |  0.000% | L1_SingleEG5_SingleJet28_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   374 |    0.048% |  0.000% | L1_SingleEG5_SingleJet32_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   375 |    0.048% |  0.000% | L1_SingleEG5_SingleJet40_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   376 |    0.048% |  0.000% | L1_SingleEG7_SingleJet32_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   377 |    0.048% |  0.000% | L1_SingleEG7_SingleJet40_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |    65 |    0.048% |  0.000% | L1_SingleJet120_FWD3p0                        |
+2020-02-11 12:08:38 INFO : |   275 |    0.048% |  0.000% | L1_SingleJet16_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   309 |    0.048% |  0.000% | L1_SingleJet16_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   317 |    0.048% |  0.000% | L1_SingleJet16_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |   276 |    0.048% |  0.000% | L1_SingleJet28_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   310 |    0.048% |  0.000% | L1_SingleJet28_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   318 |    0.048% |  0.000% | L1_SingleJet28_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |    62 |    0.048% |  0.000% | L1_SingleJet35_FWD3p0                         |
+2020-02-11 12:08:38 INFO : |   277 |    0.048% |  0.000% | L1_SingleJet36_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   311 |    0.048% |  0.000% | L1_SingleJet36_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   319 |    0.048% |  0.000% | L1_SingleJet36_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |   278 |    0.048% |  0.000% | L1_SingleJet44_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   312 |    0.048% |  0.000% | L1_SingleJet44_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   320 |    0.048% |  0.000% | L1_SingleJet44_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |   279 |    0.048% |  0.000% | L1_SingleJet56_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   313 |    0.048% |  0.000% | L1_SingleJet56_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   321 |    0.048% |  0.000% | L1_SingleJet56_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |    63 |    0.048% |  0.000% | L1_SingleJet60_FWD3p0                         |
+2020-02-11 12:08:38 INFO : |   280 |    0.048% |  0.000% | L1_SingleJet64_FWD_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   314 |    0.048% |  0.000% | L1_SingleJet64_FWD_Centrality_30_100_B...     |
+2020-02-11 12:08:38 INFO : |   322 |    0.048% |  0.000% | L1_SingleJet64_FWD_Centrality_50_100_B...     |
+2020-02-11 12:08:38 INFO : |   274 |    0.048% |  0.000% | L1_SingleJet8_FWD_BptxAND                     |
+2020-02-11 12:08:38 INFO : |   308 |    0.048% |  0.000% | L1_SingleJet8_FWD_Centrality_30_100_Bp...     |
+2020-02-11 12:08:38 INFO : |   316 |    0.048% |  0.000% | L1_SingleJet8_FWD_Centrality_50_100_Bp...     |
+2020-02-11 12:08:38 INFO : |   402 |    0.050% |  0.000% | L1_DoubleEG2_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   400 |    0.050% |  0.000% | L1_DoubleEG2_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   403 |    0.050% |  0.000% | L1_DoubleEG5_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   401 |    0.050% |  0.000% | L1_DoubleEG5_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |     6 |    0.080% |  0.000% | L1_SingleMu0                                  |
+2020-02-11 12:08:38 INFO : |     7 |    0.080% |  0.000% | L1_SingleMu0_BMTF                             |
+2020-02-11 12:08:38 INFO : |   181 |    0.080% |  0.000% | L1_SingleMu0_BptxAND                          |
+2020-02-11 12:08:38 INFO : |     5 |    0.080% |  0.000% | L1_SingleMu0_DQ                               |
+2020-02-11 12:08:38 INFO : |     9 |    0.080% |  0.000% | L1_SingleMu0_EMTF                             |
+2020-02-11 12:08:38 INFO : |     8 |    0.080% |  0.000% | L1_SingleMu0_OMTF                             |
+2020-02-11 12:08:38 INFO : |    15 |    0.080% |  0.000% | L1_SingleMu12                                 |
+2020-02-11 12:08:38 INFO : |   185 |    0.080% |  0.000% | L1_SingleMu12_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   186 |    0.080% |  0.000% | L1_SingleMu16_BptxAND                         |
+2020-02-11 12:08:38 INFO : |    20 |    0.080% |  0.000% | L1_SingleMu22                                 |
+2020-02-11 12:08:38 INFO : |    21 |    0.080% |  0.000% | L1_SingleMu22_BMTF                            |
+2020-02-11 12:08:38 INFO : |    23 |    0.080% |  0.000% | L1_SingleMu22_EMTF                            |
+2020-02-11 12:08:38 INFO : |    22 |    0.080% |  0.000% | L1_SingleMu22_OMTF                            |
+2020-02-11 12:08:38 INFO : |    10 |    0.080% |  0.000% | L1_SingleMu3                                  |
+2020-02-11 12:08:38 INFO : |    11 |    0.080% |  0.000% | L1_SingleMu3Open_BptxAND                      |
+2020-02-11 12:08:38 INFO : |   182 |    0.080% |  0.000% | L1_SingleMu3_BptxAND                          |
+2020-02-11 12:08:38 INFO : |   190 |    0.080% |  0.000% | L1_SingleMu3_Centrality_70_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |   192 |    0.080% |  0.000% | L1_SingleMu3_Centrality_80_100_BptxAND        |
+2020-02-11 12:08:38 INFO : |    12 |    0.080% |  0.000% | L1_SingleMu5                                  |
+2020-02-11 12:08:38 INFO : |   183 |    0.080% |  0.000% | L1_SingleMu5_BptxAND                          |
+2020-02-11 12:08:38 INFO : |    14 |    0.080% |  0.000% | L1_SingleMu7                                  |
+2020-02-11 12:08:38 INFO : |   184 |    0.080% |  0.000% | L1_SingleMu7_BptxAND                          |
+2020-02-11 12:08:38 INFO : |     0 |    0.080% |  0.000% | L1_SingleMuCosmics                            |
+2020-02-11 12:08:38 INFO : |     1 |    0.080% |  0.000% | L1_SingleMuCosmics_BMTF                       |
+2020-02-11 12:08:38 INFO : |     3 |    0.080% |  0.000% | L1_SingleMuCosmics_EMTF                       |
+2020-02-11 12:08:38 INFO : |     2 |    0.080% |  0.000% | L1_SingleMuCosmics_OMTF                       |
+2020-02-11 12:08:38 INFO : |     4 |    0.080% |  0.000% | L1_SingleMuOpen                               |
+2020-02-11 12:08:38 INFO : |   180 |    0.080% |  0.000% | L1_SingleMuOpen_BptxAND                       |
+2020-02-11 12:08:38 INFO : |   189 |    0.080% |  0.000% | L1_SingleMuOpen_Centrality_70_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   191 |    0.080% |  0.000% | L1_SingleMuOpen_Centrality_80_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   501 |    0.082% |  0.000% | L1_CastorMediumJet_SingleMu0_MinimumBi...     |
+2020-02-11 12:08:38 INFO : |   203 |    0.082% |  0.000% | L1_SingleMu0_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   200 |    0.082% |  0.000% | L1_SingleMu0_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   196 |    0.082% |  0.000% | L1_SingleMu12_MinimumBiasHF1_AND_BptxAND      |
+2020-02-11 12:08:38 INFO : |   197 |    0.082% |  0.000% | L1_SingleMu16_MinimumBiasHF1_AND_BptxAND      |
+2020-02-11 12:08:38 INFO : |   193 |    0.082% |  0.000% | L1_SingleMu3_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   201 |    0.082% |  0.000% | L1_SingleMu3_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |   194 |    0.082% |  0.000% | L1_SingleMu5_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   195 |    0.082% |  0.000% | L1_SingleMu7_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   205 |    0.082% |  0.000% | L1_SingleMuOpen_Centrality_70_100_Mini...     |
+2020-02-11 12:08:38 INFO : |   206 |    0.082% |  0.000% | L1_SingleMuOpen_Centrality_80_100_Mini...     |
+2020-02-11 12:08:38 INFO : |   202 |    0.082% |  0.000% | L1_SingleMuOpen_NotMinimumBiasHF2_AND_...     |
+2020-02-11 12:08:38 INFO : |   199 |    0.082% |  0.000% | L1_SingleMuOpen_NotMinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   228 |    0.104% |  0.000% | L1_SingleMu12_SingleEG7_BptxAND               |
+2020-02-11 12:08:38 INFO : |   216 |    0.104% |  0.000% | L1_SingleMu3_SingleEG12_BptxAND               |
+2020-02-11 12:08:38 INFO : |   218 |    0.104% |  0.000% | L1_SingleMu3_SingleEG20_BptxAND               |
+2020-02-11 12:08:38 INFO : |   219 |    0.104% |  0.000% | L1_SingleMu3_SingleEG30_BptxAND               |
+2020-02-11 12:08:38 INFO : |   212 |    0.104% |  0.000% | L1_SingleMu3_SingleJet28_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   213 |    0.104% |  0.000% | L1_SingleMu3_SingleJet32_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   214 |    0.104% |  0.000% | L1_SingleMu3_SingleJet40_MidEta2p7_Bpt...     |
+2020-02-11 12:08:38 INFO : |   220 |    0.104% |  0.000% | L1_SingleMu5_SingleEG10_BptxAND               |
+2020-02-11 12:08:38 INFO : |   221 |    0.104% |  0.000% | L1_SingleMu5_SingleEG12_BptxAND               |
+2020-02-11 12:08:38 INFO : |   222 |    0.104% |  0.000% | L1_SingleMu5_SingleEG15_BptxAND               |
+2020-02-11 12:08:38 INFO : |   223 |    0.104% |  0.000% | L1_SingleMu5_SingleEG20_BptxAND               |
+2020-02-11 12:08:38 INFO : |   225 |    0.104% |  0.000% | L1_SingleMu7_SingleEG10_BptxAND               |
+2020-02-11 12:08:38 INFO : |   226 |    0.104% |  0.000% | L1_SingleMu7_SingleEG12_BptxAND               |
+2020-02-11 12:08:38 INFO : |   227 |    0.104% |  0.000% | L1_SingleMu7_SingleEG15_BptxAND               |
+2020-02-11 12:08:38 INFO : |   224 |    0.104% |  0.000% | L1_SingleMu7_SingleEG7_BptxAND                |
+2020-02-11 12:08:38 INFO : |   217 |    0.104% |  0.000% | L1_SingleMuOpen_SingleEG15_BptxAND            |
+2020-02-11 12:08:38 INFO : |   208 |    0.104% |  0.000% | L1_SingleMuOpen_SingleJet28_MidEta2p7_...     |
+2020-02-11 12:08:38 INFO : |   209 |    0.104% |  0.000% | L1_SingleMuOpen_SingleJet44_MidEta2p7_...     |
+2020-02-11 12:08:38 INFO : |   210 |    0.104% |  0.000% | L1_SingleMuOpen_SingleJet56_MidEta2p7_...     |
+2020-02-11 12:08:38 INFO : |   211 |    0.104% |  0.000% | L1_SingleMuOpen_SingleJet64_MidEta2p7_...     |
+2020-02-11 12:08:38 INFO : |    29 |    0.160% |  0.000% | L1_DoubleMu0                                  |
+2020-02-11 12:08:38 INFO : |   235 |    0.160% |  0.000% | L1_DoubleMu0_BptxAND                          |
+2020-02-11 12:08:38 INFO : |    30 |    0.160% |  0.000% | L1_DoubleMu0_SQ                               |
+2020-02-11 12:08:38 INFO : |    31 |    0.160% |  0.000% | L1_DoubleMu0_SQ_OS                            |
+2020-02-11 12:08:38 INFO : |   236 |    0.160% |  0.000% | L1_DoubleMu10_BptxAND                         |
+2020-02-11 12:08:38 INFO : |   232 |    0.160% |  0.000% | L1_DoubleMuOpen_BptxAND                       |
+2020-02-11 12:08:38 INFO : |   248 |    0.160% |  0.000% | L1_DoubleMuOpen_Centrality_10_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   249 |    0.160% |  0.000% | L1_DoubleMuOpen_Centrality_30_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   250 |    0.160% |  0.000% | L1_DoubleMuOpen_Centrality_40_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   251 |    0.160% |  0.000% | L1_DoubleMuOpen_Centrality_50_100_BptxAND     |
+2020-02-11 12:08:38 INFO : |   233 |    0.160% |  0.000% | L1_DoubleMuOpen_OS_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   234 |    0.160% |  0.000% | L1_DoubleMuOpen_SS_BptxAND                    |
+2020-02-11 12:08:38 INFO : |   253 |    0.162% |  0.000% | L1_DoubleMu0_Centrality_10_100_Minimum...     |
+2020-02-11 12:08:38 INFO : |   254 |    0.162% |  0.000% | L1_DoubleMu0_Centrality_30_100_Minimum...     |
+2020-02-11 12:08:38 INFO : |   255 |    0.162% |  0.000% | L1_DoubleMu0_Centrality_50_100_Minimum...     |
+2020-02-11 12:08:38 INFO : |   243 |    0.162% |  0.000% | L1_DoubleMu0_MinimumBiasHF1_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |   246 |    0.162% |  0.000% | L1_DoubleMu0_NotMinimumBiasHF2_AND_Bpt...     |
+2020-02-11 12:08:38 INFO : |   245 |    0.162% |  0.000% | L1_DoubleMu0_NotMinimumBiasHF2_OR_BptxAND     |
+2020-02-11 12:08:38 INFO : |    27 |    0.162% |  0.000% | L1_DoubleMuOpen_NotMinimumBiasHF2_AND_...     |
+2020-02-11 12:08:38 INFO : |   244 |    0.162% |  0.000% | L1_DoubleMuOpen_NotMinimumBiasHF2_OR_B...     |
+2020-02-11 12:08:38 INFO : |   238 |    2.520% |  1.568% | L1_DoubleMuOpen_MaxDr2p0_BptxAND              |
+2020-02-11 12:08:38 INFO : |   239 |    2.520% |  1.568% | L1_DoubleMuOpen_MaxDr2p0_OS_BptxAND           |
+2020-02-11 12:08:38 INFO : |   240 |    2.520% |  1.568% | L1_DoubleMuOpen_MaxDr3p5                      |
+2020-02-11 12:08:38 INFO : |   241 |    2.520% |  1.568% | L1_DoubleMuOpen_MaxDr3p5_BptxAND              |
+2020-02-11 12:08:38 INFO : |   384 |    4.608% |  8.064% | L1_SingleEG12_SingleJet28_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   385 |    4.608% |  8.064% | L1_SingleEG12_SingleJet44_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   386 |    4.608% |  8.064% | L1_SingleEG12_SingleJet56_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   387 |    4.608% |  8.064% | L1_SingleEG12_SingleJet60_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   392 |    4.608% |  8.064% | L1_SingleEG15_SingleJet28_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   393 |    4.608% |  8.064% | L1_SingleEG15_SingleJet44_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   394 |    4.608% |  8.064% | L1_SingleEG15_SingleJet56_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   395 |    4.608% |  8.064% | L1_SingleEG15_SingleJet60_MidEta2p7_Mi...     |
+2020-02-11 12:08:38 INFO : |   378 |    4.608% |  8.064% | L1_SingleEG7_SingleJet28_MidEta2p7_Min...     |
+2020-02-11 12:08:38 INFO : |   379 |    4.608% |  8.064% | L1_SingleEG7_SingleJet44_MidEta2p7_Min...     |
+2020-02-11 12:08:38 INFO : |   380 |    4.608% |  8.064% | L1_SingleEG7_SingleJet56_MidEta2p7_Min...     |
+2020-02-11 12:08:38 INFO : |   381 |    4.608% |  8.064% | L1_SingleEG7_SingleJet60_MidEta2p7_Min...     |
+2020-02-11 12:08:38 INFO : |-------|-----------|---------|-----------------------------------------------|
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : distributing algorithms, shadow ratio: 0.5
+2020-02-11 12:08:38 INFO : starting algorithm distribution for 416 algorithms on 6 modules using shadow ratio of 0.5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4_BptxAND (384) to module 0
+2020-02-11 12:08:38 INFO :  +-- L1_AlwaysTrue shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ZeroBias shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_ZeroBias_copy shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZeroBias_copy 108 to module 0
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZeroBias 107 to module 0
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_AlwaysTrue 106 to module 0
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG12_SingleJet44_MidEta2p7_MinDr0p4_BptxAND (385) to module 1
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG12_SingleJet56_MidEta2p7_MinDr0p4_BptxAND (386) to module 2
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG12_SingleJet60_MidEta2p7_MinDr0p4_BptxAND (387) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4_BptxAND (392) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG15_SingleJet44_MidEta2p7_MinDr0p4_BptxAND (393) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG15_SingleJet56_MidEta2p7_MinDr0p4_BptxAND (394) to module 0
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG15_SingleJet60_MidEta2p7_MinDr0p4_BptxAND (395) to module 1
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG7_SingleJet28_MidEta2p7_MinDr0p4_BptxAND (378) to module 2
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG7_SingleJet44_MidEta2p7_MinDr0p4_BptxAND (379) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG7_SingleJet56_MidEta2p7_MinDr0p4_BptxAND (380) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG7_SingleJet60_MidEta2p7_MinDr0p4_BptxAND (381) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_MaxDr2p0_BptxAND (238) to module 0
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_MaxDr2p0_OS_BptxAND (239) to module 1
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_MaxDr3p5 (240) to module 2
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleMuOpen_MaxDr3p5_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_MaxDr3p5_BptxAND 241 to module 2
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0_Centrality_10_100_MinimumBiasHF1_AND_BptxAND (253) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleMu0_Centrality_30_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 81.8 %
+2020-02-11 12:08:38 INFO :  +--- L1_FirstCollisionInOrbit_Centrality30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleMu0_Centrality_50_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 58.3 %
+2020-02-11 12:08:38 INFO :  +----- L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 75.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------- L1_DoubleMuOpen_Centrality_10_100_BptxAND shadowed ratio 61.5 %
+2020-02-11 12:08:38 INFO :  +-------- L1_DoubleMuOpen_Centrality_30_100_BptxAND shadowed ratio 53.8 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet16_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet24_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet28_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet32_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_DoubleJet16And12_MidEta2p7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet36_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet40_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet44_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet48_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet56_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet60_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet64_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet8_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_DoubleJet16And8_MidEta2p7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG21_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_DoubleJet20And12_MidEta2p7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_DoubleJet20And8_MidEta2p7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG3_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_DoubleJet28And16_MidEta2p7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG7_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG15_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMu0_Centrality_50_100_MinimumBiasHF1_AND_BptxAND 255 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMu0_Centrality_30_100_MinimumBiasHF1_AND_BptxAND 254 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet28_Centrality_30_100_BptxAND 285 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet60_Centrality_30_100_BptxAND 292 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_FirstCollisionInOrbit_Centrality30_100_BptxAND 128 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND 174 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet44_Centrality_30_100_BptxAND 289 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet16And8_MidEta2p7_Centrality_30_100_BptxAND 330 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG21_Centrality_30_100_BptxAND 366 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND 175 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet32_Centrality_30_100_BptxAND 286 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet64_Centrality_30_100_BptxAND 293 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG7_Centrality_30_100_BptxAND 364 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet20And12_MidEta2p7_Centrality_30_100_BptxAND 333 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet16_Centrality_30_100_BptxAND 283 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_Centrality_30_100_BptxAND 249 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet48_Centrality_30_100_BptxAND 290 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_Centrality_10_100_BptxAND 248 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet20And8_MidEta2p7_Centrality_30_100_BptxAND 332 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_Centrality_30_100_BptxAND 365 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG3_Centrality_30_100_BptxAND 363 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet36_Centrality_30_100_BptxAND 287 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet56_Centrality_30_100_BptxAND 291 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet28And16_MidEta2p7_Centrality_30_100_BptxAND 334 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet40_Centrality_30_100_BptxAND 288 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet24_Centrality_30_100_BptxAND 284 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet16And12_MidEta2p7_Centrality_30_100_BptxAND 331 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet8_Centrality_30_100_BptxAND 282 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0_MinimumBiasHF1_AND_BptxAND (243) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleMu0_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ETT8_ETTAsym50_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_ETT8_ETTAsym55_MinimumBiasHF1_OR_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT8_ETTAsym60_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ETTAsym50_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_ETTAsym60_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT8_ETTAsym65_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT8_ETTAsym70_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ETTAsym70_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT8_ETTAsym80_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ETTAsym80_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT10_ETTAsym50_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_MinimumBiasHF1_AND_OR_ETT10_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_ETT10_ETTAsym55_MinimumBiasHF1_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +---- L1_MinimumBiasHF0_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_MinimumBiasHF0_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_MinimumBiasHF1_XOR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--------- L1_NotMinimumBiasHF0_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---------- L1_NotMinimumBiasHF0_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----------- L1_NotMinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ETTAsym40_MinimumBiasHF1_OR_BptxAND shadowed ratio 60.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu5_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu7_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT95_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotETT95_MinimumBiasHF1_AND_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT100_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT110_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT150_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotETT150_MinimumBiasHF1_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT200_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT20_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotETT20_MinimumBiasHF1_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotETT80_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotETT80_MinimumBiasHF1_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_ETT5_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT5_ETTAsym40_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_1 shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_1 shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_2 shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_2 shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_4 shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_4 shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_CastorHighJet_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_CastorHighJet_OR_MinimumBiasHF1_AND_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +---- L1_CastorMediumJet_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_CastorMediumJet_SingleEG5_MinimumBiasHF1_OR_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +------ L1_CastorMediumJet_SingleMu0_MinimumBiasHF1_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu12_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu16_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu3_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_MinimumBiasHF1_AND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_MinimumBiasHF1_OR shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_SingleMuOpen_Centrality_80_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleMuOpen_Centrality_80_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleMuOpen_Centrality_70_100_MinimumBiasHF1_AND_BptxAND shadowed ratio 71.4 %
+2020-02-11 12:08:38 INFO :  +-------- L1_SingleMuOpen_Centrality_70_100_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +----- L1_ZDC_AND_OR_MinimumBiasHF1_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ZDCM_ZDCP_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_ZDC_AND_OR_MinimumBiasHF1_OR_BptxAND shadowed ratio 83.3 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ZDC_OR_OR_MinimumBiasHF1_OR_BptxAND shadowed ratio 83.3 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotMinimumBiasHF1_AND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotMinimumBiasHF1_OR shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu5_MinimumBiasHF1_AND_BptxAND 194 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym60_MinimumBiasHF1_OR_BptxAND 421 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_Centrality_70_100_BptxAND 189 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_AND_BptxAND 141 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT95_MinimumBiasHF1_OR_BptxAND 480 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_Centrality_80_100_BptxAND 191 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu16_MinimumBiasHF1_AND_BptxAND 197 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDCM_ZDCP_BptxAND 99 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_1 145 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_Centrality_70_100_MinimumBiasHF1_AND_BptxAND 205 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT10_ETTAsym50_MinimumBiasHF1_OR_BptxAND 448 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT100_MinimumBiasHF1_AND_BptxAND 488 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym50_MinimumBiasHF1_OR_BptxAND 442 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_2 146 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT10_ETTAsym55_MinimumBiasHF1_OR_BptxAND 449 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT110_MinimumBiasHF1_OR_BptxAND 491 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_Centrality_80_100_MinimumBiasHF1_AND_BptxAND 206 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym55_MinimumBiasHF1_OR_BptxAND 443 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym70_MinimumBiasHF1_OR_BptxAND 422 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_4 147 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_OR_BptxAND 142 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_MinimumBiasHF1_OR_BptxAND 507 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym60_MinimumBiasHF1_OR_BptxAND 444 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF0_AND_BptxAND 140 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF1_AND 158 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_AND 152 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT150_MinimumBiasHF1_AND_BptxAND 489 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym65_MinimumBiasHF1_OR_BptxAND 445 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_1 148 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_AND_OR_MinimumBiasHF1_AND_BptxAND 102 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_ETTAsym40_BptxAND 436 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT150_MinimumBiasHF1_OR_BptxAND 493 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym70_MinimumBiasHF1_OR_BptxAND 446 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu7_MinimumBiasHF1_AND_BptxAND 195 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_2 149 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_OR_MinimumBiasHF1_AND_BptxAND 510 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_AND_OR_MinimumBiasHF1_OR_BptxAND 103 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_MinimumBiasHF1_AND_BptxAND 193 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT8_ETTAsym80_MinimumBiasHF1_OR_BptxAND 447 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym80_MinimumBiasHF1_OR_BptxAND 423 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF0_OR_BptxAND 143 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_4 150 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT200_MinimumBiasHF1_AND_BptxAND 490 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF1_OR 159 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_OR 153 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT20_MinimumBiasHF1_AND_BptxAND 485 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_AND_BptxAND 154 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_OR_OR_MinimumBiasHF1_OR_BptxAND 100 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF1_OR_BptxAND 160 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym40_MinimumBiasHF1_OR_BptxAND 419 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT20_MinimumBiasHF1_OR_BptxAND 478 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMu0_BptxAND 235 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_AND_OR_ETT10_BptxAND 157 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_MinimumBiasHF1_OR_BptxAND 498 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT80_MinimumBiasHF1_AND_BptxAND 486 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_OR_BptxAND 155 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu12_MinimumBiasHF1_AND_BptxAND 196 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_MinimumBiasHF1_OR_BptxAND 433 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT80_MinimumBiasHF1_OR_BptxAND 479 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF1_XOR_BptxAND 156 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym50_MinimumBiasHF1_OR_BptxAND 420 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_SingleEG5_MinimumBiasHF1_OR_BptxAND 502 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT95_MinimumBiasHF1_AND_BptxAND 487 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_SingleMu0_MinimumBiasHF1_OR_BptxAND 501 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0_NotMinimumBiasHF2_AND_BptxAND (246) to module 5
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleMu0_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 100.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ETT65_ETTAsym80_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +----- L1_MinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_ETT50_ETTAsym80_MinimumBiasHF2_OR_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym40_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--------- L1_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---------- L1_ETT50_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +----------- L1_ETT50_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym50_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--------- L1_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---------- L1_ETT50_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym55_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym60_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--------- L1_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---------- L1_ETT50_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym65_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_ETT50_ETTAsym70_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--------- L1_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---------- L1_ETT50_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +----------- L1_ETT65_ETTAsym70_MinimumBiasHF2_OR_BptxAND shadowed ratio 62.5 %
+2020-02-11 12:08:38 INFO :  +------- L1_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_MinimumBiasHF2_AND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_MinimumBiasHF2_OR shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotETT95_MinimumBiasHF2_OR_BptxAND shadowed ratio 60.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleMuOpen_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleMuOpen_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotETT110_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotETT150_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotETT20_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotETT80_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_DoubleMuOpen_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_DoubleMuOpen_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_CastorHighJet_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_CastorHighJet_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +-------- L1_CastorHighJet_OR_MinimumBiasHF2_AND_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleMu0_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleMu0_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleEG3_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleEG3_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_CastorMediumJet_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_CastorMediumJet_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleEG5_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleEG5_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleMu3_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_DoubleEG2_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_DoubleEG2_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +------ L1_DoubleEG5_NotMinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_DoubleEG5_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +----- L1_ZDC_AND_OR_MinimumBiasHF2_AND_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ZDC_AND_OR_MinimumBiasHF2_OR_BptxAND shadowed ratio 83.3 %
+2020-02-11 12:08:38 INFO :  +------- L1_ZDC_OR_OR_MinimumBiasHF2_OR_BptxAND shadowed ratio 83.3 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT60_ETTAsym60_MinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ETT60_ETTAsym65_MinimumBiasHF2_OR_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT5_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_ETT5_ETTAsym50_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_ETT5_NotMinimumBiasHF2_OR shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_NotMinimumBiasHF2_AND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_NotMinimumBiasHF2_OR shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND 460 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG5_NotMinimumBiasHF2_AND_BptxAND 361 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym65_MinimumBiasHF2_OR_BptxAND 455 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF2_OR_BptxAND 165 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG5_NotMinimumBiasHF2_OR_BptxAND 359 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym70_MinimumBiasHF2_OR_BptxAND 456 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT95_MinimumBiasHF2_OR_BptxAND 483 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND 426 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT65_ETTAsym80_MinimumBiasHF2_OR_BptxAND 467 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND 461 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMu0_NotMinimumBiasHF2_OR_BptxAND 245 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym80_MinimumBiasHF2_OR_BptxAND 457 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND 462 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_NotMinimumBiasHF2_AND_BptxAND 202 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT110_MinimumBiasHF2_OR_BptxAND 492 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_NotMinimumBiasHF2_OR_BptxAND 244 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_NotMinimumBiasHF2_OR_BptxAND 199 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT60_ETTAsym60_MinimumBiasHF2_OR_BptxAND 464 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_NotMinimumBiasHF2_AND_BptxAND 508 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND 427 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_NotMinimumBiasHF2_OR_BptxAND 509 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT150_MinimumBiasHF2_OR_BptxAND 494 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_ETTAsym50_BptxAND 437 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_AND_OR_MinimumBiasHF2_AND_BptxAND 104 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_OR_MinimumBiasHF2_AND_BptxAND 511 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu0_NotMinimumBiasHF2_AND_BptxAND 203 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_AND_OR_MinimumBiasHF2_OR_BptxAND 105 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_NotMinimumBiasHF2_OR_BptxAND 201 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG2_NotMinimumBiasHF2_AND_BptxAND 402 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu0_NotMinimumBiasHF2_OR_BptxAND 200 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND 428 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_NotMinimumBiasHF2_OR 434 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG2_NotMinimumBiasHF2_OR_BptxAND 400 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND 441 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym40_MinimumBiasHF2_OR_BptxAND 451 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDC_OR_OR_MinimumBiasHF2_OR_BptxAND 101 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF2_AND 166 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG3_NotMinimumBiasHF2_AND_BptxAND 360 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT20_MinimumBiasHF2_OR_BptxAND 481 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND 424 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF2_AND_BptxAND 167 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND 458 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF2_AND 162 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG3_NotMinimumBiasHF2_OR_BptxAND 358 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym50_MinimumBiasHF2_OR_BptxAND 452 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_NotMinimumBiasHF2_AND_BptxAND 500 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG5_NotMinimumBiasHF2_AND_BptxAND 403 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF2_OR 169 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF2_AND_BptxAND 164 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym60_MinimumBiasHF2_OR_BptxAND 454 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_NotMinimumBiasHF2_OR_BptxAND 499 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG5_NotMinimumBiasHF2_OR_BptxAND 401 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND 459 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotMinimumBiasHF2_OR_BptxAND 170 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT65_ETTAsym70_MinimumBiasHF2_OR_BptxAND 466 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotETT80_MinimumBiasHF2_OR_BptxAND 482 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT50_ETTAsym55_MinimumBiasHF2_OR_BptxAND 453 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_NotMinimumBiasHF2_AND_BptxAND 27 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_MinimumBiasHF2_OR 163 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT60_ETTAsym65_MinimumBiasHF2_OR_BptxAND 465 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND 425 to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0 (29) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0_SQ (30) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu0_SQ_OS (31) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMu10_BptxAND (236) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_BptxAND (232) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_Centrality_40_100_BptxAND (250) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleMuOpen_Centrality_50_100_BptxAND shadowed ratio 83.3 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleJet44_Centrality_50_100_BptxAND shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet44_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_SingleJet44_FWD_Centrality_50_100_BptxAND shadowed ratio 60.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleJet56_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet56_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleJet64_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet64_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleJet8_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet8_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_SingleJet16_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet16_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------ L1_Centrality_30_100 shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet28_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_SingleJet28_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +------- L1_SingleJet36_FWD_Centrality_30_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-------- L1_SingleJet36_FWD_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet48_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet56_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet60_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet64_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet8_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleJet16And8_MidEta2p7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleEG21_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleJet20And12_MidEta2p7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet16_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleJet20And8_MidEta2p7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleEG3_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleJet28And16_MidEta2p7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet24_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet40_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet28_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet32_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleEG7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleEG15_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleJet36_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_DoubleJet16And12_MidEta2p7_Centrality_50_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_Centrality_50_100 shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet40_Centrality_50_100_BptxAND 301 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet28_Centrality_50_100_BptxAND 298 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_Centrality_50_100 173 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet60_Centrality_50_100_BptxAND 305 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet8_FWD_Centrality_50_100_BptxAND 316 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_Centrality_30_100 172 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet28_FWD_Centrality_50_100_BptxAND 318 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet44_Centrality_50_100_BptxAND 302 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet16And8_MidEta2p7_Centrality_50_100_BptxAND 336 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet28_FWD_Centrality_30_100_BptxAND 310 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG21_Centrality_50_100_BptxAND 371 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet32_Centrality_50_100_BptxAND 299 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet64_Centrality_50_100_BptxAND 306 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG7_Centrality_50_100_BptxAND 369 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet44_FWD_Centrality_50_100_BptxAND 320 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet20And12_MidEta2p7_Centrality_50_100_BptxAND 339 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet16_Centrality_50_100_BptxAND 296 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet44_FWD_Centrality_30_100_BptxAND 312 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet48_Centrality_50_100_BptxAND 303 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet20And8_MidEta2p7_Centrality_50_100_BptxAND 338 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet64_FWD_Centrality_50_100_BptxAND 322 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_Centrality_50_100_BptxAND 370 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet16_FWD_Centrality_50_100_BptxAND 317 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG3_Centrality_50_100_BptxAND 368 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet64_FWD_Centrality_30_100_BptxAND 314 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleMuOpen_Centrality_50_100_BptxAND 251 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet16_FWD_Centrality_30_100_BptxAND 309 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet36_Centrality_50_100_BptxAND 300 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet56_Centrality_50_100_BptxAND 304 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet28And16_MidEta2p7_Centrality_50_100_BptxAND 340 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet8_FWD_Centrality_30_100_BptxAND 308 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet24_Centrality_50_100_BptxAND 297 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet36_FWD_Centrality_50_100_BptxAND 319 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet56_FWD_Centrality_50_100_BptxAND 321 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet8_Centrality_50_100_BptxAND 295 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet36_FWD_Centrality_30_100_BptxAND 311 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet56_FWD_Centrality_30_100_BptxAND 313 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleJet16And12_MidEta2p7_Centrality_50_100_BptxAND 337 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_OS_BptxAND (233) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleMuOpen_SS_BptxAND (234) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu12_SingleEG7_BptxAND (228) to module 5
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu7_SingleEG7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleMu7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu12_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_SingleEG7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG7_SingleJet32_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG7_SingleJet40_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG7_SingleJet32_MidEta2p7_BptxAND 376 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG7_SingleJet40_MidEta2p7_BptxAND 377 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu7_BptxAND 184 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu12_BptxAND 185 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu7_SingleEG7_BptxAND 224 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG7_BptxAND 346 to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu3_SingleEG12_BptxAND (216) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_SingleEG20_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG12_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_SingleMu3_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_SingleEG30_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG30_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_SingleJet28_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_SingleJet32_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG12_SingleJet32_MidEta2p7_BptxAND shadowed ratio 75.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_SingleJet40_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG12_SingleJet40_MidEta2p7_BptxAND shadowed ratio 75.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu5_SingleEG12_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleMu5_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu7_SingleEG12_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu3_Centrality_80_100_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleMu3_Centrality_70_100_BptxAND shadowed ratio 60.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG12_SingleJet40_MidEta2p7_BptxAND 383 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_SingleJet28_MidEta2p7_BptxAND 212 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG12_BptxAND 347 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_BptxAND 182 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu7_SingleEG12_BptxAND 226 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_SingleJet32_MidEta2p7_BptxAND 213 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu5_BptxAND 183 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG30_BptxAND 350 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_SingleJet40_MidEta2p7_BptxAND 214 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_SingleEG20_BptxAND 218 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_Centrality_70_100_BptxAND 190 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu5_SingleEG12_BptxAND 221 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_Centrality_80_100_BptxAND 192 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG12_SingleJet32_MidEta2p7_BptxAND 382 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu3_SingleEG30_BptxAND 219 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu5_SingleEG10_BptxAND (220) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu5_SingleEG15_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG15_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu5_SingleEG20_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu7_SingleEG10_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu5_SingleEG15_BptxAND 222 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_BptxAND 348 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu7_SingleEG10_BptxAND 225 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu5_SingleEG20_BptxAND 223 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu7_SingleEG15_BptxAND (227) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMuOpen_SingleEG15_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleMuOpen_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG15_SingleJet28_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG15_SingleJet44_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG15_SingleJet56_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG15_SingleJet60_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_SingleJet44_MidEta2p7_BptxAND 389 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_SingleEG15_BptxAND 217 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_SingleJet28_MidEta2p7_BptxAND 388 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_SingleJet56_MidEta2p7_BptxAND 390 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG15_SingleJet60_MidEta2p7_BptxAND 391 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_BptxAND 180 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuOpen_SingleJet28_MidEta2p7_BptxAND (208) to module 5
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMuOpen_SingleJet44_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMuOpen_SingleJet56_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMuOpen_SingleJet64_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG5_SingleJet28_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_SingleEG5_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG5_SingleJet28_MidEta2p7_BptxAND 373 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_SingleJet44_MidEta2p7_BptxAND 209 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_SingleJet56_MidEta2p7_BptxAND 210 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG5_BptxAND 345 to module 5
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMuOpen_SingleJet64_MidEta2p7_BptxAND 211 to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu0 (6) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_SingleMu0_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleMu0_BptxAND 181 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu0_BMTF (7) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu0_DQ (5) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu0_EMTF (9) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu0_OMTF (8) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu12 (15) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu16_BptxAND (186) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu22 (20) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu22_BMTF (21) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu22_EMTF (23) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu22_OMTF (22) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu3 (10) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu3Open_BptxAND (11) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu5 (12) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMu7 (14) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuCosmics (0) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuCosmics_BMTF (1) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuCosmics_EMTF (3) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuCosmics_OMTF (2) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleMuOpen (4) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleEG10_BptxAND (399) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleEG2 (43) to module 5
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleEG2_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG2_BptxAND 396 to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleEG5 (44) to module 5
+2020-02-11 12:08:38 INFO :  +-- L1_DoubleEG5_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_DoubleEG5_BptxAND 397 to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleEG8_BptxAND (398) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleJet16And12_MidEta2p7_BptxAND (325) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleJet16And8_MidEta2p7_BptxAND (324) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleJet20And12_MidEta2p7_BptxAND (327) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleJet20And8_MidEta2p7_BptxAND (326) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_DoubleJet28And16_MidEta2p7_BptxAND (328) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG5_SingleJet32_MidEta2p7_BptxAND (374) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG5_SingleJet40_MidEta2p7_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG5_SingleJet40_MidEta2p7_BptxAND 375 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet120_FWD3p0 (65) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet16_FWD_BptxAND (275) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet28_FWD_BptxAND (276) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet35_FWD3p0 (62) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet36_FWD_BptxAND (277) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet44_FWD_BptxAND (278) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet56_FWD_BptxAND (279) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet60_FWD3p0 (63) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet64_FWD_BptxAND (280) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet8_FWD_BptxAND (274) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG10er2p5 (39) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG15er2p5 (40) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG21_BptxAND (349) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG26er2p5 (41) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG3 (34) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_SingleEG3_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleEG3_BptxAND 344 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG5 (35) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG50 (36) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleEG8er2p5 (38) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleIsoEG12_BptxAND (354) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleIsoEG15_BptxAND (355) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleIsoEG21_BptxAND (356) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleIsoEG3_BptxAND (352) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleIsoEG7_BptxAND (353) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet120 (52) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet120er2p5 (57) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet16_BptxAND (260) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet200 (54) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet24_BptxAND (261) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet28_BptxAND (262) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet32_BptxAND (263) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet35 (49) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet35er2p5 (56) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet36_BptxAND (264) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet40_BptxAND (265) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet44_BptxAND (266) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet48_BptxAND (267) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet56_BptxAND (268) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet60 (50) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_SingleJet60_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet60_BptxAND 269 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet60er2p5 (59) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet64_BptxAND (270) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet72_BptxAND (271) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet8 (48) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_SingleJet8_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SingleJet8_BptxAND 259 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet80_BptxAND (272) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_SingleJet90 (51) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETT35_NotETT80_BptxAND (472) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_ETT40_NotETT95_BptxAND (473) to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_ETT45_NotETT110_BptxAND (474) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_ETT50_NotETT120_BptxAND (475) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETT55_NotETT130_BptxAND (476) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_ETT5_ETTAsym60_BptxAND (438) to module 3
+2020-02-11 12:08:38 INFO :  +-- L1_ETT5_ETTAsym70_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ETTAsym60_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_ETTAsym70_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_ETT5_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_ETT5_ETTAsym80_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_ETTAsym80_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +-- L1_ETT5_NotETT30_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_ETTAsym80_BptxAND 440 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym80_BptxAND 417 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym70_BptxAND 416 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym60_BptxAND 415 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_BptxAND 432 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_NotETT30_BptxAND 471 to module 3
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETT5_ETTAsym70_BptxAND 439 to module 3
+2020-02-11 12:08:38 INFO :  . adding L1_ETMHF100 (84) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETT2000 (80) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_ETT5 (77) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETTAsym40 (407) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_ETTAsym40_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym40_BptxAND 413 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETTAsym50 (408) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_ETTAsym50_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ETTAsym50_BptxAND 414 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETTAsym60 (409) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETTAsym70 (410) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ETTAsym80 (411) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_HTT120er (69) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_HTT200er (70) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_HTT280er (71) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_HTT360er (72) to module 5
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_AND_Ref1_VME (133) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_AND_Ref3_VME (134) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_AND_Ref4_VME (135) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_BeamGas_B1_VME (138) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_BeamGas_B2_VME (139) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_BeamGas_Ref1_VME (136) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_BeamGas_Ref2_VME (137) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_NotOR_VME (129) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_OR_Ref3_VME (130) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_OR_Ref4_VME (131) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BPTX_RefAND_VME (132) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BptxMinus (113) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_BptxMinus_NotBptxPlus shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  +--- L1_BptxXOR shadowed ratio 100.0 %
+2020-02-11 12:08:38 INFO :  +---- L1_BptxPlus_NotBptxMinus shadowed ratio 100.0 %
+2020-02-11 12:08:38 INFO :  +----- L1_BptxPlus shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_BptxXOR 111 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_BptxPlus_NotBptxMinus 114 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_BptxPlus 112 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_BptxMinus_NotBptxPlus 115 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_BptxOR (109) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_NotBptxOR shadowed ratio 100.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_NotBptxOR 110 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_Castor1 (495) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_CastorHighJet (505) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_CastorHighJet_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorHighJet_BptxAND 506 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_CastorMediumJet (496) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_CastorMediumJet_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMediumJet_BptxAND 497 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_CastorMuon (503) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_CastorMuon_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_CastorMuon_BptxAND 504 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_Centrality_Saturation (176) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_FirstBunchAfterTrain (122) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_LastBunchInTrain shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +--- L1_SecondLastBunchInTrain shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_LastBunchInTrain 121 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SecondLastBunchInTrain 124 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_FirstBunchBeforeTrain (123) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_FirstBunchInTrain shadowed ratio 66.7 %
+2020-02-11 12:08:38 INFO :  +--- L1_SecondBunchInTrain shadowed ratio 57.1 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_SecondBunchInTrain 120 to module 4
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_FirstBunchInTrain 119 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_FirstCollisionInOrbit (127) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_FirstCollisionInTrain (126) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_IsolatedBunch (118) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_LastCollisionInTrain (125) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_TOTEM_1 (91) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_TOTEM_2 (92) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_TOTEM_3 (93) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_TOTEM_4 (94) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_UnpairedBunchBptxMinus (117) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_UnpairedBunchBptxPlus (116) to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ZDCM (95) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_ZDCM_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDCM_BptxAND 97 to module 4
+2020-02-11 12:08:38 INFO :  . adding L1_ZDCP (96) to module 4
+2020-02-11 12:08:38 INFO :  +-- L1_ZDCP_BptxAND shadowed ratio 50.0 %
+2020-02-11 12:08:38 INFO :  ... adding shadowed L1_ZDCP_BptxAND 98 to module 4
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : | Detailed distribition on 6 modules, shadow ratio: 0.5                       |
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : |------------|----------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : | Module     | Algorithm                                                      |
+2020-02-11 12:08:38 INFO : | ID | Index | Index | Name                                                   |
+2020-02-11 12:08:38 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |  0 |     0 |   384 | L1_SingleEG12_SingleJet28_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  0 |     1 |   108 | L1_ZeroBias_copy                                       |
+2020-02-11 12:08:38 INFO : |  0 |     2 |   107 | L1_ZeroBias                                            |
+2020-02-11 12:08:38 INFO : |  0 |     3 |   106 | L1_AlwaysTrue                                          |
+2020-02-11 12:08:38 INFO : |  0 |     4 |   394 | L1_SingleEG15_SingleJet56_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  0 |     5 |   238 | L1_DoubleMuOpen_MaxDr2p0_BptxAND                       |
+2020-02-11 12:08:38 INFO : |  1 |     0 |   385 | L1_SingleEG12_SingleJet44_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  1 |     1 |   395 | L1_SingleEG15_SingleJet60_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  1 |     2 |   239 | L1_DoubleMuOpen_MaxDr2p0_OS_BptxAND                    |
+2020-02-11 12:08:38 INFO : |  2 |     0 |   386 | L1_SingleEG12_SingleJet56_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  2 |     1 |   378 | L1_SingleEG7_SingleJet28_MidEta2p7_MinDr0p4_Bpt...     |
+2020-02-11 12:08:38 INFO : |  2 |     2 |   240 | L1_DoubleMuOpen_MaxDr3p5                               |
+2020-02-11 12:08:38 INFO : |  2 |     3 |   241 | L1_DoubleMuOpen_MaxDr3p5_BptxAND                       |
+2020-02-11 12:08:38 INFO : |  3 |     0 |   387 | L1_SingleEG12_SingleJet60_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  3 |     1 |   379 | L1_SingleEG7_SingleJet44_MidEta2p7_MinDr0p4_Bpt...     |
+2020-02-11 12:08:38 INFO : |  3 |     2 |   253 | L1_DoubleMu0_Centrality_10_100_MinimumBiasHF1_A...     |
+2020-02-11 12:08:38 INFO : |  3 |     3 |   255 | L1_DoubleMu0_Centrality_50_100_MinimumBiasHF1_A...     |
+2020-02-11 12:08:38 INFO : |  3 |     4 |   254 | L1_DoubleMu0_Centrality_30_100_MinimumBiasHF1_A...     |
+2020-02-11 12:08:38 INFO : |  3 |     5 |   285 | L1_SingleJet28_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |     6 |   292 | L1_SingleJet60_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |     7 |   128 | L1_FirstCollisionInOrbit_Centrality30_100_BptxAND      |
+2020-02-11 12:08:38 INFO : |  3 |     8 |   174 | L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND        |
+2020-02-11 12:08:38 INFO : |  3 |     9 |   289 | L1_SingleJet44_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    10 |   330 | L1_DoubleJet16And8_MidEta2p7_Centrality_30_100_...     |
+2020-02-11 12:08:38 INFO : |  3 |    11 |   366 | L1_SingleEG21_Centrality_30_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    12 |   175 | L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND        |
+2020-02-11 12:08:38 INFO : |  3 |    13 |   286 | L1_SingleJet32_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    14 |   293 | L1_SingleJet64_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    15 |   364 | L1_SingleEG7_Centrality_30_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  3 |    16 |   333 | L1_DoubleJet20And12_MidEta2p7_Centrality_30_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    17 |   283 | L1_SingleJet16_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    18 |   249 | L1_DoubleMuOpen_Centrality_30_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  3 |    19 |   290 | L1_SingleJet48_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    20 |   248 | L1_DoubleMuOpen_Centrality_10_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  3 |    21 |   332 | L1_DoubleJet20And8_MidEta2p7_Centrality_30_100_...     |
+2020-02-11 12:08:38 INFO : |  3 |    22 |   365 | L1_SingleEG15_Centrality_30_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    23 |   363 | L1_SingleEG3_Centrality_30_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  3 |    24 |   287 | L1_SingleJet36_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    25 |   291 | L1_SingleJet56_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    26 |   334 | L1_DoubleJet28And16_MidEta2p7_Centrality_30_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    27 |   288 | L1_SingleJet40_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    28 |   284 | L1_SingleJet24_Centrality_30_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    29 |   331 | L1_DoubleJet16And12_MidEta2p7_Centrality_30_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    30 |   282 | L1_SingleJet8_Centrality_30_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    31 |   250 | L1_DoubleMuOpen_Centrality_40_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  3 |    32 |   301 | L1_SingleJet40_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    33 |   298 | L1_SingleJet28_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    34 |   173 | L1_Centrality_50_100                                   |
+2020-02-11 12:08:38 INFO : |  3 |    35 |   305 | L1_SingleJet60_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    36 |   316 | L1_SingleJet8_FWD_Centrality_50_100_BptxAND            |
+2020-02-11 12:08:38 INFO : |  3 |    37 |   172 | L1_Centrality_30_100                                   |
+2020-02-11 12:08:38 INFO : |  3 |    38 |   318 | L1_SingleJet28_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    39 |   302 | L1_SingleJet44_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    40 |   336 | L1_DoubleJet16And8_MidEta2p7_Centrality_50_100_...     |
+2020-02-11 12:08:38 INFO : |  3 |    41 |   310 | L1_SingleJet28_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    42 |   371 | L1_SingleEG21_Centrality_50_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    43 |   299 | L1_SingleJet32_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    44 |   306 | L1_SingleJet64_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    45 |   369 | L1_SingleEG7_Centrality_50_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  3 |    46 |   320 | L1_SingleJet44_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    47 |   339 | L1_DoubleJet20And12_MidEta2p7_Centrality_50_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    48 |   296 | L1_SingleJet16_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    49 |   312 | L1_SingleJet44_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    50 |   303 | L1_SingleJet48_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    51 |   338 | L1_DoubleJet20And8_MidEta2p7_Centrality_50_100_...     |
+2020-02-11 12:08:38 INFO : |  3 |    52 |   322 | L1_SingleJet64_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    53 |   370 | L1_SingleEG15_Centrality_50_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    54 |   317 | L1_SingleJet16_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    55 |   368 | L1_SingleEG3_Centrality_50_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  3 |    56 |   314 | L1_SingleJet64_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    57 |   251 | L1_DoubleMuOpen_Centrality_50_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  3 |    58 |   309 | L1_SingleJet16_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    59 |   300 | L1_SingleJet36_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    60 |   304 | L1_SingleJet56_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    61 |   340 | L1_DoubleJet28And16_MidEta2p7_Centrality_50_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    62 |   308 | L1_SingleJet8_FWD_Centrality_30_100_BptxAND            |
+2020-02-11 12:08:38 INFO : |  3 |    63 |   297 | L1_SingleJet24_Centrality_50_100_BptxAND               |
+2020-02-11 12:08:38 INFO : |  3 |    64 |   319 | L1_SingleJet36_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    65 |   321 | L1_SingleJet56_FWD_Centrality_50_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    66 |   295 | L1_SingleJet8_Centrality_50_100_BptxAND                |
+2020-02-11 12:08:38 INFO : |  3 |    67 |   311 | L1_SingleJet36_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    68 |   313 | L1_SingleJet56_FWD_Centrality_30_100_BptxAND           |
+2020-02-11 12:08:38 INFO : |  3 |    69 |   337 | L1_DoubleJet16And12_MidEta2p7_Centrality_50_100...     |
+2020-02-11 12:08:38 INFO : |  3 |    70 |   220 | L1_SingleMu5_SingleEG10_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  3 |    71 |   222 | L1_SingleMu5_SingleEG15_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  3 |    72 |   348 | L1_SingleEG15_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  3 |    73 |   225 | L1_SingleMu7_SingleEG10_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  3 |    74 |   223 | L1_SingleMu5_SingleEG20_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  3 |    75 |     6 | L1_SingleMu0                                           |
+2020-02-11 12:08:38 INFO : |  3 |    76 |   181 | L1_SingleMu0_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  3 |    77 |     9 | L1_SingleMu0_EMTF                                      |
+2020-02-11 12:08:38 INFO : |  3 |    78 |    20 | L1_SingleMu22                                          |
+2020-02-11 12:08:38 INFO : |  3 |    79 |    22 | L1_SingleMu22_OMTF                                     |
+2020-02-11 12:08:38 INFO : |  3 |    80 |    14 | L1_SingleMu7                                           |
+2020-02-11 12:08:38 INFO : |  3 |    81 |     0 | L1_SingleMuCosmics                                     |
+2020-02-11 12:08:38 INFO : |  3 |    82 |     2 | L1_SingleMuCosmics_OMTF                                |
+2020-02-11 12:08:38 INFO : |  3 |    83 |   324 | L1_DoubleJet16And8_MidEta2p7_BptxAND                   |
+2020-02-11 12:08:38 INFO : |  3 |    84 |   327 | L1_DoubleJet20And12_MidEta2p7_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  3 |    85 |   326 | L1_DoubleJet20And8_MidEta2p7_BptxAND                   |
+2020-02-11 12:08:38 INFO : |  3 |    86 |   328 | L1_DoubleJet28And16_MidEta2p7_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  3 |    87 |   374 | L1_SingleEG5_SingleJet32_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  3 |    88 |   375 | L1_SingleEG5_SingleJet40_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  3 |    89 |    62 | L1_SingleJet35_FWD3p0                                  |
+2020-02-11 12:08:38 INFO : |  3 |    90 |   279 | L1_SingleJet56_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  3 |    91 |    63 | L1_SingleJet60_FWD3p0                                  |
+2020-02-11 12:08:38 INFO : |  3 |    92 |    39 | L1_SingleEG10er2p5                                     |
+2020-02-11 12:08:38 INFO : |  3 |    93 |   349 | L1_SingleEG21_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  3 |    94 |    41 | L1_SingleEG26er2p5                                     |
+2020-02-11 12:08:38 INFO : |  3 |    95 |    38 | L1_SingleEG8er2p5                                      |
+2020-02-11 12:08:38 INFO : |  3 |    96 |   356 | L1_SingleIsoEG21_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  3 |    97 |    52 | L1_SingleJet120                                        |
+2020-02-11 12:08:38 INFO : |  3 |    98 |    54 | L1_SingleJet200                                        |
+2020-02-11 12:08:38 INFO : |  3 |    99 |   263 | L1_SingleJet32_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   100 |    49 | L1_SingleJet35                                         |
+2020-02-11 12:08:38 INFO : |  3 |   101 |   265 | L1_SingleJet40_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   102 |   266 | L1_SingleJet44_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   103 |   267 | L1_SingleJet48_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   104 |   268 | L1_SingleJet56_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   105 |    50 | L1_SingleJet60                                         |
+2020-02-11 12:08:38 INFO : |  3 |   106 |   269 | L1_SingleJet60_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   107 |    59 | L1_SingleJet60er2p5                                    |
+2020-02-11 12:08:38 INFO : |  3 |   108 |    48 | L1_SingleJet8                                          |
+2020-02-11 12:08:38 INFO : |  3 |   109 |   259 | L1_SingleJet8_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  3 |   110 |   272 | L1_SingleJet80_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  3 |   111 |   473 | L1_ETT40_NotETT95_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  3 |   112 |   438 | L1_ETT5_ETTAsym60_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  3 |   113 |   440 | L1_ETT5_ETTAsym80_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  3 |   114 |   417 | L1_ETTAsym80_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  3 |   115 |   416 | L1_ETTAsym70_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  3 |   116 |   415 | L1_ETTAsym60_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  3 |   117 |   432 | L1_ETT5_BptxAND                                        |
+2020-02-11 12:08:38 INFO : |  3 |   118 |   471 | L1_ETT5_NotETT30_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  3 |   119 |   439 | L1_ETT5_ETTAsym70_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  4 |     0 |   392 | L1_SingleEG15_SingleJet28_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  4 |     1 |   380 | L1_SingleEG7_SingleJet56_MidEta2p7_MinDr0p4_Bpt...     |
+2020-02-11 12:08:38 INFO : |  4 |     2 |   243 | L1_DoubleMu0_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |     3 |   194 | L1_SingleMu5_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |     4 |   421 | L1_ETTAsym60_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |     5 |   189 | L1_SingleMuOpen_Centrality_70_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  4 |     6 |   141 | L1_NotMinimumBiasHF0_AND_BptxAND                       |
+2020-02-11 12:08:38 INFO : |  4 |     7 |   480 | L1_NotETT95_MinimumBiasHF1_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  4 |     8 |   191 | L1_SingleMuOpen_Centrality_80_100_BptxAND              |
+2020-02-11 12:08:38 INFO : |  4 |     9 |   197 | L1_SingleMu16_MinimumBiasHF1_AND_BptxAND               |
+2020-02-11 12:08:38 INFO : |  4 |    10 |    99 | L1_ZDCM_ZDCP_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |    11 |   145 | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_1               |
+2020-02-11 12:08:38 INFO : |  4 |    12 |   205 | L1_SingleMuOpen_Centrality_70_100_MinimumBiasHF...     |
+2020-02-11 12:08:38 INFO : |  4 |    13 |   448 | L1_ETT10_ETTAsym50_MinimumBiasHF1_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  4 |    14 |   488 | L1_NotETT100_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    15 |   442 | L1_ETT8_ETTAsym50_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    16 |   146 | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_2               |
+2020-02-11 12:08:38 INFO : |  4 |    17 |   449 | L1_ETT10_ETTAsym55_MinimumBiasHF1_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  4 |    18 |   491 | L1_NotETT110_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    19 |   206 | L1_SingleMuOpen_Centrality_80_100_MinimumBiasHF...     |
+2020-02-11 12:08:38 INFO : |  4 |    20 |   443 | L1_ETT8_ETTAsym55_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    21 |   422 | L1_ETTAsym70_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    22 |   147 | L1_NotMinimumBiasHF0_AND_BptxAND_TOTEM_4               |
+2020-02-11 12:08:38 INFO : |  4 |    23 |   142 | L1_NotMinimumBiasHF0_OR_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    24 |   507 | L1_CastorHighJet_MinimumBiasHF1_OR_BptxAND             |
+2020-02-11 12:08:38 INFO : |  4 |    25 |   444 | L1_ETT8_ETTAsym60_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    26 |   140 | L1_MinimumBiasHF0_AND_BptxAND                          |
+2020-02-11 12:08:38 INFO : |  4 |    27 |   158 | L1_NotMinimumBiasHF1_AND                               |
+2020-02-11 12:08:38 INFO : |  4 |    28 |   152 | L1_MinimumBiasHF1_AND                                  |
+2020-02-11 12:08:38 INFO : |  4 |    29 |   489 | L1_NotETT150_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    30 |   445 | L1_ETT8_ETTAsym65_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    31 |   148 | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_1                |
+2020-02-11 12:08:38 INFO : |  4 |    32 |   102 | L1_ZDC_AND_OR_MinimumBiasHF1_AND_BptxAND               |
+2020-02-11 12:08:38 INFO : |  4 |    33 |   436 | L1_ETT5_ETTAsym40_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  4 |    34 |   493 | L1_NotETT150_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    35 |   446 | L1_ETT8_ETTAsym70_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    36 |   195 | L1_SingleMu7_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    37 |   149 | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_2                |
+2020-02-11 12:08:38 INFO : |  4 |    38 |   510 | L1_CastorHighJet_OR_MinimumBiasHF1_AND_BptxAND         |
+2020-02-11 12:08:38 INFO : |  4 |    39 |   103 | L1_ZDC_AND_OR_MinimumBiasHF1_OR_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    40 |   193 | L1_SingleMu3_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    41 |   447 | L1_ETT8_ETTAsym80_MinimumBiasHF1_OR_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    42 |   423 | L1_ETTAsym80_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    43 |   143 | L1_MinimumBiasHF0_OR_BptxAND                           |
+2020-02-11 12:08:38 INFO : |  4 |    44 |   150 | L1_NotMinimumBiasHF0_OR_BptxAND_TOTEM_4                |
+2020-02-11 12:08:38 INFO : |  4 |    45 |   490 | L1_NotETT200_MinimumBiasHF1_AND_BptxAND                |
+2020-02-11 12:08:38 INFO : |  4 |    46 |   159 | L1_NotMinimumBiasHF1_OR                                |
+2020-02-11 12:08:38 INFO : |  4 |    47 |   153 | L1_MinimumBiasHF1_OR                                   |
+2020-02-11 12:08:38 INFO : |  4 |    48 |   485 | L1_NotETT20_MinimumBiasHF1_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    49 |   154 | L1_MinimumBiasHF1_AND_BptxAND                          |
+2020-02-11 12:08:38 INFO : |  4 |    50 |   100 | L1_ZDC_OR_OR_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    51 |   160 | L1_NotMinimumBiasHF1_OR_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    52 |   419 | L1_ETTAsym40_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    53 |   478 | L1_NotETT20_MinimumBiasHF1_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  4 |    54 |   235 | L1_DoubleMu0_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |    55 |   157 | L1_MinimumBiasHF1_AND_OR_ETT10_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    56 |   498 | L1_CastorMediumJet_MinimumBiasHF1_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  4 |    57 |   486 | L1_NotETT80_MinimumBiasHF1_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    58 |   155 | L1_MinimumBiasHF1_OR_BptxAND                           |
+2020-02-11 12:08:38 INFO : |  4 |    59 |   196 | L1_SingleMu12_MinimumBiasHF1_AND_BptxAND               |
+2020-02-11 12:08:38 INFO : |  4 |    60 |   433 | L1_ETT5_MinimumBiasHF1_OR_BptxAND                      |
+2020-02-11 12:08:38 INFO : |  4 |    61 |   479 | L1_NotETT80_MinimumBiasHF1_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  4 |    62 |   156 | L1_MinimumBiasHF1_XOR_BptxAND                          |
+2020-02-11 12:08:38 INFO : |  4 |    63 |   420 | L1_ETTAsym50_MinimumBiasHF1_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    64 |   502 | L1_CastorMediumJet_SingleEG5_MinimumBiasHF1_OR_...     |
+2020-02-11 12:08:38 INFO : |  4 |    65 |   487 | L1_NotETT95_MinimumBiasHF1_AND_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    66 |   501 | L1_CastorMediumJet_SingleMu0_MinimumBiasHF1_OR_...     |
+2020-02-11 12:08:38 INFO : |  4 |    67 |    31 | L1_DoubleMu0_SQ_OS                                     |
+2020-02-11 12:08:38 INFO : |  4 |    68 |   232 | L1_DoubleMuOpen_BptxAND                                |
+2020-02-11 12:08:38 INFO : |  4 |    69 |   234 | L1_DoubleMuOpen_SS_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |    70 |   216 | L1_SingleMu3_SingleEG12_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    71 |   383 | L1_SingleEG12_SingleJet40_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    72 |   212 | L1_SingleMu3_SingleJet28_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  4 |    73 |   347 | L1_SingleEG12_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  4 |    74 |   182 | L1_SingleMu3_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |    75 |   226 | L1_SingleMu7_SingleEG12_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    76 |   213 | L1_SingleMu3_SingleJet32_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  4 |    77 |   183 | L1_SingleMu5_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |    78 |   350 | L1_SingleEG30_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  4 |    79 |   214 | L1_SingleMu3_SingleJet40_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  4 |    80 |   218 | L1_SingleMu3_SingleEG20_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    81 |   190 | L1_SingleMu3_Centrality_70_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    82 |   221 | L1_SingleMu5_SingleEG12_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    83 |   192 | L1_SingleMu3_Centrality_80_100_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  4 |    84 |   382 | L1_SingleEG12_SingleJet32_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    85 |   219 | L1_SingleMu3_SingleEG30_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    86 |   227 | L1_SingleMu7_SingleEG15_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  4 |    87 |   389 | L1_SingleEG15_SingleJet44_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    88 |   217 | L1_SingleMuOpen_SingleEG15_BptxAND                     |
+2020-02-11 12:08:38 INFO : |  4 |    89 |   388 | L1_SingleEG15_SingleJet28_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    90 |   390 | L1_SingleEG15_SingleJet56_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    91 |   391 | L1_SingleEG15_SingleJet60_MidEta2p7_BptxAND            |
+2020-02-11 12:08:38 INFO : |  4 |    92 |   180 | L1_SingleMuOpen_BptxAND                                |
+2020-02-11 12:08:38 INFO : |  4 |    93 |     7 | L1_SingleMu0_BMTF                                      |
+2020-02-11 12:08:38 INFO : |  4 |    94 |     8 | L1_SingleMu0_OMTF                                      |
+2020-02-11 12:08:38 INFO : |  4 |    95 |    21 | L1_SingleMu22_BMTF                                     |
+2020-02-11 12:08:38 INFO : |  4 |    96 |    10 | L1_SingleMu3                                           |
+2020-02-11 12:08:38 INFO : |  4 |    97 |    11 | L1_SingleMu3Open_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  4 |    98 |     1 | L1_SingleMuCosmics_BMTF                                |
+2020-02-11 12:08:38 INFO : |  4 |    99 |     4 | L1_SingleMuOpen                                        |
+2020-02-11 12:08:38 INFO : |  4 |   100 |   399 | L1_DoubleEG10_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  4 |   101 |   325 | L1_DoubleJet16And12_MidEta2p7_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  4 |   102 |   275 | L1_SingleJet16_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |   103 |   277 | L1_SingleJet36_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |   104 |   280 | L1_SingleJet64_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |   105 |    40 | L1_SingleEG15er2p5                                     |
+2020-02-11 12:08:38 INFO : |  4 |   106 |    34 | L1_SingleEG3                                           |
+2020-02-11 12:08:38 INFO : |  4 |   107 |   344 | L1_SingleEG3_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |   108 |   354 | L1_SingleIsoEG12_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  4 |   109 |   352 | L1_SingleIsoEG3_BptxAND                                |
+2020-02-11 12:08:38 INFO : |  4 |   110 |    57 | L1_SingleJet120er2p5                                   |
+2020-02-11 12:08:38 INFO : |  4 |   111 |   261 | L1_SingleJet24_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  4 |   112 |    56 | L1_SingleJet35er2p5                                    |
+2020-02-11 12:08:38 INFO : |  4 |   113 |   270 | L1_SingleJet64_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  4 |   114 |    51 | L1_SingleJet90                                         |
+2020-02-11 12:08:38 INFO : |  4 |   115 |   475 | L1_ETT50_NotETT120_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |   116 |    84 | L1_ETMHF100                                            |
+2020-02-11 12:08:38 INFO : |  4 |   117 |    77 | L1_ETT5                                                |
+2020-02-11 12:08:38 INFO : |  4 |   118 |   407 | L1_ETTAsym40                                           |
+2020-02-11 12:08:38 INFO : |  4 |   119 |   413 | L1_ETTAsym40_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |   120 |   408 | L1_ETTAsym50                                           |
+2020-02-11 12:08:38 INFO : |  4 |   121 |   414 | L1_ETTAsym50_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  4 |   122 |   409 | L1_ETTAsym60                                           |
+2020-02-11 12:08:38 INFO : |  4 |   123 |   410 | L1_ETTAsym70                                           |
+2020-02-11 12:08:38 INFO : |  4 |   124 |   411 | L1_ETTAsym80                                           |
+2020-02-11 12:08:38 INFO : |  4 |   125 |    69 | L1_HTT120er                                            |
+2020-02-11 12:08:38 INFO : |  4 |   126 |    71 | L1_HTT280er                                            |
+2020-02-11 12:08:38 INFO : |  4 |   127 |   133 | L1_BPTX_AND_Ref1_VME                                   |
+2020-02-11 12:08:38 INFO : |  4 |   128 |   134 | L1_BPTX_AND_Ref3_VME                                   |
+2020-02-11 12:08:38 INFO : |  4 |   129 |   135 | L1_BPTX_AND_Ref4_VME                                   |
+2020-02-11 12:08:38 INFO : |  4 |   130 |   138 | L1_BPTX_BeamGas_B1_VME                                 |
+2020-02-11 12:08:38 INFO : |  4 |   131 |   139 | L1_BPTX_BeamGas_B2_VME                                 |
+2020-02-11 12:08:38 INFO : |  4 |   132 |   136 | L1_BPTX_BeamGas_Ref1_VME                               |
+2020-02-11 12:08:38 INFO : |  4 |   133 |   137 | L1_BPTX_BeamGas_Ref2_VME                               |
+2020-02-11 12:08:38 INFO : |  4 |   134 |   129 | L1_BPTX_NotOR_VME                                      |
+2020-02-11 12:08:38 INFO : |  4 |   135 |   130 | L1_BPTX_OR_Ref3_VME                                    |
+2020-02-11 12:08:38 INFO : |  4 |   136 |   131 | L1_BPTX_OR_Ref4_VME                                    |
+2020-02-11 12:08:38 INFO : |  4 |   137 |   132 | L1_BPTX_RefAND_VME                                     |
+2020-02-11 12:08:38 INFO : |  4 |   138 |   113 | L1_BptxMinus                                           |
+2020-02-11 12:08:38 INFO : |  4 |   139 |   111 | L1_BptxXOR                                             |
+2020-02-11 12:08:38 INFO : |  4 |   140 |   114 | L1_BptxPlus_NotBptxMinus                               |
+2020-02-11 12:08:38 INFO : |  4 |   141 |   112 | L1_BptxPlus                                            |
+2020-02-11 12:08:38 INFO : |  4 |   142 |   115 | L1_BptxMinus_NotBptxPlus                               |
+2020-02-11 12:08:38 INFO : |  4 |   143 |   109 | L1_BptxOR                                              |
+2020-02-11 12:08:38 INFO : |  4 |   144 |   110 | L1_NotBptxOR                                           |
+2020-02-11 12:08:38 INFO : |  4 |   145 |   495 | L1_Castor1                                             |
+2020-02-11 12:08:38 INFO : |  4 |   146 |   505 | L1_CastorHighJet                                       |
+2020-02-11 12:08:38 INFO : |  4 |   147 |   506 | L1_CastorHighJet_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  4 |   148 |   496 | L1_CastorMediumJet                                     |
+2020-02-11 12:08:38 INFO : |  4 |   149 |   497 | L1_CastorMediumJet_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  4 |   150 |   503 | L1_CastorMuon                                          |
+2020-02-11 12:08:38 INFO : |  4 |   151 |   504 | L1_CastorMuon_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  4 |   152 |   176 | L1_Centrality_Saturation                               |
+2020-02-11 12:08:38 INFO : |  4 |   153 |   122 | L1_FirstBunchAfterTrain                                |
+2020-02-11 12:08:38 INFO : |  4 |   154 |   121 | L1_LastBunchInTrain                                    |
+2020-02-11 12:08:38 INFO : |  4 |   155 |   124 | L1_SecondLastBunchInTrain                              |
+2020-02-11 12:08:38 INFO : |  4 |   156 |   123 | L1_FirstBunchBeforeTrain                               |
+2020-02-11 12:08:38 INFO : |  4 |   157 |   120 | L1_SecondBunchInTrain                                  |
+2020-02-11 12:08:38 INFO : |  4 |   158 |   119 | L1_FirstBunchInTrain                                   |
+2020-02-11 12:08:38 INFO : |  4 |   159 |   127 | L1_FirstCollisionInOrbit                               |
+2020-02-11 12:08:38 INFO : |  4 |   160 |   126 | L1_FirstCollisionInTrain                               |
+2020-02-11 12:08:38 INFO : |  4 |   161 |   118 | L1_IsolatedBunch                                       |
+2020-02-11 12:08:38 INFO : |  4 |   162 |   125 | L1_LastCollisionInTrain                                |
+2020-02-11 12:08:38 INFO : |  4 |   163 |    91 | L1_TOTEM_1                                             |
+2020-02-11 12:08:38 INFO : |  4 |   164 |    92 | L1_TOTEM_2                                             |
+2020-02-11 12:08:38 INFO : |  4 |   165 |    93 | L1_TOTEM_3                                             |
+2020-02-11 12:08:38 INFO : |  4 |   166 |    94 | L1_TOTEM_4                                             |
+2020-02-11 12:08:38 INFO : |  4 |   167 |   117 | L1_UnpairedBunchBptxMinus                              |
+2020-02-11 12:08:38 INFO : |  4 |   168 |   116 | L1_UnpairedBunchBptxPlus                               |
+2020-02-11 12:08:38 INFO : |  4 |   169 |    95 | L1_ZDCM                                                |
+2020-02-11 12:08:38 INFO : |  4 |   170 |    97 | L1_ZDCM_BptxAND                                        |
+2020-02-11 12:08:38 INFO : |  4 |   171 |    96 | L1_ZDCP                                                |
+2020-02-11 12:08:38 INFO : |  4 |   172 |    98 | L1_ZDCP_BptxAND                                        |
+2020-02-11 12:08:38 INFO : |  5 |     0 |   393 | L1_SingleEG15_SingleJet44_MidEta2p7_MinDr0p4_Bp...     |
+2020-02-11 12:08:38 INFO : |  5 |     1 |   381 | L1_SingleEG7_SingleJet60_MidEta2p7_MinDr0p4_Bpt...     |
+2020-02-11 12:08:38 INFO : |  5 |     2 |   246 | L1_DoubleMu0_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |     3 |   460 | L1_ETT50_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |     4 |   361 | L1_SingleEG5_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |     5 |   455 | L1_ETT50_ETTAsym65_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |     6 |   165 | L1_MinimumBiasHF2_OR_BptxAND                           |
+2020-02-11 12:08:38 INFO : |  5 |     7 |   359 | L1_SingleEG5_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |     8 |   456 | L1_ETT50_ETTAsym70_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |     9 |   483 | L1_NotETT95_MinimumBiasHF2_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  5 |    10 |   426 | L1_ETTAsym60_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    11 |   467 | L1_ETT65_ETTAsym80_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    12 |   461 | L1_ETT50_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |    13 |   245 | L1_DoubleMu0_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    14 |   457 | L1_ETT50_ETTAsym80_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    15 |   462 | L1_ETT50_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |    16 |   202 | L1_SingleMuOpen_NotMinimumBiasHF2_AND_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    17 |   492 | L1_NotETT110_MinimumBiasHF2_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  5 |    18 |   244 | L1_DoubleMuOpen_NotMinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    19 |   199 | L1_SingleMuOpen_NotMinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    20 |   464 | L1_ETT60_ETTAsym60_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    21 |   508 | L1_CastorHighJet_NotMinimumBiasHF2_AND_BptxAND         |
+2020-02-11 12:08:38 INFO : |  5 |    22 |   427 | L1_ETTAsym70_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    23 |   509 | L1_CastorHighJet_NotMinimumBiasHF2_OR_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    24 |   494 | L1_NotETT150_MinimumBiasHF2_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  5 |    25 |   437 | L1_ETT5_ETTAsym50_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  5 |    26 |   104 | L1_ZDC_AND_OR_MinimumBiasHF2_AND_BptxAND               |
+2020-02-11 12:08:38 INFO : |  5 |    27 |   511 | L1_CastorHighJet_OR_MinimumBiasHF2_AND_BptxAND         |
+2020-02-11 12:08:38 INFO : |  5 |    28 |   203 | L1_SingleMu0_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    29 |   105 | L1_ZDC_AND_OR_MinimumBiasHF2_OR_BptxAND                |
+2020-02-11 12:08:38 INFO : |  5 |    30 |   201 | L1_SingleMu3_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    31 |   402 | L1_DoubleEG2_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    32 |   200 | L1_SingleMu0_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    33 |   428 | L1_ETTAsym80_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    34 |   434 | L1_ETT5_NotMinimumBiasHF2_OR                           |
+2020-02-11 12:08:38 INFO : |  5 |    35 |   400 | L1_DoubleEG2_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    36 |   441 | L1_ETT5_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND         |
+2020-02-11 12:08:38 INFO : |  5 |    37 |   451 | L1_ETT50_ETTAsym40_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    38 |   101 | L1_ZDC_OR_OR_MinimumBiasHF2_OR_BptxAND                 |
+2020-02-11 12:08:38 INFO : |  5 |    39 |   166 | L1_NotMinimumBiasHF2_AND                               |
+2020-02-11 12:08:38 INFO : |  5 |    40 |   360 | L1_SingleEG3_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    41 |   481 | L1_NotETT20_MinimumBiasHF2_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  5 |    42 |   424 | L1_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    43 |   167 | L1_NotMinimumBiasHF2_AND_BptxAND                       |
+2020-02-11 12:08:38 INFO : |  5 |    44 |   458 | L1_ETT50_ETTAsym40_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |    45 |   162 | L1_MinimumBiasHF2_AND                                  |
+2020-02-11 12:08:38 INFO : |  5 |    46 |   358 | L1_SingleEG3_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    47 |   452 | L1_ETT50_ETTAsym50_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    48 |   500 | L1_CastorMediumJet_NotMinimumBiasHF2_AND_BptxAND       |
+2020-02-11 12:08:38 INFO : |  5 |    49 |   403 | L1_DoubleEG5_NotMinimumBiasHF2_AND_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    50 |   169 | L1_NotMinimumBiasHF2_OR                                |
+2020-02-11 12:08:38 INFO : |  5 |    51 |   164 | L1_MinimumBiasHF2_AND_BptxAND                          |
+2020-02-11 12:08:38 INFO : |  5 |    52 |   454 | L1_ETT50_ETTAsym60_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    53 |   499 | L1_CastorMediumJet_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |    54 |   401 | L1_DoubleEG5_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    55 |   459 | L1_ETT50_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND        |
+2020-02-11 12:08:38 INFO : |  5 |    56 |   170 | L1_NotMinimumBiasHF2_OR_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  5 |    57 |   466 | L1_ETT65_ETTAsym70_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    58 |   482 | L1_NotETT80_MinimumBiasHF2_OR_BptxAND                  |
+2020-02-11 12:08:38 INFO : |  5 |    59 |   453 | L1_ETT50_ETTAsym55_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    60 |    27 | L1_DoubleMuOpen_NotMinimumBiasHF2_AND_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    61 |   163 | L1_MinimumBiasHF2_OR                                   |
+2020-02-11 12:08:38 INFO : |  5 |    62 |   465 | L1_ETT60_ETTAsym65_MinimumBiasHF2_OR_BptxAND           |
+2020-02-11 12:08:38 INFO : |  5 |    63 |   425 | L1_ETTAsym50_NotMinimumBiasHF2_OR_BptxAND              |
+2020-02-11 12:08:38 INFO : |  5 |    64 |    29 | L1_DoubleMu0                                           |
+2020-02-11 12:08:38 INFO : |  5 |    65 |    30 | L1_DoubleMu0_SQ                                        |
+2020-02-11 12:08:38 INFO : |  5 |    66 |   236 | L1_DoubleMu10_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  5 |    67 |   233 | L1_DoubleMuOpen_OS_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  5 |    68 |   228 | L1_SingleMu12_SingleEG7_BptxAND                        |
+2020-02-11 12:08:38 INFO : |  5 |    69 |   376 | L1_SingleEG7_SingleJet32_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    70 |   377 | L1_SingleEG7_SingleJet40_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    71 |   184 | L1_SingleMu7_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    72 |   185 | L1_SingleMu12_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  5 |    73 |   224 | L1_SingleMu7_SingleEG7_BptxAND                         |
+2020-02-11 12:08:38 INFO : |  5 |    74 |   346 | L1_SingleEG7_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    75 |   208 | L1_SingleMuOpen_SingleJet28_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    76 |   373 | L1_SingleEG5_SingleJet28_MidEta2p7_BptxAND             |
+2020-02-11 12:08:38 INFO : |  5 |    77 |   209 | L1_SingleMuOpen_SingleJet44_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    78 |   210 | L1_SingleMuOpen_SingleJet56_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    79 |   345 | L1_SingleEG5_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    80 |   211 | L1_SingleMuOpen_SingleJet64_MidEta2p7_BptxAND          |
+2020-02-11 12:08:38 INFO : |  5 |    81 |     5 | L1_SingleMu0_DQ                                        |
+2020-02-11 12:08:38 INFO : |  5 |    82 |    15 | L1_SingleMu12                                          |
+2020-02-11 12:08:38 INFO : |  5 |    83 |   186 | L1_SingleMu16_BptxAND                                  |
+2020-02-11 12:08:38 INFO : |  5 |    84 |    23 | L1_SingleMu22_EMTF                                     |
+2020-02-11 12:08:38 INFO : |  5 |    85 |    12 | L1_SingleMu5                                           |
+2020-02-11 12:08:38 INFO : |  5 |    86 |     3 | L1_SingleMuCosmics_EMTF                                |
+2020-02-11 12:08:38 INFO : |  5 |    87 |    43 | L1_DoubleEG2                                           |
+2020-02-11 12:08:38 INFO : |  5 |    88 |   396 | L1_DoubleEG2_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    89 |    44 | L1_DoubleEG5                                           |
+2020-02-11 12:08:38 INFO : |  5 |    90 |   397 | L1_DoubleEG5_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    91 |   398 | L1_DoubleEG8_BptxAND                                   |
+2020-02-11 12:08:38 INFO : |  5 |    92 |    65 | L1_SingleJet120_FWD3p0                                 |
+2020-02-11 12:08:38 INFO : |  5 |    93 |   276 | L1_SingleJet28_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  5 |    94 |   278 | L1_SingleJet44_FWD_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  5 |    95 |   274 | L1_SingleJet8_FWD_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  5 |    96 |    35 | L1_SingleEG5                                           |
+2020-02-11 12:08:38 INFO : |  5 |    97 |    36 | L1_SingleEG50                                          |
+2020-02-11 12:08:38 INFO : |  5 |    98 |   355 | L1_SingleIsoEG15_BptxAND                               |
+2020-02-11 12:08:38 INFO : |  5 |    99 |   353 | L1_SingleIsoEG7_BptxAND                                |
+2020-02-11 12:08:38 INFO : |  5 |   100 |   260 | L1_SingleJet16_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  5 |   101 |   262 | L1_SingleJet28_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  5 |   102 |   264 | L1_SingleJet36_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  5 |   103 |   271 | L1_SingleJet72_BptxAND                                 |
+2020-02-11 12:08:38 INFO : |  5 |   104 |   472 | L1_ETT35_NotETT80_BptxAND                              |
+2020-02-11 12:08:38 INFO : |  5 |   105 |   474 | L1_ETT45_NotETT110_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  5 |   106 |   476 | L1_ETT55_NotETT130_BptxAND                             |
+2020-02-11 12:08:38 INFO : |  5 |   107 |    80 | L1_ETT2000                                             |
+2020-02-11 12:08:38 INFO : |  5 |   108 |    70 | L1_HTT200er                                            |
+2020-02-11 12:08:38 INFO : |  5 |   109 |    72 | L1_HTT360er                                            |
+2020-02-11 12:08:38 INFO : |----|-------|-------|--------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : | Condition distribution, sorted by weight (descending)                       |
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : | Name                                             | Modules                  |
+2020-02-11 12:08:38 INFO : |--------------------------------------------------|--------------------------|
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i150                         | 4                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i151                         | 5                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i152                         | 0                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i153                         | 1                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i159                         | 2                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i160                         | 3                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i161                         | 4                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i162                         | 5                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i163                         | 0                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i164                         | 1                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i165                         | 2                        |
+2020-02-11 12:08:38 INFO : | CaloCaloCorrelation_i166                         | 3                        |
+2020-02-11 12:08:38 INFO : | MuonMuonCorrelation_i116                         | 0                        |
+2020-02-11 12:08:38 INFO : | MuonMuonCorrelation_i117                         | 1                        |
+2020-02-11 12:08:38 INFO : | MuonMuonCorrelation_i118                         | 2                        |
+2020-02-11 12:08:38 INFO : | DoubleMU_i112                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | DoubleMU_i114                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleMU_i115                                    | 4                        |
+2020-02-11 12:08:38 INFO : | DoubleMU_i119                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | DoubleMU_i120                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleMU_i143                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleMU_i144                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i0                                      | 3                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i1                                      | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i104                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleMU_i105                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleMU_i106                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleMU_i107                                    | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleMU_i108                                    | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleMU_i145                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i146                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i147                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i148                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i149                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i2                                      | 3                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i28                                     | 5                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i3                                      | 5                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i4                                      | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i40                                     | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleMU_i41                                     | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleMU_i5                                      | 4                        |
+2020-02-11 12:08:38 INFO : | SingleMU_i6                                      | 3                        |
+2020-02-11 12:08:38 INFO : | DoubleEG_i102                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleEG_i103                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleEG_i154                                    | 5                        |
+2020-02-11 12:08:38 INFO : | DoubleEG_i155                                    | 4                        |
+2020-02-11 12:08:38 INFO : | DoubleJET_i79                                    | 3                        |
+2020-02-11 12:08:38 INFO : | DoubleJET_i80                                    | 3                        |
+2020-02-11 12:08:38 INFO : | DoubleJET_i81                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | DoubleJET_i82                                    | 3                        |
+2020-02-11 12:08:38 INFO : | DoubleJET_i83                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i10                                     | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i100                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i101                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i11                                     | 5                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i110                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleEG_i111                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i7                                      | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i8                                      | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i84                                     | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleEG_i85                                     | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleEG_i86                                     | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleEG_i87                                     | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i88                                     | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleEG_i89                                     | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i9                                      | 3                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i90                                     | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i97                                     | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i98                                     | 5                        |
+2020-02-11 12:08:38 INFO : | SingleEG_i99                                     | 4                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i109                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i12                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i13                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i14                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i15                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i16                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i17                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i18                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i19                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i20                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i21                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i22                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i29                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i30                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i31                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i52                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i53                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i54                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i55                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i56                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i57                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i58                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i59                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i60                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i61                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i62                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i63                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i64                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i65                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i66                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i67                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i68                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i69                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i70                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i71                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i72                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i73                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i74                                    | 3,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i75                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i76                                    | 3                        |
+2020-02-11 12:08:38 INFO : | SingleJET_i77                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i78                                    | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i91                                    | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i92                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleJET_i93                                    | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleJET_i94                                    | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i95                                    | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleJET_i96                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i122                                | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i123                                | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i124                                | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i125                                | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i126                                | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i168                                | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleASYMET_i169                                | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETMHF_i27                                  | 4                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i121                                   | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleETT_i127                                   | 3                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i128                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i129                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETT_i130                                   | 3                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i131                                   | 3,4,5                    |
+2020-02-11 12:08:38 INFO : | SingleETT_i132                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i133                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETT_i134                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETT_i135                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i136                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i137                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i138                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETT_i139                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i140                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleETT_i141                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i167                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i170                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i171                                   | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i32                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleETT_i42                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleHTT_i23                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleHTT_i24                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleHTT_i25                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleHTT_i26                                    | 5                        |
+2020-02-11 12:08:38 INFO : | SingleMBT0HFM_i34                                | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleMBT0HFP_i33                                | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleMBT1HFM_i44                                | 5                        |
+2020-02-11 12:08:38 INFO : | SingleMBT1HFP_i43                                | 5                        |
+2020-02-11 12:08:38 INFO : | SingleCENT0_i45                                  | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleCENT1_i46                                  | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleCENT2_i47                                  | 3                        |
+2020-02-11 12:08:38 INFO : | SingleCENT3_i48                                  | 3                        |
+2020-02-11 12:08:38 INFO : | SingleCENT4_i49                                  | 3                        |
+2020-02-11 12:08:38 INFO : | SingleCENT5_i50                                  | 3                        |
+2020-02-11 12:08:38 INFO : | SingleCENT6_i113                                 | 3                        |
+2020-02-11 12:08:38 INFO : | SingleCENT7_i51                                  | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i142                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i156                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleEXT_i157                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i158                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleEXT_i172                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleEXT_i173                                   | 4,5                      |
+2020-02-11 12:08:38 INFO : | SingleEXT_i174                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i175                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i176                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i177                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i178                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i179                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i180                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i181                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i182                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i183                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i184                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i185                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i186                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i187                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i188                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i189                                   | 3,4                      |
+2020-02-11 12:08:38 INFO : | SingleEXT_i190                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i191                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i192                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i193                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i194                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i195                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i196                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i197                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i198                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i199                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i200                                   | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i35                                    | 0,1,2,3,4,5              |
+2020-02-11 12:08:38 INFO : | SingleEXT_i36                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i37                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i38                                    | 4                        |
+2020-02-11 12:08:38 INFO : | SingleEXT_i39                                    | 4                        |
+2020-02-11 12:08:38 INFO : |--------------------------------------------------|--------------------------|
+2020-02-11 12:08:38 INFO : |-----------------------------------------------------------------------------|
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : | Summary for distribution on 6 modules, shadow ratio: 0.5                    |
+2020-02-11 12:08:38 INFO : |                                                                             |
+2020-02-11 12:08:38 INFO : |-------------------------------------|---------------------------------------|
+2020-02-11 12:08:38 INFO : | Module                              | Payload                               |
+2020-02-11 12:08:38 INFO : | ID | Algorithms | Conditions | Rel. | SliceLUTs | DSPs    |                 |
+2020-02-11 12:08:38 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-02-11 12:08:38 INFO : |  0 |          6 |          4 | 0.67 |    28.74% |  17.70% |                 |
+2020-02-11 12:08:38 INFO : |  1 |          3 |          4 | 1.33 |    28.74% |  17.70% |                 |
+2020-02-11 12:08:38 INFO : |  2 |          4 |          4 | 1.00 |    28.74% |  17.70% |                 |
+2020-02-11 12:08:38 INFO : |  3 |        120 |         83 | 0.69 |    28.58% |  16.13% |                 |
+2020-02-11 12:08:38 INFO : |  4 |        173 |        111 | 0.64 |    28.58% |  16.13% |                 |
+2020-02-11 12:08:38 INFO : |  5 |        110 |         74 | 0.67 |    28.58% |  16.13% |                 |
+2020-02-11 12:08:38 INFO : |----|------------|------------|------|-----------|---------|-----------------|
+2020-02-11 12:08:38 INFO : writing VHDL modules...
+2020-02-11 12:08:38 INFO : writing 416 algorithms to 6 module(s)
+2020-02-11 12:08:38 INFO : writing output for module: 0
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_0/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_0/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing output for module: 1
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_1/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_1/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing output for module: 2
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_2/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_2/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing output for module: 3
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_3/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_3/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing output for module: 4
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_4/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_4/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing output for module: 5
+2020-02-11 12:08:38 INFO : l1menu.vhd              : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_5/src/l1menu.vhd
+2020-02-11 12:08:38 INFO : l1menu_pkg.vhd          : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/vhdl/module_5/src/l1menu_pkg.vhd
+2020-02-11 12:08:38 INFO : writing updated XML file /home/bergauer/github/cms-l1-globaltrigger/cms-l1-menu/2018/L1Menu_CollisionsHeavyIons2018_v4_2_0-d1/xml/L1Menu_CollisionsHeavyIons2018_v4_2_0-d1.xml
+2020-02-11 12:08:38 INFO : reading source XML menu file /home/bergauer/github/cms-l1-globaltrigger/cms-l1-menu/2018/L1Menu_CollisionsHeavyIons2018_v4_2_0-d1/xml/L1Menu_CollisionsHeavyIons2018_v4_2_0-d1.xml
+2020-02-11 12:08:39 INFO : processing menu "L1Menu_CollisionsHeavyIons2018_v4_2_0" ... 
+2020-02-11 12:08:39 INFO : updating menu information...
+2020-02-11 12:08:39 INFO : uuid_menu     : 18def6b5-725e-4ccd-bd48-aa6c63158cc8
+2020-02-11 12:08:39 INFO : uuid_firmware : a52f5ad9-78f6-4765-a14c-a24029f177a8
+2020-02-11 12:08:39 INFO : n_modules     : 6
+2020-02-11 12:08:39 INFO : writing target XML menu file /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/xml/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2.xml
+2020-02-11 12:08:39 INFO : generating menu documentation...
+2020-02-11 12:08:39 INFO : writing HTML documentation /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/xml/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2.xml
+2020-02-11 12:08:40 INFO : writing TWIKI page template /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/xml/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2.xml
+2020-02-11 12:08:41 INFO : patching filenames...
+2020-02-11 12:08:41 INFO : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/doc/L1Menu_CollisionsHeavyIons2018_v4_2_0.html --> /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/doc/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2.html
+2020-02-11 12:08:41 INFO : /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/doc/L1Menu_CollisionsHeavyIons2018_v4_2_0.twiki --> /home/bergauer/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2/doc/L1Menu_CollisionsHeavyIons2018_v4_2_0-d2.twiki
+2020-02-11 12:08:41 INFO : done.
