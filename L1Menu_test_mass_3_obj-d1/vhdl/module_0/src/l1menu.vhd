@@ -58,12 +58,13 @@ architecture rtl of l1menu is
     signal comp_pt_mu_bx_0_0x0015 : mu_obj_t;
 -- Correlation cuts
     signal comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009a7ec80 : mu_mu_t;
+    signal comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80 : mu_mu_mu_t;
 -- Muon charge correlation
 -- Conditions inputs
     -- Object cuts "and"
    signal comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign : mu_obj_t;
 -- Signal definition for conditions names
-    signal l1_mass_3_obj : std_logic;
+    signal mass_3_obj_i0 : std_logic;
     signal invariant_mass_i0 : std_logic;
 -- Signal definition for algorithms names
     signal l1_mass_3_obj : std_logic;
@@ -158,6 +159,17 @@ begin
             invmass_mu_mu(bx(0),bx(0)), comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009A7EC80
         );
 
+    comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80_i: entity work.comparators_mass_3_obj
+        generic map(
+            N_MU_OBJECTS,
+            MU_MU_MASS_VECTOR_WIDTH, mass,
+            X"0000000175D720", X"00000009A7EC80"        
+        )
+        port map(
+            lhc_clk, 
+            invmass_mu_mu(bx(0),bx(0)), comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80
+        );
+
 -- Third stage: conditions and algos
     -- Creating condition inputs (combination of object cuts)
     comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign <= 
@@ -195,8 +207,8 @@ begin
             comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign, 
             in_3 => 
             comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign, 
-            inv_mass => comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009a7ec80,
-            cond_o => invariant_mass_i0
+            inv_mass => comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80,
+            cond_o => mass_3_obj_i0
         );
     
     -- Centrality assignment
