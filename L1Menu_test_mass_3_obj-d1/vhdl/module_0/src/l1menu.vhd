@@ -22,6 +22,12 @@
 -- v3.0.0
 -- ========================================================
 
+-- ********************************************************
+-- REMARKS:
+-- All instances and declarations for mass_3_obj are done manually!!!
+-- Actually mass_3_obj is not in TME and VHDL Producer.
+-- ********************************************************
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -58,7 +64,7 @@ architecture rtl of l1menu is
     signal comp_pt_mu_bx_0_0x0015 : mu_obj_t;
 -- Correlation cuts
     signal comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009a7ec80 : mu_mu_t;
-    signal comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80 : mu_mu_mu_t;
+    signal comp_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80 : mass_3_obj_mu_t;
 -- Muon charge correlation
 -- Conditions inputs
     -- Object cuts "and"
@@ -159,7 +165,7 @@ begin
             invmass_mu_mu(bx(0),bx(0)), comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009A7EC80
         );
 
-    comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80_i: entity work.comparators_mass_3_obj
+    comp_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80_i: entity work.comparators_mass_3_obj
         generic map(
             N_MU_OBJECTS,
             MU_MU_MASS_VECTOR_WIDTH, mass,
@@ -167,7 +173,7 @@ begin
         )
         port map(
             lhc_clk, 
-            invmass_mu_mu(bx(0),bx(0)), comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80
+            invmass_mu_mu(bx(0),bx(0)), comp_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80
         );
 
 -- Third stage: conditions and algos
@@ -207,7 +213,7 @@ begin
             comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign, 
             in_3 => 
             comb_mu_bx_0_pt_0015_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign, 
-            inv_mass => comp_mass_3_obj_mu_0x0000000175d720_0x00000009a7ec80,
+            inv_mass => comp_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80,
             cond_o => mass_3_obj_i0
         );
     
@@ -215,7 +221,7 @@ begin
     -- External condition assignment
     -- Instantiations of algorithms
 
--- 0 L1_mass_3_obj : mass_inv{MU10,MU10}[MASS_MASS_7to18]
+-- 0 L1_mass_3_obj : mass_3_obj{MU10,MU10,MU10}[MASS_MASS_7to18]
     l1_mass_3_obj <= mass_3_obj_i0;
     algo(1) <= l1_mass_3_obj;
 -- 1 L1_mass_2_obj : mass_inv{MU10,MU10}[MASS_MASS_7to18]
