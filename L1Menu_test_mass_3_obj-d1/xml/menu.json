@@ -1,0 +1,10 @@
+{
+  "firmware_uuid" : "878d4067-60ad-4080-92ec-170c0b65a7d2",
+  "menu_uuid"     : "0e904f61-7a41-444f-82a4-5802d4ae02b8",
+  "n_modules"     : 1,
+  "guide"         : ["AlgoName", "Global_Index", "Module_Index", "Local_Index"],
+  "algorithms"    : [
+    ["L1_mass_3_obj", 0, 0, 1],
+    ["L1_mass_2_obj", 1, 0, 0]
+  ]
+}

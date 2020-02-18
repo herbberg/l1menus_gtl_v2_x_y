@@ -1,0 +1,69 @@
+%SET{ "REPORTER_URL" value="%ATTACHURL%/L1Menu_test_mass_3_obj.html" }%
+
+---+!! !L1Menu_test_mass_3_obj
+
+%TOC%
+
+---++ Introduction
+
+| *Trigger Menu Name* | *Grammar Version* | *Compatible releases* | *First run with collision key* |
+| !L1Menu_test_mass_3_obj | 0.7 | >= X_Y_Z |  |
+
+---++ Changes with respect to !L1Menu_xxxx
+   * Added the following algorithms
+      * bxxx L1_xxxx
+   * Changed the following algorithms
+      * bxxx L1_xxxx
+   * Removed the following algorithms
+      * bxxx L1_xxxx
+   * references:
+      * https://its.cern.ch/jira/browse/CMSHLT-xxxx
+
+---+++ Menu availability in a CMSSW job
+
+---++ List and description of algorithm and technical triggers
+
+
+A complete description of the algorithm and technical trigger implementation is available in the attached
+[[%GET{"REPORTER_URL"}%][HTML Description of L1 Menu]]. %ICON{updated}%
+
+---+++ L1 menu identification
+
+|Menu Name: | !L1Menu_test_mass_3_obj |
+|Menu UUID: | 0e904f61-7a41-444f-82a4-5802d4ae02b8 |
+|Firmware UUID: | 878d4067-60ad-4080-92ec-170c0b65a7d2  |
+|Associated L1 scale DB key: | scales_2018_08_07 |
+
+
+---+++ Summary
+
+   * Number of algorithm triggers: 2 defined.
+
+Number of algorithm triggers per trigger group:
+
+    | *Trigger group* | *Number of bits used* |
+      | !Mass algorithm triggers: | 2 |
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by trigger groups
+
+<p style="page-break-before: always">&nbsp;</p>
+---++++ !Mass algorithm triggers
+|  *Trigger Name*  |  *Trigger Alias*  |  *Bit*  |  *Comments*  |
+|[[%GET{"REPORTER_URL"}%#L1_mass_3_obj ][L1_mass_3_obj]]   | L1_mass_3_obj  | 0 |  |
+|[[%GET{"REPORTER_URL"}%#L1_mass_2_obj ][L1_mass_2_obj]]   | L1_mass_2_obj  | 1 |  |
+!Mass algorithm triggers: 2 bits defined
+
+
+
+<p style="page-break-before: always">&nbsp;</p>
+
+---+++ List of algorithm triggers sorted by bits
+
+| *Algorithm* | *Alias* | *Bit number* | *Module Id* |
+|[[%GET{"REPORTER_URL"}%#L1_mass_3_obj ][L1_mass_3_obj]]   |L1_mass_3_obj |0 |0 |
+|[[%GET{"REPORTER_URL"}%#L1_mass_2_obj ][L1_mass_2_obj]]   |L1_mass_2_obj |1 |0 |
+
+
+<p style="page-break-before: always">&nbsp;</p>
