@@ -203,7 +203,8 @@ begin
     cond_mass_3_obj_i0_i: entity work.mass_3_obj_condition
         generic map(
             N_MU_OBJECTS,
-            ((0,7), (0,7), (0,7), (0,0))
+            ((0,7), (0,7), (0,7), (0,0)),
+            false
         )
         port map(
             lhc_clk,
