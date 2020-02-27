@@ -13,7 +13,7 @@
 -- 9ba19cda-011f-415a-b41e-10a9f3d5f145
 
 -- Unique ID of firmware implementation:
--- 7daa02bb-da21-45b5-8a90-33422eeac845
+-- 86aea376-2072-4802-85e8-6d0c4de6c410
 
 -- Scale set:
 -- scales_2018_08_07
@@ -221,7 +221,7 @@ begin
             cond_o => invariant_mass_i0
         );
 
-    cond_invariant_mass_three_obj_i1_i: entity work.mass_3_obj_conditions
+    cond_invariant_mass_three_obj_i1_i: entity work.mass_3_obj_condition
         generic map(
             N_MU_OBJECTS,
             ((0,7), (0,7), (0,7), (0,0)),
