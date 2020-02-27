@@ -13,7 +13,7 @@
 -- 9ba19cda-011f-415a-b41e-10a9f3d5f145
 
 -- Unique ID of firmware implementation:
--- 6b305c98-13b2-47c4-b0de-f76fd0c6f0f2
+-- 7daa02bb-da21-45b5-8a90-33422eeac845
 
 -- Scale set:
 -- scales_2018_08_07
@@ -142,35 +142,6 @@ begin
             cos_dphi_mu_mu(bx(0),bx(0)),
             invmass_mu_mu(bx(0),bx(0))
        );
-    calc_cosh_deta_mu_mu_bx_0_bx_0_i: entity work.cosh_deta_lut
-        generic map(
-            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t), (bx(0),bx(0))
-        )
-        port map(
-            deta_calc_mu_mu(bx(0),bx(0)),
-            cosh_deta_mu_mu(bx(0),bx(0))
-        );
-    calc_cos_dphi_mu_mu_bx_0_bx_0_i: entity work.cos_dphi_lut
-        generic map(
-            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t), (bx(0),bx(0))
-        )
-        port map(
-            dphi_calc_mu_mu(bx(0),bx(0)),
-            cos_dphi_mu_mu(bx(0),bx(0))
-        );
-    calc_inv_mass_mu_mu_bx_0_bx_0_i: entity work.invariant_mass
-        generic map(
-            N_MU_OBJECTS, N_MU_OBJECTS, (mu_t,mu_t), (bx(0),bx(0)),
-            MU_PT_VECTOR_WIDTH, MU_PT_VECTOR_WIDTH,
-            MU_MU_COSH_COS_VECTOR_WIDTH
-        )
-        port map(
-            conv.mu(bx(0)).pt_vector,
-            conv.mu(bx(0)).pt_vector,
-            cosh_deta_mu_mu(bx(0),bx(0)),
-            cos_dphi_mu_mu(bx(0),bx(0)),
-            invmass_mu_mu(bx(0),bx(0))
-       );
     
 -- Second stage: comparisons
     comp_pt_mu_bx_0_0x0015_i: entity work.comparators_obj_cuts
@@ -209,7 +180,7 @@ begin
         port map(
             lhc_clk, invmass_mu_mu(bx(0),bx(0)), comp_invmass_mu_mu_bx_0_bx_0_0x0000000175d720_0x00000009A7EC80
         );
-    comp_inv_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80_i: entity work.mass_3_obj_condition
+    comp_inv_mass_3_obj_mu_bx_0_0x0000000175d720_0x00000009a7ec80_i: entity work.comparators_mass_3_obj
         generic map(
             N_MU_OBJECTS,
             MU_MU_MASS_VECTOR_WIDTH, mass, 
