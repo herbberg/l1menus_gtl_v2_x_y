@@ -13,7 +13,7 @@
 -- 821d31a5-e544-47d3-85d1-ce2181a9ac94
 
 -- Unique ID of firmware implementation:
--- 65fed0af-5e02-468c-b76d-5641f75a5196
+-- 51b04746-0c6a-425b-848e-0c4da41ccd33
 
 -- Scale set:
 -- scales_2018_08_07
@@ -91,6 +91,7 @@ architecture rtl of l1menu is
     signal comp_invmass3obj_eg_bx_0_0x00000007735940_0x0000001dcd6500 : mass_3_obj_eg_t;
     signal comp_invmass3obj_mu_bx_0_0x0000004a817c80_0x0000012a05f200 : mass_3_obj_mu_t;
 -- Muon charge correlation
+    signal comp_cc_triple_bx_0_bx_0_cc_os : mu_cc_triple_t;
 -- Conditions inputs
     -- Object cuts "and"
    signal comb_eg_bx_0_pt_0014_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f : eg_obj_t;
@@ -120,6 +121,14 @@ architecture rtl of l1menu is
     signal l1_jet_mass_2_obj : std_logic;
 begin
 -- First stage: calculations
+    calc_muon_charge_correlations_bx_0_bx_0_i: entity work.muon_charge_correlations
+        port map(
+            data.mu(bx(0)).charge,
+            data.mu(bx(0)).charge,
+            cc_double(bx(0),bx(0)),
+            cc_triple(bx(0),bx(0)),
+            cc_quad(bx(0),bx(0))
+        );
   
     calc_deta_eg_eg_bx_0_bx_0_i: entity work.deta_calc
         generic map(
@@ -473,6 +482,15 @@ begin
         port map(
             lhc_clk, invmass_mu_mu(bx(0),bx(0)), comp_invmass3obj_mu_bx_0_0x0000004a817c80_0x0000012A05F200
         );
+    comp_cc_triple_bx_0_bx_0_cc_os_i: entity work.comparators_muon_charge_corr
+        generic map(
+            triple, CC_OS
+        )
+        port map(
+            lhc_clk, 
+            cc_triple => cc_triple(bx(0),bx(0)), 
+            comp_o_triple => comp_cc_triple_bx_0_bx_0_cc_os
+        );
 
 -- Third stage: conditions and algos
     -- Creating condition inputs (combination of object cuts)
@@ -620,7 +638,7 @@ begin
             in_3 => 
             comb_mu_bx_0_pt_0041_eta_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_phi_0000_0000_0000_0000_iso_000f_qual_ffff_charge_ign,
             inv_mass => comp_invmass3obj_mu_bx_0_0x0000004a817c80_0x0000012a05f200,
-            charge_corr_triple => comp_cc_triple_bx_0_bx_0_bx_0_cc_os,
+            charge_corr_triple => comp_cc_triple_bx_0_bx_0_cc_os,
             cond_o => invariant_mass_three_obj_i1
         );
     
