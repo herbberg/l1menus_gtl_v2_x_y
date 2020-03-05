@@ -71,9 +71,9 @@ architecture rtl of l1menu is
     signal cos_dphi_jet_jet :  obj_bx_corr_cuts_std_logic_array;
     signal cos_dphi_mu_mu :  obj_bx_corr_cuts_std_logic_array;
     -- Sum of 3 invariant mass (for mass with 3 objects)
-    signal  sum_mass_3_obj_eg_bx_0 : sum_mass_array;
-    signal  sum_mass_3_obj_jet_bx_0 : sum_mass_array;
-    signal  sum_mass_3_obj_mu_bx_0 : sum_mass_array;
+    signal sum_mass_3_obj_eg : obj_bx_sum_mass_array;
+    signal sum_mass_3_obj_jet : obj_bx_sum_mass_array;
+    signal sum_mass_3_obj_mu : obj_bx_sum_mass_array;
 -- Muon charge correlation    
     signal cc_double : obj_bx_muon_cc_double_array;
     signal cc_triple : obj_bx_muon_cc_triple_array;
@@ -283,7 +283,7 @@ begin
         )
         port map(
             invmass_eg_eg(bx(0),bx(0)),
-            sum_mass_3_obj_eg_bx_0
+            sum_mass_3_obj_eg(bx(0))
         );
     calc_cosh_deta_jet_jet_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
@@ -320,7 +320,7 @@ begin
         )
         port map(
             invmass_jet_jet(bx(0),bx(0)),
-            sum_mass_3_obj_jet_bx_0
+            sum_mass_3_obj_jet(bx(0))
         );
     calc_cosh_deta_mu_mu_bx_0_bx_0_i: entity work.cosh_deta_lut
         generic map(
@@ -357,7 +357,7 @@ begin
         )
         port map(
             invmass_mu_mu(bx(0),bx(0)),
-            sum_mass_3_obj_mu_bx_0
+            sum_mass_3_obj_mu(bx(0))
         );
     
 -- Second stage: comparisons
@@ -493,7 +493,7 @@ begin
             X"00000000256250", X"00000000F73140"        
         )
         port map(
-            lhc_clk, sum_mass_3_obj_jet_bx_0, comp_invmass3obj_jet_bx_0_0x00000000256250_0x00000000F73140
+            lhc_clk, sum_mass_3_obj_jet(bx(0)), comp_invmass3obj_jet_bx_0_0x00000000256250_0x00000000F73140
         );
     comp_inv_mass_3_obj_eg_bx_0_0x00000007735940_0x0000001dcd6500_i: entity work.comparators_mass_3_obj
         generic map(
@@ -501,7 +501,7 @@ begin
             X"00000007735940", X"0000001DCD6500"        
         )
         port map(
-            lhc_clk, sum_mass_3_obj_eg_bx_0, comp_invmass3obj_eg_bx_0_0x00000007735940_0x0000001DCD6500
+            lhc_clk, sum_mass_3_obj_eg(bx(0)), comp_invmass3obj_eg_bx_0_0x00000007735940_0x0000001DCD6500
         );
     comp_inv_mass_3_obj_mu_bx_0_0x0000004a817c80_0x0000012a05f200_i: entity work.comparators_mass_3_obj
         generic map(
@@ -509,7 +509,7 @@ begin
             X"0000004A817C80", X"0000012A05F200"        
         )
         port map(
-            lhc_clk, sum_mass_3_obj_mu_bx_0, comp_invmass3obj_mu_bx_0_0x0000004a817c80_0x0000012A05F200
+            lhc_clk, sum_mass_3_obj_mu(bx(0)), comp_invmass3obj_mu_bx_0_0x0000004a817c80_0x0000012A05F200
         );
     comp_cc_triple_bx_0_bx_0_cc_os_i: entity work.comparators_muon_charge_corr
         generic map(
